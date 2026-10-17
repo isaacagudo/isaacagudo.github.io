@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isaac Agudo</title>
+  <meta name="description" content="Isaac Agudo teaches and researches applied cryptography, cybersecurity and blockchain at NICS Lab, University of Málaga, and is the founder of Decentralized Security.">
+  <meta name="theme-color" content="#F7FAFA">
+  <link rel="preload" href="fonts/petrona-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: "Petrona";
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url("fonts/petrona-latin-wght-normal.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "Petrona";
+      font-style: italic;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url("fonts/petrona-latin-wght-italic.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "Hanken Grotesk";
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url("fonts/hanken-grotesk-latin-wght-normal.woff2") format("woff2");
+    }
+
+    :root {
+      --paper: #F7FAFA;      /* cool, airy white */
+      --ink: #142A3E;        /* deep harbour navy */
+      --slate: #4F6476;      /* secondary text */
+      --sea: #0B6B70;        /* links and accents */
+      --sea-deep: #07484C;   /* text on the sea-glass band */
+      --glass: #D5EEE8;      /* fresh sea-glass tint */
+      --line: #D9E3E8;
+
+      --serif: "Petrona", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      --sans: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
+
+      --gutter: clamp(1rem, 6vw, 7rem);
+      --measure: 36rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 1.125rem;
+      line-height: 1.6;
+      font-optical-sizing: auto;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: var(--sea);
+      text-decoration-line: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+      transition: text-decoration-thickness 120ms ease;
+    }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible {
+      outline: 2px solid var(--sea);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(4rem, 14vh, 9rem) 0 clamp(3rem, 8vh, 5rem);
+    }
+
+    .intro {
+      padding-inline: var(--gutter);
+      max-width: calc(var(--measure) + 2 * var(--gutter));
+    }
+
+    h1 {
+      margin: 0 0 0.35em;
+      font-weight: 480;
+      font-size: clamp(3rem, 2rem + 6vw, 6.25rem);
+      line-height: 0.98;
+      letter-spacing: -0.025em;
+    }
+
+    .lede {
+      margin: 0;
+      font-size: clamp(1.2rem, 1.1rem + 0.5vw, 1.45rem);
+      line-height: 1.5;
+      color: var(--ink);
+    }
+
+    /* The construction band: starts at the text column and runs off the right edge */
+    .band {
+      margin: clamp(2.5rem, 7vh, 4rem) 0 0 var(--gutter);
+      padding: clamp(1.4rem, 3vw, 2.1rem) var(--gutter) clamp(1.5rem, 3vw, 2.2rem) clamp(1.25rem, 3vw, 2.25rem);
+      background: var(--glass);
+      border-radius: 6px 0 0 6px;
+    }
+
+    .status {
+      margin: 0 0 0.4rem;
+      max-width: 30rem;
+      font-style: italic;
+      font-weight: 450;
+      font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2.2rem);
+      line-height: 1.2;
+      color: var(--sea-deep);
+    }
+
+    /* Each letter keeps its real width while a random hex digit is drawn over
+       it, so the scramble never changes the layout */
+    .ch { position: relative; }
+    .ch.scr { color: transparent; }
+    .ch.scr::after {
+      content: attr(data-n);
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      color: var(--sea-deep);
+    }
+
+    .band p.note {
+      margin: 0;
+      max-width: 32rem;
+      font-size: 1.1rem;
+      color: var(--sea-deep);
+    }
+
+    .meanwhile {
+      margin: clamp(2rem, 5vh, 3rem) 0 0;
+      padding-inline: var(--gutter);
+      max-width: calc(var(--measure) + 2 * var(--gutter));
+      color: var(--slate);
+    }
+
+    footer {
+      padding: 1.25rem var(--gutter) 1.5rem;
+      border-top: 1px solid var(--line);
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      color: var(--slate);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.25rem 1.5rem;
+    }
+    footer p { margin: 0; }
+
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 30rem) {
+      body { font-size: 1.0625rem; }
+      .band { border-radius: 4px 0 0 4px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="intro">
+      <h1>Isaac Agudo</h1>
+      <p class="lede">I teach and research applied cryptography, cybersecurity and blockchain at NICS&nbsp;Lab, University of Málaga. I am also the founder of Decentralized&nbsp;Security.</p>
+    </div>
+
+    <section class="band" aria-label="Site status">
+      <p class="status">
+        <span class="sr-only">This site is under construction.</span>
+        <span aria-hidden="true" data-decrypt>This site is under construction.</span>
+      </p>
+      <p class="note">A full version with my teaching, research and projects is on its way.</p>
+    </section>
+
+    <p class="meanwhile">In the meantime, you can visit my page at <a href="https://www.nics.uma.es/isaac">NICS&nbsp;Lab</a>, browse <a href="https://github.com/isaacagudo">my repositories</a> on GitHub, or learn more about <a href="https://decentralizedsecurity.es">Decentralized&nbsp;Security</a> and <a href="https://github.com/decentralizedsecurity">its repositories</a>.</p>
+  </main>
+
+  <footer>
+    <p>© 2026 Isaac Agudo</p>
+  </footer>
+
+  <script>
+    // One load-time moment: the status line resolves from hex "ciphertext" to plain text.
+    (function () {
+      var el = document.querySelector("[data-decrypt]");
+      if (!el) return;
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+      var plain = el.textContent;
+      var hex = "0123456789abcdef";
+      var duration = 1300;   // ms until the last character settles
+      var lead = 250;        // ms of pure noise before the first character settles
+
+      // Wrap each letter in a span; spaces and the full stop stay as they are.
+      el.textContent = "";
+      var chars = [];
+      for (var i = 0; i < plain.length; i++) {
+        var c = plain.charAt(i);
+        if (c === " " || c === ".") {
+          el.appendChild(document.createTextNode(c));
+          continue;
+        }
+        var s = document.createElement("span");
+        s.className = "ch scr";
+        s.textContent = c;
+        el.appendChild(s);
+        chars.push({ node: s, at: lead + (i / plain.length) * (duration - lead) + Math.random() * 120 });
+      }
+
+      var start = null;
+      var last = -1000;
+      function frame(t) {
+        if (start === null) start = t;
+        var elapsed = t - start;
+        var pending = 0;
+        if (t - last > 45) {
+          last = t;
+          for (var j = 0; j < chars.length; j++) {
+            var ch = chars[j];
+            if (elapsed >= ch.at) {
+              if (ch.node.classList.contains("scr")) ch.node.classList.remove("scr");
+            } else {
+              pending++;
+              ch.node.setAttribute("data-n", hex.charAt((Math.random() * 16) | 0));
+            }
+          }
+        } else {
+          pending = 1;
+        }
+        if (pending > 0) requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    })();
+  </script>
+</body>
+</html>
