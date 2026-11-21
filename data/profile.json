@@ -230,6 +230,17 @@
           "url": "https://www.linkedin.com/in/pablo-sanchez-serrano/"
         }
       ]
+    },
+    {
+      "student": "Álvaro López",
+      "topic": "Blockchain resilience and scalability",
+      "university": "University of Málaga",
+      "student_links": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/bluebycode/"
+        }
+      ]
     }
   ]
 }
