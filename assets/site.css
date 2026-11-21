@@ -129,6 +129,15 @@ h1 {
   line-height: 1.5;
 }
 
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  margin-top: 1.25rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+}
+
 /* Sections ----------------------------------------------------------------- */
 .block {
   padding: clamp(3rem, 8vh, 4.5rem) var(--gutter) 0;

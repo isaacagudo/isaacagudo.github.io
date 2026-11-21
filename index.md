@@ -41,6 +41,7 @@ I teach and research applied cryptography at the University of Málaga, where I 
 - [OpenAlex](https://openalex.org/A5053752266)
 - [NICS Lab](https://www.nics.uma.es/isaac)
 - [UMA research portal](https://portaldelainvestigacion.uma.es/investigadores/1241243)
+- [LinkedIn](https://www.linkedin.com/in/isaacagudo)
 - [GitHub](https://github.com/isaacagudo)
 
 ## Selected publications

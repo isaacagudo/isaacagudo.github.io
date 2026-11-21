@@ -115,6 +115,10 @@
       "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243"
     },
     {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/isaacagudo"
+    },
+    {
       "name": "GitHub",
       "url": "https://github.com/isaacagudo"
     }
@@ -145,6 +149,28 @@
       ],
       "url": "https://www.nics.uma.es/news/best-thesis-award-in-jnic-2017-for-nics-member-david-nunez/",
       "language": "en"
+    }
+  ],
+  "hero_links": [
+    {
+      "label": "NICS Lab page",
+      "url": "https://www.nics.uma.es/isaac"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=JGd3lHkAAAAJ"
+    },
+    {
+      "label": "ORCID",
+      "url": "https://orcid.org/0000-0002-2911-2300"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/isaacagudo"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/isaacagudo"
     }
   ]
 }

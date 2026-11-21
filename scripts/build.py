@@ -512,6 +512,7 @@ def build_index():
     <div class="intro">
       <h1>{e(pr['name'])}</h1>
       <p class="lede">{e(pr['lede']).replace('NICS Lab', '<a href="' + pr['lab']['url'] + '">NICS Lab</a>').replace('Decentralized Security', '<a href="' + pr['company']['url'] + '">Decentralized Security</a>')}</p>
+      <nav class="hero-links" aria-label="Profiles">{' '.join(f'<a href="{e(x["url"])}">{e(x["label"])}</a>' for x in pr.get('hero_links', []))}</nav>
     </div>
 
     <section class="block" id="research" aria-labelledby="research-h">
