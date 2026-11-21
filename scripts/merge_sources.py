@@ -20,7 +20,7 @@ OUT = ROOT / "data" / "works.json"
 
 # DOIs listed as "Relevant publications" on the NICS Lab profile page
 SELECTED = {
-    "10.23919/nisscps00007.2026.00037", "10.1016/j.bcra.2025.100323",
+    "10.1016/j.bcra.2025.100323",
     "10.1109/jiot.2025.3555026", "10.1109/mcom.001.2300839",
     "10.1109/metacom57706.2023.00056", "10.1109/access.2022.3223430",
     "10.1109/tvt.2020.3046640", "10.1049/iet-ifs.2018.5082",
@@ -295,7 +295,7 @@ add("eprint-2026-1804", {
     "URL": "https://eprint.iacr.org/2026/1804",
     "language": "en",
     "abstract": "Hash-based constructions occupy a distinctive position among post-quantum signatures: their security reduces to well-tested properties of hash functions rather than to newer assumptions such as lattices or isogenies. This work focuses on stateful schemes instead of stateless, because the former are considerably more efficient. However, they have the problem of state handling, since reusing a one-time key twice enables signature forgeries. Despite threshold signatures mitigate this problem by spreading trust among a set of disjoint parties, building them from hash-based schemes is difficult, since these lack the homomorphic structure needed to recombine partial signatures, and generic multiparty computation can be expensive for hash-based constructions. Kelsey, Lang and Lucks recently proposed Haystack, the first threshold scheme for hash-based signatures producing standard LMS or XMSS signatures, at the cost of a fully trusted setup and a large common reference value. We analyze Haystack along two dimensions: performance and security. First, as Haystack lacks an implementation and realistic benchmarking, we implement the protocol in Java and produce a network-aware evaluation of its viability in real deployments, concluding that it performs comparably to other post-quantum threshold schemes. Second, we relax the trust placed in the dealer. For that, we introduce a variant of the setup built on an optimistic, lightweight MPC-based partial-DKG. It does not remove the dealer's ability to forge, but it prevents it from impersonating trustees within the signing protocol, while preserving the standard signature format. Also, an optional succinct-argument layer provides public auditability. We further consider a full-DKG setting with no dealer and where the trustees run the entire setup under MPC. Both variants are implemented in MP-SPDZ and their costs have been analyzed."
-}, {"sources": ["manual"], "oa_url": "https://eprint.iacr.org/2026/1804.pdf"})
+}, {"sources": ["manual"], "oa_url": "https://eprint.iacr.org/2026/1804.pdf", "selected": True})
 
 # Curation -------------------------------------------------------------------
 # Canonical spelling of co-authors whose names some databases strip of accents

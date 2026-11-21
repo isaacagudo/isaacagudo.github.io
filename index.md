@@ -45,7 +45,7 @@ I teach and research applied cryptography at the University of Málaga, where I 
 
 ## Selected publications
 
-- [On the Effectiveness of Lightweight Models for Encrypted Traffic Classification](https://isaacagudo.github.io/publications/sanchez2026effectiveness/index.md). Pablo Sánchez-Serrano, Ruben Rios, Isaac Agudo. Conference paper in *2026 9th International Conference on Networking, Intelligent Systems & Security (NISS)*, pp. 215–222, 2026.
+- [Dealing Haystack: Towards Trustless Haystack in the Optimistic Setting](https://isaacagudo.github.io/publications/munoz2026dealing/index.md). Isabel Muñoz, Isaac Agudo, Marco López, Daniel Morales. Preprint in *Cryptology ePrint Archive*, Paper 2026/1804, 2026.
 - [Zero-knowledge Bitcoin mixer with reversible unlinkability](https://isaacagudo.github.io/publications/morales2026zero/index.md). Daniel Morales, Isaac Agudo, Javier López. Journal article in *Blockchain: Research and Applications*, 7(2), 100323, 2026.
 - [A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices](https://isaacagudo.github.io/publications/morales2025lightweight/index.md). Daniel Morales, Isaac Agudo, Javier López. Journal article in *IEEE Internet of Things Journal*, 12(13), 22725–22732, 2025.
 - [Toward a Framework for Cost-Effective and Publicly Verifiable Confidential Computations in Blockchain](https://isaacagudo.github.io/publications/morales2025toward/index.md). Daniel Morales, Isaac Agudo, Javier López. Journal article in *IEEE Communications Magazine*, 63(2), 96–102, 2025.
