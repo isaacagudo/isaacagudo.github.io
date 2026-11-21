@@ -107,6 +107,28 @@ for q in ('inventor:"Isaac Agudo"', 'inventor:"Agudo Ruiz"', 'inventor:"Isaac Ag
     time.sleep(1)
 save("google-patents.json", json.dumps(patents, indent=1).encode())
 
+# Google Patents: full page of each relevant publication (inventors, abstract, status)
+for num in ("US10691817B2", "US20180091301A1", "WO2018102382A1", "US10581603B2",
+            "WO2018208786A1", "US10574440B2", "WO2018208787A1", "ES3075470A1",
+            "WO2026162858A1", "EP2809027B1"):
+    save(f"patent-{num}.html", get(f"https://patents.google.com/patent/{num}/en", accept="text/html"))
+    time.sleep(1)
+
+# DBLP search API (the person pages sit behind a bot check)
+save("dblp-search.json", get("https://dblp.org/search/publ/api?" + urllib.parse.urlencode(
+    {"q": "author:Isaac_Agudo:", "format": "json", "h": "1000"})))
+
+# Semantic Scholar author papers
+ss = as_json(get("https://api.semanticscholar.org/graph/v1/author/search?" + urllib.parse.urlencode(
+    {"query": "Isaac Agudo", "fields": "name,affiliations,paperCount,externalIds"})))
+save("s2-authors.json", json.dumps(ss, indent=1).encode() if ss else None)
+
+# University of Malaga research portal, publications list (all pages)
+for page in range(1, 6):
+    save(f"uma-portal-{page}.html", get(
+        f"https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page={page}",
+        accept="text/html"))
+
 (out / "log.json").write_text(json.dumps(log, indent=1))
 print(f"{len(dois)} DOIs, {len(crossref)} Crossref records")
 for e in log:
