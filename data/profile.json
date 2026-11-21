@@ -112,7 +112,7 @@
     },
     {
       "name": "UMA research portal",
-      "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243"
+      "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/detalle?lang=en"
     },
     {
       "name": "LinkedIn",
@@ -134,14 +134,15 @@
       ],
       "url": "https://hdl.handle.net/10630/38704",
       "language": "en",
-      "student_links": [
-        {
-          "label": "NICS Lab page",
-          "url": "https://www.nics.uma.es/?p=1661"
-        },
+      "web": "https://www.nics.uma.es/?p=1661",
+      "profiles": [
         {
           "label": "LinkedIn",
           "url": "https://www.linkedin.com/in/daniel-morales-escalera"
+        },
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0002-6932-7437"
         }
       ]
     },
@@ -159,7 +160,7 @@
       ],
       "url": "https://www.nics.uma.es/news/best-thesis-award-in-jnic-2017-for-nics-member-david-nunez/",
       "language": "en",
-      "student_links": [
+      "profiles": [
         {
           "label": "LinkedIn",
           "url": "https://www.linkedin.com/in/davidnunezmontanez"
@@ -198,10 +199,14 @@
       "student": "Marco López",
       "topic": "Post-quantum blockchains",
       "university": "University of Málaga",
-      "student_links": [
+      "profiles": [
         {
           "label": "LinkedIn",
           "url": "https://www.linkedin.com/in/marcologonz/"
+        },
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0003-6441-7809"
         }
       ]
     },
@@ -209,7 +214,7 @@
       "student": "Fran Zafra",
       "topic": "Privacy Risks in Tabular Data",
       "university": "University of Málaga",
-      "student_links": [
+      "profiles": [
         {
           "label": "LinkedIn",
           "url": "https://www.linkedin.com/in/franzafra/"
@@ -220,14 +225,15 @@
       "student": "Pablo Sánchez-Serrano",
       "topic": "Privacy and AI",
       "university": "University of Málaga",
-      "student_links": [
-        {
-          "label": "NICS Lab page",
-          "url": "https://www.nics.uma.es/pablo-sanchez/"
-        },
+      "web": "https://www.nics.uma.es/pablo-sanchez/",
+      "profiles": [
         {
           "label": "LinkedIn",
           "url": "https://www.linkedin.com/in/pablo-sanchez-serrano/"
+        },
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0007-8769-0516"
         }
       ]
     },
@@ -235,7 +241,7 @@
       "student": "Álvaro López",
       "topic": "Blockchain resilience and scalability",
       "university": "University of Málaga",
-      "student_links": [
+      "profiles": [
         {
           "label": "LinkedIn",
           "url": "https://www.linkedin.com/in/bluebycode/"

@@ -337,13 +337,25 @@ def sup_when(t):
 
 
 def student_html(t):
-    """Student name linked to their main page, followed by any other profiles."""
-    links = t.get("student_links", [])
-    if not links:
-        return e(t["student"])
-    name = f'<a href="{e(links[0]["url"])}">{e(t["student"])}</a>'
-    more = " ".join(f'<a class="more" href="{e(x["url"])}">{e(x["label"])}</a>' for x in links[1:])
+    """Name links only to a personal web page; other profiles follow with their own labels."""
+    name = f'<a href="{e(t["web"])}">{e(t["student"])}</a>' if t.get("web") else e(t["student"])
+    more = " ".join(f'<a class="more" href="{e(x["url"])}">{e(x["label"])}</a>' for x in t.get("profiles", []))
     return name + (f' <span class="student-links">{more}</span>' if more else "")
+
+
+def student_ld(t):
+    p = {"@type": "Person", "name": t["student"]}
+    if t.get("web"):
+        p["url"] = t["web"]
+    urls = ([t["web"]] if t.get("web") else []) + [x["url"] for x in t.get("profiles", [])]
+    if urls:
+        p["sameAs"] = urls
+    return p
+
+
+def student_md(t):
+    links = ([{"label": "web page", "url": t["web"]}] if t.get("web") else []) + t.get("profiles", [])
+    return t["student"] + (" (" + ", ".join(f"[{x['label']}]({x['url']})" for x in links) + ")" if links else "")
 
 
 def supervision_li(t):
@@ -365,20 +377,14 @@ def ongoing_li(t):
 
 
 def ongoing_ld(t):
-    student = {"@type": "Person", "name": t["student"]}
-    if t.get("student_links"):
-        student["sameAs"] = [x["url"] for x in t["student_links"]]
-    return {"@type": "Thesis", "name": t["topic"], "author": student, "inSupportOf": "PhD",
+    return {"@type": "Thesis", "name": t["topic"], "author": student_ld(t), "inSupportOf": "PhD",
             "creativeWorkStatus": "In progress",
             "sourceOrganization": {"@type": "CollegeOrUniversity", "name": t["university"]},
             "contributor": [{"@type": "Role", "roleName": "PhD supervisor", "contributor": {"@id": PERSON_ID}}]}
 
 
 def supervision_ld(t):
-    student = {"@type": "Person", "name": t["student"]}
-    if t.get("student_links"):
-        student["sameAs"] = [x["url"] for x in t["student_links"]]
-    d = {"@type": "Thesis", "name": t["title"], "author": student,
+    d = {"@type": "Thesis", "name": t["title"], "author": student_ld(t),
          "inSupportOf": "PhD", "datePublished": t["date"], "url": t["url"], "inLanguage": t.get("language", "en"),
          "sourceOrganization": {"@type": "CollegeOrUniversity", "name": t["university"]},
          "contributor": [{"@type": "Role", "roleName": "PhD supervisor", "contributor": {"@id": PERSON_ID}}]
@@ -394,14 +400,12 @@ def supervision_md():
     for t in profile.get("supervision", []):
         co = f", co-supervised with {', '.join(t['co_supervisors'])}" if t.get("co_supervisors") else ""
         aw = f". Awards: {'; '.join(t['awards'])}" if t.get("awards") else ""
-        links = t.get("student_links", [])
-        who = t["student"] + (" (" + ", ".join(f"[{x['label']}]({x['url']})" for x in links) + ")" if links else "")
+        who = student_md(t)
         out.append(f"- {who}, *{t['title']}*, {t['university']}, defended {sup_when(t)}{co}{aw}. {t['url']}")
     if profile.get("supervision_ongoing"):
         out += ["", "## PhD students (ongoing)", ""]
         for t in profile["supervision_ongoing"]:
-            links = t.get("student_links", [])
-            who = t["student"] + (" (" + ", ".join(f"[{x['label']}]({x['url']})" for x in links) + ")" if links else "")
+            who = student_md(t)
             out.append(f"- {who}: {t['topic']}, PhD in progress at the {t['university']}")
     return "\n".join(out) + "\n"
 

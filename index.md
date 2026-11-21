@@ -28,14 +28,14 @@ I teach and research applied cryptography at the University of Málaga, where I 
 
 ## PhD theses supervised
 
-- Daniel Morales Escalera ([NICS Lab page](https://www.nics.uma.es/?p=1661), [LinkedIn](https://www.linkedin.com/in/daniel-morales-escalera)), *Secure Multi-Party Computation: Constructions and Applications in Blockchain*, University of Málaga, defended 28 April 2025, co-supervised with Javier López. https://hdl.handle.net/10630/38704
+- Daniel Morales Escalera ([web page](https://www.nics.uma.es/?p=1661), [LinkedIn](https://www.linkedin.com/in/daniel-morales-escalera), [ORCID](https://orcid.org/0000-0002-6932-7437)), *Secure Multi-Party Computation: Constructions and Applications in Blockchain*, University of Málaga, defended 28 April 2025, co-supervised with Javier López. https://hdl.handle.net/10630/38704
 - David Núñez ([LinkedIn](https://www.linkedin.com/in/davidnunezmontanez), [ORCID](https://orcid.org/0000-0002-3392-1530)), *New Security Definitions, Constructions and Applications of Proxy Re-Encryption*, University of Málaga, defended January 2016, co-supervised with Javier López. Awards: Best Thesis Award at JNIC 2017; ERCIM STM PhD Award 2017. https://www.nics.uma.es/news/best-thesis-award-in-jnic-2017-for-nics-member-david-nunez/
 
 ## PhD students (ongoing)
 
-- Marco López ([LinkedIn](https://www.linkedin.com/in/marcologonz/)): Post-quantum blockchains, PhD in progress at the University of Málaga
+- Marco López ([LinkedIn](https://www.linkedin.com/in/marcologonz/), [ORCID](https://orcid.org/0009-0003-6441-7809)): Post-quantum blockchains, PhD in progress at the University of Málaga
 - Fran Zafra ([LinkedIn](https://www.linkedin.com/in/franzafra/)): Privacy Risks in Tabular Data, PhD in progress at the University of Málaga
-- Pablo Sánchez-Serrano ([NICS Lab page](https://www.nics.uma.es/pablo-sanchez/), [LinkedIn](https://www.linkedin.com/in/pablo-sanchez-serrano/)): Privacy and AI, PhD in progress at the University of Málaga
+- Pablo Sánchez-Serrano ([web page](https://www.nics.uma.es/pablo-sanchez/), [LinkedIn](https://www.linkedin.com/in/pablo-sanchez-serrano/), [ORCID](https://orcid.org/0009-0007-8769-0516)): Privacy and AI, PhD in progress at the University of Málaga
 - Álvaro López ([LinkedIn](https://www.linkedin.com/in/bluebycode/)): Blockchain resilience and scalability, PhD in progress at the University of Málaga
 
 ## Profiles
@@ -47,7 +47,7 @@ I teach and research applied cryptography at the University of Málaga, where I 
 - [Web of Science](https://www.webofscience.com/wos/author/record/L-1785-2014)
 - [OpenAlex](https://openalex.org/A5053752266)
 - [NICS Lab](https://www.nics.uma.es/isaac)
-- [UMA research portal](https://portaldelainvestigacion.uma.es/investigadores/1241243)
+- [UMA research portal](https://portaldelainvestigacion.uma.es/investigadores/1241243/detalle?lang=en)
 - [LinkedIn](https://www.linkedin.com/in/isaacagudo)
 - [GitHub](https://github.com/isaacagudo)
 
