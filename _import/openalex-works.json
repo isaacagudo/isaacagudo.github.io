@@ -6798,14 +6798,14 @@
   },
   "sustainable_development_goals": [
    {
+    "score": 1.0,
     "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure",
-    "score": 1.0
+    "display_name": "Industry, innovation and infrastructure"
    },
    {
+    "score": 0.5142999887466431,
     "id": "https://metadata.un.org/sdg/11",
-    "display_name": "Sustainable cities and communities",
-    "score": 0.5142999887466431
+    "display_name": "Sustainable cities and communities"
    }
   ],
   "study_designs": [],
@@ -9690,9 +9690,9 @@
   "best_oa_location": null,
   "sustainable_development_goals": [
    {
+    "score": 1.0,
     "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure",
-    "score": 1.0
+    "display_name": "Industry, innovation and infrastructure"
    }
   ],
   "study_designs": [],
@@ -22068,9 +22068,9 @@
   "best_oa_location": null,
   "sustainable_development_goals": [
    {
+    "score": 0.5378999710083008,
     "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure",
-    "score": 0.5378999710083008
+    "display_name": "Industry, innovation and infrastructure"
    }
   ],
   "study_designs": [],
@@ -22923,9 +22923,9 @@
   "best_oa_location": null,
   "sustainable_development_goals": [
    {
+    "score": 0.8278999924659729,
     "id": "https://metadata.un.org/sdg/4",
-    "display_name": "Quality education",
-    "score": 0.8278999924659729
+    "display_name": "Quality education"
    }
   ],
   "study_designs": [
@@ -24845,9 +24845,9 @@
   "best_oa_location": null,
   "sustainable_development_goals": [
    {
+    "score": 0.7297000288963318,
     "id": "https://metadata.un.org/sdg/16",
-    "display_name": "Peace, justice, and strong institutions",
-    "score": 0.7297000288963318
+    "display_name": "Peace, justice, and strong institutions"
    }
   ],
   "study_designs": [],
@@ -26373,14 +26373,14 @@
   "best_oa_location": null,
   "sustainable_development_goals": [
    {
+    "score": 1.0,
     "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure",
-    "score": 1.0
+    "display_name": "Industry, innovation and infrastructure"
    },
    {
+    "score": 0.875,
     "id": "https://metadata.un.org/sdg/11",
-    "display_name": "Sustainable cities and communities",
-    "score": 0.875
+    "display_name": "Sustainable cities and communities"
    }
   ],
   "study_designs": [],
@@ -33796,9 +33796,9 @@
   },
   "sustainable_development_goals": [
    {
+    "score": 0.7297000288963318,
     "id": "https://metadata.un.org/sdg/16",
-    "display_name": "Peace, justice, and strong institutions",
-    "score": 0.7297000288963318
+    "display_name": "Peace, justice, and strong institutions"
    }
   ],
   "study_designs": [],
@@ -35374,9 +35374,9 @@
   },
   "sustainable_development_goals": [
    {
+    "score": 0.9901999831199646,
     "id": "https://metadata.un.org/sdg/4",
-    "display_name": "Quality education",
-    "score": 0.9901999831199646
+    "display_name": "Quality education"
    }
   ],
   "study_designs": [],
@@ -40575,9 +40575,9 @@
   "best_oa_location": null,
   "sustainable_development_goals": [
    {
+    "score": 0.46149998903274536,
     "id": "https://metadata.un.org/sdg/16",
-    "display_name": "Peace, justice, and strong institutions",
-    "score": 0.46149998903274536
+    "display_name": "Peace, justice, and strong institutions"
    }
   ],
   "study_designs": [],
@@ -47791,14 +47791,14 @@
   "best_oa_location": null,
   "sustainable_development_goals": [
    {
+    "score": 0.5378999710083008,
     "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure",
-    "score": 0.5378999710083008
+    "display_name": "Industry, innovation and infrastructure"
    },
    {
+    "score": 0.5142999887466431,
     "id": "https://metadata.un.org/sdg/11",
-    "display_name": "Sustainable cities and communities",
-    "score": 0.5142999887466431
+    "display_name": "Sustainable cities and communities"
    }
   ],
   "study_designs": [],
@@ -54258,9 +54258,9 @@
   },
   "sustainable_development_goals": [
    {
+    "score": 0.8970999717712402,
     "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure",
-    "score": 0.8970999717712402
+    "display_name": "Industry, innovation and infrastructure"
    }
   ],
   "study_designs": [],
@@ -55332,9 +55332,9 @@
   "best_oa_location": null,
   "sustainable_development_goals": [
    {
+    "score": 0.666700005531311,
     "id": "https://metadata.un.org/sdg/16",
-    "display_name": "Peace, justice, and strong institutions",
-    "score": 0.666700005531311
+    "display_name": "Peace, justice, and strong institutions"
    }
   ],
   "study_designs": [],
@@ -55973,9 +55973,9 @@
   "best_oa_location": null,
   "sustainable_development_goals": [
    {
+    "score": 0.9901999831199646,
     "id": "https://metadata.un.org/sdg/4",
-    "display_name": "Quality education",
-    "score": 0.9901999831199646
+    "display_name": "Quality education"
    }
   ],
   "study_designs": [],
@@ -59529,9 +59529,9 @@
   },
   "sustainable_development_goals": [
    {
+    "score": 0.428600013256073,
     "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure",
-    "score": 0.428600013256073
+    "display_name": "Industry, innovation and infrastructure"
    }
   ],
   "study_designs": [],
@@ -61314,9 +61314,9 @@
   },
   "sustainable_development_goals": [
    {
+    "score": 0.5378999710083008,
     "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure",
-    "score": 0.5378999710083008
+    "display_name": "Industry, innovation and infrastructure"
    }
   ],
   "study_designs": [],

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WO2026162858A1 - Methods and systems for sharing encrypted data 
+        - Google Patents</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="referrer" content="origin-when-crossorigin">
+    <link rel="canonical" href="https://patents.google.com/patent/WO2026162858A1/en">
+    <meta name="description" content="
+     The present invention relates to methods and systems for sharing encrypted data. The method comprises providing a distributed network comprising network owners (h) and resource-constrained devices (d) that generate private data (m); encrypting the private data (m) to generate encrypted data (c); and sending the encrypted data (c) to a proxy server where they are split into a set of pieces (c i ). The method further comprises determining a subset of network owners (h j ) to which the set of pieces (c i ) is sent; generating, for each resource-constrained device (d) and network owner pair, a re-encryption key (rk) based on any combination of the public/private key pairs of the resource-constrained device (d) and the network owner, wherein the re-encryption keys (rk) can only be accessed by the proxy server; and re-encrypting each piece (ci) with the respective re-encryption key (rk). 
+   
+   ">
+    <meta name="DC.type" content="patent">
+    <meta name="DC.title" content="Methods and systems for sharing encrypted data 
+       ">
+    <meta name="DC.date" content="2026-01-23" scheme="dateSubmitted">
+    <meta name="DC.description" content="
+     The present invention relates to methods and systems for sharing encrypted data. The method comprises providing a distributed network comprising network owners (h) and resource-constrained devices (d) that generate private data (m); encrypting the private data (m) to generate encrypted data (c); and sending the encrypted data (c) to a proxy server where they are split into a set of pieces (c i ). The method further comprises determining a subset of network owners (h j ) to which the set of pieces (c i ) is sent; generating, for each resource-constrained device (d) and network owner pair, a re-encryption key (rk) based on any combination of the public/private key pairs of the resource-constrained device (d) and the network owner, wherein the re-encryption keys (rk) can only be accessed by the proxy server; and re-encrypting each piece (ci) with the respective re-encryption key (rk). 
+   
+   ">
+    <meta name="citation_patent_application_number" content="PC:T/ES2026/070037">
+    <meta name="citation_patent_publication_number" content="WO:2026162858:A1">
+    <meta name="DC.date" content="2026-08-06">
+    <meta name="DC.contributor" content="Daniel MORALES ESCALERA" scheme="inventor">
+    <meta name="DC.contributor" content="Isaac AGUDO RUIZ" scheme="inventor">
+    <meta name="DC.contributor" content="Francisco Javier LÓPEZ MUÑOZ" scheme="inventor">
+    <meta name="DC.contributor" content="University of Malaga" scheme="assignee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700">
+
+    <style>
+      
+      #gb { position: absolute; top: 6px; left: auto; right: 0; width: auto; min-width: 135px !important; }   
+      body { transition: none; }
+    </style>
+    <script></script>
+
+    <script>
+      window.version = 'patent-search.search_20261106_RC00';
+
+      function sendFeedback() {
+        userfeedback.api.startFeedback({
+          'productId': '713680',
+          'bucket': 'patent-search-web',
+          'productVersion': window.version,
+        });
+      }
+
+      window.experiments = {};
+      window.experiments.patentCountries = "ae,ag,al,am,ao,ap,ar,at,au,aw,az,ba,bb,bd,be,bf,bg,bh,bj,bn,bo,br,bw,bx,by,bz,ca,cf,cg,ch,ci,cl,cm,cn,co,cr,cs,cu,cy,cz,dd,de,dj,dk,dm,do,dz,ea,ec,ee,eg,em,ep,es,fi,fr,ga,gb,gc,gd,ge,gh,gm,gn,gq,gr,gt,gw,hk,hn,hr,hu,ib,id,ie,il,in,ir,is,it,jo,jp,ke,kg,kh,km,kn,kp,kr,kw,kz,la,lc,li,lk,lr,ls,lt,lu,lv,ly,ma,mc,md,me,mg,mk,ml,mn,mo,mr,mt,mw,mx,my,mz,na,ne,ng,ni,nl,no,nz,oa,om,pa,pe,pg,ph,pl,pt,py,qa,ro,rs,ru,rw,sa,sc,sd,se,sg,si,sk,sl,sm,sn,st,su,sv,sy,sz,td,tg,th,tj,tm,tn,tr,tt,tw,tz,ua,ug,us,uy,uz,vc,ve,vn,wo,yu,za,zm,zw";
+      
+      
+      window.experiments.keywordWizard = true;
+      
+      
+      
+      window.experiments.definitions = true;
+      window.experiments.plogs = true;
+
+      window.Polymer = {
+        dom: 'shady',
+        lazyRegister: true,
+      };
+    </script>
+
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20261106_RC00/scs/compiled_dir/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="//www.gstatic.com/patent-search/frontend/patent-search.search_20261106_RC00/scs/compiled_dir/search-app-vulcanized.html">
+  </head>
+  <body unresolved>
+    
+    
+    <script></script>
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20261106_RC00/scs/compiled_dir/search-app-vulcanized.js"></script>
+    <search-app>
+      
+      
+
+      <article class="result" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <h1 itemprop="pageTitle">WO2026162858A1 - Methods and systems for sharing encrypted data 
+        - Google Patents</h1>
+  <span itemprop="title">Methods and systems for sharing encrypted data 
+       </span>
+
+  <meta itemprop="type" content="patent">
+  
+  <h2>Info</h2>
+
+  <dl>
+    <dt>Publication number</dt>
+    <dd itemprop="publicationNumber">WO2026162858A1</dd>
+    <meta itemprop="numberWithoutCodes" content="2026162858">
+    <meta itemprop="kindCode" content="A1">
+    <meta itemprop="publicationDescription" content="International application published with international search report">
+    <span>WO2026162858A1</span>
+    <span>PCT/ES2026/070037</span>
+    <span>ES2026070037W</span>
+    <span>WO2026162858A1</span>
+    <span>WO 2026162858 A1</span>
+    <span>WO2026162858 A1</span>
+    <span>WO 2026162858A1</span>
+    <span>  </span>
+    <span> </span>
+    <span> </span>
+    <span>ES 2026070037 W</span>
+    <span>ES2026070037 W</span>
+    <span>ES 2026070037W</span>
+    <span>WO 2026162858 A1</span>
+    <span>WO2026162858 A1</span>
+    <span>WO 2026162858A1</span>
+
+    <dt>Authority</dt>
+    <dd itemprop="countryCode">WO</dd>
+    <dd itemprop="countryName">WIPO (PCT)</dd>
+
+    <dt>Prior art keywords</dt>
+    <dd itemprop="priorArtKeywords" repeat>network</dd>
+    <dd itemprop="priorArtKeywords" repeat>resource</dd>
+    <dd itemprop="priorArtKeywords" repeat>key</dd>
+    <dd itemprop="priorArtKeywords" repeat>data</dd>
+    <dd itemprop="priorArtKeywords" repeat>encrypted data</dd>
+
+    <dt>Prior art date</dt>
+    <dd><time itemprop="priorArtDate" datetime="2025-01-30">2025-01-30</time></dd>
+
+    <dt>Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)</dt>
+    <dd itemprop="legalStatusIfi" itemscope>
+      <span itemprop="status">Pending</span>
+    </dd>
+  </dl>
+
+  <dt>Application number</dt>
+  <dd itemprop="applicationNumber">PCT/ES2026/070037</dd>
+
+  <dt>Other languages</dt>
+  <dd itemprop="otherLanguages" itemscope repeat>
+    <a href="/patent/WO2026162858A1/es">
+      <span itemprop="name">Spanish</span> (<span itemprop="code">es</span>)
+    </a>
+  </dd>
+  <dd itemprop="otherLanguages" itemscope repeat>
+    <a href="/patent/WO2026162858A1/fr">
+      <span itemprop="name">French</span> (<span itemprop="code">fr</span>)
+    </a>
+  </dd>
+
+  
+
+  <dt>Inventor</dt>
+  <dd itemprop="inventor" repeat>Daniel MORALES ESCALERA</dd>
+  <dd itemprop="inventor" repeat>Isaac AGUDO RUIZ</dd>
+  <dd itemprop="inventor" repeat>Francisco Javier LÓPEZ MUÑOZ</dd>
+
+  <dt>Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)</dt>
+  <dd itemprop="assigneeCurrent" repeat>
+    University of Malaga
+  </dd>
+
+  <dt>Original Assignee</dt>
+  <dd itemprop="assigneeOriginal" repeat>University of Malaga</dd>
+
+  <dt>Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)</dt>
+  <dd><time itemprop="priorityDate" datetime="2025-01-30">2025-01-30</time></dd>
+
+  <dt>Filing date</dt>
+  <dd><time itemprop="filingDate" datetime="2026-01-23">2026-01-23</time></dd>
+
+  <dt>Publication date</dt>
+  <dd><time itemprop="publicationDate" datetime="2026-08-06">2026-08-06</time></dd>
+
+  
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2026-01-23">2026-01-23</time>
+    <span itemprop="title">Application filed by University of Malaga</span>
+    <span itemprop="type">filed</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    
+    <span itemprop="assigneeSearch">University of Malaga</span>
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2026-08-06">2026-08-06</time>
+    <span itemprop="title">Publication of WO2026162858A1</span>
+    <span itemprop="type">publication</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    <span itemprop="documentId">patent/WO2026162858A1/en</span>
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date">Status</time>
+    <span itemprop="title">Pending</span>
+    <span itemprop="type">legal-status</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    <span itemprop="current" content="true" bool>Current</span>
+    
+    
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2027-07-30">2027-07-30</time>
+    <span itemprop="title">Anticipated expiration</span>
+    <span itemprop="type">legal-status</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    
+    
+  </dd>
+
+  <h2>Links</h2>
+  <ul>
+    
+
+    <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="espacenetLink">
+        <a href="https://worldwide.espacenet.com/publicationDetails/biblio?CC=WO&amp;NR=2026162858A1&amp;KC=A1&amp;FT=D" itemprop="url" target="_blank"><span itemprop="text">Espacenet</span></a>
+      </li>
+      
+
+    
+
+    <li itemprop="links" itemscope repeat>
+      <meta itemprop="id" content="globalDossierLink">
+      <a href="https://globaldossier.uspto.gov/result/application/WIPO/PCTES2026070037/1" itemprop="url" target="_blank"><span itemprop="text">Global Dossier</span></a>
+    </li>
+
+    
+
+      
+
+      <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="patentscopeLink">
+        <a href="https://patentscope.wipo.int/search/en/WO2026162858" itemprop="url" target="_blank"><span itemprop="text">PatentScope</span></a>
+      </li>
+
+      
+      <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="stackexchangeLink">
+        <a href="https://patents.stackexchange.com/questions/tagged/WO2026162858A1" itemprop="url"><span itemprop="text">Discuss</span></a>
+      </li>
+  </ul>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <section>
+    <h2>Landscapes</h2>
+    <ul>
+      <li itemprop="landscapes" itemscope repeat>
+        <span itemprop="name">Storage Device Security</span>
+        (<span itemprop="type">AREA</span>)
+      </li>
+    </ul>
+  </section>
+
+
+  <section itemprop="abstract" itemscope>
+    <h2>Abstract</h2>
+    
+    <div itemprop="content" html><abstract mxw-id="PA791527838" lang="EN" load-source="patent-office">
+    <div num="0000" class="abstract">The present invention relates to methods and systems for sharing encrypted data. The method comprises providing a distributed network comprising network owners (h) and resource-constrained devices (d) that generate private data (m); encrypting the private data (m) to generate encrypted data (c); and sending the encrypted data (c) to a proxy server where they are split into a set of pieces (c<sub>i</sub>). The method further comprises determining a subset of network owners (h<sub>j</sub>) to which the set of pieces (c<sub>i</sub>) is sent; generating, for each resource-constrained device (d) and network owner pair, a re-encryption key (rk) based on any combination of the public/private key pairs of the resource-constrained device (d) and the network owner, wherein the re-encryption keys (rk) can only be accessed by the proxy server; and re-encrypting each piece (ci) with the respective re-encryption key (rk).</div>
+  </abstract>
+  </div>
+  </section>
+
+  <section itemprop="description" itemscope>
+    <h2>Description</h2>
+    <aside>Translated from <span itemprop="translatedLanguage">Spanish</span></aside>
+    <div itemprop="content" html><description mxw-id="PDES538386601" lang="EN" load-source="google">
+    <p id="p0001" num="0001">
+      <span class="notranslate"> <span class="google-src-text">MÉTODOS Y SISTEMAS PARA COMPARTIR DATOS CIFRADOS </span>METHODS AND SYSTEMS FOR SHARING ENCRYPTED DATA</span>
+    </p>
+    <p id="p0002" num="0002">
+      <span class="notranslate"> <span class="google-src-text"> SECTOR TÉCNICO </span>TECHNICAL SECTOR</span>
+    </p>
+    <p id="p0003" num="0003">
+      <span class="notranslate"> <span class="google-src-text"> La presente invención se refiere de forma general a la computación confidencial distribuida y de forma particular a los métodos y sistemas para cifrar datos que puedan ser descifrados y procesados en una red distribuida mientras se preserva la confidencialidad. </span>The present invention relates generally to distributed confidential computing and particularly to methods and systems for encrypting data that can be decrypted and processed on a distributed network while preserving confidentiality.</span>
+    </p>
+    <p id="p0004" num="0004">
+      <span class="notranslate"> <span class="google-src-text"> ANTECEDENTES DE LA INVENCIÓN </span>BACKGROUND OF THE INVENTION</span>
+    </p>
+    <p id="p0005" num="0005">
+      <span class="notranslate"> <span class="google-src-text"> Externalizar la computación a la nube es crucial para los dispositivos limitados en recursos como los dispositivos del Internet de las cosas (loT). Este tipo de computación permite a un cliente limitado en recursos expandir su capacidad de cómputo mediante la externalización de la computación a otros nodos o nubes. Sin embargo, la externalización de la computación puede generar algunos problemas de privacidad, especialmente cuando los dispositivos comparten datos sensibles entre ellos. Los dispositivos limitados en recursos cifran los datos que generan antes de enviarlos a la nube. A pesar de que existen métodos de cifrado que pueden prevenir el acceso a los datos cifrados por parte del proveedor de la nube y también los protegen ante violaciones de datos, transmitir esos datos cifrados a través de mecanismos tradicionales implica una gestión de claves compleja. Además, los datos necesitan ser descifrados antes de que puedan ser utilizados. </span>Outsourcing computing to the cloud is crucial for resource-constrained devices such as Internet of Things (IoT) devices. This type of computing allows a resource-constrained client to expand its computing capacity by outsourcing computing to other nodes or clouds. However, outsourcing computing can raise some privacy concerns, especially when devices share sensitive data with each other. Resource-constrained devices encrypt the data they generate before sending it to the cloud. While encryption methods exist that can prevent the cloud provider from accessing the encrypted data and protect it against data breaches, transmitting that encrypted data through traditional mechanisms involves complex key management. Furthermore, the data needs to be decrypted before it can be used.</span>
+    </p>
+    <p id="p0006" num="0006">
+      <span class="notranslate"> <span class="google-src-text"> Algunas tecnologías para la preservación de la privacidad han demostrado ser muy beneficiosas ante implementaciones de externalización de la computación, ya que permiten que las operaciones sean ejecutadas sobre datos confidenciales. Entre esas tecnologías podemos encontrar dos principales: el Cifrado Completamente Homomórfico (FHE) y la Computación Segura Multiparte (MPC). </span>Some privacy-preserving technologies have proven highly beneficial in outsourced computing implementations, as they allow operations to be performed on sensitive data. Two key technologies among these are Fully Homomorphic Encryption (FHE) and Multi-Party Secure Computing (MPC).</span>
+    </p>
+    <p id="p0007" num="0007">
+      <span class="notranslate"> <span class="google-src-text"> FHE permite realizar la computación sobre datos cifrados sin revelar los datos en claro y, por ello, es adecuado para externalizar las operaciones en un solo servidor. Sin embargo, FHE presenta algunos inconvenientes a la hora de trabajar con datos cifrados provistos por múltiples clientes, y esto se resuelve normalmente con protocolos distribuidos para las claves de descifrado utilizando técnicas de Secreto Compartido. </span>FHE allows computation to be performed on encrypted data without revealing the plaintext data, making it suitable for outsourcing operations to a single server. However, FHE has some drawbacks when working with encrypted data provided by multiple clients, and this is typically resolved with distributed protocols for decryption keys using Shared Secret techniques.</span>
+    </p>
+    <p id="p0008" num="0008">
+      <span class="notranslate"> <span class="google-src-text"> Por otro lado, MPC es una familia de protocolos criptográficos que permiten a un grupo de participantes calcular conjuntamente una función sobre sus datos de entrada privados sin revelar nada más que el resultado. Mientras que el MPC tradicional está diseñado para la computación directa e interactiva entre los propietarios de los datos de entrada, algunos estudios proponen MPC en un contexto de proveedor de servicios (ver,por ejemplo, M. Burkhart, etal, “SEPIA: Privacy-Preserving Aggregation of Multi-Domain Network Events and Statistics,” 2010). Este enfoque delega la computación completamente a un conjunto de nodos de computación mientras que garantiza la privacidad de los datos. Algunas investigaciones han sugerido usar MPC como solución para dispositivos limitados en recursos. </span>On the other hand, MPC is a family of cryptographic protocols that allow a group of participants to jointly compute a function on their private input data without revealing anything other than the result. While traditional MPC is designed for direct, interactive computation between the owners of the input data, some studies propose MPC in a service provider context (see, for example, M. Burkhart et al., “SEPIA: Privacy-Preserving Aggregation of Multi-Domain Network Events and Statistics,” 2010). This approach delegates the computation entirely to a set of computing nodes while ensuring data privacy. Some research has suggested using MPC as a solution for resource-constrained devices.</span>
+    </p>
+    <p id="p0009" num="0009">
+      <span class="notranslate"> <span class="google-src-text"> Los protocolos MPC se basan principalmente en Secretos Compartidos, los cuales ofrecen mucha flexibilidad, garantizando la privacidad siempre que suficientes participantes entre los nodos de computación permanezcan sin corromper. Específicamente, un valor secreto ‘x’ se divide en ‘n’ trozos distintos {x¡} para ‘¡=1 a n’, donde cada trozo se asigna a un tenedor diferente. Con un umbral de corrupción de t&lt;n, solamente un grupo válido de ‘t+1 ’ trozos puede reconstruir el secreto original ‘x’, y las operaciones pueden ser realizadas directamente sobre estos trozos. Sin embargo, este enfoque tiene algunas limitaciones: mientras que el incremento del número de tenedores de trozos del secreto mejora la segundad, también impone una carga en el dispositivo a la hora de compartir información sensible. En particular, si hay ‘n’ nodos de computación (tenedores de trozos), el dispositivo debe establecer ‘n’ canales confidenciales separados (ci...c<sub>n</sub>) para transmitir el valor privado ‘x’, enviando un trozo {x¡} de ‘x’ a través de cada canal (ver Figura 1), resultando en ‘n’ datos cifrados. Para un valor de ‘n’ grande, esto puede ser impráctico para dispositivos con recursos limitados que necesitan enviar datos privados de forma periódica. Además, para compartir ‘x’ con un grupo de tenedores, cada uno de ellos debe ser conocido por el dispositivo antes de poder enviar cada trozo y el dispositivo debe tener acceso a la forma claro de ‘x’ para poder calcular los trozos. Si se desea que un valor previamente compartido con un grupo de tenedores sea compartido con un grupo diferente, o bien el grupo anterior realiza un protocolo de recompartición hacia el nuevo grupo, o bien el dispositivo debe recuperar el texto plano de ‘x’ y realizar una nueva fase de compartición con el nuevo grupo de tenedores. </span> MPC protocols are primarily based on Shared Secrets, which offer considerable flexibility, ensuring privacy as long as enough participants among the computing nodes remain uncorrupted. Specifically, a secret value &#39;x&#39; is divided into &#39;n&#39; distinct pieces {x!} for &#39;x! = 1 to n&#39;, where each piece is assigned to a different fork. With a corruption threshold of t &lt; n, only a valid set of &#39;t + 1&#39; pieces can reconstruct the original secret &#39;x&#39;, and operations can be performed directly on these pieces. However, this approach has some limitations: while increasing the number of forks of the secret pieces improves security, it also places a load on the device when sharing sensitive information. In particular, if there are &#39;n&#39; compute nodes (piece forks), the device must establish &#39;n&#39; separate confidential channels (c_i... <sub>c_n</sub> ) to transmit the private value &#39;x&#39;, sending a piece {x_i} of &#39;x&#39; through each channel (see Figure 1), resulting in &#39;n&#39; encrypted data. For a large value of &#39;n&#39;, this can be impractical for resource-constrained devices that need to send private data periodically. Furthermore, to share &#39;x&#39; with a group of forks, each fork must be known to the device before it can send each piece, and the device must have access to the plaintext of &#39;x&#39; to compute the pieces. If a value previously shared with one group of forks is to be shared with a different group, either the previous group performs a re-sharing protocol to the new group, or the device must retrieve the plaintext of &#39;x&#39; and perform a new sharing phase with the new group of forks. </span>
+    </p>
+    <p id="p0010" num="0010">
+      <span class="notranslate"> <span class="google-src-text"> Por tanto, existe una necesidad en el estado del arte de un método y sistema para cifrar datos que sean capaces de superar los problemas citados previamente y que permitan a un dispositivo limitado en recursos elegir de forma dinámica una red distribuida de tenedores y compartir un secreto con dicha red sin la necesidad de transmitir ‘n’ valores independientes a través de n canales confidenciales separados y que garanticen la completa confidencialidad de la transmisión del secreto desde los dispositivos limitados en recursos hacia los titulares de red de la red distribuida. </span>Therefore, there is a state-of-the-art need for a method and system for encrypting data that can overcome the problems mentioned above and allow a resource-constrained device to dynamically choose a distributed network of forks and share a secret with that network without the need to transmit &#39;n&#39; independent values through n separate confidential channels, and that guarantees the complete confidentiality of the transmission of the secret from the resource-constrained devices to the network holders of the distributed network.</span>
+    </p>
+    <p id="p0011" num="0011">
+      <span class="notranslate"> <span class="google-src-text"> DESCRIPCIÓN DE LA INVENCIÓNUn primer objeto de la presente invención es un método implementado por computador para compartir datos cifrados, caracterizado por que dicho método comprende las etapas de: </span>DESCRIPTION OF THE INVENTION A first object of the present invention is a computer-implemented method for sharing encrypted data, characterized in that said method comprises the steps of:</span>
+    </p>
+    <p id="p0012" num="0012">
+      <span class="notranslate"> <span class="google-src-text"> proporcionar una red distribuida que comprende una pluralidad de titulares de red (h), donde cada titular de red (h) posee una clave pública de titular (pkh) y una clave privada de titular (skh); </span>provide a distributed network comprising a plurality of network holders (h), where each network holder (h) possesses a public holder key (pkh) and a private holder key (skh);</span>
+    </p>
+    <p id="p0013" num="0013">
+      <span class="notranslate"> <span class="google-src-text"> proporcionar al menos un dispositivo limitado en recursos (d) que genera datos privados (m), donde cada dispositivo limitado en recursos (d) posee una clave pública de dispositivo (pkd) y una clave privada de dispositivo (skd); </span>provide at least one resource-constrained device (d) that generates private data (m), wherein each resource-constrained device (d) possesses a device public key (pkd) and a device private key (skd);</span>
+    </p>
+    <p id="p0014" num="0014">
+      <span class="notranslate"> <span class="google-src-text"> cifrar, por al menos uno de los dispositivos limitados en recursos (d), el dato privado (m) usando su clave pública de dispositivo (pkd) y un algoritmo de cifrado homomórfico aditivo, generando un dato cifrado (c); </span>encrypt, by at least one of the resource-constrained devices (d), the private data (m) using its device public key (pkd) and an additive homomorphic encryption algorithm, generating an encrypted data (c);</span>
+    </p>
+    <p id="p0015" num="0015">
+      <span class="notranslate"> <span class="google-src-text"> enviar, por al menos uno de los dispositivos limitados en recursos (d), el dato cifrado (c) a un servidor intermediario; </span>send, by at least one of the resource-limited devices (d), the encrypted data (c) to an intermediary server;</span>
+    </p>
+    <p id="p0016" num="0016">
+      <span class="notranslate"> <span class="google-src-text"> determinar un subconjunto de titulares de red (h¡) dentro de la pluralidad de titulares de red (h) hacia los que los trozos (c¡) del dato cifrado (c) son enviados por el servidor intermediario; </span>determine a subset of network holders (h¡) within the plurality of network holders (h) to which the pieces (c¡) of the encrypted data (c) are sent by the intermediary server;</span>
+    </p>
+    <p id="p0017" num="0017">
+      <span class="notranslate"> <span class="google-src-text"> fragmentar, por el servidor intermediario, del dato cifrado (c) en el conjunto de trozos (c¡) tal que los datos en claro de los datos cifrados (c¡) conforman un conjunto de trozos de datos en claro (m¡) del dato privado (m); </span>fragment, by the intermediary server, the encrypted data (c) into the set of pieces (c¡) such that the plaintext data of the encrypted data (c¡) make up a set of plaintext data pieces (m¡) of the private data (m);</span>
+    </p>
+    <p id="p0018" num="0018">
+      <span class="notranslate"> <span class="google-src-text"> generar, por cada par de dispositivo limitado en recursos (d) y titular de red del subconjunto de titulares de red (h¡), una clave de recifrado (rk) basada en cualquier combinación del par de claves público/privada (pkd, skd) del dispositivo limitado en recursos particular (d) con el par de claves público/privada (pkh, skh) del titular de red particular, tal que las claves de recifrado (rk) son solo accesibles por el servidor intermediario; y </span>generate, for each pair of resource-constrained device (d) and network holder from the subset of network holders (h), a re-encryption key (rk) based on any combination of the public/private key pair (pkd, skd) of the particular resource-constrained device (d) with the public/private key pair (pkh, skh) of the particular network holder, such that the re-encryption keys (rk) are only accessible by the intermediary server; and</span>
+    </p>
+    <p id="p0019" num="0019">
+      <span class="notranslate"> <span class="google-src-text"> recifrar, por parte del servidor intermediario, cada trozo (c¡) con la clave de recifrado respectiva (rk) que corresponde al par que comprende el dispositivo limitado en recursos (d) que genera el dato cifrado (c) y el titular de red (h¡) con el que el trozo (c¡) debe ser compartido, generando un conjunto de trozos recifrados (c¡’). En otras palabras, como una clave de recifrado (rk) ha sido generada para cada trozo particular (c¡) que debe ser enviado desde el origen del dispositivo limitado en recursos (d), que ha generado el dato privado (m) (cifrado como el correspondiente dato cifrado (c)) hacia el titular de red destino (hj), para el que dicho trozo particular (c¡) debe ser enviado, dicha clave de recifrado (rk) es utilizada para recifrar ese trozo en particular (c¡). </span>The intermediary server re-encrypts each piece (c¡) with the respective decryption key (rk) corresponding to the pair comprising the resource-constrained device (d) that generates the encrypted data (c) and the network owner (h¡) with whom the piece (c¡) must be shared, generating a set of re-encrypted pieces (c¡’). In other words, since a decryption key (rk) has been generated for each particular piece (c¡) that must be sent from the source resource-constrained device (d), which has generated the private data (m) (encrypted as the corresponding encrypted data (c)) to the destination network owner (hj), for whom said particular piece (c¡) must be sent, said decryption key (rk) is used to re-encrypt that particular piece (c¡).</span>
+    </p>
+    <p id="p0020" num="0020">
+      <span class="notranslate"> <span class="google-src-text"> Las claves de recifrado (rk) pueden ser generadas por el propietario del dato cuando las claves privadas de los titulares no sean requeridas para la generación, encaso contrario se debe ejecutar un protocolo de tres participantes que implique al dispositivo limitado en recursos (d), al titular de red correspondiente (h) y al servidor intermediario, donde solo el servidor intermediario aprenda las claves de recifrado. En cualquier caso, el servidor intermediario no conoce las claves privadas (skd, skh) de los dispositivos limitados en recursos y de los titulares de red. Los titulares de red no tienen acceso ni conocen las claves de recifrado en ninguna fase del proceso de cifrado de los datos, en caso contrario podrían comprometer la clave privada del dispositivo limitado en recursos. </span>The encryption keys (rk) can be generated by the data owner when the private keys of the network owners are not required for generation. Otherwise, a three-party protocol must be executed involving the resource-constrained device (d), the corresponding network owner (h), and the intermediary server, where only the intermediary server learns the encryption keys. In either case, the intermediary server does not know the private keys (skd, skh) of the resource-constrained devices or the network owners. The network owners do not have access to or knowledge of the encryption keys at any stage of the data encryption process; otherwise, they could compromise the private key of the resource-constrained device.</span>
+    </p>
+    <p id="p0021" num="0021">
+      <span class="notranslate"> <span class="google-src-text"> Tal como se utiliza en el presente documento, una red distribuida puede referirse a una red en la que cada titular de red puede comunicarse con algún otro titular sin acceder a un punto centralizado. </span>As used herein, a distributed network may refer to a network in which each network holder can communicate with any other holder without accessing a centralized point.</span>
+    </p>
+    <p id="p0022" num="0022">
+      <span class="notranslate"> <span class="google-src-text"> Tal como se utiliza en el presente documento, un dispositivo limitado en recursos puede referirse a tener, por diseño, almacenamiento y capacidades de procesamiento limitados, tal que ejecuten sus tareas con un consumo mínimo de energía sin dejar de ser rentables. </span>As used herein, a resource-constrained device may refer to having, by design, limited storage and processing capabilities, such that it performs its tasks with minimal energy consumption while remaining cost-effective.</span>
+    </p>
+    <p id="p0023" num="0023">
+      <span class="notranslate"> <span class="google-src-text"> Tal como se utiliza en el presente documento, una clave pública es aquella clave que puede estar disponible para cualquiera que quiera enviar un mensaje cifrado al propietario de la clave privada. Puede ser usada para cifrar los datos y puede ser compartida libremente. La clave privada, por el contrario, puede mantenerse en secreto y puede utilizarse para descifrar el mensaje cifrado. </span>As used herein, a public key is a key that is available to anyone who wants to send an encrypted message to the owner of the private key. It can be used to encrypt data and can be freely shared. The private key, on the other hand, can be kept secret and can be used to decrypt the encrypted message.</span>
+    </p>
+    <p id="p0024" num="0024">
+      <span class="notranslate"> <span class="google-src-text"> La clave pública del titular (pkh) y la clave privada del titular (skh) son generadas normalmente en la red de titulares correspondiente (h) y los métodos para generar dichas claves (pkh, skh) deberían ser compatibles con el uso del algoritmo de cifrado homomórfico aditivo que se utiliza para generar el dato cifrado (c). Un ejemplo de dichos métodos para generar las claves puede ser NTRU, aunque puede haber otros. </span>The holder&#39;s public key (pkh) and private key (skh) are typically generated on the relevant holder network (h), and the methods for generating these keys (pkh, skh) should be compatible with the additive homomorphic encryption algorithm used to generate the encrypted data (c). NTRU is one such key generation method, although others may exist.</span>
+    </p>
+    <p id="p0025" num="0025">
+      <span class="notranslate"> <span class="google-src-text"> La clave pública del dispositivo (pkd) y la clave privada del dispositivo (skd) pueden ser generadas por los dispositivos limitados en recursos (d) correspondientes o pueden ser generadas externamente por un usuario y enviadas al dispositivo limitado en recursos (d) respectivo. Esos métodos para generar dichas claves (pkd, skd) deben ser compatibles con el uso del algoritmo de cifrado homomórfico aditivo que se utiliza para generar el dato cifrado (c). Un ejemplo de dichos métodos para generar las claves puede ser NTRU, aunque puede haber otros. </span>The device&#39;s public key (pkd) and private key (skd) can be generated by the corresponding resource-constrained devices (d) or externally by a user and sent to the respective resource-constrained device (d). The methods for generating these keys (pkd, skd) must be compatible with the additive homomorphic encryption algorithm used to generate the encrypted data (c). NTRU is one such key generation method, although others may exist.</span>
+    </p>
+    <p id="p0026" num="0026">
+      <span class="notranslate"> <span class="google-src-text"> Por tanto, el método descrito en el presente documento permite que los dispositivos limitados en recursos cifren la información que ellos mismos generan mediante sus propias claves públicas y que, o bien inmediatamente después o en un instante futuro no necesariamente consecutivo, un servidor intermediario dispuesto en términos de comunicación entre los dispositivos limitados en recursos y los titulares dered recifre y envíe los nuevos datos cifrados a los titulares de red tal que, después de descifrar con la clave privada de los titulares, puedan recuperar su parte del dato en claro. De esta forma la confidencialidad absoluta de la información está garantizada durante todo el proceso ya que solo el servidor intermediario conoce las claves de recifrado (ni los dispositivos limitados en recursos ni los titulares de red las conocen) y solo los titulares de red conocen sus claves privadas las cuales serán usadas para descifrar la información recifrada. </span>Therefore, the method described herein allows resource-constrained devices to encrypt the information they generate using their own public keys. Then, either immediately afterward or at a later, not necessarily consecutive, point in time, an intermediary server, acting as a communication link between the resource-constrained devices and the network owners, re-encrypts and sends the newly encrypted data to the network owners. After decrypting the data with their private keys, the network owners can recover their portion of the data in plaintext. In this way, absolute confidentiality of the information is guaranteed throughout the entire process, since only the intermediary server knows the encryption keys (neither the resource-constrained devices nor the network owners know them), and only the network owners know their private keys, which are used to decrypt the encrypted information.</span>
+    </p>
+    <p id="p0027" num="0027">
+      <span class="notranslate"> <span class="google-src-text"> En algunos casos, el método comprende además el envío, por parte del servidor intermediario, de cada trozo recifrado (c¡’) al titular de red correspondiente del subconjunto de titulares de red (hj). Esos trozos recifrados (c¡’) pueden ser descifrados con las correspondientes claves privadas (skh) de los titulares de red del subconjunto de titulares de red (hj). De esta forma, se puede obtener un nuevo conjunto de datos cifrados (c¡ = Enc(pkd; m¡)) provenientes del dato cifrado (c), tal que el conjunto de trozos del dato en claro (m¡) puede ser usado para reconstruir el dato en claro original (m) utilizando un esquema de secreto compartido y cada trozo (c¡) del dato cifrado ha sido recifrado a un nuevo dato cifrado (c¡’) que puede ser descifrado con la clave privada del titular (skh). Por lo tanto, solo el titular (h¡) que ha recibido el trozo del dato cifrado (c¡’) tiene la capacidad de descifrar el trozo (c¡), el cual contiene el trozo ‘m¡’ del dato en claro original (m). Esto minimiza el riesgo de que un solo dispositivo tenga la capacidad de descifrar todos los trozos y por lo tanto acceso al valor original ‘m’. </span>In some cases, the method also involves the intermediary server sending each re-encrypted piece (c¡’) to the corresponding network holder within the subset of network holders (hj). These re-encrypted pieces (c¡’) can then be decrypted using the corresponding private keys (skh) of the network holders within the subset of network holders (hj). In this way, a new set of encrypted data (c¡ = Enc(pkd; m¡)) can be obtained from the encrypted data (c), such that the set of plaintext pieces (m¡) can be used to reconstruct the original plaintext data (m) using a shared-secret scheme, and each piece (c¡) of the encrypted data has been re-encrypted into a new encrypted data (c¡’) that can be decrypted with the holder&#39;s private key (skh). Therefore, only the holder (h¡) who has received the encrypted data fragment (c¡’) has the ability to decrypt the fragment (c¡), which contains the fragment ‘m¡’ of the original plaintext data (m). This minimizes the risk of a single device having the ability to decrypt all the fragments and therefore access the original value ‘m’.</span>
+    </p>
+    <p id="p0028" num="0028">
+      <span class="notranslate"> <span class="google-src-text"> En algunos casos, la fase de generación de la clave de recifrado (rk) comprende generar la clave de recifrado (rk) en base a la combinación de la clave privada de dispositivo (skd) de al menos uno de los dispositivos limitados en recursos (d) con la clave pública (pkh) o la clave privada (skh) del titular de red. La utilización de la clave privada (skd) del dispositivo limitado en recursos (d) para la generación de las claves de recifrado (rk) implica que solo el dispositivo, es decir, el propietario de los datos privados es capaz de permitir el recifrado hacia un grupo de titulares y que ni el servidor intermediario ni ningún otro participante puede robar los contenidos de los datos cifrados sin una autorización previa del dispositivo. </span>In some cases, the decryption key (rk) generation phase involves generating the decryption key (rk) by combining the device private key (skd) of at least one of the resource-constrained devices (d) with the network owner&#39;s public key (pkh) or private key (skh). Using the resource-constrained device&#39;s (d) private key (skd) to generate the decryption keys (rk) means that only the device—that is, the owner of the private data—can authorize decryption to a group of owners, and that neither the intermediary server nor any other participant can steal the encrypted data without prior authorization from the device.</span>
+    </p>
+    <p id="p0029" num="0029">
+      <span class="notranslate"> <span class="google-src-text"> En algunos casos, la clave de recifrado (rk) se genera en base a la combinación de la clave privada del dispositivo (skd) y la clave privada del titular (skh) mediante un protocolo interactivo entre el dispositivo limitado en recursos (d), el correspondiente titular de red (h) y el servidor intermediario, tal que solo el servidor intermediario aprende el valor de la clave de recifrado (rk) y la clave privada del dispositivo (skd) y la clave privada del titular de red (skh) se mantienen confidenciales, solo accesibles por el dispositivo limitado en recursos (d) y el titular de red (h), respectivamente. En otras palabras, ni el dispositivo limitado en recursos (d) ni el titular de red (h) tienen acceso opueden aprender la clave de recifrado (rk) y ninguna de las entidades (dispositivo, titular y servidor intermediario) implicadas en el protocolo interactivo conocerá la clave privada de los demás. </span>In some cases, the decryption key (rk) is generated based on the combination of the device private key (skd) and the network owner&#39;s private key (skh) through an interactive protocol between the resource-constrained device (d), the corresponding network owner (h), and the intermediary server. Only the intermediary server learns the value of the decryption key (rk), and the device private key (skd) and the network owner&#39;s private key (skh) remain confidential, accessible only to the resource-constrained device (d) and the network owner (h), respectively. In other words, neither the resource-constrained device (d) nor the network owner (h) has access to or can learn the decryption key (rk), and none of the entities (device, owner, and intermediary server) involved in the interactive protocol will know each other&#39;s private keys.</span>
+    </p>
+    <p id="p0030" num="0030">
+      <span class="notranslate"> <span class="google-src-text"> En algunos casos, la clave de recifrado (rk) es generada por al menos uno de los dispositivos limitados en recursos (d) o mediante la ejecución de un protocolo compartido entre el dispositivo limitado en recursos (d), el correspondiente titular de red (h) y el servidor intermediario. </span>In some cases, the encryption key (rk) is generated by at least one of the resource-constrained devices (d) or by running a protocol shared between the resource-constrained device (d), the corresponding network holder (h), and the intermediary server.</span>
+    </p>
+    <p id="p0031" num="0031">
+      <span class="notranslate"> <span class="google-src-text"> En algunos casos, los dispositivos limitados en recursos (d) son dispositivos del Internet de las cosas o loT. Tal y como se utiliza en el presente documento, los dispositivos loT pueden referirse al hardware de cómputo no estándar, como sensores, actuadores o electrodomésticos, entre otros, que se conectan inalámbricamente a una red y pueden transmitir datos. Ejemplos de dispositivos loT pueden ser contadores inteligentes, entre otros. </span>In some cases, resource-constrained devices (d) are Internet of Things (IoT) devices. As used herein, IoT devices can refer to non-standard computing hardware, such as sensors, actuators, or household appliances, that connect wirelessly to a network and can transmit data. Examples of IoT devices include smart meters.</span>
+    </p>
+    <p id="p0032" num="0032">
+      <span class="notranslate"> <span class="google-src-text"> En algunos casos, los dispositivos limitados en recursos (d) generan los datos privados (m) de forma continua o periódica. </span>In some cases, resource-constrained devices (d) generate private data (m) continuously or periodically.</span>
+    </p>
+    <p id="p0033" num="0033">
+      <span class="notranslate"> <span class="google-src-text"> En algunos casos, la fase de cifrado del dato privado (m) que genera un dato cifrado (c) se lleva a cabo en un instante ‘t1 y las fases en las que se determina el subconjunto de titulares de red (h¡) de la pluralidad de titulares de red (h), se trocea el dato cifrado (c) en un conjunto de trozos (c¡), se generan las claves de recifrado (rk) y se recifra cada trozo (c¡) con la correspondiente clave de recifrado (rk) se llevan a cabo en un instante ‘t2’, donde el instante ‘t2’ ocurre posteriormente al instante ‘t1 ’. En otras palabras, la generación de los datos cifrados puede llevarse a cabo en un instante particular, pero el recifrado de dicho dato cifrado (incluyendo las fases de elección de los titulares de red, troceado, generación de las claves de recifrado y recifrado de los trozos) a ser enviado a los titulares de red correspondientes puede ser realizado posteriormente. Estas dos fases del proceso, la generación de los datos cifrados y el recifrado de los trozos, no necesitan ser ejecutadas de manera consecutiva. De hecho, los datos cifrados podrían ser almacenados en una memoria y accedidos posteriormente para su procesamiento y recifrado. Esto es posible gracias a la propiedad de homomorfismo aditivo del esquema de cifrado, la cual permite generar los trozos del dato cifrado de forma ciega, y gracias al algoritmo de recifrado, el cual permite determinar el nuevo receptor de cada trozo cifrado. Otras soluciones en la literatura implican o bien tener acceso al dato en claro para generar los nuevos trozos o bien usar un dato cifrado que pueda ser procesado por cada titular de forma independiente, incurriendo en una gran carga computacional. </span>In some cases, the encryption phase of the private data (m) that generates an encrypted data (c) is carried out at a time &#39;t1&#39;, and the phases in which the subset of network holders (h) is determined from the plurality of network holders (h), the encrypted data (c) is sliced into a set of slices (c), the decryption keys (rk) are generated, and each slice (c) is decrypted with the corresponding decryption key (rk) are carried out at a time &#39;t2&#39;, where time &#39;t2&#39; occurs after time &#39;t1&#39;. In other words, the generation of the encrypted data may be carried out at a particular time, but the decryption of that encrypted data (including the phases of choosing the network holders, slicing, generating the decryption keys, and decrypting the slices) to be sent to the corresponding network holders may be carried out later. These two phases of the process—generating the encrypted data and decrypting the fragments—do not need to be executed sequentially. In fact, the encrypted data could be stored in memory and accessed later for processing and decryption. This is possible thanks to the additive homomorphism property of the encryption scheme, which allows the fragments of the encrypted data to be generated blindly, and thanks to the decryption algorithm, which allows the new recipient of each encrypted fragment to be determined. Other solutions in the literature involve either having access to the plaintext data to generate the new fragments or using encrypted data that can be processed independently by each user, incurring a significant computational load.</span>
+    </p>
+    <p id="p0034" num="0034">
+      <span class="notranslate"> <span class="google-src-text"> En algunos casos, el servidor intermediario puede ser un servidor semi-honesto. Tal y como se utiliza en el presente documento, un servidor intermediario semi-honestopuede referirse a un servidor intermediario que puede seguir la descripción del protocolo (puede ejecutar los comandos que se supone que debe ejecutar) pero que puede intentar inferir información adicional de aquellos datos que se supone que puede ver a través de la ejecución del protocolo (es decir, todos los datos que el servidor intermediario puede generar, recibir o enviar cuando ejecuta el protocolo). </span>In some cases, the broker server may be a semi-honest server. As used herein, a semi-honest broker server can refer to a broker server that can follow the protocol description (it can execute the commands it is supposed to execute) but may attempt to infer additional information from the data it is supposed to see through the execution of the protocol (i.e., all the data the broker server can generate, receive, or send when executing the protocol).</span>
+    </p>
+    <p id="p0035" num="0035">
+      <span class="notranslate"> <span class="google-src-text"> En algunos ejemplos, los titulares de red (h) pueden ser titulares de red de Computación Segura Multiparte (MPC) y la red distribuida puede ser una red MPC. Además de almacenar datos secretos de forma distribuida, las redes MPC posibilitan la realización de cómputo sobre esos datos sin exponerlos en ningún momento. Solo los resultados de la computación son expuestos. </span>In some examples, the network holders (h) may be Multi-Party Secure Computing (MPC) network holders, and the distributed network may be an MPC network. In addition to storing secret data in a distributed manner, MPC networks enable computation to be performed on that data without ever exposing it. Only the results of the computation are exposed.</span>
+    </p>
+    <p id="p0036" num="0036">
+      <span class="notranslate"> <span class="google-src-text"> Un segundo objeto de la presente invención es un medio legible por máquina no transitorio el cual almacena instrucciones que pueden ser ejecutadas por uno o más dispositivos computacionales que ejecutan el método previamente descrito. </span>A second object of the present invention is a non-transient machine-readable medium which stores instructions that can be executed by one or more computing devices that execute the method described above.</span>
+    </p>
+    <p id="p0037" num="0037">
+      <span class="notranslate"> <span class="google-src-text"> Un tercer objeto de la presente invención es un sistema para compartir datos cifrados, donde el sistema se caracteriza por que comprende una red distribuida que comprende una pluralidad de titulares de red (h), donde cada titular (h) tiene su clave pública de titular (pkh) y su clave privada de titular (skh), por al menos un dispositivo limitado en recursos (d) que genera datos privados (m), donde cada dispositivo limitado en recursos (d) tiene una clave pública de dispositivo (pkd) y una clave privada de dispositivo (skd) y por un servidor intermediario acoplado en términos de comunicación con los titulares de red (h) y con al menos un dispositivo limitado en recursos (d). </span>A third object of the present invention is a system for sharing encrypted data, where the system is characterized in that it comprises a distributed network comprising a plurality of network holders (h), where each holder (h) has his holder&#39;s public key (pkh) and his holder&#39;s private key (skh), by at least one resource-limited device (d) that generates private data (m), where each resource-limited device (d) has a device public key (pkd) and a device private key (skd), and by an intermediary server coupled in terms of communication with the network holders (h) and with at least one resource-limited device (d).</span>
+    </p>
+    <p id="p0038" num="0038">
+      <span class="notranslate"> <span class="google-src-text"> El al menos un dispositivo limitado en recursos (d) está configurado para cifrar los datos privados (m) utilizando su clave pública de dispositivo (pkd) y un algoritmo de cifrado homomórficamente aditivo, generando un dato cifrado (c), y para enviar el dato cifrado (c) al servidor intermediario. </span>The at least one resource-constrained device (d) is configured to encrypt the private data (m) using its device public key (pkd) and a homomorphically additive encryption algorithm, generating an encrypted data (c), and to send the encrypted data (c) to the intermediary server.</span>
+    </p>
+    <p id="p0039" num="0039">
+      <span class="notranslate"> <span class="google-src-text"> A su vez, el sistema, cuando un subconjunto de los titulares de red (hj) de la pluralidad de titulares de red (h) con el que un conjunto de trozos (c¡) del dato cifrado (c) que deben ser enviados ha sido seleccionado o determinado, está configurado para: </span>In turn, the system, when a subset of the network holders (hj) from the plurality of network holders (h) with which a set of pieces (c¡) of the encrypted data (c) to be sent has been selected or determined, is configured to:</span>
+    </p>
+    <p id="p0040" num="0040">
+      <span class="notranslate"> <span class="google-src-text"> causar que el servidor intermediario trocee el dato cifrado (c) en un conjunto de trozos (c¡) tal que los datos en claro de los datos cifrados (c¡) conforman un conjunto de trozos de datos en claro (m¡) del dato privado (m); </span>cause the intermediary server to slice the encrypted data (c) into a set of slices (c¡) such that the plaintext data of the encrypted data (c¡) make up a set of plaintext data slices (m¡) of the private data (m);</span>
+    </p>
+    <p id="p0041" num="0041">
+      <span class="notranslate"> <span class="google-src-text"> causar la generación, por cada par de dispositivo limitado en recursos (d) y titular de red del subconjunto de titulares de red (hj), de una clave de recifrado (rk) basada en cualquier combinación del par de claves pública/privada (pkd, skd) de ese dispositivo limitado en recursos (d) en particular con el par de claves público/privada (pkh, skh) del titular de red particular, donde las claves de recifrado (rk) solo son accesibles por el servidor intermediario; ycausar que el servidor intermediario recifre cada trozo (c¡) con la respectiva clave de recifrado (rk) que corresponde al par que comprende el dispositivo limitado en recursos (d) que genera el dato cifrado (c) y al titular de red (hj) con el que el trozo (c¡) debe ser compartido, generando un conjunto de trozos recifrados (c¡’). </span>cause the generation, for each pair of resource-constrained device (d) and network holder of the subset of network holders (hj), of a decryption key (rk) based on any combination of the public/private key pair (pkd, skd) of that particular resource-constrained device (d) with the public/private key pair (pkh, skh) of the particular network holder, wherein the decryption keys (rk) are only accessible by the intermediary server; and cause the intermediary server to decrypt each chunk (c¡) with the respective decryption key (rk) corresponding to the pair comprising the resource-constrained device (d) that generates the encrypted data (c) and the network holder (hj) with whom the chunk (c¡) is to be shared, generating a set of decrypted chunks (c¡’).</span>
+    </p>
+    <p id="p0042" num="0042">
+      <span class="notranslate"> <span class="google-src-text"> En algunos casos, los dispositivos limitados en recursos (d) pueden ser dispositivos loT, por ejemplo, contadores inteligentes. </span>In some cases, resource-constrained devices (d) may be IoT devices, for example, smart meters.</span>
+    </p>
+    <p id="p0043" num="0043">
+      <span class="notranslate"> <span class="google-src-text"> En algunos casos, el servidor intermediario puede ser un intermediario semi-honesto. </span>In some cases, the intermediary server may be a semi-honest intermediary.</span>
+    </p>
+    <p id="p0044" num="0044">
+      <span class="notranslate"> <span class="google-src-text"> En algunos casos, los titulares de red (h) pueden ser titulares de red de Computación Segura Multiparte (MPC), y la red distribuida puede ser una red MPC. </span>In some cases, the network holders (h) may be Multi-Party Secure Computing (MPC) network holders, and the distributed network may be an MPC network.</span>
+    </p>
+    <p id="p0045" num="0045">
+      <span class="notranslate"> <span class="google-src-text"> La solución divulgada en el presente documento presenta algunas ventajas sobre otras soluciones existentes. Presenta una solución ligera y dinámica que permite a dispositivos limitados en recursos el compartir datos como secretos compartidos mediante el envío de un solo dato cifrado, por tanto, evitando la necesidad de ‘n’ canales confidenciales independientes. Es ligero porque consigue un coste de comunicación amortizada constante para compartir los datos privados en la parte del dispositivo el cual, además del proceso de generación de las claves de recifrado, es independiente del número de titulares. Por todo esto, es particularmente eficiente cuando se comparten datos desde el dispositivo a una red de titulares de forma periódica. Es dinámico porque los datos privados pueden ser cifrados con la clave pública del dispositivo (pkd), compartidos en algún lugar, y el grupo de titulares (h) para recibir la versión troceada del secreto (m) puede ser seleccionado en algún momento posterior en el tiempo. Además, este método permite no solamente compartir el dato privado (m) mediante secreto compartido deforma más eficiente, sino que también permite la interoperabilidad con otras técnicas estándar como la recuperación del dato cifrado (c) y su descifrado por parte del dispositivo, o el mero recifrado del dato cifrado hacia la clave pública de un receptor confiable diferente tal que pueda obtener el dato en claro al completo dado ese nuevo dato cifrado. Todos los métodos especificados pueden ser seleccionados con posterioridad a que el dato cifrado original (c) haya sido generado. </span>The solution disclosed in this document offers several advantages over existing solutions. It presents a lightweight and dynamic solution that allows resource-constrained devices to share data, such as shared secrets, by sending a single encrypted data point, thus avoiding the need for multiple independent confidential channels. It is lightweight because it achieves a constant amortized communication cost for sharing private data on the device side, which, in addition to the encryption key generation process, is independent of the number of owners. Therefore, it is particularly efficient when sharing data from the device to a network of owners on a regular basis. It is dynamic because private data can be encrypted with the device&#39;s public key (pkd), shared elsewhere, and the group of owners (h) to receive the fragmented version of the secret (m) can be selected at a later time. Furthermore, this method not only allows for more efficient sharing of private data (m) via shared secret, but also enables interoperability with other standard techniques such as the recovery of encrypted data (c) and its decryption by the device, or simply the re-encryption of the encrypted data to the public key of a different trusted recipient who can obtain the complete plaintext data from this new encrypted data. All the specified methods can be selected after the original encrypted data (c) has been generated.</span>
+    </p>
+    <p id="p0046" num="0046">
+      <span class="notranslate"> <span class="google-src-text"> BREVE DESCRIPCIÓN DE LAS FIGURAS </span>BRIEF DESCRIPTION OF THE FIGURES</span>
+    </p>
+    <p id="p0047" num="0047">
+      <span class="notranslate"> <span class="google-src-text"> Para completar la descripción y proporcionar una mejor comprensión de la invención, se proporciona un conjunto de imágenes. Dichas imágenes conforman una parte integral de la descripción e ¡lustran un ejemplo de la invención, el cual no debe ser interpretado como una restricción del alcance de la invención, sino como un mero ejemplo de cómo la invención puede ser llevada a cabo. </span>To complete the description and provide a better understanding of the invention, a set of images is provided. These images form an integral part of the description and illustrate an example of the invention, which should not be interpreted as restricting the scope of the invention, but merely as an example of how the invention can be carried out.</span>
+    </p>
+    <p id="p0048" num="0048">
+      <span class="notranslate"> <span class="google-src-text"> Los dibujos comprenden las siguientes figuras:La Figura 1 muestra un diagrama de bloques de un sistema del estado del arte para cifrar y compartir datos, el cual hace uso de ‘n’ canales de comunicación confidenciales e independientes. </span>The drawings comprise the following figures: Figure 1 shows a block diagram of a state-of-the-art system for encrypting and sharing data, which makes use of &#39;n&#39; confidential and independent communication channels.</span>
+    </p>
+    <p id="p0049" num="0049">
+      <span class="notranslate"> <span class="google-src-text"> La Figura 2 muestra un diagrama de bloques de un sistema para compartir datos cifrados, según un ejemplo de la presente invención. </span>Figure 2 shows a block diagram of a system for sharing encrypted data, according to an example of the present invention.</span>
+    </p>
+    <p id="p0050" num="0050">
+      <span class="notranslate"> <span class="google-src-text"> La Figura 3 muestra un diagrama de bloques de un sistema para compartir datos cifrados, según otro ejemplo de la presente invención. </span>Figure 3 shows a block diagram of a system for sharing encrypted data, according to another example of the present invention.</span>
+    </p>
+    <p id="p0051" num="0051">
+      <span class="notranslate"> <span class="google-src-text"> La Figura 4 muestras un diagrama de flujo de un método para compartir datos cifrados, según un ejemplo de la presente invención. </span>Figure 4 shows a flowchart of a method for sharing encrypted data, according to an example of the present invention.</span>
+    </p>
+    <p id="p0052" num="0052">
+      <span class="notranslate"> <span class="google-src-text"> La Figura 5 muestra un diagrama de bloques de un sistema para compartir datos cifrados, según otro ejemplo de la presente invención. </span>Figure 5 shows a block diagram of a system for sharing encrypted data, according to another example of the present invention.</span>
+    </p>
+    <p id="p0053" num="0053">
+      <span class="notranslate"> <span class="google-src-text"> DESCRIPCIÓN DE LOS EJEMPLOS </span>DESCRIPTION OF THE EXAMPLES</span>
+    </p>
+    <p id="p0054" num="0054">
+      <span class="notranslate"> <span class="google-src-text"> La Figura 2 muestra un diagrama de bloques de un sistema 1 para compartir datos cifrados, de acuerdo con un ejemplo de la presente invención. Debe entenderse que el sistema 1 mostrado en la Figura 2 podría incluir componentes adicionales y que algunos de los componentes descritos en dicha figura podrían ser eliminados y/o modificados sin una desviación del objetivo del ejemplo en el sistema 1. Adicionalmente, la implementación del sistema 1 no está limitada a dicho ejemplo. </span>Figure 2 shows a block diagram of a System 1 for sharing encrypted data, according to an example of the present invention. It should be understood that the System 1 shown in Figure 2 could include additional components and that some of the components described in that figure could be removed and/or modified without deviating from the objective of the example System 1. Furthermore, the implementation of System 1 is not limited to that example.</span>
+    </p>
+    <p id="p0055" num="0055">
+      <span class="notranslate"> <span class="google-src-text"> El sistema 1 comprende una red distribuida 4 que a su vez comprende una pluralidad de titulares de red (h), un conjunto de dispositivos limitados en recursos (d) 2 y un servidor intermediario 3. Cada titular de red (h) posee su propia clave pública de titular (pkh) y clave privada de titular (skh). Cada dispositivo limitado en recursos (d) 2 genera su propio dato privado (m) y posee su propia clave pública de dispositivo (pkd) y clave privada de dispositivo (skd). El servidor intermediario 3 está acoplado en términos de comunicación con los titulares de red (h) y con el conjunto de dispositivos limitados en recursos (d) 2. Mientras que el servidor intermediario 3 está acoplado en términos de comunicación con todos los dispositivos limitados en recursos (d) mediante un solo canal de comunicación, también lo está con cada titular de red pero mediante un canal de comunicación independiente. </span>System 1 comprises a distributed network 4, which in turn comprises a plurality of network holders (h), a set of resource-constrained devices (d) 2, and an intermediary server 3. Each network holder (h) possesses its own holder public key (pkh) and holder private key (skh). Each resource-constrained device (d) 2 generates its own private data (m) and possesses its own device public key (pkd) and device private key (skd). The intermediary server 3 is communicationally coupled to the network holders (h) and to the set of resource-constrained devices (d) 2. While the intermediary server 3 is communicationally coupled to all the resource-constrained devices (d) via a single communication channel, it is also coupled to each network holder, but via a separate communication channel.</span>
+    </p>
+    <p id="p0056" num="0056">
+      <span class="notranslate"> <span class="google-src-text"> En dicho ejemplo, los dispositivos limitados en recursos 1 pueden ser contadores de energía inteligentes, el servidor intermediario 3 puede ser un servidor intermediario semi honesto y la red distribuida 4 puede ser una red MPC. </span>In this example, the resource-constrained devices 1 can be smart energy meters, the intermediary server 3 can be a semi-honest intermediary server, and the distributed network 4 can be an MPC network.</span>
+    </p>
+    <p id="p0057" num="0057">
+      <span class="notranslate"> <span class="google-src-text"> Los dispositivos limitados en recursos (d) están configurados para cifrar los datos privados (m) que están generando. Estos datos pueden ser generados de forma continua o periódica utilizando su propia clave pública de dispositivo (pkd) e implementando un algoritmo de cifrado homomórfico aditivo, como por ejemplo elcriptosistema NTRU. De esta forma, los datos privados (m) son cifrados, generando datos cifrados (c). Estos datos cifrados (c) son entonces enviados al servidor intermediario a través de un solo canal de comunicación. </span>Resource-constrained devices (d) are configured to encrypt the private data (m) they generate. This data can be generated continuously or periodically using their own device public key (pkd) and implementing an additive homomorphic encryption algorithm, such as the NTRU cryptosystem. In this way, the private data (m) is encrypted, generating encrypted data (c). This encrypted data (c) is then sent to the intermediary server through a single communication channel.</span>
+    </p>
+    <p id="p0058" num="0058">
+      <span class="notranslate"> <span class="google-src-text"> El sistema, una vez que ha sido seleccionado o determinado un subconjunto de titulares de red (hj) de la pluralidad de titulares de red (h) a los cuales se les envía el conjunto de trozos (c¡), es además configurado para: </span>Once a subset of network holders (hj) has been selected or determined from the plurality of network holders (h) to whom the set of pieces (c¡) is sent, the system is further configured to:</span>
+    </p>
+    <p id="p0059" num="0059">
+      <span class="notranslate"> <span class="google-src-text"> causar que el servidor intermediario sea configurado para trocear el dato cifrado (c) en un conjunto de trozos (c¡) tal que los datos en claro de los datos cifrados (c¡) formen un conjunto de trozos de datos en claro (m¡) del dato privado (m). En otras palabras, el sistema debe informar al servidor intermediario sobre el número de titulares de red (hj) de la pluralidad de titulares de red (h) con los cuales se va a compartir el conjunto de trozos (c¡) y el servidor intermediario decidirá el número de trozos de datos cifrados (c¡) en los que el dato cifrado (c) debe ser dividido; </span>cause the intermediary server to be configured to slice the encrypted data (c) into a set of slices (c¡) such that the plaintext data of the encrypted data (c¡) forms a set of plaintext data slices (m¡) of the private data (m). In other words, the system must inform the intermediary server about the number of network holders (hj) out of the plurality of network holders (h) with whom the set of slices (c¡) is to be shared, and the intermediary server will decide the number of encrypted data slices (c¡) into which the encrypted data (c) should be divided;</span>
+    </p>
+    <p id="p0060" num="0060">
+      <span class="notranslate"> <span class="google-src-text"> generar, para cada par de dispositivo limitado en recursos (d) y titular de red del subconjunto de titulares de red (hj), una clave de recifrado (rk) basada en cualquier combinación del par de claves público/privada (pkd, skd) del dispositivo limitado en recursos particular (d) con el par de claves público/privada (pkh, skh) del titular de red particular, donde las claves de recifrado (rk) solo son accesibles por el servidor intermediario; y </span>generate, for each pair of resource-constrained device (d) and network holder from the subset of network holders (hj), a re-encryption key (rk) based on any combination of the public/private key pair (pkd, skd) of the particular resource-constrained device (d) with the public/private key pair (pkh, skh) of the particular network holder, wherein the re-encryption keys (rk) are only accessible by the intermediary server; and</span>
+    </p>
+    <p id="p0061" num="0061">
+      <span class="notranslate"> <span class="google-src-text"> recifrar cada trozo (c¡) con la clave de recifrado (rk) respectiva que corresponda al par que comprenda el dispositivo limitado en recursos (d) que genera el dato cifrado (c) y al titular de red (hj) con el que el trozo (c¡) debe ser compartido, generando un conjunto de trozos recifrados (c¡’). </span>Re-encrypt each piece (c¡) with the respective re-encryption key (rk) corresponding to the pair comprising the resource-limited device (d) that generates the encrypted data (c) and the network owner (hj) with whom the piece (c¡) must be shared, generating a set of re-encrypted pieces (c¡’).</span>
+    </p>
+    <p id="p0062" num="0062">
+      <span class="notranslate"> <span class="google-src-text"> La Figura 3 muestra un diagrama de bloques de un sistema para cifrar datos, de acuerdo con un ejemplo de la presente invención. El sistema 1 de la Figura 3 es similar al sistema 1 de la Figura 2 pero incluye el dominio del consumidor de los datos 5. Es decir, los datos cifrados (c) generados en los dispositivos limitados en recursos (d) 2 (dominio del propietario de los datos) son enviados al servidor intermediario, a través de la nube 6, donde son troceados, recifrados y enviados a la red MPC 4. Los titulares MPC (h<sub>n</sub>) son capaces de descifrar los trozos recifrados (c¡’) con la clave privada del titular skh y procesar los datos en claro contenidos en ellos. Los datos procesados f(xi, X2 x<sub>n</sub>) pueden ser enviados a un consumidor de datos final 5. </span> Figure 3 shows a block diagram of a data encryption system, according to an example of the present invention. System 1 in Figure 3 is similar to System 1 in Figure 2 but includes the data consumer domain 5. That is, the encrypted data (c) generated on the resource-constrained devices (d) 2 (data owner domain) is sent to the intermediary server, via the cloud 6, where it is sliced, decrypted, and sent to the MPC network 4. MPC holders (h <sub>n</sub> ) are able to decrypt the decrypted slices (c¡&#39;) with the holder&#39;s private key skh and process the plaintext data contained therein. The processed data f(xi, X2 x <sub>n</sub> ) can be sent to an end data consumer 5. </span>
+    </p>
+    <p id="p0063" num="0063">
+      <span class="notranslate"> <span class="google-src-text"> En dicho ejemplo, los dispositivos limitados en recursos (d) 2 pueden usar un algoritmo de cifrado homomórfico aditivo y su propia clave pública de dispositivo (pkd) para cifrar los datos privados (m). Puede implementar un esquema de secreto compartido de Shamir que es un esquema de secreto compartido de umbral donde el secreto se codifica en un polinomio aleatorio P(x) = £ <sub>=0</sub> aj ■ x<sup>]</sup> donde el conjunto{a<sub>1}</sub> ... , a<sub>k</sub>} contiene los coeficientes del polinomio, que son elegidos de forma aleatoria de una distribución uniforme. El secreto ‘m se codifica en el coeficiente de grado 0, es decir, P(0) = a<sub>0</sub> = m. Dado el número ‘i’ que representa el índice del titular </span> In this example, resource-constrained devices (d) 2 can use an additive homomorphic encryption algorithm and their own device public key (pkd) to encrypt private data (m). They can implement a Shamir shared secret scheme, which is a threshold shared secret scheme where the secret is encoded in a random polynomial P(x) = ∑_{j <sub>=0}</sub> ^{a_j} x^{-1 <sup>}</sup> where the set {a_1 <sub>}</sub> ... , <sub>a_k</sub> } contains the coefficients of the polynomial, which are randomly chosen from a uniform distribution. The secret &#39;m&#39; is encoded in the coefficient of degree 0, i.e., P(0) = <sub>a_0</sub> = m. Given the number &#39;i&#39; representing the index of the holder </span>
+    </p>
+    <p id="p0064" num="0064">
+      <span class="notranslate">
+        <span class="google-src-text">
+          <span class="patent-image-not-available"></span>
+        </span>
+        <span class="patent-image-not-available"></span>
+      </span>
+    </p>
+    <p id="p0065" num="0065">
+      <span class="notranslate"> <span class="google-src-text"> su trozo se calcula como la evaluación del polinomio en dicho punto, es decir, P(¿). El término ‘k’ del polinomio representa su grado y determina el número de trozos necesarios para reconstruir el secreto ‘m dados los trozos y utilizando un método de interpolación. De forma más específica, se necesitarán al menos ‘k + 1’ trozos calculados como P(¿) con diferentes valores para ‘i’ para describir de forma completa al polinomio P(x) y calcular P(0) = m. </span>Its piece is calculated as the evaluation of the polynomial at that point, that is, P(i). The term ‘k’ of the polynomial represents its degree and determines the number of pieces needed to reconstruct the secret ‘m’ given the pieces and using an interpolation method. More specifically, at least ‘k + 1’ pieces calculated as P(i) with different values for ‘i’ will be needed to fully describe the polynomial P(x) and calculate P(0) = m.</span>
+    </p>
+    <p id="p0066" num="0066">
+      <span class="notranslate"> <span class="google-src-text"> El troceado del dato cifrado (c) llevado a cabo por el servidor intermediario que genera un conjunto de trozos de dato cifrado (c¡) de los datos cifrados (c) enviados por los dispositivos limitados en recursos (d), tal que cada dato cifrado (c¡) contiene un trozo válido del mensaje (m) en formato de Shamir, y donde todos los trozos de datos cifrados (c¡) solo pueden ser descifrados con la clave privada del dispositivo (skd). Por ello, dejamos que el intermediario obtenga c = Enc<sub>pkd</sub>(ao), donde el dato en claro a<sub>0</sub> = m representa el coeficiente de grado 0 de un polinomio de Shamir. Tras esto, el intermediario selecciona un conjunto de coeficientes aleatorios {a<sub>1</sub>, ..., a<sub>k</sub>} tal que representen a un polinomio P(x). Entonces, para cada titular h¡, el intermediario genera su evaluación correspondiente del polinomio P(¿) (llamamos a esta evaluación c^<sup>rtial</sup>), menos el coeficiente de grado 0 ‘a<sub>0</sub> ’, el cual es desconocido para el intermediario. Cabe destacar que </span> The fragmentation of the encrypted data (c) is carried out by the intermediary server, which generates a set of encrypted data fragments (c&lt;sub&gt;i&lt;/sub&gt;) from the encrypted data (c) sent by the resource-constrained devices (d), such that each encrypted data fragment (c&lt;sub&gt;i&lt;/sub&gt;) contains a valid fragment of the message (m) in Shamir format, and where all encrypted data fragments (c&lt;sub&gt;i&lt;/sub&gt;) can only be decrypted with the device&#39;s private key (sk&lt;sub&gt;d&lt;/sub&gt;). Therefore, we let the intermediary obtain c = Enc <sub>pk&lt;sub&gt;</sub> d&lt;/sub&gt;(a&lt;sub&gt;0&lt;/sub&gt;), where the plaintext a&lt;sub&gt;<sub>0&lt;/sub&gt;</sub> = m represents the coefficient of degree 0 of a Shamir polynomial. Following this, the intermediary selects a set of random coefficients {a <sub>&lt;sub&gt;1&lt;/sub&gt;</sub> , ..., a <sub>&lt;sub&gt;k&lt;/sub&gt;</sub> } such that they represent a polynomial P(x). Then, for each title h, the intermediary generates its corresponding evaluation of the polynomial P(h) (we call this evaluation c^ <sup>rtial</sup> ), minus the coefficient of degree 0 &#39;a <sub>0</sub> &#39;, which is unknown to the intermediary. It is worth noting that </span>
+    </p>
+    <p id="p0067" num="0067">
+      <span class="notranslate">
+        <span class="google-src-text">
+          <span class="patent-image-not-available"></span>
+        </span>
+        <span class="patent-image-not-available"></span>
+      </span>
+    </p>
+    <p id="p0068" num="0068">
+      <span class="notranslate"> <span class="google-src-text">     Tras esto, el intermediario se aprovecha de la propiedad de homomorfismo aditivo del esquema de cifrado para sumar el coeficiente de grado 0 y obtener el dato cifrado del trozo de h¡, es decir, </span>Following this, the intermediary takes advantage of the additive homomorphism property of the encryption scheme to add the coefficient of degree 0 and obtain the encrypted data of the piece of h!, that is,</span>
+    </p>
+    <p id="p0069" num="0069">
+      <span class="notranslate">
+        <span class="google-src-text">
+          <span class="patent-image-not-available"></span>
+        </span>
+        <span class="patent-image-not-available"></span>
+      </span>
+    </p>
+    <p id="p0070" num="0070">
+      <span class="notranslate"> <span class="google-src-text"> = c + c^<sup>rtial</sup> = </span> = c + c^ <sup>rtial</sup> = </span>
+    </p>
+    <p id="p0071" num="0071">
+      <span class="notranslate">
+        <span class="google-src-text">
+          <span class="patent-image-not-available"></span>
+        </span>
+        <span class="patent-image-not-available"></span>
+      </span>
+    </p>
+    <p id="p0072" num="0072">
+      <span class="notranslate"> <span class="google-src-text">   &#34;    </span>&#34;</span>
+    </p>
+    <p id="p0073" num="0073">
+      <span class="notranslate"> <span class="google-src-text"> La fase de recifrado permite al servidor intermediario generar, para cada trozo de dato cifrado </span>The decryption phase allows the intermediary server to generate, for each piece of encrypted data</span>
+    </p>
+    <p id="p0074" num="0074">
+      <span class="notranslate">
+        <span class="google-src-text">
+          <span class="patent-image-not-available"></span>
+        </span>
+        <span class="patent-image-not-available"></span>
+      </span>
+    </p>
+    <p id="p0075" num="0075">
+      <span class="notranslate"> <span class="google-src-text"> un nuevo dato recifrado c<sub>h</sub>&#39; . el cual solo puede ser descifrado con la clave privada sk<sub>h</sub>.) de h¡. De forma más específica, esto se calcula como c<sub>h</sub>&#39; . = ReEnc^^Xc^<sup>111</sup>), donde rk<sub>d</sub>^<sub>h</sub>. representa la clave de recifrado que permite recifrar datos cifrados bajo la clave pública del dispositivo, la cual es pk<sub>d</sub>, hacia la clave pública del tenedor h<sub>t</sub>, la cual es pk<sub>h</sub>.. Para completar, remarcar que Dec<sub>skh</sub> (c^<sup>11</sup>^ = </span> a new encrypted data c <sub>h</sub> &#39; . which can only be decrypted with the private key sk <sub>h</sub> .) of h¡. More specifically, this is calculated as c <sub>h</sub> &#39; . = ReEnc^^Xc^ <sup>111</sup> ), where rk <sub>d</sub> ^ <sub>h</sub> . represents the decryption key that allows decrypting data encrypted under the device&#39;s public key, which is pk <sub>d</sub> , to the fork&#39;s public key h <sub>t</sub> , which is pk <sub>h</sub> .. To complete, note that Dec <sub>skh</sub> (c^ <sup>11</sup> ^ = </span>
+    </p>
+    <p id="p0076" num="0076">
+      <span class="notranslate">
+        <span class="google-src-text">
+          <span class="patent-image-not-available"></span>
+        </span>
+        <span class="patent-image-not-available"></span>
+      </span>
+    </p>
+    <p id="p0077" num="0077">
+      <span class="notranslate"> <span class="google-src-text"> que se corresponde con el trozo del tenedor h¡. </span>which corresponds to the piece of the fork h¡.</span>
+    </p>
+    <p id="p0078" num="0078">
+      <span class="notranslate"> <span class="google-src-text"> Mientras este ejemplo de la Figura 3 ha sido descrito para compartir secretos del tipo secreto compartido de Shamir, otros algoritmos de compartición de secretos podrían ser implementados para realizar el esquema de secreto compartido.La Figura 4 muestra un diagrama de flujo de un método para cifrar datos, de acuerdo con un ejemplo de la presente invención. </span>While this example in Figure 3 has been described for sharing secrets of the Shamir shared secret type, other secret-sharing algorithms could be implemented to realize the shared secret scheme. Figure 4 shows a flowchart of a method for encrypting data, according to an example of the present invention.</span>
+    </p>
+    <p id="p0079" num="0079">
+      <span class="notranslate"> <span class="google-src-text"> En el paso 21 del método 20, se provee una red distribuida que comprende una pluralidad de titulares de red (h). Cada titular de red (h) de la red distribuida tiene su clave pública de titular (pkh) y su clave privada de titular (skh). Estas claves públicas de titular (pkh) y claves privadas de titular (skh) pueden haber sido generadas por los respectivos titulares de red (h). </span>In step 21 of method 20, a distributed network comprising a plurality of network holders (h) is provided. Each network holder (h) in the distributed network has their own public holder key (pkh) and private holder key (skh). These public holder keys (pkh) and private holder keys (skh) may have been generated by the respective network holders (h).</span>
+    </p>
+    <p id="p0080" num="0080">
+      <span class="notranslate"> <span class="google-src-text"> En el paso 22 del método 20 se provee al menos un dispositivo limitado en recursos (d) que genera datos privados (m), donde cada dispositivo limitado en recursos (d) tiene una clave pública de dispositivo (pkd) y una clave privada de dispositivo (skd). </span>In step 22 of method 20, at least one resource-limited device (d) is provided that generates private data (m), where each resource-limited device (d) has a device public key (pkd) and a device private key (skd).</span>
+    </p>
+    <p id="p0081" num="0081">
+      <span class="notranslate"> <span class="google-src-text"> En el paso 23 del método 20, cada dispositivo limitado en recursos (d) cifra su propio dato privado (m) utilizando su clave pública de dispositivo (pkd) y un algoritmo de cifrado homomórfico aditivo, generando un dato cifrado (c). </span>In step 23 of method 20, each resource-constrained device (d) encrypts its own private data (m) using its device public key (pkd) and an additive homomorphic encryption algorithm, generating an encrypted data (c).</span>
+    </p>
+    <p id="p0082" num="0082">
+      <span class="notranslate"> <span class="google-src-text"> En el paso 24 del método 20, cada dispositivo limitado en recursos (d) envía los datos cifrados (c) que ha generado al servidor intermediario. Estos datos cifrados (c) podrían ser enviados al servidor intermediario a través de un solo canal. </span>In step 24 of method 20, each resource-constrained device (d) sends the encrypted data (c) it has generated to the intermediary server. This encrypted data (c) could be sent to the intermediary server through a single channel.</span>
+    </p>
+    <p id="p0083" num="0083">
+      <span class="notranslate"> <span class="google-src-text"> En el paso 25 del método 20 se determina un subconjunto de titulares de red (h¡) de la pluralidad de los titulares de red (h), con los que se comparte el conjunto de trozos (c¡) del dato cifrado (c). </span>In step 25 of method 20, a subset of network holders (h¡) is determined from the plurality of network holders (h), with whom the set of pieces (c¡) of the encrypted data (c) is shared.</span>
+    </p>
+    <p id="p0084" num="0084">
+      <span class="notranslate"> <span class="google-src-text"> En el paso 26 del método 20, el servidor intermediario trocea cada dato cifrado (c) en un conjunto de trozos (c¡) donde los datos en claro contenidos en los datos cifrados (c¡) conforman un conjunto de trozos de datos en claro (m¡) del dato privado (m) donde cada trozo de dato en claro (m¡) está contenido en el trozo correspondiente (c¡). </span>In step 26 of method 20, the intermediary server slices each encrypted data (c) into a set of pieces (c¡) where the plaintext data contained in the encrypted data (c¡) make up a set of plaintext data pieces (m¡) from the private data (m) where each plaintext data piece (m¡) is contained in the corresponding piece (c¡).</span>
+    </p>
+    <p id="p0085" num="0085">
+      <span class="notranslate"> <span class="google-src-text"> En el paso 27 del método 20, se genera una clave de recifrado (rk) para cada par de dispositivo limitado en recursos (d) y titular de red del subconjunto de titulares de red (hj). Las claves de recifrado (rk) están basadas en cualquier combinación del par de claves público/privada (pkd, skd) del dispositivo limitado en recursos particular (d) con el par de claves público/privada (pkh, skh) del titular de red particular. En otras palabras, la clave de recifrado que se utilizará para recifrar un trozo (c¡), trozo el cual es parte del dato cifrado (c) generado por el dispositivo limitado en recursos ‘A’ y que debe ser enviado al titular de red ‘B’, será generado en base a cualquier combinación del par de claves público/privada (pkA, skA) del dispositivo limitado en recursos ‘A con el par de claves público/privada (pks, sks) del titular de red ‘B’. Por ejemplo, dicha clave de recifrado (rkAB) puede ser generada mediante la combinación de la clave privada (skA) del dispositivo limitado en recursos ‘A con la clave pública (pks) o la clave privada (skB) del titular de red ‘B’.Estas claves de recifrado (rk) pueden ser generadas por el propietario de los datos cuando las claves privadas de los titulares de red no son requeridas para la generación o también se puede ejecutar un protocolo compartido entre el correspondiente dispositivo limitado en recursos (d) y el correspondiente titular de red (h) implicado en la transmisión del trozo recifrado particular (c¡’) y el servidor intermediario. En cualquier caso, el servidor intermediario no conoce las claves privadas (skd, skh) de los dispositivos limitados en recursos y los titulares de red. Los titulares de red no tienen acceso o conocen las claves de recifrado (rk) en ninguna fase del proceso para cifrar los datos, en caso contrario podrían comprometer la clave privada del dispositivo (skd). </span>In step 27 of method 20, a decryption key (rk) is generated for each resource-constrained device (d) and network holder (hj) pair within the subset of network holders. The decryption keys (rk) are based on any combination of the public/private key pair (pkd, skd) of the particular resource-constrained device (d) with the public/private key pair (pkh, skh) of the particular network holder. In other words, the decryption key used to decrypt a chunk (c), which is part of the encrypted data (c) generated by resource-constrained device &#39;A&#39; and to be sent to network holder &#39;B&#39;, will be generated based on any combination of the public/private key pair (pkA, skA) of resource-constrained device &#39;A&#39; with the public/private key pair (pks, sks) of network holder &#39;B&#39;. For example, such a decryption key (rkAB) can be generated by combining the private key (skA) of resource-constrained device &#39;A&#39; with the public key (pks) or the private key (skB) of network owner &#39;B&#39;. These decryption keys (rk) can be generated by the data owner when the network owners&#39; private keys are not required for generation, or a shared protocol can be executed between the relevant resource-constrained device (d) and the relevant network owner (h) involved in the transmission of the particular decrypted chunk (c¡&#39;) and the intermediary server. In either case, the intermediary server does not know the private keys (skd, skh) of the resource-constrained devices and the network owners. The network owners do not have access to or knowledge of the decryption keys (rk) at any stage of the data encryption process; otherwise, they could compromise the device&#39;s private key (skd).</span>
+    </p>
+    <p id="p0086" num="0086">
+      <span class="notranslate"> <span class="google-src-text"> En el paso 28 del método 20, el servidor intermediario recifra cada trozo (c¡) con la respectiva clave de recifrado (rk) que se corresponde con el par que comprende el dispositivo limitado en recursos (d) que genera el dato cifrado (c) y el titular de red (hj), a quien debe ser enviado el trozo (c¡) en particular, generando el conjunto de trozos recifrados (c¡’). Por todo esto, ya que una clave de recifrado (rk) ha sido generada para cada trozo (c¡) en particular que debe ser enviado desde el dispositivo limitado en recursos (d) como emisor, el cual ha generado el dato privado (m) (cifrado como el correspondiente dato cifrado (c)), al titular de red (hj) como destinatario, hacia el que se debe enviar dicho trozo (c¡) en particular, y donde que la clave de recifrado (rk) se utiliza para recifrar dicho trozo (c¡) en particular. Por el ejemplo mencionado previamente donde la clave de recifrado (rkAB) es generada para transmitir el trozo (c¡) entre el dispositivo limitado en recursos ‘A’ y el titular de red ‘B’, el servidor intermediario recifra el trozo (c¡) con la clave de recifrado (rkAB) generando el correspondiente trozo recifrado (c¡’). </span>In step 28 of method 20, the intermediary server re-encrypts each piece (c¡) with the respective re-encryption key (rk) that corresponds to the pair comprising the resource-constrained device (d) that generates the encrypted data (c) and the network owner (hj), to whom the particular piece (c¡) must be sent, generating the set of re-encrypted pieces (c¡’). Therefore, since a re-encryption key (rk) has been generated for each particular piece (c¡) that must be sent from the resource-constrained device (d) as the sender, which has generated the private data (m) (encrypted as the corresponding encrypted data (c)), to the network owner (hj) as the recipient, to whom said particular piece (c¡) must be sent, and where the re-encryption key (rk) is used to re-encrypt said particular piece (c¡). For the previously mentioned example where the re-encryption key (rkAB) is generated to transmit the chunk (c¡) between the resource-limited device ‘A’ and the network holder ‘B’, the intermediary server re-encrypts the chunk (c¡) with the re-encryption key (rkAB) generating the corresponding re-encrypted chunk (c¡’).</span>
+    </p>
+    <p id="p0087" num="0087">
+      <span class="notranslate"> <span class="google-src-text"> La Figura 5 muestra un diagrama de bloques de un sistema 30 para compartir datos cifrados, de acuerdo con otro ejemplo de la presente invención. Debe entenderse que el sistema 30 mostrado en la Figura 5 podría incluir componentes adicionales y que algunos de los componentes descritos en el presente documento podrían ser eliminados y/o modificados sin una desviación del objetivo del sistema ejemplificado 30. Adicionalmente, la implementación del sistema 30 no se limita a dicho ejemplo. </span>Figure 5 shows a block diagram of a system 30 for sharing encrypted data, according to another example of the present invention. It should be understood that the system 30 shown in Figure 5 could include additional components and that some of the components described herein could be removed and/or modified without deviating from the objective of the exemplified system 30. Furthermore, the implementation of system 30 is not limited to this example.</span>
+    </p>
+    <p id="p0088" num="0088">
+      <span class="notranslate"> <span class="google-src-text"> Tal y como se muestra en la Figura 5 el sistema 30 comprende una pluralidad de dispositivos limitados en recursos (d) que generan sus propios datos privados (m). Cada uno de estos dispositivos limitados en recursos (d) tiene sus propias claves pública y privada (pkd, skd). El sistema además comprende una red distribuida 32 con una pluralidad de titulares de red (h), donde cada red y cada titular (h) posee sus propias claves pública y privada (pkh, skh), y un servidor intermediario 33 acoplado en términos de comunicación con los titulares de red (h) y con los dispositivos limitados en recursos (d).Cada dispositivo limitado en recursos (d) comprende un controlador de dispositivo y un medio de almacenamiento legible por máquina (no mostrado en esta figura) que almacena instrucciones para generar los datos cifrados (c) mediante el cifrado de sus propios datos privados (m) utilizando su propia clave pública (pkd) y un algoritmo de cifrado homomórfico aditivo y envía los datos cifrados (c) generados al servidor intermediario 33. </span>As shown in Figure 5, the system 30 comprises a plurality of resource-constrained devices (d) that generate their own private data (m). Each of these resource-constrained devices (d) has its own public and private keys (pkd, skd). The system further comprises a distributed network 32 with a plurality of network holders (h), where each network and each holder (h) possesses its own public and private keys (pkh, skh), and a broker server 33 coupled in terms of communication with the network holders (h) and with the resource-constrained devices (d). Each resource-constrained device (d) comprises a device driver and a machine-readable storage medium (not shown in this figure) that stores instructions for generating the encrypted data (c) by encrypting its own private data (m) using its own public key (pkd) and an additive homomorphic encryption algorithm and sends the generated encrypted data (c) to the broker server 33.</span>
+    </p>
+    <p id="p0089" num="0089">
+      <span class="notranslate"> <span class="google-src-text"> El sistema 30 también comprende un controlador del sistema 34 que comprende un medio de almacenamiento legible por máquina 35 que almacena instrucciones para ser ejecutadas por el controlador del sistema 34. En dicho ejemplo, el controlador del sistema 34, una vez que ha sido determinado el subconjunto de los titulares de red (hj) de la red distribuida 32 con la que debe ser compartido el conjunto de trozos (c¡) de un dato cifrado particular (c), causa 36 que el servidor intermediario 33 trocee ese dato cifrado particular (c) en un conjunto de trozos (c¡) tal que los datos en claro de los trozos de dato cifrado (c¡) conforman un conjunto de trozos de datos en claro (m¡) del dato privado (m). Entonces, el controlador del sistema 34 causa la generación 37, para cada par de dispositivo limitado en recursos (d) y titular de red del subconjunto de titulares de red (hj), de una clave de recifrado (rk) basada en cualquier combinación del par de claves público/privada (pkd, sk ) de dicho dispositivo limitado en recursos en particular (d) y el par de claves público/privada (pkh, skh) del titular de red en particular, donde las claves de recifrado (rk) son solamente accesibles por el servidor intermediario. Tras esto, el controlador del sistema 34 causa que el servidor intermediario recifre 38 cada dato cifrado (c¡) con la clave de recifrado respectiva (rk) que se corresponde con el par que comprende el dispositivo limitado en recursos (d) que genera el dato cifrado (c) y los titulares de red (hj) con los que los trozos (c¡) deben ser compartidos, generando un conjunto de trozos recifrados (c¡’). </span>System 30 also comprises a system controller 34 comprising a machine-readable storage medium 35 that stores instructions to be executed by the system controller 34. In this example, the system controller 34, once the subset of network holders (hj) of the distributed network 32 with whom the set of chunks (c¡) of a particular encrypted data (c) is to be shared has been determined, causes 36 the intermediary server 33 to chunk that particular encrypted data (c) into a set of chunks (c¡) such that the plaintext data of the encrypted data chunks (c¡) constitute a set of plaintext data chunks (m¡) of the private data (m). Then, the system controller 34 causes the generation 37, for each pair of resource-constrained device (d) and network holder from the subset of network holders (hj), of a decryption key (rk) based on any combination of the public/private key pair (pkd, sk) of that particular resource-constrained device (d) and the public/private key pair (pkh, skh) of the particular network holder, where the decryption keys (rk) are only accessible by the intermediary server. Following this, the system controller 34 causes the intermediary server to decrypt 38 each piece of ciphered data (c¡) with the respective decryption key (rk) that corresponds to the pair comprising the resource-constrained device (d) that generates the ciphered data (c) and the network holders (hj) with whom the pieces (c¡) are to be shared, generating a set of decrypted pieces (c¡’).</span>
+    </p>
+    <p id="p0090" num="0090">
+      <span class="notranslate"> <span class="google-src-text"> El controlador del dispositivo (no mostrado) y el controlador del sistema 34 podrían incluir lógica hardware para realizar las funcionalidades descritas previamente en relación con las instrucciones para generar los datos cifrados y enviarlos al servidor intermediario y en relación con las instrucciones 36-38, respectivamente. De forma alternativa, el controlador del sistema 34 podría incluir lógica software o una combinación de lógica hardware y software para realizar las funcionalidades descritas previamente en relación con dichas instrucciones. Los medios de almacenamiento legibles por máquina de los dispositivos limitados en recursos del controlador del sistema 34 podrían estar localizados en el dispositivo computational que ejecuta las instrucciones legibles por máquina o de forma remota pero accesible por el dispositivo computational (por ejemplo, a través de una red informática) para su ejecución.Tal y como se utiliza en el presente documento, un “medio de almacenamiento legible por máquina” podría ser cualquier aparato de almacenamiento electrónico, magnético, óptico o físico para contener o almacenar información como instrucciones ejecutables, datos o similares. Por ejemplo, cualquier medio de almacenamiento legible por máquina descrito en el presente documento podría ser cualquier memoria hardware como una máquina de estado finito o similar. Además, cualquier medio de almacenamiento legible por máquina descrito en el presente documento podría ser no transitorio. En los ejemplos aquí descritos, un medio de almacenamiento legible por máquina podría ser parte de un artículo (o artículo manufacturado). Un artículo o artículo manufacturado podría referirse a cualquier componente individual manufacturado o a cualesquiera componentes múltiples manufacturados. </span>The device controller (not shown) and the system controller 34 could include hardware logic to perform the functionalities described above in relation to the instructions for generating the encrypted data and sending it to the intermediary server and in relation to instructions 36-38, respectively. Alternatively, the system controller 34 could include software logic or a combination of hardware and software logic to perform the functionalities described above in relation to those instructions. The machine-readable storage media of the resource-constrained devices of the system controller 34 could be located on the computational device that executes the machine-readable instructions or remotely but accessible by the computational device (for example, through a computer network) for execution. As used herein, a “machine-readable storage medium” could be any electronic, magnetic, optical, or physical storage device for holding or storing information such as executable instructions, data, or the like. For example, any machine-readable storage medium described herein could be any hardware memory such as a finite-state machine or similar. Furthermore, any machine-readable storage medium described herein may be non-transient. In the examples described herein, a machine-readable storage medium may be part of an item (or manufactured item). An item or manufactured item may refer to any single manufactured component or any multiple manufactured components.</span>
+    </p>
+  </description>
+  </div>
+  </section>
+
+  <section itemprop="claims" itemscope>
+    <h2>Claims</h2>
+    <aside>Translated from <span itemprop="translatedLanguage">Spanish</span></aside>
+    <div itemprop="content" html><claims mxw-id="PCLM533064832" lang="EN" load-source="google">
+    <claim-statement>
+      <span class="notranslate"> <span class="google-src-text">REIVINDICACIONES
+    </span></span></claim-statement>
+    <claim id="clm-0001" num="1">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 1. Método implementado por computador para compartir datos cifrados, caracterizado por que dicho método comprende las etapas de: </span>1. A computer-implemented method for sharing encrypted data, characterized in that said method comprises the following steps:</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> proporcionar (21 ) una red distribuida que comprende una pluralidad de titulares de red (h), donde cada titular de red (h) posee una clave pública de titular (pkh) y una clave privada de titular (skh); </span>provide (21) a distributed network comprising a plurality of network holders (h), wherein each network holder (h) possesses a public holder key (pkh) and a private holder key (skh);</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> proporcionar (22) al menos un dispositivo limitado en recursos (d) que genera datos privados (m), donde cada dispositivo limitado en recursos (d) posee una clave pública de dispositivo (pkd) y una clave privada de dispositivo (skd); </span>provide (22) at least one resource-constrained device (d) that generates private data (m), wherein each resource-constrained device (d) possesses a device public key (pkd) and a device private key (skd);</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> cifrar (23), por al menos uno de los dispositivos limitados en recursos (d), el dato privado (m) usando su clave pública de dispositivo (pkd) y un algoritmo de cifrado homomórfico aditivo, generando un dato cifrado (c); </span>encrypt (23), by at least one of the resource-constrained devices (d), the private data (m) using its device public key (pkd) and an additive homomorphic encryption algorithm, generating an encrypted data (c);</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> enviar (24), por al menos uno de los dispositivos limitados en recursos (d), el dato cifrado (c) a un servidor intermediario; </span>send (24), by at least one of the resource-constrained devices (d), the encrypted data (c) to an intermediary server;</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> determinar (25) un subconjunto de titulares de red (h¡) dentro de la pluralidad de titulares de red (h) hacia los que los trozos (c¡) del dato cifrado (c) son enviados por el servidor intermediario; </span>determine (25) a subset of network holders (h¡) within the plurality of network holders (h) to which the pieces (c¡) of the encrypted data (c) are sent by the intermediary server;</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> fragmentar (26), por el servidor intermediario, del dato cifrado (c) en el conjunto de trozos (c¡) tal que los datos en claro de los datos cifrados (c¡) conforman un conjunto de trozos de datos en claro (m¡) del dato privado (m); </span>fragment (26), by the intermediary server, of the encrypted data (c) into the set of pieces (c¡) such that the plaintext data of the encrypted data (c¡) make up a set of plaintext data pieces (m¡) of the private data (m);</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> generar (27), por cada par de dispositivo limitado en recursos (d) y titular de red del subconjunto de titulares de red (h¡), una clave de recifrado (rk) basada en cualquier combinación del par de claves público/privada (pkd, skd) del dispositivo limitado en recursos particular (d) con el par de claves público/privada (pkh, skh) del titular de red particular, tal que las claves de recifrado (rk) son solo accesibles por el servidor intermediario; y </span>generate (27), for each pair of resource-constrained device (d) and network holder from the subset of network holders (h), a re-encryption key (rk) based on any combination of the public/private key pair (pkd, skd) of the particular resource-constrained device (d) with the public/private key pair (pkh, skh) of the particular network holder, such that the re-encryption keys (rk) are accessible only by the intermediary server; and</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> recifrar (28), por parte del servidor intermediario, cada trozo (c¡) con la clave de recifrado respectiva (rk) que corresponde al par que comprende el dispositivo limitado en recursos (d) que genera el dato cifrado (c) y el titular de red (h¡) con el que el trozo (c¡) debe ser compartido, generando un conjunto de trozos recifrados (c¡’). </span>Re-encrypt (28), by the intermediary server, each piece (c¡) with the respective re-encryption key (rk) that corresponds to the pair comprising the resource-limited device (d) that generates the encrypted data (c) and the network owner (h¡) with whom the piece (c¡) must be shared, generating a set of re-encrypted pieces (c¡’).</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0002" num="2">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 2. El método implementado para computador según la reivindicación 1 caracterizado por que comprende: </span>2. The computer-implemented method according to claim 1, characterized in that it comprises:</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> enviar, por parte del servidor intermediario, cada trozo recifrado (c¡’) al titular de red correspondiente del subconjunto de titulares de red (hj), dichos trozos recifrados (c¡’)siendo descifrados con las correspondientes claves privadas (skh) de los titulares de red del subconjunto de titulares de red (hj). </span>send, by the intermediary server, each re-encrypted piece (c¡’) to the corresponding network holder of the subset of network holders (hj), said re-encrypted pieces (c¡’) being decrypted with the corresponding private keys (skh) of the network holders of the subset of network holders (hj).</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0003" num="3">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 3. El método implementado para computador según la reivindicación 1 ó 2 caracterizado por que la etapa de la generación de la clave de recifrado (rk) comprende generar la clave de recifrado (rk) en base a la combinación de la clave privada de dispositivo (skd) de al menos uno de los dispositivos limitados en recursos (d) con la clave pública (pkh) o la clave privada (skh) del titular de red. </span>3. The computer-implemented method according to claim 1 or 2, characterized in that the re-encryption key (rk) generation step comprises generating the re-encryption key (rk) based on the combination of the device private key (skd) of at least one of the resource-limited devices (d) with the network holder&#39;s public key (pkh) or private key (skh).</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0004" num="4">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 4. El método implementado para computador según la reivindicación 3 caracterizado por que cuando la clave de recifrado (rk) es generada en base a la combinación de la clave privada de dispositivo (skd) y la clave privada de dispositivo (skh) mediante un protocolo interactivo entre el dispositivo limitado en recursos (d), el correspondiente titular de red (h) y el servidor intermediario, solo el servidor intermediario aprende el valor de la clave de recifrado (rk) y la clave privada del dispositivo (skd) y la clave privada del titular de red (skh) se mantienen confidenciales para el dispositivo limitado en recursos (d) y el titular de red (h), respectivamente. </span>4. The computer-implemented method according to claim 3, characterized in that when the re-encryption key (rk) is generated based on the combination of the device private key (skd) and the device private key (skh) by means of an interactive protocol between the resource-constrained device (d), the corresponding network holder (h), and the intermediary server, only the intermediary server learns the value of the re-encryption key (rk), and the device private key (skd) and the network holder private key (skh) are kept confidential from the resource-constrained device (d) and the network holder (h), respectively.</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0005" num="5">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 5. El método implementado para computador según cualquiera de las reivindicaciones anteriores caracterizado por que la clave de recifrado (rk) es generada por al menos uno de los dispositivos limitados en recursos (d) o mediante la ejecución de un protocolo compartido entre el dispositivo limitado en recursos (d), el correspondiente titular de red (h) y el servidor intermediario. </span>5. The computer-implemented method according to any of the preceding claims, characterized in that the encryption key (rk) is generated by at least one of the resource-constrained devices (d) or by executing a protocol shared between the resource-constrained device (d), the corresponding network holder (h), and the intermediary server.</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0006" num="6">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 6. El método implementado para computador según cualquiera de las reivindicaciones anteriores caracterizado por que os dispositivos limitados en recursos (d) son dispositivos del Internet de las cosas o loT. </span>6. The computer-implemented method according to any of the preceding claims, characterized in that the resource-limited devices (d) are Internet of Things or IoT devices.</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0007" num="7">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 7. El método implementado para computador según cualquiera de las reivindicaciones anteriores caracterizado por que los dispositivos limitados en recursos (d) generan los datos privados (m) de forma continua o periódica. </span>7. The computer-implemented method according to any of the preceding claims, characterized in that the resource-limited devices (d) generate the private data (m) continuously or periodically.</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0008" num="8">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 8. El método implementado para computador según cualquiera de las reivindicaciones anteriores caracterizado por que: </span>8. The computer-implemented method according to any of the preceding claims, characterized in that:</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> la etapa de cifrar los datos privados (m) generando un dato cifrado (c) se lleva a cabo en un instante ‘t1 ylas etapas de determinar el subconjunto de titulares de red (hj) de la pluralidad de titulares de red (h), trocear el dato cifrado (c) en un conjunto de trozos (c¡), generar las claves de recifrado (rk) y recifrar cada trozo (c¡) con la correspondiente clave de recifrado (rk) se llevan a cabo en un instante ‘t2’, donde el instante ‘t2’ ocurre posteriormente al instante ‘t1 </span>The stage of encrypting the private data (m) by generating an encrypted data (c) is carried out at an instant &#39;t1&#39; and the stages of determining the subset of network holders (hj) from the plurality of network holders (h), slicing the encrypted data (c) into a set of slices (c¡), generating the decryption keys (rk) and decrypting each slice (c¡) with the corresponding decryption key (rk) are carried out at an instant &#39;t2&#39;, where instant &#39;t2&#39; occurs after instant &#39;t1&#39;</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0009" num="9">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 9. El método implementado para computador según cualquiera de las reivindicaciones anteriores caracterizado por que el servidor intermediario es un servidor semi-honesto. </span>9. The computer-implemented method according to any of the preceding claims, characterized in that the intermediary server is a semi-honest server.</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0010" num="10">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 10. El método implementado para computador según cualquiera de las reivindicaciones anteriores caracterizado por que los titulares de red (h) son titulares de red de Computación Segura Multiparte (MPC) y la red distribuida es una red MPC. </span>10. The computer-implemented method according to any of the preceding claims, characterized in that the network holders (h) are Multi-Party Secure Computing (MPC) network holders and the distributed network is an MPC network.</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0011" num="11">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 11. Un medio legible por máquina no transitorio el cual almacena instrucciones que cuando se ejecutan por uno o más dispositivos computacionales ejecuta el método según cualquiera de las reivindicaciones anteriores 1 a 10. </span>11. A non-transient machine-readable medium which stores instructions which, when executed by one or more computing devices, executes the method according to any of claims 1 to 10 above.</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0012" num="12">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 12. Un sistema (1 ) para compartir datos cifrados caracterizado por que dicho sistema comprende: </span>12. A system (1) for sharing encrypted data characterized in that said system comprises:</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> una red distribuida (4) que comprende una pluralidad de titulares de red (h), donde cada titular (h) tiene su clave pública de titular (pkh) y su clave privada de titular (skh); </span>a distributed network (4) comprising a plurality of network holders (h), wherein each holder (h) has his or her public holder key (pkh) and private holder key (skh);</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> al menos un dispositivo limitado en recursos (d) que genera datos privados (m), donde cada dispositivo limitado en recursos (d) tiene una clave pública de dispositivo (pkd) y una clave privada de dispositivo (skd); y </span>at least one resource-constrained device (d) that generates private data (m), wherein each resource-constrained device (d) has a device public key (pkd) and a device private key (skd); and</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> un servidor intermediario (3) acoplado en términos de comunicación con los titulares de red (h) y con el al menos un dispositivo limitado en recursos; </span>an intermediary server (3) coupled in terms of communication with the network holders (h) and with at least one resource-limited device;</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> donde el al menos un dispositivo limitado en recursos (d) está configurado para: cifrar los datos privados (m) utilizando su clave pública de dispositivo (pkd) y un algoritmo de cifrado homomórficamente aditivo, generando un dato cifrado (c), y enviar el dato cifrado (c) al servidor intermediario; </span>where at least one resource-constrained device (d) is configured to: encrypt the private data (m) using its device public key (pkd) and a homomorphically additive encryption algorithm, generating an encrypted data (c), and send the encrypted data (c) to the intermediary server;</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> donde el sistema (1), cuando un subconjunto de los titulares de red (hj) de la pluralidad de titulares de red (h) con el que un conjunto de trozos (c¡) del dato cifrado (c) que deben ser enviados ha sido determinado, está además configurado para: </span>where the system (1), when a subset of the network holders (hj) from the plurality of network holders (h) with which a set of pieces (c¡) of the encrypted data (c) to be sent has been determined, is further configured to:</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> causar que el servidor intermediario (3) trocee el dato cifrado (c) en un conjunto de trozos (c¡) tal que los datos en claro de los datos cifrados (c¡) conforman un conjunto de trozos de datos en claro (m¡) del dato privado (m);causar la generación, por cada par de dispositivo limitado en recursos (d) y titular de red del subconjunto de titulares de red (hj), de una clave de recifrado (rk) basada en cualquier combinación del par de claves pública/privada (pkd, skd) de ese dispositivo limitado en recursos (d) en particular con el par de claves público/privada (pkh, skh) del titular de red particular, donde las claves de recifrado (rk) solo son accesibles por el servidor intermediario; y </span>causing the intermediary server (3) to slice the encrypted data (c) into a set of slices (c¡) such that the plaintext data of the encrypted data (c¡) constitutes a set of plaintext slices (m¡) of the private data (m); causing the generation, by each pair of resource-constrained device (d) and network holder of the subset of network holders (hj), of a decryption key (rk) based on any combination of the public/private key pair (pkd, skd) of that particular resource-constrained device (d) with the public/private key pair (pkh, skh) of the particular network holder, wherein the decryption keys (rk) are accessible only by the intermediary server; and</span>
+      </claim-text>
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> causar que el servidor intermediario (3) recifre cada trozo (c¡) con la respectiva clave de recifrado (rk) que corresponde al par que comprende el dispositivo limitado en recursos (d) que genera el dato cifrado (c) y al titular de red (hj) con el que el trozo (c¡) debe ser compartido, generando un conjunto de trozos recifrados (c¡’). </span>cause the intermediary server (3) to re-encrypt each piece (c¡) with the respective re-encryption key (rk) that corresponds to the pair comprising the resource-limited device (d) that generates the encrypted data (c) and the network owner (hj) with whom the piece (c¡) must be shared, generating a set of re-encrypted pieces (c¡’).</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0013" num="13">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 13. El sistema (1) según la reivindicación 12 caracterizado por que los dispositivos limitados en recursos (d) son dispositivos del Internet de las cosas o loT. </span>13. The system (1) according to claim 12 characterized in that the resource-constrained devices (d) are Internet of Things or IoT devices.</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0014" num="14">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 14. El sistema (1) según la reivindicación 12 ó 13 caracterizado por que el servidor intermediario es un servidor semi-honesto. </span>14. The system (1) according to claim 12 or 13 characterized in that the intermediary server is a semi-honest server.</span>
+      </claim-text>
+    </claim>
+    <claim id="clm-0015" num="15">
+      <claim-text>
+        <span class="notranslate"> <span class="google-src-text"> 15. El sistema (1) según cualquiera de las reivindicaciones 12 a 14 caracterizado por que los titulares de red (h) son titulares de red de Computación Segura Multiparte (MPC) y la red distribuida es una red MPC. </span>15. The system (1) according to any of claims 12 to 14 characterized in that the network holders (h) are Multi-Party Secure Computing (MPC) network holders and the distributed network is an MPC network.</span>
+      </claim-text>
+    </claim>
+  </claims>
+  </div>
+  </section>
+
+  <section itemprop="application" itemscope>
+
+    <section itemprop="metadata" itemscope>
+      <span itemprop="applicationNumber">PCT/ES2026/070037</span>
+      <span itemprop="priorityDate">2025-01-30</span>
+      <span itemprop="filingDate">2026-01-23</span>
+      <span itemprop="title">Methods and systems for sharing encrypted data 
+       </span>
+      <span itemprop="ifiStatus">Pending</span>
+      
+      <a href="/patent/WO2026162858A1/en">
+        <span itemprop="representativePublication">WO2026162858A1</span>
+        (<span itemprop="primaryLanguage">en</span>)
+      </a>
+    </section>
+
+    
+
+    <h2>Applications Claiming Priority (2)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="appsClaimingPriority" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">ES202530072A</span>
+            <a href="/patent/ES3075470A1/en">
+              <span itemprop="representativePublication">ES3075470A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2025-01-30</td>
+          <td itemprop="filingDate">2025-01-30</td>
+          <td itemprop="title">
+        METHODS AND SYSTEMS FOR SHARING ENCRYPTED DATA
+       
+     </td>
+        </tr>
+        <tr itemprop="appsClaimingPriority" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">ESP202530072</span>
+            
+          </td>
+          <td itemprop="priorityDate"></td>
+          <td itemprop="filingDate">2025-01-30</td>
+          <td itemprop="title"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Publications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication Number</th>
+          <th>Publication Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="pubs" itemscope repeat>
+          <td>
+            <span itemprop="publicationNumber">WO2026162858A1</span>
+            
+            <span itemprop="thisPatent">true</span>
+            <a href="/patent/WO2026162858A1/en">
+              WO2026162858A1
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="publicationDate">2026-08-06</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <section itemprop="family" itemscope>
+    <h1>Family</h1>
+    <h2>ID=100734101</h2>
+
+    <h2>Family Applications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Title</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="applications" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">PCT/ES2026/070037</span>
+            <span itemprop="ifiStatus">Pending</span>
+            
+            <a href="/patent/WO2026162858A1/en">
+              <span itemprop="representativePublication">WO2026162858A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2025-01-30</td>
+          <td itemprop="filingDate">2026-01-23</td>
+          <td itemprop="title">Methods and systems for sharing encrypted data 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Country Status (2)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="countryStatus" itemscope repeat>
+          <td>
+            <span itemprop="countryCode">ES</span>
+            (<span itemprop="num">1</span>)
+            
+          </td>
+          <td>
+            <a href="/patent/ES3075470A1/en">
+              <span itemprop="representativePublication">ES3075470A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+        </tr>
+        <tr itemprop="countryStatus" itemscope repeat>
+          <td>
+            <span itemprop="countryCode">WO</span>
+            (<span itemprop="num">1</span>)
+            <meta itemprop="thisCountry" content="true">
+          </td>
+          <td>
+            <a href="/patent/WO2026162858A1/en">
+              <span itemprop="representativePublication">WO2026162858A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    
+
+    
+
+    <ul>
+      <li itemprop="applicationsByYear" itemscope repeat>
+        <span itemprop="year">2025</span>
+        <ul>
+          <li itemprop="application" itemscope repeat>
+            <span itemprop="filingDate">2025-01-30</span>
+            <span itemprop="countryCode">ES</span>
+            <span itemprop="applicationNumber">ES202530072A</span>
+            <a href="/patent/ES3075470A1/en"><span itemprop="documentId">patent/ES3075470A1/en</span></a>
+            <span itemprop="legalStatusCat">active</span>
+            <span itemprop="legalStatus">Pending</span>
+            
+          </li>
+        </ul>
+      </li>
+      <li itemprop="applicationsByYear" itemscope repeat>
+        <span itemprop="year">2026</span>
+        <ul>
+          <li itemprop="application" itemscope repeat>
+            <span itemprop="filingDate">2026-01-23</span>
+            <span itemprop="countryCode">WO</span>
+            <span itemprop="applicationNumber">PCT/ES2026/070037</span>
+            <a href="/patent/WO2026162858A1/en"><span itemprop="documentId">patent/WO2026162858A1/en</span></a>
+            <span itemprop="legalStatusCat">active</span>
+            <span itemprop="legalStatus">Pending</span>
+            <span itemprop="thisApp" content="true" bool></span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    </section>
+
+  
+
+  
+
+  
+
+  <section>
+    <h2>Also Published As</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Publication date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="docdbFamily" itemscope repeat>
+          <td>
+            <a href="/patent/ES3075470A1/en">
+              <span itemprop="publicationNumber">ES3075470A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="publicationDate">2026-08-04</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  
+
+  
+
+</article>
+
+    </search-app>
+    
+    <script></script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/api.js"></script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/js/help/prod/service/lazy.min.js"></script>
+    <script type="text/javascript">
+      if (window.help && window.help.service) {
+        helpApi = window.help.service.Lazy.create(0, {apiKey: 'AIzaSyDTEI_0tLX4varJ7bwK8aT-eOI5qr3BmyI', locale: 'en-US'});
+        window.requestedSurveys = new Set();
+        window.requestSurvey = function(triggerId) {
+          if (window.requestedSurveys.has(triggerId)) {
+            return;
+          }
+          window.requestedSurveys.add(triggerId);
+          helpApi.requestSurvey({
+            triggerId: triggerId,
+            enableTestingMode: false,
+            callback: (requestSurveyCallbackParam) => {
+              if (!requestSurveyCallbackParam.surveyData) {
+                return;
+              }
+              helpApi.presentSurvey({
+                productData: {
+                  productVersion: window.version,
+                  customData: {
+                    "experiments": "",
+                  },
+                },
+                surveyData: requestSurveyCallbackParam.surveyData,
+                colorScheme: 1,
+                customZIndex: 10000,
+              });
+            }
+          });
+        };
+
+        window.requestSurvey('YXTwAsvoW0kedxbuTdH0RArc9VhT');
+      }
+    </script>
+    <script src="/sw/null_loader.js"></script>
+  </body>
+</html>

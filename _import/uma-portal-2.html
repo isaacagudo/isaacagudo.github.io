@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en" xml:lang="en">
+
+    <head>
+        
+        
+        <script>
+            window.PCIENCIA = window.PCIENCIA || {};
+            (function (P) {
+                var cola = [];
+                P.ready = function (fn) {
+                    if (P.ready.done) {
+                        fn();
+                    } else {
+                        cola.push(fn);
+                    }
+                };
+                P.ready.done = false;
+                function vaciar() {
+                    P.ready.done = true;
+                    var pendientes = cola;
+                    cola = [];
+                    pendientes.forEach(function (fn) {
+                        try {
+                            fn();
+                        } catch (e) {
+                            console.error(e);   // un inicializador roto no se lleva a los demás
+                        }
+                    });
+                }
+                function cargarPesadas(enlaces) {
+                    var quedan = enlaces.length;
+                    var acabado = function () {
+                        if (--quedan === 0) {
+                            vaciar();
+                        }
+                    };
+                    for (var i = 0; i < enlaces.length; i++) {
+                        var script = document.createElement('script');
+                        script.src = enlaces[i].href;
+                        script.async = false;   // insertados dinámicamente, así se ejecutan en orden
+                        script.onload = acabado;
+                        script.onerror = acabado;
+                        document.head.appendChild(script);   // el <link> se queda: lleva el id y los data-* que lee el script
+                    }
+                }
+                document.addEventListener('DOMContentLoaded', function () {
+                    var pesadas = document.querySelectorAll('link[data-lazy][href]');
+                    if (pesadas.length === 0) {
+                        vaciar();
+                        return;
+                    }
+                    // tras el primer pintado: un frame y un tick, para no robarle el hilo al pintado
+                    requestAnimationFrame(function () {
+                        setTimeout(function () {
+                            cargarPesadas(pesadas);
+                        }, 0);
+                    });
+                });
+            })(window.PCIENCIA);
+        </script>
+                
+        
+        
+            <!-- Google Tag Manager -->
+            <script>
+                (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-NVGXS5ZH');            
+            </script>
+        
+        
+        <title>ISAAC AGUDO RUIZ - Universidad de Málaga</title>
+        
+        
+    
+        <meta name="description" content="Universidad de Málaga research portal: researchers, research groups, publications, projects and research data." />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <meta name="display-level" content="standard" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons&amp;display=block" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Roboto+Mono&amp;family=Slabo+27px&amp;display=swap" />
+
+        <link media="all" type="text/css" rel="stylesheet" href="/css/theme_base-5c1ea4bb13d7b2d468257acca4ad537d.css" />
+        <link media="all" type="text/css" rel="stylesheet" href="/css/theme_96-9602b2dbb2e3bd279da3e8783705be77.css" />
+        <link media="all" type="text/css" rel="stylesheet" href="/css/style-8525600ca0f07bb4b0571c17dfe53609.css" />
+        
+        <link media="all" type="text/css" rel="stylesheet" href="/css/filter-bar-e41b45a48dedc2c2e7af124be8c2658c.css" />
+
+        
+        <script defer src="/js/htmx.min-2e713ba95db2e33981bb607ae5183305.js"></script>
+        <script defer src="/js/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js"></script>
+        <script defer src="/js/app-b867693ed4c153436f03061c89c1a33e.js"></script>
+        <script defer src="/js/filter-bar-c078341eeef3cec288ecc365c9942be0.js"></script>
+        
+        <script defer src="/js/export-datos-b1cc337ec0910c5ba8566a3cab20c534.js"></script>
+        
+        <script defer src="/js/distribuciones-205663f06cee9f30a1f7f66e1ec287e0.js"></script>
+        <script defer src="/js/vista-datos-7a25f5f41b6c387c50037c81a7f1d862.js"></script>
+        
+        
+        <script type="text/javascript">
+            PCIENCIA.config = {
+                exportarDatos: true,
+                maxFilasExportacion: 100000,
+                exportarContacto: null
+            };
+        </script>
+    
+        
+        <script type="text/javascript">
+            PCIENCIA.lang = {
+                exportar: "Export",
+                exportarDatos: "Export data",
+                exportarGrafico: "Export the chart or its data",
+                exportarImagen: "Download image (PNG)",
+                exportarCsv: "Download CSV",
+                exportarExcel: "Download Excel",
+                exportarExportando: "Exporting\u2026",
+                exportarError: "The download could not be prepared",
+                // el resultado no cabe en una exportación: NO se descarga nada y el botón lo
+                // dice antes de pulsar (tarea #13635). {0} son los registros de la selección,
+                // {1} el techo del portal (PreferenciasCliente.Ui#maxFilasExportacion)
+                exportarBloqueado: "Too many rows",
+                exportarBloqueadoCifras: "({0}; max. {1})",
+                exportarBloqueadoTitulo: "This selection cannot be exported",
+                exportarBloqueadoDetalle: "This view contains {0} records and the export limit is {1}.",
+                exportarBloqueadoAyuda: "What can I do?",
+                exportarBloqueadoReducir: "Apply filters, a search or a narrower time range until the result has {0} records or fewer. You will then be able to download it.",
+                // solo si el portal mantiene un canal de contacto (PCIENCIA.config.exportarContacto)
+                exportarContactoAviso: "If you need the complete download, {0}.",
+                exportarContacto: "contact the portal administrators",
+                // la leyenda de las tartas (PCIENCIA.donuts): {0} es el nombre de la categoría
+                leyendaSolo: "Show only {0}",
+                leyendaTodos: "Show all",
+                leyendaAtajos: "Ctrl+click adds or removes"
+            };
+        </script>
+
+        
+        
+        <link media="print" onload="this.media='all'" type="text/css" rel="stylesheet" href="/cookies/cookieconsent-670b37e75a82edfd7af1776c3081eac5.css"/>
+        <noscript><link media="all" type="text/css" rel="stylesheet" href="/cookies/cookieconsent-670b37e75a82edfd7af1776c3081eac5.css"/></noscript>
+        <script defer src="/cookies/cookieconsent-0a3c8bda3a0c2359787caa8bfe0cae04.js"></script>
+    
+        
+        <link rel="alternate" hreflang="es" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2"/><link rel="alternate" hreflang="ca" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=ca"/><link rel="alternate" hreflang="eu" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=eu"/><link rel="alternate" hreflang="gl" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=gl"/><link rel="alternate" hreflang="en" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=en"/><link rel="alternate" hreflang="fr" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=fr"/><link rel="alternate" hreflang="de" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=de"/>
+        <link rel="alternate" hreflang="x-default" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2"/>
+        <link rel="canonical" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=en_US"/>
+    
+        
+        
+    
+        
+        <link rel="prefetch" as="script" data-lazy href="/js/echarts.min-8c36f4634efacb4a9c91e0d82a683ece.js" />
+        <link rel="prefetch" as="script" data-lazy href="/js/pciencia-charts-bc88b1224d2c208cd37b4bd3f5944003.js" />
+    </head>
+    <body hx-history="false">   
+        
+            <!-- Google Tag Manager (noscript) -->
+            <noscript>
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVGXS5ZH" height="0" width="0" style="display:none;visibility:hidden">                                  
+                </iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        
+        
+        <!--button type="button" data-cc="c-settings">Show cookie settings</button-->
+        <script>
+            window.addEventListener('load', function () {
+                /**
+                 * All config. options available here:
+                 * https://cookieconsent.orestbida.com/reference/configuration-reference.html
+                 */
+                CookieConsent.run({
+
+                    // root: 'body',
+                    // autoShow: true,
+                    // disablePageInteraction: true,
+                    // hideFromBots: true,
+                    // mode: 'opt-in',
+                    // revision: 0,
+
+                    cookie: {
+                        name: 'cc_cookie',
+                        // domain: location.hostname,
+                        // path: '/',
+                        // sameSite: "Lax",
+                        // expiresAfterDays: 365,
+                    },
+
+                    // https://cookieconsent.orestbida.com/reference/configuration-reference.html#guioptions
+                    guiOptions: {
+                        consentModal: {
+                            layout: 'bar',
+                            position: 'bottom',
+                            equalWeightButtons: true,
+                            flipButtons: false
+                        },
+                        preferencesModal: {
+                            layout: 'box',
+                            equalWeightButtons: true,
+                            flipButtons: false
+                        }
+                    },
+
+                    categories: {
+                        necessary: {
+                            enabled: true, // this category is enabled by default
+                            readOnly: true  // this category cannot be disabled
+                        },
+                        analytics: {
+                            autoClear: {
+                                cookies: [
+                                    {
+                                        name: /^(_ga|_gid)/
+                                    }
+                                ]
+                            }
+                        }                        
+                    },
+
+                    language: {
+                        default: 'en',
+                        translations: {
+                            en: {
+                                consentModal: {
+                                    title: "This website uses cookies",
+                                    description: "This portal uses its own and third-party cookies for analytical purposes. Those related to analytical purposes will only be taken into account if you accept the cookies.",
+                                    acceptAllBtn: "Allow all",
+                                    acceptNecessaryBtn: "Allow only necessary",
+                                    showPreferencesBtn: "Manage cookies",
+                                    // closeIconLabel: 'Reject all and close modal',
+                                    footer: `<a href="/aviso_legal#cookies" target="_blank">Política de cookies</a>`,
+                                },
+                                preferencesModal: {
+                                    title: "Manage cookies",
+                                    acceptAllBtn: "Allow all",
+                                    acceptNecessaryBtn: "Allow only necessary",
+                                    savePreferencesBtn: "Save preferences",
+                                    closeIconLabel: "Close",
+                                    serviceCounterLabel: 'Service|Services',
+                                    sections: [
+                                        {
+                                            title: "Use of Cookies\uD83D\uDCE2",
+                                            description: "The use of cookies guarantees the basic functionalities of the website and improves your user experience. You can choose for each category whether or not to accept at any time. For more details about cookies and other sensitive data, please read the <a href=\"\/aviso_legal#cookies\" class=\"cc-link\">Cookie Policy<\/a>."
+                                        },
+                                        {
+                                            title: "Technical and Functional (Strictly necessary)",
+                                            description: "Strictly necessary cookies help make a website navigable by activating basic functions, such as language selection, page navigation and access to secure areas of the website. Without these cookies, the site could not function properly.",
+
+                                            //this field will generate a toggle linked to the 'necessary' category
+                                            linkedCategory: 'necessary'
+                                        },
+                                        {
+                                            title: "Statistics",
+                                            description: "Statistical cookies help the website owner understand how visitors interact with the site, collecting and reporting information.",
+                                            linkedCategory: 'analytics',
+                                            cookieTable: {
+                                                headers: {
+                                                    name: "Name",
+                                                    domain: "Domain",
+                                                    vencimiento: "Expiration",
+                                                    desc: "Description"
+                                                },
+                                                body: [
+                                                    {
+                                                        name: '_ga',
+                                                        domain: 'google.com',
+                                                        vencimiento: "2 years",
+                                                        desc: "This cookie is installed by Google Analytics. The cookie is used to calculate the data of visitors, sessions, campaigns and to track the use of the website for the analytical report of said website. Cookies store information anonymously and assign a randomly generated number to identify unique visitors."
+                                                    },
+                                                    {
+                                                        name: '_gat',
+                                                        domain: 'google.com',
+                                                        vencimiento: "1 minute",
+                                                        desc: "This cookie is installed by Google Analytics. The cookie is used to store information about how visitors use the website and helps create an analytical report on how the website is performing. The data collected, including the number of visitors, the source from which they came and the pages, appeared anonymously."
+                                                    },
+                                                    {
+                                                        name: '_gid',
+                                                        domain: 'google.com',
+                                                        vencimiento: "24 hours",
+                                                        desc: "Google Universal Analytics sets these cookies to slow down the request rate and limit data collection on high-traffic sites."
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            title: "More information",
+                                            description: "Any questions or concerns regarding the cookie policy, please <a class=\"cc-link\" href=\"\/contacto\">contact us<\/a>."
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        </script>
+    
+        <header class="site-header">
+            
+    
+    
+        <section class="site-header__container">
+            <nav>
+                <span class="site-header__logos">
+                    <a class="site-header__logo site-header__logo--portal" href="/">
+                        <img fetchpriority="high" src="/img/logo-c26f1a78b45c0b1358d48275be203900.png" alt="Research Portal Logo: Universidad de Málaga"/>
+                    </a>
+                    <a target="_blank" class="site-header__logo site-header__logo--parent" href="https://www.uma.es/">
+                        <img src="/img/parent-logo-b261534ba0fc455b3567a74c0f2d45c6.png" alt="Logo: Universidad de Málaga"/>
+                    </a>
+                </span>
+                <span class="site-header__push"></span>
+                
+        <span class="site-header__authentication" >
+            <span class="site-header__login">
+                
+                
+                    <button type="submit" form="login-form" class="site-header__link">Sign in</button>
+                    <form id="login-form" action="/sso/login?redirect_uri=https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang%3Den%26page%3D2" method="post" hidden></form>
+                
+
+                
+            </span>
+        </span>
+    
+            </nav>
+        </section>
+        
+
+
+        </header>
+
+        <nav class="site-navbar">
+            
+    
+    
+        <div class="site-navbar__container">
+            <div class="site-navbar__links">
+                <a class="navbar__grupos" href="/grupos">Groups</a>
+                <a class="navbar__investigadores" href="/investigadores">Researchers</a>   
+                <a class="navbar__proyectos" href="/financiaciones">Funding</a>
+                <a class="navbar__produccion" href="/resultados">Results</a>              
+            </div>
+        </div>
+    
+
+
+
+
+
+        </nav>
+
+        <main class="content">            
+            
+            
+            
+        <div class="content-header" >
+            <div class="content-header__container">
+                <div class="content-header__content">
+                    <div class="investigador-header__buttons">
+                        
+                    </div>
+
+                    <div class="investigador-header">
+
+                        <div class="investigador-header__foto">
+                            <div class="investigador-header__foto-canvas">
+                                <img src="/img/nophoto-11a61d72634ad47789f777a6311393e0.png" alt="Foto de ISAAC"
+                                     title="Foto de ISAAC"
+                                     width="100%"/>
+                            </div>
+                        </div>
+                        <div class="investigador-header__title-wrapper">
+                            <div class="investigador-header__title">
+                                
+                                <h1 class="investigador-header__nombre">ISAAC<br/>AGUDO RUIZ</h1>
+                                
+                                <h2 class="investigador-header__categoria">PROFESOR/A TITULAR DE UNIVERSIDAD</h2> 
+                                
+                            </div>
+                            <div class="investigador-header__usuario-actions">
+                                                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="c-tabs">
+                    
+                        
+                        <a class="c-tabs__tab"
+                           href="/investigadores/1241243/detalle">Profile</a>
+                
+                    
+                        
+                        <a class="c-tabs__tab c-tabs__tab--current"
+                           href="/investigadores/1241243/publicaciones">Publications</a>
+                
+                    
+                        
+                        <a class="c-tabs__tab"
+                           href="/investigadores/1241243/colaboracion">Collaboration</a>
+                
+                    
+                        
+                        <a class="c-tabs__tab"
+                           href="/investigadores/1241243/tesis">Theses</a>
+                
+                    
+                        
+                        
+                
+                    
+                        
+                        
+                
+                    
+                        
+                        <a class="c-tabs__tab"
+                           href="/investigadores/1241243/financiacion">Funding</a>
+                
+                    
+                        
+                        
+                
+                    
+                        
+                        
+                
+                    
+                </div>
+                
+                <script type="text/javascript">
+                    // TODO: refactor para convertirlo en un componente reusable
+                    PCIENCIA.ready(function(){
+                        var tabs = $('.c-tabs').css("position", "relative"),
+                            left = $("<span data-nosnippet class='scroll-btn material-icons' style='display: none; position: sticky; left: 0;'>keyboard_arrow_left</span>").prependTo(tabs),
+                            right = $("<span data-nosnippet class='scroll-btn material-icons' style='display: none; position: sticky; right: 0;'>keyboard_arrow_right</span>").appendTo(tabs);
+
+                        right.click(function(){
+                            tabs.animate({scrollLeft: tabs[0].offsetWidth}, 400);
+                        });
+                        left.click(function(){
+                            tabs.animate({scrollLeft: 0}, 400);
+                        });
+
+                        tabs.animate({scrollLeft: tabs.find(".c-tabs__tab--current").offset().left-32}, 1);
+                        $(window).on('resize', function(){
+                            if (tabs[0].offsetWidth < tabs[0].scrollWidth) {
+                                tabs.animate({scrollLeft: tabs[0].scrollLeft+1}, 1);
+                            } else {
+                                left.hide();
+                                right.hide();
+                            }
+                        });
+                        
+                        $(window).trigger('resize');
+                        
+                        $(tabs).scroll(function(){
+                            if(tabs[0].scrollLeft < 10) {
+                                left.hide();
+                            } else {
+                                left.show();
+                            }
+                            if(tabs[0].scrollLeft > tabs[0].scrollWidth - tabs[0].offsetWidth - 50) {
+                                right.hide();
+                            } else {
+                                right.show();
+                            }
+                        });
+                    });
+                    
+                    
+                </script>
+            </div>
+        </div>
+
+    
+
+            <div class="main-content ">
+                <div>
+                    <h2 class="section-title section-title--filter-bar">Publications</h2>
+                    
+                    <div id="filter-bar" class="filter-bar" hx-swap-oob="true">
+                        <div class="filter-bar__subtitulo">
+                            <span>ISAAC AGUDO RUIZ publications</span>
+                            <!--  tarea #10600#note-9 -->
+                            
+                            <!--  tarea #10739 -->
+                            
+                        </div>
+                        
+        <div class="filter-bar__row">
+            <div class="filter-bar__filters">
+                
+                
+        <button type="button" class="fb-master" popovertarget="fb-menu-master"
+                aria-expanded="false" aria-haspopup="menu">
+            <i class="material-icons">tune</i>Filters
+        </button>
+        <div class="fb-menu" id="fb-menu-master" popover role="menu" aria-label="Filters">
+            <section data-panel="">
+                <div class="fb-menu__catalog" data-menu-list>
+                    
+                    
+                    
+                        
+                        
+                        
+                        <button type="button" class="fb-menu__item"
+                                data-panel-target="agrTipoPublicacion">
+                            <i class="material-icons">category</i>
+                            <span class="fb-menu__item-text">
+                                <span class="fb-menu__item-label">Publication type</span>
+                                
+                                
+                            </span>
+                            <i class="material-icons fb-menu__chevron">chevron_right</i>
+                        </button>
+                    
+                        
+                        
+                        
+                        <button type="button" class="fb-menu__item"
+                                data-panel-target="accesible">
+                            <i class="material-icons">lock_open</i>
+                            <span class="fb-menu__item-text">
+                                <span class="fb-menu__item-label">Access</span>
+                                
+                                <span class="fb-menu__item-hint">
+                                    
+                                    
+                                    Full-text availability
+                                </span>
+                            </span>
+                            <i class="material-icons fb-menu__chevron">chevron_right</i>
+                        </button>
+                    
+                    <button type="button" class="fb-menu__item"
+                            data-panel-target="fb-range">
+                        <i class="material-icons">date_range</i>
+                        <span class="fb-menu__item-text">
+                            <span class="fb-menu__item-label">Years</span>
+                            <span class="fb-menu__item-hint">Publication year range</span>
+                        </span>
+                        <i class="material-icons fb-menu__chevron">chevron_right</i>
+                    </button>
+                </div>
+                <p class="fb-menu__empty" hidden>No results</p>
+            </section>
+            
+                
+        
+        
+        <section data-panel="agrTipoPublicacion" hidden
+                 data-menu-wide="wide"
+                 data-menu-clear="tipo">
+            <header class="fb-menu__header fb-menu__header--root">
+                
+                <button type="button" class="fb-menu__back"
+                        aria-label="Back">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <span class="fb-menu__title">Publication type</span>
+            </header>
+            <div class="fb-menu__search">
+                <i class="material-icons">search</i>
+                <input type="text" data-menu-search
+                       placeholder="Search across all levels…"
+                       aria-label="Search across all levels…" />
+            </div>
+            <div data-menu-list>
+                
+                
+                    
+        <div class="fb-menu__row">
+            <button type="button" class="fb-menu__item"
+            data-param="agrTipoPublicacion" data-value="ARTICLE"
+            role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Articles</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">23</span>
+    </button>
+            <button type="button" class="fb-menu__into" data-panel-target="agrTipoPublicacion-0"
+                    aria-label="See what Articles contains">
+                <i class="material-icons">chevron_right</i>
+            </button>
+        </div>
+        
+    
+                
+                    
+        
+        <div class="fb-menu__row">
+            <button type="button" class="fb-menu__item"
+            data-param="agrTipoPublicacion" data-value="BOOK"
+            role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Books</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">0</span>
+    </button>
+            
+            <span class="fb-menu__into-spacer" aria-hidden="true"></span>
+        </div>
+    
+                
+                    
+        <div class="fb-menu__row">
+            <button type="button" class="fb-menu__item"
+            data-param="agrTipoPublicacion" data-value="BOOK_CHAPTER"
+            role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Book chapters</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">4</span>
+    </button>
+            <button type="button" class="fb-menu__into" data-panel-target="agrTipoPublicacion-2"
+                    aria-label="See what Book chapters contains">
+                <i class="material-icons">chevron_right</i>
+            </button>
+        </div>
+        
+    
+                
+                    
+        <div class="fb-menu__row">
+            <button type="button" class="fb-menu__item"
+            data-param="agrTipoPublicacion" data-value="CONFERENCE_PAPER"
+            role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Conference papers</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">40</span>
+    </button>
+            <button type="button" class="fb-menu__into" data-panel-target="agrTipoPublicacion-3"
+                    aria-label="See what Conference papers contains">
+                <i class="material-icons">chevron_right</i>
+            </button>
+        </div>
+        
+    
+                
+                    
+        <div class="fb-menu__row">
+            <button type="button" class="fb-menu__item"
+            data-param="agrTipoPublicacion" data-value="OTROS"
+            role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Others</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">3</span>
+    </button>
+            <button type="button" class="fb-menu__into" data-panel-target="agrTipoPublicacion-4"
+                    aria-label="See what Others contains">
+                <i class="material-icons">chevron_right</i>
+            </button>
+        </div>
+        
+    
+                
+                
+            </div>
+            
+            <div data-menu-flat hidden></div>
+            <p class="fb-menu__empty" hidden>No results</p>
+        </section>
+        
+            
+        
+            
+            <section data-panel="agrTipoPublicacion-0" data-menu-wide hidden data-menu-clear="tipo">
+                <header class="fb-menu__header">
+                    <button type="button" class="fb-menu__back" data-menu-back="agrTipoPublicacion"
+                            aria-label="Back">
+                        <i class="material-icons">arrow_back</i>
+                    </button>
+                    <span class="fb-menu__title">
+                        
+                        <span>Articles</span>
+                    </span>
+                </header>
+                <button type="button" class="fb-menu__item fb-menu__item--self"
+            data-param="agrTipoPublicacion" data-value="ARTICLE"
+            role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Articles</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">23</span>
+    </button>
+                <hr class="fb-menu__rule" />
+                
+                
+                    
+        
+        <div class="fb-menu__row">
+            <button type="button" class="fb-menu__item"
+            data-param="tipo" data-value="ARTICLE"
+            data-also="agrTipoPublicacion=ARTICLE" role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Articles</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">21</span>
+    </button>
+            
+            <span class="fb-menu__into-spacer" aria-hidden="true"></span>
+        </div>
+    
+                
+                    
+        
+        <div class="fb-menu__row">
+            <button type="button" class="fb-menu__item"
+            data-param="tipo" data-value="REVIEW"
+            data-also="agrTipoPublicacion=ARTICLE" role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Reviews</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">2</span>
+    </button>
+            
+            <span class="fb-menu__into-spacer" aria-hidden="true"></span>
+        </div>
+    
+                
+            </section>
+            
+                
+        
+    
+            
+        
+            
+            <section data-panel="agrTipoPublicacion-2" data-menu-wide hidden data-menu-clear="tipo">
+                <header class="fb-menu__header">
+                    <button type="button" class="fb-menu__back" data-menu-back="agrTipoPublicacion"
+                            aria-label="Back">
+                        <i class="material-icons">arrow_back</i>
+                    </button>
+                    <span class="fb-menu__title">
+                        
+                        <span>Book chapters</span>
+                    </span>
+                </header>
+                <button type="button" class="fb-menu__item fb-menu__item--self"
+            data-param="agrTipoPublicacion" data-value="BOOK_CHAPTER"
+            role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Book chapters</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">4</span>
+    </button>
+                <hr class="fb-menu__rule" />
+                
+                
+                    
+        
+        <div class="fb-menu__row">
+            <button type="button" class="fb-menu__item"
+            data-param="tipo" data-value="BOOK_CHAPTER"
+            data-also="agrTipoPublicacion=BOOK_CHAPTER" role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Book chapters</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">4</span>
+    </button>
+            
+            <span class="fb-menu__into-spacer" aria-hidden="true"></span>
+        </div>
+    
+                
+            </section>
+            
+                
+        
+    
+            
+        
+            
+            <section data-panel="agrTipoPublicacion-3" data-menu-wide hidden data-menu-clear="tipo">
+                <header class="fb-menu__header">
+                    <button type="button" class="fb-menu__back" data-menu-back="agrTipoPublicacion"
+                            aria-label="Back">
+                        <i class="material-icons">arrow_back</i>
+                    </button>
+                    <span class="fb-menu__title">
+                        
+                        <span>Conference papers</span>
+                    </span>
+                </header>
+                <button type="button" class="fb-menu__item fb-menu__item--self"
+            data-param="agrTipoPublicacion" data-value="CONFERENCE_PAPER"
+            role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Conference papers</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">40</span>
+    </button>
+                <hr class="fb-menu__rule" />
+                
+                
+                    
+        
+        <div class="fb-menu__row">
+            <button type="button" class="fb-menu__item"
+            data-param="tipo" data-value="CONFERENCE_PAPER"
+            data-also="agrTipoPublicacion=CONFERENCE_PAPER" role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Conference papers</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">40</span>
+    </button>
+            
+            <span class="fb-menu__into-spacer" aria-hidden="true"></span>
+        </div>
+    
+                
+            </section>
+            
+                
+        
+    
+            
+        
+            
+            <section data-panel="agrTipoPublicacion-4" data-menu-wide hidden data-menu-clear="tipo">
+                <header class="fb-menu__header">
+                    <button type="button" class="fb-menu__back" data-menu-back="agrTipoPublicacion"
+                            aria-label="Back">
+                        <i class="material-icons">arrow_back</i>
+                    </button>
+                    <span class="fb-menu__title">
+                        
+                        <span>Others</span>
+                    </span>
+                </header>
+                <button type="button" class="fb-menu__item fb-menu__item--self"
+            data-param="agrTipoPublicacion" data-value="OTROS"
+            role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Others</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">3</span>
+    </button>
+                <hr class="fb-menu__rule" />
+                
+                
+                    
+        
+        <div class="fb-menu__row">
+            <button type="button" class="fb-menu__item"
+            data-param="tipo" data-value="EDITORIAL"
+            data-also="agrTipoPublicacion=OTROS" role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Editorials</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">3</span>
+    </button>
+            
+            <span class="fb-menu__into-spacer" aria-hidden="true"></span>
+        </div>
+    
+                
+            </section>
+            
+                
+        
+    
+            
+        
+    
+        
+    
+            
+                
+        
+        
+        <section data-panel="accesible" hidden>
+            <header class="fb-menu__header fb-menu__header--root">
+                
+                <button type="button" class="fb-menu__back"
+                        aria-label="Back">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <span class="fb-menu__title">Access</span>
+            </header>
+            
+            <div data-menu-list>
+                
+                
+                
+                    <button type="button" class="fb-menu__item"
+            data-param="accesible" role="menuitemradio" aria-checked="true">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Any access</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">70</span>
+    </button>
+                
+                    <button type="button" class="fb-menu__item"
+            data-param="accesible" data-value="true"
+            role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Open access</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">17</span>
+    </button>
+                
+                    <button type="button" class="fb-menu__item"
+            data-param="accesible" data-value="false"
+            role="menuitemradio" aria-checked="false">
+        <i class="material-icons fb-menu__check">check</i>
+        <span class="fb-menu__item-text">
+            <span class="fb-menu__item-label">Restricted access</span>
+            
+        </span>
+        <span class="fb-menu__item-meta">53</span>
+    </button>
+                
+            </div>
+            
+            
+            <p class="fb-menu__empty" hidden>No results</p>
+        </section>
+        
+    
+            
+            
+        <section data-panel="fb-range" hidden>
+            <header class="fb-menu__header fb-menu__header--root">
+                
+                <button type="button" class="fb-menu__back"
+                        aria-label="Back">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <span class="fb-menu__title">Years</span>
+            </header>
+            <div data-menu-list>
+                <button type="button" class="fb-menu__item"
+                        role="menuitemradio" data-range-min="2026" data-range-max="2026" aria-checked="false">
+                    <i class="material-icons fb-menu__check">check</i>
+                    <span class="fb-menu__item-text">
+                        <span class="fb-menu__item-label">Last year</span>
+                    </span>
+                    <span class="fb-menu__item-meta">1</span>
+                </button><button type="button" class="fb-menu__item"
+                        role="menuitemradio" data-range-min="2022" data-range-max="2026" aria-checked="false">
+                    <i class="material-icons fb-menu__check">check</i>
+                    <span class="fb-menu__item-text">
+                        <span class="fb-menu__item-label">Last 5 years</span>
+                    </span>
+                    <span class="fb-menu__item-meta">13</span>
+                </button><button type="button" class="fb-menu__item"
+                        role="menuitemradio" data-range-min="2017" data-range-max="2026" aria-checked="false">
+                    <i class="material-icons fb-menu__check">check</i>
+                    <span class="fb-menu__item-text">
+                        <span class="fb-menu__item-label">Last 10 years</span>
+                    </span>
+                    <span class="fb-menu__item-meta">19</span>
+                </button>
+                <button type="button" class="fb-menu__item" data-panel-target="fb-range-custom">
+                    <i class="material-icons">date_range</i>
+                    <span class="fb-menu__item-text">
+                        <span class="fb-menu__item-label">Other range…</span>
+                    </span>
+                    <i class="material-icons fb-menu__chevron">chevron_right</i>
+                </button>
+            </div>
+        </section>
+        
+        <section data-panel="fb-range-custom" hidden>
+            <header class="fb-menu__header">
+                <button type="button" class="fb-menu__back" data-menu-back="fb-range"
+                        aria-label="Back">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <span class="fb-menu__title">Years</span>
+            </header>
+            <div class="fb-range">
+                <label class="fb-range__field">
+                    <span>From</span>
+                    <input type="text" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" data-range-min-input
+                           value="" aria-label="From" />
+                </label>
+                <span class="fb-range__dash">–</span>
+                <label class="fb-range__field">
+                    <span>To</span>
+                    <input type="text" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" data-range-max-input
+                           value="" aria-label="To" />
+                </label>
+            </div>
+            <div class="fb-menu__footer">
+                <button type="button" data-range-cancel>Cancel</button>
+                <button type="button" data-range-apply>Apply</button>
+            </div>
+        </section>
+    
+        </div>
+    
+                
+                
+                
+                
+                
+        
+    
+                
+                
+            </div>
+            
+        </div>
+    
+                        
+        <h2 class="filter-bar__recuento">
+            <span><strong>70</strong> results</span>
+            
+            
+        </h2>
+    
+                    </div>
+
+
+                    
+
+
+
+
+
+
+                    
+                <div id="vista-datos" hidden hx-swap-oob="true">
+    <script type="application/json">{"agrupadoPor":"agrTipoPublicacion","rango":{},"grupos":[{"key":"CONFERENCE_PAPER","name":"Conference papers","color":"#251535","count":40,"porAnualidad":[{"year":2005,"count":2},{"year":2006,"count":2},{"year":2007,"count":2},{"year":2008,"count":2},{"year":2009,"count":3},{"year":2010,"count":1},{"year":2011,"count":5},{"year":2012,"count":4},{"year":2013,"count":1},{"year":2014,"count":2},{"year":2015,"count":4},{"year":2016,"count":3},{"year":2017,"count":1},{"year":2019,"count":2},{"year":2022,"count":1},{"year":2023,"count":2},{"year":2024,"count":1},{"year":2025,"count":2}],"hijos":[{"key":"CONFERENCE_PAPER","name":"Conference papers","color":"#251535","count":40,"porAnualidad":[{"year":2005,"count":2},{"year":2006,"count":2},{"year":2007,"count":2},{"year":2008,"count":2},{"year":2009,"count":3},{"year":2010,"count":1},{"year":2011,"count":5},{"year":2012,"count":4},{"year":2013,"count":1},{"year":2014,"count":2},{"year":2015,"count":4},{"year":2016,"count":3},{"year":2017,"count":1},{"year":2019,"count":2},{"year":2022,"count":1},{"year":2023,"count":2},{"year":2024,"count":1},{"year":2025,"count":2}]}]},{"key":"ARTICLE","name":"Articles","color":"#FDD089","count":23,"porAnualidad":[{"year":2007,"count":1},{"year":2008,"count":1},{"year":2009,"count":4},{"year":2010,"count":2},{"year":2011,"count":1},{"year":2012,"count":2},{"year":2013,"count":1},{"year":2014,"count":2},{"year":2017,"count":1},{"year":2019,"count":1},{"year":2021,"count":1},{"year":2022,"count":1},{"year":2023,"count":1},{"year":2025,"count":3},{"year":2026,"count":1}],"hijos":[{"key":"ARTICLE","name":"Articles","color":"#FDD089","count":21,"porAnualidad":[{"year":2007,"count":1},{"year":2008,"count":1},{"year":2009,"count":4},{"year":2010,"count":2},{"year":2011,"count":1},{"year":2012,"count":2},{"year":2013,"count":1},{"year":2014,"count":2},{"year":2019,"count":1},{"year":2021,"count":1},{"year":2022,"count":1},{"year":2025,"count":3},{"year":2026,"count":1}]},{"key":"REVIEW","name":"Reviews","color":"#F8DBE0","count":2,"porAnualidad":[{"year":2017,"count":1},{"year":2023,"count":1}]}]},{"key":"BOOK_CHAPTER","name":"Book chapters","color":"#A0446E","count":4,"porAnualidad":[{"year":2004,"count":1},{"year":2007,"count":1},{"year":2015,"count":1},{"year":2025,"count":1}],"hijos":[{"key":"BOOK_CHAPTER","name":"Book chapters","color":"#A0446E","count":4,"porAnualidad":[{"year":2004,"count":1},{"year":2007,"count":1},{"year":2015,"count":1},{"year":2025,"count":1}]}]},{"key":"OTROS","name":"Others","color":"#50B432","count":3,"porAnualidad":[{"year":2011,"count":1},{"year":2013,"count":1},{"year":2014,"count":1}],"hijos":[{"key":"EDITORIAL","name":"Editorials","color":"#DDDF00","count":3,"porAnualidad":[{"year":2011,"count":1},{"year":2013,"count":1},{"year":2014,"count":1}]}]}],"niveles":[{"parametro":"agrTipoPublicacion","grupos":[{"key":"CONFERENCE_PAPER","name":"Conference papers","color":"#251535","count":40,"porAnualidad":[{"year":2005,"count":2},{"year":2006,"count":2},{"year":2007,"count":2},{"year":2008,"count":2},{"year":2009,"count":3},{"year":2010,"count":1},{"year":2011,"count":5},{"year":2012,"count":4},{"year":2013,"count":1},{"year":2014,"count":2},{"year":2015,"count":4},{"year":2016,"count":3},{"year":2017,"count":1},{"year":2019,"count":2},{"year":2022,"count":1},{"year":2023,"count":2},{"year":2024,"count":1},{"year":2025,"count":2}],"hijos":[{"key":"CONFERENCE_PAPER","name":"Conference papers","color":"#251535","count":40,"porAnualidad":[{"year":2005,"count":2},{"year":2006,"count":2},{"year":2007,"count":2},{"year":2008,"count":2},{"year":2009,"count":3},{"year":2010,"count":1},{"year":2011,"count":5},{"year":2012,"count":4},{"year":2013,"count":1},{"year":2014,"count":2},{"year":2015,"count":4},{"year":2016,"count":3},{"year":2017,"count":1},{"year":2019,"count":2},{"year":2022,"count":1},{"year":2023,"count":2},{"year":2024,"count":1},{"year":2025,"count":2}]}]},{"key":"ARTICLE","name":"Articles","color":"#FDD089","count":23,"porAnualidad":[{"year":2007,"count":1},{"year":2008,"count":1},{"year":2009,"count":4},{"year":2010,"count":2},{"year":2011,"count":1},{"year":2012,"count":2},{"year":2013,"count":1},{"year":2014,"count":2},{"year":2017,"count":1},{"year":2019,"count":1},{"year":2021,"count":1},{"year":2022,"count":1},{"year":2023,"count":1},{"year":2025,"count":3},{"year":2026,"count":1}],"hijos":[{"key":"ARTICLE","name":"Articles","color":"#FDD089","count":21,"porAnualidad":[{"year":2007,"count":1},{"year":2008,"count":1},{"year":2009,"count":4},{"year":2010,"count":2},{"year":2011,"count":1},{"year":2012,"count":2},{"year":2013,"count":1},{"year":2014,"count":2},{"year":2019,"count":1},{"year":2021,"count":1},{"year":2022,"count":1},{"year":2025,"count":3},{"year":2026,"count":1}]},{"key":"REVIEW","name":"Reviews","color":"#F8DBE0","count":2,"porAnualidad":[{"year":2017,"count":1},{"year":2023,"count":1}]}]},{"key":"BOOK_CHAPTER","name":"Book chapters","color":"#A0446E","count":4,"porAnualidad":[{"year":2004,"count":1},{"year":2007,"count":1},{"year":2015,"count":1},{"year":2025,"count":1}],"hijos":[{"key":"BOOK_CHAPTER","name":"Book chapters","color":"#A0446E","count":4,"porAnualidad":[{"year":2004,"count":1},{"year":2007,"count":1},{"year":2015,"count":1},{"year":2025,"count":1}]}]},{"key":"OTROS","name":"Others","color":"#50B432","count":3,"porAnualidad":[{"year":2011,"count":1},{"year":2013,"count":1},{"year":2014,"count":1}],"hijos":[{"key":"EDITORIAL","name":"Editorials","color":"#DDDF00","count":3,"porAnualidad":[{"year":2011,"count":1},{"year":2013,"count":1},{"year":2014,"count":1}]}]}],"siguiente":"tipo"}]}</script>
+</div>
+                
+    <div id="tiposChart" class="chart-reserve--donut"></div>
+    <div id="anualidadesChart" class="chart-reserve--timeline"></div>
+    <script type="text/javascript">
+        PCIENCIA.ready(function () {
+            var d = PCIENCIA.distribuciones;
+            var titulo = "Publications";
+
+            /* El tramo de una barra apilada cruza su categoría (la dimensión activa) con su año. */
+            function filtrarBarra(datos) {
+                return function (year, key) {
+                    var filtro = {};
+                    filtro[datos.agrupadoPor] = key;
+                    PCIENCIA.filters.range(year, year, filtro);
+                };
+            }
+
+            /*
+             * Un click en un sector de un aro filtra por ese valor de SU nivel y quita los filtros
+             * de los niveles de dentro: elegir «Libros» en el aro de agrupadores deja de filtrar
+             * por el tipo que hubiera elegido dentro de «Otros». (Repulsar lo único elegido lo
+             * quita: lo resuelve PCIENCIA.donuts con onSelect([]).)
+             */
+            function filtrarNivel(niveles, i) {
+                return function (key) {
+                    seleccionarNivel(niveles, i)([key]);
+                };
+            }
+
+            /*
+             * Varios a la vez en un nivel (Ctrl, Mayús o el «+» de la leyenda): la unión «A|B» en
+             * el parámetro, que lee pciencia.ui.filters.Seleccion; sin ninguno, se quita el filtro.
+             */
+            function seleccionarNivel(niveles, i) {
+                return function (keys) {
+                    var filtro = {};
+                    filtro[niveles[i].parametro] = keys.length ? keys.join('|') : undefined;
+                    niveles.slice(i + 1).forEach(function (nivel) {
+                        filtro[nivel.parametro] = undefined;
+                    });
+                    PCIENCIA.filters.set(filtro);
+                };
+            }
+
+            /*
+             * Los aros de la tarta, de fuera adentro, cada uno recortado al rango elegido. Una
+             * dimensión jerárquica (agrupador → tipo de publicación) trae sus niveles en los datos:
+             * los de arriba, con lo aplicado entero y sus hermanos atenuados, son aros finos, y el
+             * último —el más granular— es el donut grueso. Una dimensión plana es un solo aro.
+             */
+            function aros(datos) {
+                var niveles = datos.niveles && datos.niveles.length ? datos.niveles
+                        : [{parametro: datos.agrupadoPor, grupos: datos.grupos}];
+                return niveles.map(function (nivel) {
+                    return {
+                        parametro: nivel.parametro,
+                        activos: nivel.activos || [],
+                        grupos: d.enRango(nivel.grupos, datos.rango)
+                    };
+                });
+            }
+
+            // elegir otro agrupador, otro tipo o otro rango se rehace aquí mismo, sin esperar al
+            // servidor: la jerarquía entera viaja en el documento (ver PCIENCIA.distribuciones.jerarquia)
+            PCIENCIA.vista.anticipar(d.jerarquia);
+
+            // la tarta enseña lo que hay DENTRO del rango elegido, recortado aquí sumando el
+            // reparto por años: arrastrar el navigator la actualiza sin volver a preguntar
+            PCIENCIA.vista.bind('tiposChart', function (datos) {
+                var niveles = aros(datos);
+                var interior = niveles[niveles.length - 1];
+                /*
+                 * Una tarta de un solo sector no reparte nada: no se pinta (los indicadores de
+                 * una revista son siempre publicaciones). Sigue valiendo, en cambio, cuando hay
+                 * aros —la dimensión es jerárquica— o cuando ese único valor es el elegido: el
+                 * 100 % dice de qué se ha salido y la leyenda deshace la elección.
+                 */
+                var reparte = interior.grupos.length > 1 || niveles.length > 1
+                        || (interior.activos && interior.activos.length > 0);
+                return reparte ? niveles : [];
+            }, function (niveles, ctx) {
+                var interior = niveles[niveles.length - 1];
+                return PCIENCIA.donuts('tiposChart', interior.grupos, [{stat: 'count'}], {
+                    activos: interior.activos,
+                    onSliceClick: filtrarNivel(niveles, niveles.length - 1),
+                    onSelect: seleccionarNivel(niveles, niveles.length - 1),
+                    anillos: niveles.slice(0, -1).map(function (nivel, i) {
+                        return {grupos: nivel.grupos, activos: nivel.activos,
+                            onSliceClick: filtrarNivel(niveles, i),
+                            onSelect: seleccionarNivel(niveles, i)};
+                    })
+                });
+            });
+
+            // el histograma enseña SIEMPRE todos los años; el rango solo lo encuadra
+            PCIENCIA.vista.bind('anualidadesChart', function (datos) {
+                return d.series(datos.grupos);
+            }, function (series, ctx) {
+                return PCIENCIA.chart('anualidadesChart', {xAxis: ctx.rango, series: series}, {
+                    stacked: true,
+                    // La leyenda común de la vista es la del donut, que además refleja
+                    // el rango filtrado. El timeline no debe duplicarla con sus totales.
+                    legend: false,
+                    animation: false,
+                    minYearLine: 2009,
+                    yAxis: [{display: 'none', title: titulo}],
+                    onBarClick: filtrarBarra(ctx.datos),
+                    onRangeChange: PCIENCIA.filters.range
+                });
+            });
+        });
+    </script>
+
+                    
+                    <div id="publicaciones" hx-get
+                         hx-swap="outerHTML"
+                         hx-trigger="filters-change from:body" hx-sync="this:replace">
+
+                        
+                            <div class="grupo-docs__grupo agrupador-anualidad">
+                                <h3 class="grupo-docs__grupo-titulo">2026</h3>
+                                <ol>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/69f8dcab579ceb0ec2bf515d">
+                                            <span class="c-doc__titulo" lang="en">Zero-knowledge Bitcoin mixer with reversible unlinkability</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">Blockchain: Research and Applications, Vol. 7, Núm. 2</p>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="grupo-docs__grupo agrupador-anualidad">
+                                <h3 class="grupo-docs__grupo-titulo">2025</h3>
+                                <ol>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/67f17424ab11281270a27cf9">
+                                            <span class="c-doc__titulo" lang="en">A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">IEEE Internet of Things Journal, Vol. 12, Núm. 13, pp. 22725-22732</p>
+                                    </li>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/685708d755e1544d978771b7">
+                                            <span class="c-doc__titulo" lang="en">A decision framework for privacy-preserving synthetic data generation</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">Computers and Electrical Engineering, Vol. 126</p>
+                                    </li>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/6804cdd9ffa972638d8cb405">
+                                            <span class="c-doc__titulo" lang="en">Benchmarking Post-quantum Cryptography in Ethereum-Based Blockchains</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">Lecture Notes in Computer Science</p>
+                                    </li>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/6804cdd9ffa972638d8cb3ff">
+                                            <span class="c-doc__titulo" lang="en">Privacy-Preserving Tabular Data Generation: Systematic Literature Review</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">Lecture Notes in Computer Science</p>
+                                    </li>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/67ce7815e210502b2cf70e3a">
+                                            <span class="c-doc__titulo" lang="en">Toward a Framework for Cost-Effective and Publicly Verifiable Confidential Computations in Blockchain</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">IEEE Communications Magazine, Vol. 63, Núm. 2, pp. 96-102</p>
+                                    </li>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/6a0911cf12db65736a51befb">
+                                            <span class="c-doc__titulo" lang="en">Web3 Security</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">Tokenizing the Future: A Guide to Web3 and the Metaverse (Springer Nature), pp. 163-172</p>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="grupo-docs__grupo agrupador-anualidad">
+                                <h3 class="grupo-docs__grupo-titulo">2024</h3>
+                                <ol>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/66916f75950ba666c9e8dc41">
+                                            <span class="c-doc__titulo" lang="es">Diseño de un Grado en Ciberseguridad e Inteligencia Artificial</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">IX Jornadas Nacionales de Investigación en Ciberseguridad</p>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="grupo-docs__grupo agrupador-anualidad">
+                                <h3 class="grupo-docs__grupo-titulo">2023</h3>
+                                <ol>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/6636906acbe02b47e5870d56">
+                                            <span class="c-doc__titulo" lang="en">An empirical evaluation of BLE for ITS scenarios</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">IEEE Vehicular Technology Conference</p>
+                                    </li>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/6636906acbe02b47e5870d59">
+                                            <span class="c-doc__titulo" lang="en">Integration of MPC into Besu through an extended private transaction model</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">Proceedings - 2023 IEEE International Conference on Metaverse Computing, Networking and Applications, MetaCom 2023</p>
+                                    </li>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/6636906acbe02b47e5870d53">
+                                            <span class="c-doc__titulo" lang="en">Private set intersection: A systematic literature review</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">Computer Science Review, Vol. 49</p>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="grupo-docs__grupo agrupador-anualidad">
+                                <h3 class="grupo-docs__grupo-titulo">2022</h3>
+                                <ol>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/6636906acbe02b47e5870d5f">
+                                            <span class="c-doc__titulo" lang="en">Learning Multi-Party Adversarial Encryption and Its Application to Secret Sharing</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">IEEE Access, Vol. 10, pp. 121329-121339</p>
+                                    </li>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/6636906acbe02b47e5870d5c">
+                                            <span class="c-doc__titulo" lang="en">Real-time Crowd Counting based on Wearable Ephemeral IDs</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">Proceedings of the International Conference on Security and Cryptography</p>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="grupo-docs__grupo agrupador-anualidad">
+                                <h3 class="grupo-docs__grupo-titulo">2021</h3>
+                                <ol>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/6636906acbe02b47e5870d62">
+                                            <span class="c-doc__titulo" lang="en">A Blockchain Approach for Decentralized V2X (D-V2X)</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">IEEE Transactions on Vehicular Technology, Vol. 70, Núm. 5, pp. 4001-4010</p>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="grupo-docs__grupo agrupador-anualidad">
+                                <h3 class="grupo-docs__grupo-titulo">2019</h3>
+                                <ol>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/6631364038b3d85bb1447bd6">
+                                            <span class="c-doc__titulo" lang="es">Comunicaciones VoIP cifradas usando Intel SGX</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">Actas de las V Jornadas Nacionales de Ciberseguridad: junio 5-7, 2019. Cáceres</p>
+                                    </li>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/6636906acbe02b47e5870d65">
+                                            <span class="c-doc__titulo" lang="en">Escrowed decryption protocols for lawful interception of encrypted data</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">IET Information Security, Vol. 13, Núm. 5, pp. 498-507</p>
+                                    </li>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/6636906acbe02b47e5870d68">
+                                            <span class="c-doc__titulo" lang="en">Personalized computer security tasks with automatic evaluation and feedback</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">Proceedings of the 2019 SIGED International Conference on Information Systems Education and Research</p>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="grupo-docs__grupo agrupador-anualidad">
+                                <h3 class="grupo-docs__grupo-titulo">2017</h3>
+                                <ol>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/662469a3dc30f904d76a2093">
+                                            <span class="c-doc__titulo" lang="en">Proxy Re-Encryption: Analysis of constructions and its application to secure access delegation</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">Journal of Network and Computer Applications, Vol. 87, pp. 193-209</p>
+                                    </li>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/662469c5dc30f904d76a2467">
+                                            <span class="c-doc__titulo" lang="en">The fallout of key compromise in a proxy-mediated key agreement protocol</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)</p>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="grupo-docs__grupo agrupador-anualidad">
+                                <h3 class="grupo-docs__grupo-titulo">2016</h3>
+                                <ol>
+                                    <li class="investigador-docs__item c-doc">
+                                        <a href="/documentos/66246978dc30f904d76a1b7e">
+                                            <span class="c-doc__titulo" lang="en">A technique for enhanced provision of appropriate access to evidence across service provision chains</span>
+                                        </a>
+                                        
+                                        <p class="c-doc__localizacion">IFIP Advances in Information and Communication Technology</p>
+                                    </li>
+                                </ol>
+                            </div>
+
+                            
+                            <form>
+                                <button class="btn btn-secondary"
+                                        hx-get
+                                        hx-target="#publicaciones"
+                                        hx-swap="outerHTML"
+                                        hx-vals='{&quot;size&quot;: 40}'>See more...</button>
+                                <button class="btn btn-secondary"
+                                        hx-get
+                                        hx-target="#publicaciones"
+                                        hx-swap="outerHTML"
+                                        hx-vals='{&quot;size&quot;: 70}'>View all</button>
+                            </form>
+                            
+        
+    
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        
+        </main>
+
+        <nav class="site-navfooter">
+            
+    
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        
+                        <li><a href="/contacto">Contact</a></li>
+                        
+                        <li><a href="/aviso_legal">Legal notice</a></li>
+                        <li><a href="/mapa_sitio">Site map</a></li>
+                        <li><a href="https://biblioguias.uma.es/portaldelainvestigacion" target="_blank">Help</a></li>
+                    </ul>                                        
+                </div>
+                <div>
+        <div class="c-langselect">
+            <a href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&amp;page=2" tabindex="0" class="c-langselect--trigger" title="Change language">
+                <i class="material-icons material-icons--translate">translate</i> en <i class="material-icons">arrow_drop_down</i>
+            </a>
+            
+            <div class="mdc-menu mdc-menu-surface">
+                <div class="mdc-list">
+                    <a href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=en" title="English">
+                        <i class="material-icons material-icons--translate">translate</i> en <i class="material-icons">arrow_drop_down</i>
+                    </a>
+                    <a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=es"
+                       data-lang="es"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Español">
+                        es
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=ca"
+                       data-lang="ca"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Català i valencià">
+                        ca
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=eu"
+                       data-lang="eu"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Euskara">
+                        eu
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=gl"
+                       data-lang="gl"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Galego">
+                        gl
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=en"
+                       data-lang="en"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="English">
+                        en
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=fr"
+                       data-lang="fr"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Francais">
+                        fr
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?page=2&amp;lang=de"
+                       data-lang="de"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Deutsch">
+                        de
+                    </a>
+                </div>
+            </div>
+        </div>        
+    </div>
+            </div>
+        </div>
+    
+
+        </nav>
+        <footer class="site-footer">
+            
+    
+    
+        <section class="site-footer__container">                   
+            <div class="site-footer__direccion">
+                <p class="nombre">Universidad de Málaga</p>
+                <p>Avda. Cervantes, 2. 29071 MÁLAGA</p>
+            </div>
+        </section>
+    
+
+            
+    
+    
+        <div class="site-actualizacion__container">
+            <div class="info-container">
+                Data updated as of:
+                19-11-2026
+                <i class="material-icons">info</i>
+                <div class="info-content">
+                    <p>Portal documents are updated daily. This date refers to the updating of information related to the portal structure (people, research groups, organizational units, projects...).</p>
+                </div>
+            </div>
+        </div>
+    
+
+            
+    
+    
+        <div class="site-footer__copyright">
+            <div>
+                <span>CRIS project developed in collaboration with <strong><a target="_blank" href="https://fundaciondialnet.unirioja.es/" class="externo">Fundación Dialnet</a> (<a target="_blank" href="https://www.unirioja.es/" class="externo">University of La Rioja</a>)</strong></span>
+            </div>
+        </div>       
+        
+
+
+        </footer>
+
+        
+
+    
+
+    
+
+
+        
+
+    
+
+    
+    
+
+        
+    </body>
+</html>
+
+
+

@@ -12,12 +12,12 @@
  {
   "url": "https://dblp.org/pid/23/6961.bib",
   "status": 202,
-  "bytes": 2986
+  "bytes": 2985
  },
  {
   "url": "https://dblp.org/pid/23/6961.xml",
   "status": 202,
-  "bytes": 3295
+  "bytes": 3294
  },
  {
   "url": "https://api.openalex.org/authors/orcid:0000-0002-2911-2300",
@@ -354,5 +354,89 @@
   "url": "https://patents.google.com/xhr/query?url=q%3Dinventor%253A%2522Isaac%2BAgudo%2BRuiz%2522%26num%3D100&exp=",
   "status": 200,
   "bytes": 1701
+ },
+ {
+  "url": "https://patents.google.com/patent/US10691817B2/en",
+  "status": 200,
+  "bytes": 357061
+ },
+ {
+  "url": "https://patents.google.com/patent/US20180091301A1/en",
+  "status": 200,
+  "bytes": 275961
+ },
+ {
+  "url": "https://patents.google.com/patent/WO2018102382A1/en",
+  "status": 200,
+  "bytes": 214687
+ },
+ {
+  "url": "https://patents.google.com/patent/US10581603B2/en",
+  "status": 200,
+  "bytes": 553841
+ },
+ {
+  "url": "https://patents.google.com/patent/WO2018208786A1/en",
+  "status": 200,
+  "bytes": 402320
+ },
+ {
+  "url": "https://patents.google.com/patent/US10574440B2/en",
+  "status": 200,
+  "bytes": 443086
+ },
+ {
+  "url": "https://patents.google.com/patent/WO2018208787A1/en",
+  "status": 200,
+  "bytes": 326361
+ },
+ {
+  "url": "https://patents.google.com/patent/ES3075470A1/en",
+  "status": 200,
+  "bytes": 20060
+ },
+ {
+  "url": "https://patents.google.com/patent/WO2026162858A1/en",
+  "status": 200,
+  "bytes": 132803
+ },
+ {
+  "url": "https://patents.google.com/patent/EP2809027B1/en",
+  "status": 200,
+  "bytes": 338232
+ },
+ {
+  "url": "https://dblp.org/search/publ/api?q=author%3AIsaac_Agudo%3A&format=json&h=1000",
+  "status": 202,
+  "bytes": 2985
+ },
+ {
+  "url": "https://api.semanticscholar.org/graph/v1/author/search?query=Isaac+Agudo&fields=name%2Caffiliations%2CpaperCount%2CexternalIds",
+  "status": 200,
+  "bytes": 491
+ },
+ {
+  "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=1",
+  "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+ },
+ {
+  "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=2",
+  "status": 200,
+  "bytes": 80323
+ },
+ {
+  "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=3",
+  "status": 200,
+  "bytes": 80323
+ },
+ {
+  "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=4",
+  "status": 200,
+  "bytes": 80323
+ },
+ {
+  "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=5",
+  "status": 200,
+  "bytes": 80323
  }
 ]
