@@ -3,259 +3,3651 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Isaac Agudo</title>
-  <meta name="description" content="Isaac Agudo teaches and researches applied cryptography, cybersecurity and blockchain at NICS Lab, University of Málaga, and is the founder of Decentralized Security.">
+  <title>Isaac Agudo · Applied cryptography, University of Málaga</title>
+  <meta name="description" content="Isaac Agudo: Associate Professor of Computer Science at the University of Málaga, researching applied cryptography at NICS Lab, and founder of Decentralized Security. Publications, patents and research lines.">
+  <meta name="author" content="Isaac Agudo">
   <meta name="theme-color" content="#F7FAFA">
-  <link rel="preload" href="fonts/petrona-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <style>
-    @font-face {
-      font-family: "Petrona";
-      font-style: normal;
-      font-weight: 100 900;
-      font-display: swap;
-      src: url("fonts/petrona-latin-wght-normal.woff2") format("woff2");
+  <link rel="canonical" href="https://isaacagudo.github.io/">
+  <link rel="alternate" type="text/markdown" href="https://isaacagudo.github.io/index.md" title="Markdown version">
+  <link rel="alternate" type="text/plain" href="https://isaacagudo.github.io/llms.txt" title="llms.txt">
+  <link rel="preload" href="/fonts/petrona-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfilePage",
+   "@id": "https://isaacagudo.github.io/#page",
+   "url": "https://isaacagudo.github.io/",
+   "name": "Isaac Agudo",
+   "mainEntity": {
+    "@id": "https://isaacagudo.github.io/#person"
+   },
+   "dateModified": "2026-11-21",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "Person",
+   "@id": "https://isaacagudo.github.io/#person",
+   "name": "Isaac Agudo",
+   "alternateName": "Isaac Agudo Ruiz",
+   "givenName": "Isaac",
+   "familyName": "Agudo Ruiz",
+   "url": "https://isaacagudo.github.io/",
+   "description": "Associate Professor of Computer Science at the University of Málaga, researching applied cryptography at NICS Lab, and founder of Decentralized Security.",
+   "jobTitle": "Associate Professor",
+   "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "@id": "https://isaacagudo.github.io/#uma",
+    "name": "University of Málaga",
+    "alternateName": "Universidad de Málaga",
+    "url": "https://www.uma.es"
+   },
+   "affiliation": [
+    {
+     "@type": "ResearchOrganization",
+     "name": "NICS Lab",
+     "alternateName": "Network, Information and Computer Security Lab",
+     "url": "https://www.nics.uma.es",
+     "parentOrganization": {
+      "@id": "https://isaacagudo.github.io/#uma"
+     }
+    },
+    {
+     "@type": "Organization",
+     "@id": "https://isaacagudo.github.io/#company",
+     "name": "Decentralized Security",
+     "url": "https://decentralizedsecurity.es",
+     "founder": {
+      "@id": "https://isaacagudo.github.io/#person"
+     },
+     "sameAs": [
+      "https://github.com/decentralizedsecurity"
+     ]
     }
-    @font-face {
-      font-family: "Petrona";
-      font-style: italic;
-      font-weight: 100 900;
-      font-display: swap;
-      src: url("fonts/petrona-latin-wght-italic.woff2") format("woff2");
+   ],
+   "alumniOf": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "University of Málaga"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "UNED (National University of Distance Education)"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "University of Málaga"
     }
-    @font-face {
-      font-family: "Hanken Grotesk";
-      font-style: normal;
-      font-weight: 100 900;
-      font-display: swap;
-      src: url("fonts/hanken-grotesk-latin-wght-normal.woff2") format("woff2");
+   ],
+   "knowsAbout": [
+    "Applied cryptography",
+    "Secure multi-party computation",
+    "Proxy re-encryption",
+    "Secret sharing",
+    "Blockchain",
+    "Ethereum",
+    "Post-quantum cryptography",
+    "Digital identity",
+    "Privacy",
+    "Access control and delegation",
+    "Trust management",
+    "Vehicular networks (V2X)"
+   ],
+   "identifier": [
+    {
+     "@type": "PropertyValue",
+     "propertyID": "ORCID",
+     "value": "0000-0002-2911-2300"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "Scopus Author ID",
+     "value": "8881544100"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "ResearcherID",
+     "value": "L-1785-2014"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "DBLP",
+     "value": "23/6961"
     }
-
-    :root {
-      --paper: #F7FAFA;      /* cool, airy white */
-      --ink: #142A3E;        /* deep harbour navy */
-      --slate: #4F6476;      /* secondary text */
-      --sea: #0B6B70;        /* links and accents */
-      --sea-deep: #07484C;   /* text on the sea-glass band */
-      --glass: #D5EEE8;      /* fresh sea-glass tint */
-      --line: #D9E3E8;
-
-      --serif: "Petrona", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-      --sans: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
-
-      --gutter: clamp(1rem, 6vw, 7rem);
-      --measure: 36rem;
+   ],
+   "sameAs": [
+    "https://orcid.org/0000-0002-2911-2300",
+    "https://dblp.org/pid/23/6961.html",
+    "https://www.scopus.com/authid/detail.uri?authorId=8881544100",
+    "https://www.webofscience.com/wos/author/record/L-1785-2014",
+    "https://openalex.org/A5053752266",
+    "https://www.nics.uma.es/isaac",
+    "https://portaldelainvestigacion.uma.es/investigadores/1241243",
+    "https://github.com/isaacagudo"
+   ]
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/sanchez2026effectiveness/#work",
+   "url": "https://isaacagudo.github.io/publications/sanchez2026effectiveness/",
+   "name": "On the Effectiveness of Lightweight Models for Encrypted Traffic Classification",
+   "headline": "On the Effectiveness of Lightweight Models for Encrypted Traffic Classification",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Pablo Sánchez-Serrano"
+    },
+    {
+     "@type": "Person",
+     "name": "Ruben Rios"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
     }
-
-    *, *::before, *::after { box-sizing: border-box; }
-
-    html { -webkit-text-size-adjust: 100%; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      min-height: 100svh;
-      display: flex;
-      flex-direction: column;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: var(--serif);
-      font-size: 1.125rem;
-      line-height: 1.6;
-      font-optical-sizing: auto;
-      text-rendering: optimizeLegibility;
-      overflow-x: hidden;
+   ],
+   "datePublished": "2026-04",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "2026 9th International Conference on Networking, Intelligent Systems & Security (NISS)"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "IEEE"
+   },
+   "pagination": "215-222",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.23919/nisscps00007.2026.00037"
+   },
+   "sameAs": "https://doi.org/10.23919/nisscps00007.2026.00037",
+   "abstract": "With the widespread adoption of encryption, encrypted traffic classification has become an essential tool for cybersecurity and network management. Although this problem has been largely addressed using deep learning approaches, the suitability of more computationally efficient models, especially under constrained and high-demand scenarios, remains unclear. This paper presents a systematic experimental study of packet-level encrypted traffic classification that analyzes the impact of lightweight feature engineering and model complexity across heterogeneous datasets. We evaluate sliding window selection and BITization strategies in combination with classical machine learning and deep learning models. We perform a fair comparison across model families and explicitly assess the trade-off between classification performance and computational cost. The results show that well-designed classical machine learning models, particularly tree-based approaches, can match or closely approach the performance of deep learning architectures when paired with appropriate feature representations, while requiring substantially lower computational resources. These findings indicate that, under controlled packet-level input constraints, increasing model complexity yields limited benefits and that feature engineering is a key design factor in practical encrypted traffic classification.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://doi.org/10.23919/nisscps00007.2026.00037"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/morales2026zero/#work",
+   "url": "https://isaacagudo.github.io/publications/morales2026zero/",
+   "name": "Zero-knowledge Bitcoin mixer with reversible unlinkability",
+   "headline": "Zero-knowledge Bitcoin mixer with reversible unlinkability",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Daniel Morales"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
     }
-
-    a {
-      color: var(--sea);
-      text-decoration-line: underline;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 0.18em;
-      transition: text-decoration-thickness 120ms ease;
+   ],
+   "datePublished": "2026-04",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "7",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Blockchain: Research and Applications"
     }
-    a:hover { text-decoration-thickness: 2px; }
-    a:focus-visible {
-      outline: 2px solid var(--sea);
-      outline-offset: 3px;
-      border-radius: 2px;
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Elsevier BV"
+   },
+   "pagination": "100323",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1016/j.bcra.2025.100323"
+   },
+   "sameAs": "https://doi.org/10.1016/j.bcra.2025.100323",
+   "abstract": "Cryptocurrencies, particularly Bitcoin, continue to be the most prevalent use case within the blockchain ecosystem. One of the inherent limitations of blockchain is that it can create a false sense of privacy. All transaction history and the amount of cryptocurrency held are publicly available, and this information can be easily associated with specific individuals. Many works have proposed fully-private solutions, which are ideal but not realistic in many scenarios. This paper proposes a technical solution that enables private Bitcoin payments by default, but with the option to conditionally disclose payment data. To do so, this solution relies on unlinkability by a decentralized mixer, which can be reversed by a conditional discloser using a trapdoor unlinkability function. The conditional discloser, which also provides accountability of requests, obeys the payer's policies regarding who can access payment data. To ensure compliance, we propose a mixer that does not learn anything about the payment link, but is guaranteed by Zero-Knowledge Proofs that the payment can be relinked by a specific conditional discloser. Furthermore, we provide a proof-of-concept implementation of the proofs, using Circom and SnarkJS. We also present a benchmark that demonstrates the feasibility of this solution. It incurs only one additional parameter per on-chain transaction, while the remainder of the verification data is managed off-chain.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://doi.org/10.1016/j.bcra.2025.100323"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/sanchez2025decision/#work",
+   "url": "https://isaacagudo.github.io/publications/sanchez2025decision/",
+   "name": "A decision framework for privacy-preserving synthetic data generation",
+   "headline": "A decision framework for privacy-preserving synthetic data generation",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Pablo Sánchez-Serrano"
+    },
+    {
+     "@type": "Person",
+     "name": "Ruben Rios"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
     }
-
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: clamp(4rem, 14vh, 9rem) 0 clamp(3rem, 8vh, 5rem);
+   ],
+   "datePublished": "2025-08",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "126",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Computers and Electrical Engineering"
     }
-
-    .intro {
-      padding-inline: var(--gutter);
-      max-width: calc(var(--measure) + 2 * var(--gutter));
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Elsevier BV"
+   },
+   "pagination": "110468",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1016/j.compeleceng.2025.110468"
+   },
+   "sameAs": "https://doi.org/10.1016/j.compeleceng.2025.110468",
+   "abstract": "Access to realistic data is essential for various purposes, including training machine learning models, conducting simulations, and supporting data-driven decision making across diverse domains. However, the use of real data often raises significant privacy concerns, as it may contain sensitive or personal information. Generative models have emerged as a promising solution to this problem by generating synthetic datasets that closely resemble real data. Nevertheless, these models are typically trained on original datasets, which carries the risk of leaking sensitive information. To mitigate this issue, privacy-preserving generative models have been developed to balance data utility and privacy guarantees. This paper examines existing generative models for synthetic tabular data generation, proposing a taxonomy of solutions based on the privacy guarantees they provide. Additionally, we present a decision framework to aid in selecting the most suitable privacy-preserving generative model for specific scenarios, using privacy and utility metrics as key selection criteria.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://doi.org/10.1016/j.compeleceng.2025.110468"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/morales2025lightweight/#work",
+   "url": "https://isaacagudo.github.io/publications/morales2025lightweight/",
+   "name": "A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices",
+   "headline": "A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Daniel Morales"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
     }
-
-    h1 {
-      margin: 0 0 0.35em;
-      font-weight: 480;
-      font-size: clamp(3rem, 2rem + 6vw, 6.25rem);
-      line-height: 0.98;
-      letter-spacing: -0.025em;
+   ],
+   "datePublished": "2025-07",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "12",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "IEEE Internet of Things Journal"
     }
-
-    .lede {
-      margin: 0;
-      font-size: clamp(1.2rem, 1.1rem + 0.5vw, 1.45rem);
-      line-height: 1.5;
-      color: var(--ink);
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Institute of Electrical and Electronics Engineers (IEEE)"
+   },
+   "pagination": "22725-22732",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/jiot.2025.3555026"
+   },
+   "sameAs": "https://doi.org/10.1109/jiot.2025.3555026",
+   "abstract": "Outsourced computations are essential for IoT devices, but they can raise privacy issues. Privacy-preserving technologies, such as Secure Multiparty Computation, can be used to delegate computations on private data from multiple devices while disclosing nothing but the output, but they may come at a prohibitive cost. In particular, Secret Sharing-based Secure Multiparty Computation requires the device to establish n independent confidential channels for each shared message, one channel per holder. This work proposes a new approach for IoT devices to secretly share private data with a committee of holders by broadcasting a single ciphertext. A straightforward solution is Homomorphic Encryption with Decryption to Shares from Chillotti et al., 2022, but it requires Fully Homomorphic Encryption and is not dynamic. Additionally, we propose Oblivious Sharing Re-Encryption, which is a new family of protocols that achieve this lightweight private data sharing without requiring Fully Homomorphic Encryption, and which is also more dynamic. We provide a concrete implementation based on NTRU encryption, together with a security proof and performance analysis. The analysis shows that OSRE outperforms the standard setting with n confidential channels when the device sends more than one message.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://doi.org/10.1109/jiot.2025.3555026"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/juaristi2025benchmarking/#work",
+   "url": "https://isaacagudo.github.io/publications/juaristi2025benchmarking/",
+   "name": "Benchmarking Post-quantum Cryptography in Ethereum-Based Blockchains",
+   "headline": "Benchmarking Post-quantum Cryptography in Ethereum-Based Blockchains",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Patxi Juaristi"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Ruben Rios"
+    },
+    {
+     "@type": "Person",
+     "name": "Laura Ricci"
     }
-
-    /* The construction band: starts at the text column and runs off the right edge */
-    .band {
-      margin: clamp(2.5rem, 7vh, 4rem) 0 0 var(--gutter);
-      padding: clamp(1.4rem, 3vw, 2.1rem) var(--gutter) clamp(1.5rem, 3vw, 2.2rem) clamp(1.25rem, 3vw, 2.25rem);
-      background: var(--glass);
-      border-radius: 6px 0 0 6px;
+   ],
+   "datePublished": "2025",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Computer Security. ESORICS 2024 International Workshops"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Nature Switzerland"
+   },
+   "pagination": "340-353",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-031-82349-7_23"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-031-82349-7_23",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/sanchez2025privacy/#work",
+   "url": "https://isaacagudo.github.io/publications/sanchez2025privacy/",
+   "name": "Privacy-Preserving Tabular Data Generation: Systematic Literature Review",
+   "headline": "Privacy-Preserving Tabular Data Generation: Systematic Literature Review",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Pablo Sánchez-Serrano"
+    },
+    {
+     "@type": "Person",
+     "name": "Ruben Rios"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
     }
-
-    .status {
-      margin: 0 0 0.4rem;
-      max-width: 30rem;
-      font-style: italic;
-      font-weight: 450;
-      font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2.2rem);
-      line-height: 1.2;
-      color: var(--sea-deep);
+   ],
+   "datePublished": "2025",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Computer Security. ESORICS 2024 International Workshops"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Nature Switzerland"
+   },
+   "pagination": "170-180",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-031-82349-7_12"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-031-82349-7_12",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/morales2025toward/#work",
+   "url": "https://isaacagudo.github.io/publications/morales2025toward/",
+   "name": "Toward a Framework for Cost-Effective and Publicly Verifiable Confidential Computations in Blockchain",
+   "headline": "Toward a Framework for Cost-Effective and Publicly Verifiable Confidential Computations in Blockchain",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Daniel Morales"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
     }
-
-    /* Each letter keeps its real width while a random hex digit is drawn over
-       it, so the scramble never changes the layout */
-    .ch { position: relative; }
-    .ch.scr { color: transparent; }
-    .ch.scr::after {
-      content: attr(data-n);
-      position: absolute;
-      left: 50%;
-      top: 0;
-      transform: translateX(-50%);
-      color: var(--sea-deep);
+   ],
+   "datePublished": "2025-02",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "63",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "IEEE Communications Magazine"
     }
-
-    .band p.note {
-      margin: 0;
-      max-width: 32rem;
-      font-size: 1.1rem;
-      color: var(--sea-deep);
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Institute of Electrical and Electronics Engineers (IEEE)"
+   },
+   "pagination": "96-102",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/mcom.001.2300839"
+   },
+   "sameAs": "https://doi.org/10.1109/mcom.001.2300839",
+   "abstract": "Blockchain technologies have introduced a compelling paradigm for a new understanding of security through decentralized networks and consensus mechanisms. However, they need all data to be public, which may be unacceptable for use cases such as biometric data processing or sensitive monetary transactions. Therefore, confidentiality is identified as a need in blockchain. Additionally, blockchain can contribute to confidential applications by providing publicly verifiable mechanisms, therefore enhancing security. This work presents a framework for cost-effective and publicly verifiable confidential computations in blockchain, by relying on secure multi-party computation committees and zero-knowledge proofs. Our framework supports arbitrary computations on confidential data enforced by smart contracts. Additionally, staking, incentives, and cheat identification are provided as solutions to enhance trust. We also provide a technical solution to embed secure multi-party computations within smart contracts by using the Promise programming pattern. Finally, a cost analysis is provided to justify the feasibility of the framework compared to other solutions.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://riuma.uma.es/xmlui/bitstream/10630/34694/1/Toward_a_Framework_for_Cost-Effective_and_Publicly_Verifiable_Confidential_Computations_in_Blockchain.pdf"
+   }
+  },
+  {
+   "@type": "Chapter",
+   "@id": "https://isaacagudo.github.io/publications/ramirez2025web3/#work",
+   "url": "https://isaacagudo.github.io/publications/ramirez2025web3/",
+   "name": "Web3 Security",
+   "headline": "Web3 Security",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "José Carlos Ramírez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
     }
-
-    .meanwhile {
-      margin: clamp(2rem, 5vh, 3rem) 0 0;
-      padding-inline: var(--gutter);
-      max-width: calc(var(--measure) + 2 * var(--gutter));
-      color: var(--slate);
+   ],
+   "editor": [
+    {
+     "@type": "Person",
+     "name": "Wolfgang Prinz"
+    },
+    {
+     "@type": "Person",
+     "name": "Daniel Trauth"
     }
-
-    footer {
-      padding: 1.25rem var(--gutter) 1.5rem;
-      border-top: 1px solid var(--line);
-      font-family: var(--sans);
-      font-size: 0.875rem;
-      color: var(--slate);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 0.25rem 1.5rem;
+   ],
+   "datePublished": "2025",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Tokenizing the Future: A Guide to Web3 and the Metaverse"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer"
+   },
+   "pagination": "163-172",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-031-91405-8_11"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-031-91405-8_11",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/molina2023empirical/#work",
+   "url": "https://isaacagudo.github.io/publications/molina2023empirical/",
+   "name": "An empirical evaluation of BLE for ITS scenarios",
+   "headline": "An empirical evaluation of BLE for ITS scenarios",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Elena Molina"
+    },
+    {
+     "@type": "Person",
+     "name": "Ruben Rios"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
     }
-    footer p { margin: 0; }
-
-    .sr-only {
-      position: absolute;
-      width: 1px; height: 1px;
-      padding: 0; margin: -1px;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      white-space: nowrap;
-      border: 0;
+   ],
+   "datePublished": "2023-10",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall)"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "IEEE"
+   },
+   "pagination": "1-5",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/vtc2023-fall60731.2023.10333713"
+   },
+   "sameAs": "https://doi.org/10.1109/vtc2023-fall60731.2023.10333713",
+   "abstract": "Traditional intelligent transportation systems (ITS) network layers have not yet reach a massive adoption. These protocols require costly equipment that will unlikely be embedded into commodity devices or personal mobility vehicles, such as electric scooters. However, there are low-cost communication protocols widely deployed in personal devices, such as Bluetooth Low Energy (BLE), that would allow extending the scope of ITS to all types of vehicles and pedestrians. As such, in this paper, we adapt an existing ITS stack to run over BLE in a compact-size development embedded platform and run a series of experiments. Although our results suggest that BLE is only suitable for some ITS scenarios, we discuss possible countermeasures that could help to alleviate some of the limitations found.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/morales2023integration/#work",
+   "url": "https://isaacagudo.github.io/publications/morales2023integration/",
+   "name": "Integration of MPC into Besu through an extended private transaction model",
+   "headline": "Integration of MPC into Besu through an extended private transaction model",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Daniel Morales"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
     }
-
-    @media (max-width: 30rem) {
-      body { font-size: 1.0625rem; }
-      .band { border-radius: 4px 0 0 4px; }
+   ],
+   "datePublished": "2023-06",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "2023 IEEE International Conference on Metaverse Computing, Networking and Applications (MetaCom)"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "IEEE"
+   },
+   "pagination": "266-273",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/metacom57706.2023.00056"
+   },
+   "sameAs": "https://doi.org/10.1109/metacom57706.2023.00056",
+   "abstract": "In the last few years we have seen many different approaches to incorporate privacy features to blockchains. In the area of cryptocurrencies that would normally mean protecting the identity of the owner of some funds, but there are other applications where privacy is even more important, especially in permissioned blockchains. Permissioned blockchain platforms, such as Hyperledger Besu or Hyperledger Fabric, already include the concept of private transactions, which essentially defines a sub-group of the blockchain where their participants share some private data. We want to go one step ahead and propose an extended model for private transactions where the different participants can have a separated view of the same transaction, allowing the integration of Multi-party Computation protocols in the blockchain. Our work extends Hyperledger Besu’s design for private transactions, offering better security properties and a finer grain customization. We cover two specific MPC examples, Private Set Intersection and Byzantine Fault-Tolerant Random Number Generation, and propose a mechanism to run them using smart contract interfaces.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/morales2023private/#work",
+   "url": "https://isaacagudo.github.io/publications/morales2023private/",
+   "name": "Private set intersection: A systematic literature review",
+   "headline": "Private set intersection: A systematic literature review",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Daniel Morales"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
     }
-  </style>
+   ],
+   "datePublished": "2023-08",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "49",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Computer Science Review"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Elsevier BV"
+   },
+   "pagination": "100567",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1016/j.cosrev.2023.100567"
+   },
+   "sameAs": "https://doi.org/10.1016/j.cosrev.2023.100567",
+   "abstract": "Secure Multi-party Computation (SMPC) is a family of protocols which allow some parties to compute a function on their private inputs, obtaining the output at the end and nothing more. In this work, we focus on a particular SMPC problem named Private Set Intersection (PSI). The challenge in PSI is how two or more parties can compute the intersection of their private input sets, while the elements that are not in the intersection remain private. This problem has attracted the attention of many researchers because of its wide variety of applications, contributing to the proliferation of many different approaches. Despite that, current PSI protocols still require heavy cryptographic assumptions that may be unrealistic in some scenarios. In this paper, we perform a Systematic Literature Review of PSI solutions, with the objective of analyzing the main scenarios where PSI has been studied and giving the reader a general taxonomy of the problem together with a general understanding of the most common tools used to solve it. We also analyze the performance using different metrics, trying to determine if PSI is mature enough to be used in realistic scenarios, identifying the pros and cons of each protocol and the remaining open problems.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://doi.org/10.1016/j.cosrev.2023.100567"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/meraouche2022learning/#work",
+   "url": "https://isaacagudo.github.io/publications/meraouche2022learning/",
+   "name": "Learning Multi-Party Adversarial Encryption and Its Application to Secret Sharing",
+   "headline": "Learning Multi-Party Adversarial Encryption and Its Application to Secret Sharing",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Ishak Meraouche"
+    },
+    {
+     "@type": "Person",
+     "name": "Sabyasachi Dutta"
+    },
+    {
+     "@type": "Person",
+     "name": "Sraban Kumar Mohanty"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Kouichi Sakurai"
+    }
+   ],
+   "datePublished": "2022",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "10",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "IEEE Access"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Institute of Electrical and Electronics Engineers (IEEE)"
+   },
+   "pagination": "121329-121339",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/access.2022.3223430"
+   },
+   "sameAs": "https://doi.org/10.1109/access.2022.3223430",
+   "abstract": "Neural networks based cryptography has seen a significant growth since the introduction of adversarial cryptography which makes use of Generative Adversarial Networks (GANs) to build neural networks that can learn encryption. The encryption has been proven weak at first but many follow up works have shown that the neural networks can be made to learn the One Time Pad (OTP) and produce perfectly secure ciphertexts. To the best of our knowledge, existing works only considered communications between two or three parties. In this paper, we show how multiple neural networks in an adversarial setup can remotely synchronize and establish a perfectly secure communication in the presence of different attackers eavesdropping their communication. As an application, we show how to build Secret Sharing Scheme based on this perfectly secure multi-party communication. The results show that it takes around 45,000 training steps for 4 neural networks to synchronize and reach equilibria. When reaching equilibria, all the neural networks are able to communicate between each other and the attackers are not able to break the ciphertexts exchanged between them.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/09955544.pdf"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/morales2022real/#work",
+   "url": "https://isaacagudo.github.io/publications/morales2022real/",
+   "name": "Real-time Crowd Counting based on Wearable Ephemeral IDs",
+   "headline": "Real-time Crowd Counting based on Wearable Ephemeral IDs",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Daniel Morales"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2022",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Proceedings of the 19th International Conference on Security and Cryptography"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "SCITEPRESS - Science and Technology Publications"
+   },
+   "pagination": "249-260",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.5220/0011327200003283"
+   },
+   "sameAs": "https://doi.org/10.5220/0011327200003283",
+   "abstract": "Crowd Counting is a very interesting problem aiming at counting people typically based on density averages and/or aerial images.This is very useful to prevent crowd crushes, especially on urban environments with high crowd density, or to count people in public demonstrations.In addition, in the last years, it has become of paramount importance for pandemic management.For those reasons, giving users automatic mechanisms to anticipate high risk situations is essential.In this work, we analyze ID-based Crowd Counting, and propose a real-time Crowd Counting system based on the Ephemeral ID broadcast by contact tracing applications on wearable devices.We also performed some simulations that show the accuracy of our system in different situations.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://doi.org/10.5220/0011327200003283"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2021blockchain/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2021blockchain/",
+   "name": "A Blockchain Approach for Decentralized V2X (D-V2X)",
+   "headline": "A Blockchain Approach for Decentralized V2X (D-V2X)",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Manuel Montenegro-Gómez"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2021-05",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "70",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "IEEE Transactions on Vehicular Technology"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Institute of Electrical and Electronics Engineers (IEEE)"
+   },
+   "pagination": "4001-4010",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/tvt.2020.3046640"
+   },
+   "sameAs": "https://doi.org/10.1109/tvt.2020.3046640",
+   "abstract": "New mobility paradigms have appeared in recent years, and everything suggests that some more are coming. This fact makes apparent the necessity of modernizing the road infrastructure, the signalling elements and the traffic management systems. Many initiatives have emerged around the term Intelligent Transport System (ITS) in order to define new scenarios and requirements for this kind of applications. We even have two main competing technologies for implementing Vehicular communication protocols (V2X), C-V2X and 802.11p, but neither of them is widely deployed yet. One of the main barriers for the massive adoption of those technologies is governance. Current solutions rely on the use of a public key infrastructure that enables secure collaboration between the different entities in the V2X ecosystem, but given its global scope, managing such infrastructure requires reaching agreements between many parties, with conflicts of interest between automakers and telecommunication operators. As a result, there are plenty of use cases available and two mature communication technologies, but the complexity at the business layer is stopping the drivers from taking advantage of ITS applications. Blockchain technologies are defining a new decentralized paradigm for most traditional applications, where smart contracts provide a straightforward mechanism for decentralized governance. In this work, we propose an approach for decentralized V2X (D-V2X) that does not require any trusted authority and can be implemented on top of any communication protocol. We also define a proof-of-concept technical architecture on top of a cheap and highly secure System-on-Chip (SoC) that could allow for massive adoption of D-V2X.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://hdl.handle.net/10630/29924"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/ocana2019comunicaciones/#work",
+   "url": "https://isaacagudo.github.io/publications/ocana2019comunicaciones/",
+   "name": "Comunicaciones VoIP cifradas usando Intel SGX",
+   "headline": "Comunicaciones VoIP cifradas usando Intel SGX",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Raúl Ocaña"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2019",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Actas de las V Jornadas Nacionales de Investigación en Ciberseguridad (JNIC 2019)"
+   },
+   "pagination": "255-256",
+   "inLanguage": "es"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/nunez2019escrowed/#work",
+   "url": "https://isaacagudo.github.io/publications/nunez2019escrowed/",
+   "name": "Escrowed decryption protocols for lawful interception of encrypted data",
+   "headline": "Escrowed decryption protocols for lawful interception of encrypted data",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2019-09",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "13",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "IET Information Security"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Institution of Engineering and Technology (IET)"
+   },
+   "pagination": "498-507",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1049/iet-ifs.2018.5082"
+   },
+   "sameAs": "https://doi.org/10.1049/iet-ifs.2018.5082",
+   "abstract": "Escrowed decryption schemes (EDSs) are public‐key encryption schemes with an escrowed decryption functionality that allows authorities to decrypt encrypted messages under investigation, following a protocol that involves a set of trusted entities called ‘custodians’; only if custodians collaborate, the requesting authority is capable of decrypting encrypted data. This type of cryptosystem represents an interesting trade‐off to privacy versus surveillance dichotomy. In this study, the authors propose two EDSs where they use proxy re‐encryption to build the escrowed decryption capability, so that custodians re‐encrypt ciphertexts, in a distributed way, upon request from an escrow authority, and the re‐encrypted ciphertexts can be opened only by the escrow authority. Their first scheme, called EDS, follows an all‐or‐nothing approach, which means that escrow decryption only works when all custodians collaborate. Their second scheme, called threshold EDS, supports a threshold number of custodians for the escrow decryption operation. They propose definitions of semantic security with respect to the authorities, custodians and external entities, and prove the security of their schemes, under standard pairing‐based hardness assumptions. Finally, they present a theoretical and experimental analysis of the performance of both schemes, which show that they are applicable to real‐world scenarios.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2019personalized/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2019personalized/",
+   "name": "Personalized Computer Security Tasks with Automatic Evaluation and Feedback",
+   "headline": "Personalized Computer Security Tasks with Automatic Evaluation and Feedback",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Ruben Rios"
+    },
+    {
+     "@type": "Person",
+     "name": "Ana Nieto"
+    }
+   ],
+   "datePublished": "2019",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Proceedings of the 2019 AIS SIGED International Conference on Information Systems Education and Research"
+   },
+   "abstract": "Teaching cybersecurity is very challenging as it requires coverage of many different technologies, protocols, tools, and systems. This paper presents SERA, a modular and highly customizable framework specifically designed for the definition of cybersecurity exercises with automatic evaluation and feedback. The framework defines a simple yet powerful language for the specification of lab exercises, which are instantiated at runtime into personalized tasks for each student. The language supports the definition of checks that should be passed for considering that the exercise is complete. Moreover, it is possible to associate some feedback to the checks with the goal of guiding the student towards the solution in case it is necessary, thus promoting self-learning and students’ autonomy. SERA also keeps information regarding students’ submissions in order to track students’ progress and identify potential difficulties and limitations. Finally, the SERA framework has been integrated with the Moodle learning platform and is currently under beta testing in several computer security courses at the University of Malaga.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1000&context=siged2019"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2017establecimiento/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2017establecimiento/",
+   "name": "Establecimiento de claves seguro mediante códigos sonoros en dispositivos móviles",
+   "headline": "Establecimiento de claves seguro mediante códigos sonoros en dispositivos móviles",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Ricardo Ruiz Tueros"
+    }
+   ],
+   "datePublished": "2017-09",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Proceedings XIII Jornadas de Ingenieria Telematica - JITEL2017"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Universitat Politècnica València"
+   },
+   "pagination": "79-85",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.4995/jitel2017.2017.6562"
+   },
+   "sameAs": "https://doi.org/10.4995/jitel2017.2017.6562",
+   "abstract": "El objetivo de este trabajo ha sido investigar el uso de canales sonoros para el intercambio de claves en teléfonos inteligentes. Para ello, se ha realizado un diseño y un análisis del problema a resolver, teniendo en cuenta factores como la necesidad de sincronización, los parámetros de escucha, la longitud de la clave que podemos obtener, los ataques a los que sería vulnerable el protocolo, la necesidad de cierta persistencia a nivel local, el uso de la nube, etc.Se ha realizado un análisis de tecnologías relacionadas, eligiendo aquellas que mejor se adaptan a los requisitos del problema y se ha implementado un prototipo capaz de realizar un intercambio de claves y autenticar mutuamente a un par de dispositivos, creando así un canal seguro a través del cual puedan comunicarse en el futuro, sin necesidad de que una tercera parte confiable que certifique la identidad de las partes.",
+   "inLanguage": "es",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "http://ocs.editorial.upv.es/index.php/JITEL/JITEL2017/paper/download/6562/3209"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/nunez2017proxy/#work",
+   "url": "https://isaacagudo.github.io/publications/nunez2017proxy/",
+   "name": "Proxy Re-Encryption: Analysis of constructions and its application to secure access delegation",
+   "headline": "Proxy Re-Encryption: Analysis of constructions and its application to secure access delegation",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2017-06",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "87",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Journal of Network and Computer Applications"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Elsevier BV"
+   },
+   "pagination": "193-209",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1016/j.jnca.2017.03.005"
+   },
+   "sameAs": "https://doi.org/10.1016/j.jnca.2017.03.005",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/nunez2017fallout/#work",
+   "url": "https://isaacagudo.github.io/publications/nunez2017fallout/",
+   "name": "The Fallout of Key Compromise in a Proxy-Mediated Key Agreement Protocol",
+   "headline": "The Fallout of Key Compromise in a Proxy-Mediated Key Agreement Protocol",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2017",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Data and Applications Security and Privacy XXXI"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer International Publishing"
+   },
+   "pagination": "453-472",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-319-61176-1_25"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-319-61176-1_25",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://inria.hal.science/hal-01684370"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2016technique/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2016technique/",
+   "name": "A Technique for Enhanced Provision of Appropriate Access to Evidence Across Service Provision Chains",
+   "headline": "A Technique for Enhanced Provision of Appropriate Access to Evidence Across Service Provision Chains",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Ali El Kaafarani"
+    },
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@type": "Person",
+     "name": "Siani Pearson"
+    }
+   ],
+   "datePublished": "2016",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Privacy and Identity Management. Time for a Revolution?"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer International Publishing"
+   },
+   "pagination": "187-204",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-319-41763-9_13"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-319-41763-9_13",
+   "abstract": "Transparency and verifiability are necessary aspects of accountability, but care needs to be taken that auditing is done in a privacy friendly way. There are situations where it would be useful for certain actors to be able to make restricted views within service provision chains on accountability evidence, including logs, available to other actors with specific governance roles. For example, a data subject or a Data Protection Authority (DPA) might want to authorize an accountability agent to act on their behalf, and be given access to certain logs in a way that does not compromise the privacy of other actors or the security of involved data processors. In this paper two cryptographic-based techniques that may address this issue are proposed and assessed.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://inria.hal.science/hal-01619749"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/pares2016lockpic/#work",
+   "url": "https://isaacagudo.github.io/publications/pares2016lockpic/",
+   "name": "LockPic: Privacy Preserving Photo Sharing in Social Networks",
+   "headline": "LockPic: Privacy Preserving Photo Sharing in Social Networks",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Carlos Parés-Pulido"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2016",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Data Privacy Management, and Security Assurance"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer International Publishing"
+   },
+   "pagination": "281-290",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-319-29883-2_21"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-319-29883-2_21",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/nunez2016application/#work",
+   "url": "https://isaacagudo.github.io/publications/nunez2016application/",
+   "name": "On the application of generic CCA‐secure transformations to proxy re‐encryption",
+   "headline": "On the application of generic CCA‐secure transformations to proxy re‐encryption",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2016-08",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "9",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Security and Communication Networks"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Wiley"
+   },
+   "pagination": "1769-1785",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1002/sec.1434"
+   },
+   "sameAs": "https://doi.org/10.1002/sec.1434",
+   "abstract": "Several generic methods exist for achieving chosen‐ciphertext attack (CCA)‐secure public‐key encryption schemes from weakly secure cryptosystems, such as the Fujisaki–Okamoto and REACT transformations. In the context of proxy re‐encryption (PRE), it would be desirable to count on analogous constructions that allow PRE schemes to achieve better security notions. In this paper, we study the adaptation of these transformations to proxy re‐encryption and find both negative and positive results. On the one hand, we show why it is not possible to directly integrate these transformations with weakly secure PRE schemes because of general obstacles coming from both the constructions themselves and the security models, and we identify 12 PRE schemes that exhibit these problems. On the other hand, we propose an extension of the Fujisaki–Okamoto transformation for PRE, which achieves a weak form of CCA security in the random oracle model, and we describe the sufficient conditions for applying it. Copyright © 2016 John Wiley & Sons, Ltd.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/nunez2015parametric/#work",
+   "url": "https://isaacagudo.github.io/publications/nunez2015parametric/",
+   "name": "A Parametric Family of Attack Models for Proxy Re-encryption",
+   "headline": "A Parametric Family of Attack Models for Proxy Re-encryption",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2015-07",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "2015 IEEE 28th Computer Security Foundations Symposium"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "IEEE"
+   },
+   "pagination": "290-301",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/csf.2015.27"
+   },
+   "sameAs": "https://doi.org/10.1109/csf.2015.27",
+   "abstract": "Proxy Re-Encryption (PRE) is a type of Public-Key Encryption (PKE) that provides an additional re-encryption functionality. Although PRE is inherently more complex than PKE, attack models for PRE have not been developed further than those inherited from PKE. In this paper we address this gap and define a parametric family of attack models for PRE, based on the availability of both the decryption and re-encryption oracles during the security game. This family enables the definition of a set of intermediate security notions for PRE that ranges from \"plain\" IND-CPA to \"full\" IND-CCA. We analyze some relations among these notions of security, and in particular, the separations that arise when the re-encryption oracle leaks re-encryption keys. In addition, we discuss which of these security notions represent meaningful adversarial models for PRE. Finally, we provide an example of a recent \"CCA1-secure\" scheme from PKC 2014 whose security model does not capture chosen-cipher text attacks through re-encryption and for which we describe an attack under a more realistic security notion. This attack emphasizes the fact that PRE schemes that leak re-encryption keys cannot achieve strong security notions.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://ieeexplore.ieee.org/ielx7/7243288/7243713/07243740.pdf"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/ikonen2015is/#work",
+   "url": "https://isaacagudo.github.io/publications/ikonen2015is/",
+   "name": "Is the world ready or do we need more tools for programming related teamwork?",
+   "headline": "Is the world ready or do we need more tools for programming related teamwork?",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Jouni Ikonen"
+    },
+    {
+     "@type": "Person",
+     "name": "Antti Knutas"
+    },
+    {
+     "@type": "Person",
+     "name": "YongYi Wu"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2015-11",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Proceedings of the 15th Koli Calling Conference on Computing Education Research"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "ACM"
+   },
+   "pagination": "33-39",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1145/2828959.2828978"
+   },
+   "sameAs": "https://doi.org/10.1145/2828959.2828978",
+   "abstract": "Teamwork is an essential part of work nowadays, but many student team projects have serious problems in collaboration. In this work we have identified success and failure factors in programming teamwork projects. Research was conducted with an internationally distributed questionnaire. The results identify that one of the main problems is a failure to see each project member's ongoing progress. Analysis of the data shows a strong correlation between active team communications and positive views of project success, especially in student teams. We propose that project tools should be researched further to support active communication behavior e.g. by visualizing each team member's current inputs in code repositories.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/nunez2015ntrureencrypt/#work",
+   "url": "https://isaacagudo.github.io/publications/nunez2015ntrureencrypt/",
+   "name": "NTRUReEncrypt: An Efficient Proxy Re-Encryption Scheme Based on NTRU",
+   "headline": "NTRUReEncrypt: An Efficient Proxy Re-Encryption Scheme Based on NTRU",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2015-04",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Proceedings of the 10th ACM Symposium on Information, Computer and Communications Security"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "ACM"
+   },
+   "pagination": "179-189",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1145/2714576.2714585"
+   },
+   "sameAs": "https://doi.org/10.1145/2714576.2714585",
+   "abstract": "The use of alternative foundations for constructing more secure and efficient cryptographic schemes is a topic worth exploring. In the case of proxy re-encryption, the vast majority of schemes are based on number theoretic problems such as the discrete logarithm. In this paper we present NTRUReEncrypt, a new bidirectional and multihop proxy re-encryption scheme based on NTRU, a widely known lattice-based cryptosystem. We provide two versions of our scheme: the first one is based on the conventional NTRU encryption scheme and, although it lacks a security proof, remains as efficient as its predecessor; the second one is based on a variant of NTRU proposed by Stehlé and Steinfeld, which is proven CPA-secure under the hardness of the Ring-LWE problem. To the best of our knowledge, our proposals are the first proxy re-encryption schemes to be based on the NTRU primitive. In addition, we provide experimental results to show the efficiency of our proposal, as well as a comparison with previous proxy re-encryption schemes, which confirms that our first scheme outperforms the rest by an order of magnitude.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/nunez2015privacy/#work",
+   "url": "https://isaacagudo.github.io/publications/nunez2015privacy/",
+   "name": "Privacy-Preserving Identity Management as a Service",
+   "headline": "Privacy-Preserving Identity Management as a Service",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2015",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Accountability and Security in the Cloud"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer International Publishing"
+   },
+   "pagination": "114-125",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-319-17199-9_5"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-319-17199-9_5",
+   "abstract": "In this paper we tackle the problem of privacy and confidentiality in Identity Management as a Service (IDaaS). The adoption of cloud computing technologies by organizations has fostered the externalization of the identity management processes, shaping the concept of Identity Management as a Service. However, as it has happened to other cloud-based services, the cloud poses serious risks to the users, since they lose the control over their data. As part of this work, we analyze these concerns and present a model for privacy-preserving IDaaS, called \\(\\mathsf {BlindIdM}\\), which is designed to provide data privacy protection through the use of cryptographic safeguards.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/nunez2014blindidm/#work",
+   "url": "https://isaacagudo.github.io/publications/nunez2014blindidm/",
+   "name": "BlindIdM: A privacy-preserving approach for identity management as a service",
+   "headline": "BlindIdM: A privacy-preserving approach for identity management as a service",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2014-04",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "13",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "International Journal of Information Security"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Science and Business Media LLC"
+   },
+   "pagination": "199-215",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/s10207-014-0230-4"
+   },
+   "sameAs": "https://doi.org/10.1007/s10207-014-0230-4",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/fernandez2014building/#work",
+   "url": "https://isaacagudo.github.io/publications/fernandez2014building/",
+   "name": "Building trust from context similarity measures",
+   "headline": "Building trust from context similarity measures",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Carmen Fernández-Gago"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2014-06",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "36",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Computer Standards & Interfaces"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Elsevier BV"
+   },
+   "pagination": "792-800",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1016/j.csi.2013.12.012"
+   },
+   "sameAs": "https://doi.org/10.1016/j.csi.2013.12.012",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://zenodo.org/record/3416904"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/nunez2014delegated/#work",
+   "url": "https://isaacagudo.github.io/publications/nunez2014delegated/",
+   "name": "Delegated Access for Hadoop Clusters in the Cloud",
+   "headline": "Delegated Access for Hadoop Clusters in the Cloud",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2014-12",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "2014 IEEE 6th International Conference on Cloud Computing Technology and Science"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "IEEE"
+   },
+   "pagination": "374-379",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/cloudcom.2014.50"
+   },
+   "sameAs": "https://doi.org/10.1109/cloudcom.2014.50",
+   "abstract": "Among Big Data technologies, Hadoop stands out for its capacity to store and process large-scale datasets. However, although Hadoop was not designed with security in mind, it is widely used by plenty of organizations, some of which have strong data protection requirements. Traditional access control solutions are not enough, and cryptographic solutions must be put in place to protect sensitive information. In this paper, we describe a cryptographically-enforced access control system for Hadoop, based on proxy re-encryption. Our proposed solution fits in well with the outsourcing of Big Data processing to the cloud, since information can be stored in encrypted form in external servers in the cloud and processed only if access has been delegated. Experimental results show that the overhead produced by our solution is manageable, which makes it suitable for some applications.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "Book",
+   "@id": "https://isaacagudo.github.io/publications/katsikas2014public/#work",
+   "url": "https://isaacagudo.github.io/publications/katsikas2014public/",
+   "name": "Public Key Infrastructures, Services and Applications: 10th European Workshop, EuroPKI 2013, Egham, UK, September 12-13, 2013, Revised Selected Papers",
+   "headline": "Public Key Infrastructures, Services and Applications: 10th European Workshop, EuroPKI 2013, Egham, UK, Septem",
+   "editor": [
+    {
+     "@type": "Person",
+     "name": "Sokratis Katsikas"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2014",
+   "isPartOf": {
+    "@type": "BookSeries",
+    "name": "Lecture Notes in Computer Science"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Berlin Heidelberg"
+   },
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-642-53997-8"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-642-53997-8",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2013privacy/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2013privacy/",
+   "name": "A privacy-aware continuous authentication scheme for proximity-based access control",
+   "headline": "A privacy-aware continuous authentication scheme for proximity-based access control",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Ruben Rios"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2013-11",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "39",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Computers & Security"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Elsevier BV"
+   },
+   "pagination": "117-126",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1016/j.cose.2013.05.004"
+   },
+   "sameAs": "https://doi.org/10.1016/j.cose.2013.05.004",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/nunez2013leveraging/#work",
+   "url": "https://isaacagudo.github.io/publications/nunez2013leveraging/",
+   "name": "Leveraging Privacy in Identity Management as a Service through Proxy Re-Encryption",
+   "headline": "Leveraging Privacy in Identity Management as a Service through Proxy Re-Encryption",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2013",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "European Conference on Service-Oriented and Cloud Computing"
+   },
+   "abstract": "The advent of cloud computing has provided the opportunity to externalize the identity management processes, shaping what has been called Identity Management as a Service (IDaaS). However, as in the case of other cloud-based services, IDaaS brings with it great concerns regarding security and privacy, such as the loss of control over the outsourced data. As part of this PhD thesis, we analyze these concerns and propose BlindIdM, a model for privacy-preserving IDaaS with a focus on data privacy protection through the use of proxy re-encryption.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "Book",
+   "@id": "https://isaacagudo.github.io/publications/fernandez2013trust/#work",
+   "url": "https://isaacagudo.github.io/publications/fernandez2013trust/",
+   "name": "Trust Management VII: 7th IFIP WG 11.11 International Conference, IFIPTM 2013, Malaga, Spain, June 3-7, 2013. Proceedings",
+   "headline": "Trust Management VII: 7th IFIP WG 11.11 International Conference, IFIPTM 2013, Malaga, Spain, June 3-7, 2013. ",
+   "editor": [
+    {
+     "@type": "Person",
+     "name": "Carmen Fernández-Gago"
+    },
+    {
+     "@type": "Person",
+     "name": "Fabio Martinelli"
+    },
+    {
+     "@type": "Person",
+     "name": "Siani Pearson"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2013",
+   "isPartOf": {
+    "@type": "BookSeries",
+    "name": "IFIP Advances in Information and Communication Technology"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Berlin Heidelberg"
+   },
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-642-38323-6"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-642-38323-6",
+   "abstract": "This book constitutes the refereed proceedings of the 7th IFIP WG 11.11 International Conference on Trust Management, IFIPTM 2013, held in Malaga, Spain, in June 2013. The 14 revised full papers and 9",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://doi.org/10.1007/978-3-642-38323-6"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/moyano2012task/#work",
+   "url": "https://isaacagudo.github.io/publications/moyano2012task/",
+   "name": "A Task Ordering Approach for Automatic Trust Establishment",
+   "headline": "A Task Ordering Approach for Automatic Trust Establishment",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Francisco Moyano"
+    },
+    {
+     "@type": "Person",
+     "name": "Carmen Fernández-Gago"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2012",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Engineering Secure Software and Systems"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Berlin Heidelberg"
+   },
+   "pagination": "75-88",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-642-28166-2_8"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-642-28166-2_8",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/nunez2012integrating/#work",
+   "url": "https://isaacagudo.github.io/publications/nunez2012integrating/",
+   "name": "Integrating OpenID with proxy re-encryption to enhance privacy in cloud-based identity services",
+   "headline": "Integrating OpenID with proxy re-encryption to enhance privacy in cloud-based identity services",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2012-12",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "4th IEEE International Conference on Cloud Computing Technology and Science Proceedings"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "IEEE"
+   },
+   "pagination": "241-248",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/cloudcom.2012.6427551"
+   },
+   "sameAs": "https://doi.org/10.1109/cloudcom.2012.6427551",
+   "abstract": "The inclusion of identity management in the cloud computing landscape represents a new business opportunity for providing what has been called Identity Management as a Service (IDaaS). Nevertheless, IDaaS introduces the same kind of problems regarding privacy and data confidentiality as other cloud services; on top of that, the nature of the outsourced information (users' identity) is critical. Traditionally, cloud services (including IDaaS) rely only on SLAs and security policies to protect the data, but these measures have proven insufficient in some cases; recent research has employed advanced cryptographic mechanisms as an additional safeguard. Apart from this, there are several identity management schemes that could be used for realizing IDaaS systems in the cloud; among them, OpenID has gained crescent popularity because of its open and decentralized nature, which makes it a prime candidate for this task. In this paper we demonstrate how a privacy-preserving IDaaS system can be implemented using OpenID Attribute Exchange and a proxy re-encryption scheme. Our prototype enables an identity provider to serve attributes to other parties without being able to read their values. This proposal constitutes a novel contribution to both privacy and identity management fields. Finally, we discuss the performance and economical viability of our proposal.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "Article",
+   "@id": "https://isaacagudo.github.io/publications/agudo2012seguridad/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2012seguridad/",
+   "name": "La Seguridad de la Información en los nuevos grados EEES",
+   "headline": "La Seguridad de la Información en los nuevos grados EEES",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2012",
+   "isPartOf": {
+    "@type": "Periodical",
+    "name": "Red Seguridad"
+   },
+   "pagination": "70-71",
+   "inLanguage": "es"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/neumann2012strong/#work",
+   "url": "https://isaacagudo.github.io/publications/neumann2012strong/",
+   "name": "Strong Authentication of Humans and Machines in Policy Controlled Cloud Computing Environment Using Automatic Cyber Identity",
+   "headline": "Strong Authentication of Humans and Machines in Policy Controlled Cloud Computing Environment Using Automatic ",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Libor Neumann"
+    },
+    {
+     "@type": "Person",
+     "name": "Tomáš Halman"
+    },
+    {
+     "@type": "Person",
+     "name": "Pavel Rotek"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexander Boettcher"
+    },
+    {
+     "@type": "Person",
+     "name": "Julian Stecklina"
+    },
+    {
+     "@type": "Person",
+     "name": "Michal Sojka"
+    },
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2012",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "ISSE 2012 Securing Electronic Business Processes"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Fachmedien Wiesbaden"
+   },
+   "pagination": "195-206",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-658-00333-3_19"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-658-00333-3_19",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/vivas2011methodology/#work",
+   "url": "https://isaacagudo.github.io/publications/vivas2011methodology/",
+   "name": "A methodology for security assurance-driven system development",
+   "headline": "A methodology for security assurance-driven system development",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "José Luis Vivas"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2011-03",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "16",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Requirements Engineering"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Science and Business Media LLC"
+   },
+   "pagination": "55-73",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/s00766-010-0114-8"
+   },
+   "sameAs": "https://doi.org/10.1007/s00766-010-0114-8",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2011cryptography/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2011cryptography/",
+   "name": "Cryptography Goes to the Cloud",
+   "headline": "Cryptography Goes to the Cloud",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@type": "Person",
+     "name": "Gabriele Giammatteo"
+    },
+    {
+     "@type": "Person",
+     "name": "Panagiotis Rizomiliotis"
+    },
+    {
+     "@type": "Person",
+     "name": "Costas Lambrinoudakis"
+    }
+   ],
+   "datePublished": "2011",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Secure and Trust Computing, Data Management, and Applications"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Berlin Heidelberg"
+   },
+   "pagination": "190-197",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-642-22365-5_23"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-642-22365-5_23",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/nunez2011identity/#work",
+   "url": "https://isaacagudo.github.io/publications/nunez2011identity/",
+   "name": "Identity Management Challenges for Intercloud Applications",
+   "headline": "Identity Management Challenges for Intercloud Applications",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Prokopios Drogkaris"
+    },
+    {
+     "@type": "Person",
+     "name": "Stefanos Gritzalis"
+    }
+   ],
+   "datePublished": "2011",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Secure and Trust Computing, Data Management, and Applications"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Berlin Heidelberg"
+   },
+   "pagination": "198-204",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-642-22365-5_24"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-642-22365-5_24",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/alcaraz2011managing/#work",
+   "url": "https://isaacagudo.github.io/publications/alcaraz2011managing/",
+   "name": "Managing Incidents in Smart Grids à la Cloud",
+   "headline": "Managing Incidents in Smart Grids à la Cloud",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Cristina Alcaraz"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2011-11",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "2011 IEEE Third International Conference on Cloud Computing Technology and Science"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "IEEE"
+   },
+   "pagination": "527-531",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/cloudcom.2011.79"
+   },
+   "sameAs": "https://doi.org/10.1109/cloudcom.2011.79",
+   "abstract": "Over the last decade, the Cloud Computing paradigm has emerged as a panacea for many problems in traditional IT infrastructures. Much has been said about the potential of Cloud Computing in the context of the Smart Grid, but unfortunately it is still relegated to a second layer when it comes to critical systems. Although the advantages of outsourcing these kinds of applications to the cloud is clear, data confidentiality and operational privacy stand as mayor drawbacks. In this paper, we describe some security mechanisms, and specifically, some cryptographic schemes, that will help in a better integration of Smart Grids and Clouds. We propose the use of Virtual SCADA in the Cloud (VS-Cloud) as a means to improve reliability and efficiency whilst maintaining the same protection level as in traditional SCADA architectures.",
+   "inLanguage": "es"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/dai2011osami/#work",
+   "url": "https://isaacagudo.github.io/publications/dai2011osami/",
+   "name": "OSAMI Commons — An open dynamic services platform for ambient intelligence",
+   "headline": "OSAMI Commons — An open dynamic services platform for ambient intelligence",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Naci Dai"
+    },
+    {
+     "@type": "Person",
+     "name": "Alejandra Ruiz Lopez"
+    },
+    {
+     "@type": "Person",
+     "name": "Elmar Zeeb"
+    },
+    {
+     "@type": "Person",
+     "name": "Jan Krueger"
+    },
+    {
+     "@type": "Person",
+     "name": "Oliver Dohndorf"
+    },
+    {
+     "@type": "Person",
+     "name": "Jesus Bermejo"
+    },
+    {
+     "@type": "Person",
+     "name": "Wolfgang Thronicke"
+    },
+    {
+     "@type": "Person",
+     "name": "Felix Cuadrado Latasa"
+    },
+    {
+     "@type": "Person",
+     "name": "Christoph Fiehe"
+    },
+    {
+     "@type": "Person",
+     "name": "Anna Litvina"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2011-09",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "ETFA2011"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "IEEE"
+   },
+   "pagination": "1-10",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/etfa.2011.6059235"
+   },
+   "sameAs": "https://doi.org/10.1109/etfa.2011.6059235",
+   "abstract": "Today we live in an environment surrounded with networked converging devices. Human computer interactions are becoming personalized and a new concept of a global and cross-domain platform is emerging to exploit the full potential of the network in all business areas. In this convergence process, the software platform should be able to personalize itself dynamically in devices according to the context. OSAmI-Commons, an ITEA2 project for developing an open-source common approach to such a dynamic service-based platform, allows any type of device to connect and exchange information and services. OSAMI consortium is contributing to defining the foundations of a cross-platform open-services ecosystem. The sustainability of this platform is an objective beyond the project duration.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2010multidimensional/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2010multidimensional/",
+   "name": "A Multidimensional Reputation Scheme for Identity Federations",
+   "headline": "A Multidimensional Reputation Scheme for Identity Federations",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Carmen Fernández-Gago"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2010",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Public Key Infrastructures, Services and Applications"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Berlin Heidelberg"
+   },
+   "pagination": "225-238",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-642-16441-5_15"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-642-16441-5_15",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2010scale/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2010scale/",
+   "name": "A scale based trust model for multi-context environments",
+   "headline": "A scale based trust model for multi-context environments",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Carmen Fernández-Gago"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2010-07",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "60",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Computers & Mathematics with Applications"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Elsevier BV"
+   },
+   "pagination": "209-216",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1016/j.camwa.2010.02.009"
+   },
+   "sameAs": "https://doi.org/10.1016/j.camwa.2010.02.009",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://doi.org/10.1016/j.camwa.2010.02.009"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/lopez2010trust/#work",
+   "url": "https://isaacagudo.github.io/publications/lopez2010trust/",
+   "name": "Trust management systems for wireless sensor networks: Best practices",
+   "headline": "Trust management systems for wireless sensor networks: Best practices",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    },
+    {
+     "@type": "Person",
+     "name": "Rodrigo Roman"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Carmen Fernández-Gago"
+    }
+   ],
+   "datePublished": "2010-06",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "33",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Computer Communications"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Elsevier BV"
+   },
+   "pagination": "1086-1093",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1016/j.comcom.2010.02.006"
+   },
+   "sameAs": "https://doi.org/10.1016/j.comcom.2010.02.006",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://zenodo.org/record/3416402"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/alcaraz2009adaptive/#work",
+   "url": "https://isaacagudo.github.io/publications/alcaraz2009adaptive/",
+   "name": "Adaptive Dispatching of Incidences Based on Reputation for SCADA Systems",
+   "headline": "Adaptive Dispatching of Incidences Based on Reputation for SCADA Systems",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Cristina Alcaraz"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Carmen Fernández-Gago"
+    },
+    {
+     "@type": "Person",
+     "name": "Rodrigo Roman"
+    },
+    {
+     "@type": "Person",
+     "name": "Gerardo Fernandez"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2009",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Trust, Privacy and Security in Digital Business"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Berlin Heidelberg"
+   },
+   "pagination": "86-94",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-642-03748-1_9"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-642-03748-1_9",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2009evolutionary/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2009evolutionary/",
+   "name": "An Evolutionary Trust and Distrust Model",
+   "headline": "An Evolutionary Trust and Distrust Model",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Carmen Fernández-Gago"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2009-08",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "244",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Electronic Notes in Theoretical Computer Science"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Elsevier BV"
+   },
+   "pagination": "3-12",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1016/j.entcs.2009.07.034"
+   },
+   "sameAs": "https://doi.org/10.1016/j.entcs.2009.07.034",
+   "abstract": "In this paper we propose a trust model, where besides considering trust and distrust, we also consider another parameter that measures the reliability on the stability of trust or distrust. The inclusion of this new parameter will allow us to use trust in a more accurate way. We consider trust is not static but dynamic and trust values can change along time. Thus, we will also take time into account, using it as a parameter of our model. There is very little work done about the inclusion of time as an influence on trust. We will show the applicability of our model in the scenario of the process of reviewing papers for a conference. Sometimes for these kind of processes the Chair of the conference should first find the suitable reviewers. He can make this selection by using our model. Once the reviewers are selected they send out their reviews to the Chair who can also use our model in order to make the final decision about acceptance of papers.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://doi.org/10.1016/j.entcs.2009.07.034"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2009concurrent/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2009concurrent/",
+   "name": "Concurrent access control for multi‐user and multi‐processor systems based on trust relationships",
+   "headline": "Concurrent access control for multi‐user and multi‐processor systems based on trust relationships",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Carmen Fernández-Gago"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2009-07",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "21",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Concurrency and Computation: Practice and Experience"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Wiley"
+   },
+   "pagination": "1389-1403",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1002/cpe.1430"
+   },
+   "sameAs": "https://doi.org/10.1002/cpe.1430",
+   "abstract": "Concurrent access control is an old problem in many fields in Computer Science. It has been solved in many languages and systems, using mechanisms like monitors or priority queues. Nowadays computers implement multi‐core capabilities. This means that they are virtually capable of execution of processes in parallel. This requires new techniques and open new issues in the field of concurrent access control. Moreover, most operating systems are multi‐user; thus, we have to focus on a multi‐processor multi‐user scenario. Trust becomes a paramount aspect when building distributed applications; the same applies on a lower scale in modern computers. We propose the use of a trust graph that keeps record of the trust relationships of the system and helps in deciding on concurrent access requests. The information encoded in the graph will be used both in order to decide on the access requests and to order granted requests in terms of their associated trust level. Copyright © 2009 John Wiley & Sons, Ltd.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2009delegating/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2009delegating/",
+   "name": "Delegating Privileges over Finite Resources: A Quota Based Delegation Approach",
+   "headline": "Delegating Privileges over Finite Resources: A Quota Based Delegation Approach",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Carmen Fernández-Gago"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2009",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Formal Aspects in Security and Trust"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Berlin Heidelberg"
+   },
+   "pagination": "302-315",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-642-01465-9_20"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-642-01465-9_20",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "Article",
+   "@id": "https://isaacagudo.github.io/publications/agudo2009identidades/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2009identidades/",
+   "name": "Identidades digitales y tecnologías de gestión de identidad",
+   "headline": "Identidades digitales y tecnologías de gestión de identidad",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2009",
+   "isPartOf": {
+    "@type": "Periodical",
+    "name": "Novática"
+   },
+   "pagination": "6-11",
+   "inLanguage": "es"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2009security/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2009security/",
+   "name": "Security assurance during the software development cycle",
+   "headline": "Security assurance during the software development cycle",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "José L. Vivas"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2009-06",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Proceedings of the International Conference on Computer Systems and Technologies and Workshop for PhD Students in Computing"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "ACM"
+   },
+   "pagination": "1-6",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1145/1731740.1731763"
+   },
+   "sameAs": "https://doi.org/10.1145/1731740.1731763",
+   "abstract": "Assurance has been a major topic for critical systems. Assurance is usually associated with safety conditions but has also an important role for checking security requirements. Security is best assured if it is addressed holistically, systematically, and from the very beginning in the software's development process. We propose to integrate assurance and system development by letting the different stages of the system development life-cycle be mapped to the structure of the assurance case.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2008model/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2008model/",
+   "name": "A Model for Trust Metrics Analysis",
+   "headline": "A Model for Trust Metrics Analysis",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Carmen Fernández-Gago"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2008",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Trust, Privacy and Security in Digital Business"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Berlin Heidelberg"
+   },
+   "pagination": "28-37",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/978-3-540-85735-8_4"
+   },
+   "sameAs": "https://doi.org/10.1007/978-3-540-85735-8_4",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2008enabling/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2008enabling/",
+   "name": "Enabling Attribute Delegation in Ubiquitous Environments",
+   "headline": "Enabling Attribute Delegation in Ubiquitous Environments",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    },
+    {
+     "@type": "Person",
+     "name": "José A. Montenegro"
+    }
+   ],
+   "datePublished": "2008-07",
+   "isPartOf": {
+    "@type": "Periodical",
+    "name": "Mobile Networks and Applications"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Science and Business Media LLC"
+   },
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/s11036-008-0062-4"
+   },
+   "sameAs": "https://doi.org/10.1007/s11036-008-0062-4",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/marquez2008secure/#work",
+   "url": "https://isaacagudo.github.io/publications/marquez2008secure/",
+   "name": "Secure Real-Time Integration of Services in a OSGi Distributed Environment",
+   "headline": "Secure Real-Time Integration of Services in a OSGi Distributed Environment",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Jose Manuel Marquez"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier Jimenez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2008-09",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "2008 Fourth International Conference on Networked Computing and Advanced Information Management"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "IEEE"
+   },
+   "pagination": "631-635",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/ncm.2008.173"
+   },
+   "sameAs": "https://doi.org/10.1109/ncm.2008.173",
+   "abstract": "This paper presents a service oriented architecture for real-time integration of services, how to distribute them in a local domain and how to define a secure way of accessing resources using users' and services' authorization and authentication. This work take advantage of previous European R&D projects focused on del.ivering applications and utilities in embedded real-time environments and the convergence of different worlds like Internet and digital TV.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "Thesis",
+   "@id": "https://isaacagudo.github.io/publications/agudo2008marco/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2008marco/",
+   "name": "Un marco de delegación de privilegios basado en medidas de confianza sobre grafos y en atributos",
+   "headline": "Un marco de delegación de privilegios basado en medidas de confianza sobre grafos y en atributos",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2008",
+   "publisher": {
+    "@type": "Organization",
+    "name": "University of Málaga"
+   },
+   "abstract": "En esta Tesis se desarrolla un sistema de delegación de privilegios basado en atributos que saca provecho de las relaciones de confianza especificadas por los usuarios a la hora delegar sus privilegios y de la información de contexto del sistema para facilitar un proceso de toma de decisiones flexible y controlado, Para codificar las relaciones de confianza e incluirlas en el proceso de toma de decisiones, utilizamos un número real entre cero y uno, que mide el grado de confianza que el usuario que delega deposita en el delegado para hacer uso del privilegio que se estia otorgando o delegando. Estamos por tanto convirtiendo los privilegios en un concepto difuso o borroso, de forma que los privilegios pueden recibirse de forma plena sino que dependiendo de la confianza del usuario que delega se obtendrían los privilegios con mayor o menor valor de confianza asociado. Por tanto, la definición de políticas de autorización no está basada sólo en la posesión o no de cierto privilegio, sino en la imposición de cotas inferiores de confianza para dicho privilegio. Como ventaja adicional de la utilización de un parámetro de confianza obtenemos la posibilidad de ordenar las peticiones de servicio en función del grado de confianza que recibe cada uno de los delegados, cuando varios usuarios intentan ejercer un determinado privilegio de forma simultánea. De esta forma, aquellos usuarios con niveles de confianza superiores serían servidos en primer lugar. Los atributos de los usuarios se utilizan para definir las políticas de autorización. Se distingue entre atributos globales, aquellos comunes a todos los usuarios del sistema que deben ser certificados por una entidad superior, o atributos de dominio, que sólo tienen sentido en un dominio restringido y pueden ser certificados por los propios usuarios. Esta estructura en dos capas, facilita la definición de políticas de autorización más flexibles, ya que cada usuario puede definir sus propios atributos y asignarlos a los demás usuarios, usando sus propias credenciales de atributo. El marco general de delegación de privilegios nos permite, además de definir una taxonomía de atributos y las relaciones de confianza entre los usuarios, la especificación de restricciones relativas a información de contexto. Los ejemplos más habituales de información de contexto son el instante de tiempo actual y la posición del usuario. Por tanto, cuando un usuario otorga ciertos privilegios a otro, éste puede restringir el uso de dichos privilegios sin más que incluir en la credencial restricciones para los parámetros de contexto.",
+   "inLanguage": "es",
+   "inSupportOf": "PhD in Computer Science",
+   "sourceOrganization": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Málaga"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2007attribute/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2007attribute/",
+   "name": "Attribute Delegation in Ubiquitous Environments",
+   "headline": "Attribute Delegation in Ubiquitous Environments",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    },
+    {
+     "@type": "Person",
+     "name": "José A. Montenegro"
+    }
+   ],
+   "datePublished": "2007",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Proceedings of the 3rd International ICST Conference on Mobile Multimedia Communications"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "ICST"
+   },
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.4108/icst.mobimedia2007.1903"
+   },
+   "sameAs": "https://doi.org/10.4108/icst.mobimedia2007.1903",
+   "abstract": "When delegation is implemented using the attribute certificates in a Privilege Management Infrastructure (PMI), this one reaches a considerable level of distributed functionality. However, the approach is not flexible enough for the requirements of ubiquitous environments. Additionally, the PMI can",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "http://eudl.eu/pdf/10.4108/ICST.MOBIMEDIA2007.1903"
+   }
+  },
+  {
+   "@type": "Chapter",
+   "@id": "https://isaacagudo.github.io/publications/agudo2007delegation/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2007delegation/",
+   "name": "Delegation Services: A Step Beyond Authorization",
+   "headline": "Delegation Services: A Step Beyond Authorization",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "datePublished": "2007",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Advances in Enterprise Information Technology Security"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "IGI Global"
+   },
+   "pagination": "149-168",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.4018/978-1-59904-090-5.ch008"
+   },
+   "sameAs": "https://doi.org/10.4018/978-1-59904-090-5.ch008",
+   "abstract": "Advanced applications for the Internet need to make use of the authorization service so that users can prove what they are allowed to do and show their privileges to perform different tasks. However, for a real scalable distributed authorization solution to work, the delegation service needs to be seriously considered. In this chapter, we first put into perspective the delegation implications, issues and concepts derived from authorization schemes proposed as solutions to the distributed authorization problem, indicating the delegation approaches that some of them take. Then, we analyze interesting federation solutions. Finally, we examine different formalisms specifically developed to support delegation services, focusing on a generalization of those approaches, the Weighted Delegation Graphs solution.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2007implementation/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2007implementation/",
+   "name": "Implementation Aspects of a Delegation System",
+   "headline": "Implementation Aspects of a Delegation System",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    },
+    {
+     "@type": "Person",
+     "name": "José A. Montenegro"
+    }
+   ],
+   "datePublished": "2007",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Proceedings of the 3rd International ICST Conference on Mobile Multimedia Communications"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "ICST"
+   },
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.4108/icst.mobimedia2007.1901"
+   },
+   "sameAs": "https://doi.org/10.4108/icst.mobimedia2007.1901",
+   "abstract": "In this paper we simulate an authorization and delegation system using knowledge based technology. This proposal is part of a visual tool that is intended to be an implementation of the theoretical model weighted trust graph (WTG). A brief description of WTG Model and its associated tool is included",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "http://eudl.eu/pdf/10.4108/ICST.MOBIMEDIA2007.1901"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/lopez2007deployment/#work",
+   "url": "https://isaacagudo.github.io/publications/lopez2007deployment/",
+   "name": "On the deployment of a real scalable delegation service",
+   "headline": "On the deployment of a real scalable delegation service",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "José A. Montenegro"
+    }
+   ],
+   "datePublished": "2007",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "12",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Information Security Technical Report"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Elsevier BV"
+   },
+   "pagination": "139-146",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1016/j.istr.2007.05.008"
+   },
+   "sameAs": "https://doi.org/10.1016/j.istr.2007.05.008",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2006attribute/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2006attribute/",
+   "name": "Attribute delegation based on ontologies and context information",
+   "headline": "Attribute delegation based on ontologies and context information",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    },
+    {
+     "@type": "Person",
+     "name": "José A. Montenegro"
+    }
+   ],
+   "datePublished": "2006",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Communications and Multimedia Security"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Berlin Heidelberg"
+   },
+   "pagination": "54-66",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/11909033_6"
+   },
+   "sameAs": "https://doi.org/10.1007/11909033_6",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2006graphical/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2006graphical/",
+   "name": "Graphical Representation of Authorization Policies for Weighted Credentials",
+   "headline": "Graphical Representation of Authorization Policies for Weighted Credentials",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    },
+    {
+     "@type": "Person",
+     "name": "José A. Montenegro"
+    }
+   ],
+   "datePublished": "2006",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Information Security and Privacy"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Berlin Heidelberg"
+   },
+   "pagination": "383-394",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/11780656_32"
+   },
+   "sameAs": "https://doi.org/10.1007/11780656_32",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "Article",
+   "@id": "https://isaacagudo.github.io/publications/agudo2005graphical/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2005graphical/",
+   "name": "A Graphical Delegation Solution for X.509 Attribute Certificates",
+   "headline": "A Graphical Delegation Solution for X.509 Attribute Certificates",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    },
+    {
+     "@type": "Person",
+     "name": "José A. Montenegro"
+    }
+   ],
+   "datePublished": "2005",
+   "isPartOf": {
+    "@type": "Periodical",
+    "name": "ERCIM News"
+   },
+   "abstract": "Delegation is a major goal when a real scalable distributed authorization system is needed. However, the uncontrolled use of delegation statements can become an important security threat; for instance, any user could improperly obtain over a resource the same privileges as the owner of that resource. Therefore, delegation solutions should include a mechanism to control the delegation of privileges as well as making use of suitable authorization statements.",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2005representation/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2005representation/",
+   "name": "A representation model of trust relationships with delegation extensions",
+   "headline": "A representation model of trust relationships with delegation extensions",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    },
+    {
+     "@type": "Person",
+     "name": "José A. Montenegro"
+    }
+   ],
+   "datePublished": "2005",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Trust Management"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Berlin Heidelberg"
+   },
+   "pagination": "116-130",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1007/11429760_9"
+   },
+   "sameAs": "https://doi.org/10.1007/11429760_9",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/agudo2004specification/#work",
+   "url": "https://isaacagudo.github.io/publications/agudo2004specification/",
+   "name": "Specification and formal verification of security requirements",
+   "headline": "Specification and formal verification of security requirements",
+   "author": [
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2004",
+   "isPartOf": {
+    "@type": "Book",
+    "name": "Proceedings of the 5th international conference on Computer systems and technologies - CompSysTech '04"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "ACM Press"
+   },
+   "pagination": "1",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1145/1050330.1050440"
+   },
+   "sameAs": "https://doi.org/10.1145/1050330.1050440",
+   "abstract": "With the grown of internet and distributed applications, security requirements are going inherent to the software development process. Each time one communicates with some other one there are relevant security risk that must be taken in account. This is what is happening in the new soft-ware applications using client/server architecture. We propose including security requirements at the top level of development process, together with functional requirements because they are much related. With this information we are able to extract all communication protocols that are involved in our application and their associated security goals. This is the input to a verification phase in which we look for security flaws. The last step, and the more useful (and the not yet finished) is to use this information to modify our initial specification at the top level of the development process",
+   "inLanguage": "en"
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://isaacagudo.github.io/#morales2025sharing",
+   "additionalType": "https://www.wikidata.org/wiki/Q253623",
+   "genre": "patent",
+   "name": "Methods and systems for sharing encrypted data",
+   "creator": [
+    {
+     "@type": "Person",
+     "name": "Daniel Morales Escalera"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Francisco Javier López Muñoz"
+    }
+   ],
+   "identifier": [
+    {
+     "@type": "PropertyValue",
+     "propertyID": "patent publication number",
+     "value": "ES3075470A1"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "patent publication number",
+     "value": "WO2026162858A1"
+    }
+   ],
+   "sameAs": [
+    "https://patents.google.com/patent/ES3075470A1/en",
+    "https://patents.google.com/patent/WO2026162858A1/en"
+   ],
+   "dateCreated": "2025-01-30",
+   "datePublished": "2026-08-04",
+   "sourceOrganization": {
+    "@type": "Organization",
+    "name": "Universidad de Málaga"
+   },
+   "creativeWorkStatus": "Pending application",
+   "abstract": "The present invention relates to methods and systems for sharing encrypted data. The method comprises providing a distributed network comprising network owners (h) and resource-constrained devices (d) that generate private data (m); encrypting the private data (m) to generate encrypted data (c); and sending the encrypted data (c) to a proxy server where they are split into a set of pieces (ci). The method further comprises determining a subset of network owners (hj) to which the set of pieces (ci) is sent; generating, for each resource-constrained device (d) and network owner pair, a re-encryption key (rk) based on any combination of the public/private key pairs of the resource-constrained device (d) and the network owner, wherein the re-encryption keys (rk) can only be accessed by the proxy server; and re-encrypting each piece (ci) with the respective re-encryption key (rk).",
+   "url": "https://patents.google.com/patent/ES3075470A1/en"
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://isaacagudo.github.io/#egorov2020messaging",
+   "additionalType": "https://www.wikidata.org/wiki/Q253623",
+   "genre": "patent",
+   "name": "High-performance access management and data protection for distributed messaging applications",
+   "creator": [
+    {
+     "@type": "Person",
+     "name": "Mikhail Egorov"
+    },
+    {
+     "@type": "Person",
+     "name": "MacLane Scott Wilkison"
+    },
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "identifier": [
+    {
+     "@type": "PropertyValue",
+     "propertyID": "patent publication number",
+     "value": "US10574440B2"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "patent publication number",
+     "value": "WO2018208787A1"
+    }
+   ],
+   "sameAs": [
+    "https://patents.google.com/patent/US10574440B2/en",
+    "https://patents.google.com/patent/WO2018208787A1/en"
+   ],
+   "dateCreated": "2018-05-08",
+   "datePublished": "2020-02-25",
+   "sourceOrganization": {
+    "@type": "Organization",
+    "name": "ZeroDB, Inc."
+   },
+   "creativeWorkStatus": "Granted",
+   "abstract": "Provided is a computer system and method that enables delegated access to encrypted information for distributed messaging and queuing frameworks, or in general, to publish/subscribe architectures. In said frameworks and architectures, data is published by data producers and organized in channels or queues, which consumer applications can subscribe to, and that are managed by one or multiple broker entities.",
+   "url": "https://patents.google.com/patent/US10574440B2/en"
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://isaacagudo.github.io/#egorov2020bigdata",
+   "additionalType": "https://www.wikidata.org/wiki/Q253623",
+   "genre": "patent",
+   "name": "Method and system for secure delegated access to encrypted data in big data computing clusters",
+   "creator": [
+    {
+     "@type": "Person",
+     "name": "Mikhail Egorov"
+    },
+    {
+     "@type": "Person",
+     "name": "MacLane Scott Wilkison"
+    },
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "identifier": [
+    {
+     "@type": "PropertyValue",
+     "propertyID": "patent publication number",
+     "value": "US10581603B2"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "patent publication number",
+     "value": "WO2018208786A1"
+    }
+   ],
+   "sameAs": [
+    "https://patents.google.com/patent/US10581603B2/en",
+    "https://patents.google.com/patent/WO2018208786A1/en"
+   ],
+   "dateCreated": "2018-05-08",
+   "datePublished": "2020-03-03",
+   "sourceOrganization": {
+    "@type": "Organization",
+    "name": "ZeroDB, Inc."
+   },
+   "creativeWorkStatus": "Granted",
+   "abstract": "Provided is a process including: encrypting each of a plurality of data encryption keys with a first public cryptographic key to form encrypted data encryption keys; obtaining a second public cryptographic key; generating a transformation key based on the first public-private cryptographic key pair and the second public cryptographic key; and transforming the encrypted data encryption keys with proxy re-encryption based on the transformation key; and obtaining the second private cryptographic key and the transformed encrypted data encryption keys.",
+   "url": "https://patents.google.com/patent/US10581603B2/en"
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://isaacagudo.github.io/#egorov2020distributed",
+   "additionalType": "https://www.wikidata.org/wiki/Q253623",
+   "genre": "patent",
+   "name": "Encryption for distributed storage and processing",
+   "creator": [
+    {
+     "@type": "Person",
+     "name": "Mikhail Egorov"
+    },
+    {
+     "@type": "Person",
+     "name": "MacLane Scott Wilkison"
+    },
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    }
+   ],
+   "identifier": [
+    {
+     "@type": "PropertyValue",
+     "propertyID": "patent publication number",
+     "value": "US10691817B2"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "patent publication number",
+     "value": "US20170323114A1"
+    }
+   ],
+   "sameAs": [
+    "https://patents.google.com/patent/US10691817B2/en",
+    "https://patents.google.com/patent/US20170323114A1/en"
+   ],
+   "dateCreated": "2017-05-06",
+   "datePublished": "2020-06-23",
+   "sourceOrganization": {
+    "@type": "Organization",
+    "name": "ZeroDB, Inc."
+   },
+   "creativeWorkStatus": "Granted",
+   "abstract": "Provided is a process of securing data in a distributed storage and processing application, the process including: obtaining a cluster of computing nodes, wherein: the cluster stores a plurality of ciphertexts; accessing a transformation key with a first computing node; transforming the ciphertext with the first computing node based on the transformation key into a transformed ciphertext configured to be decrypted with a temporary access key; decrypting the transformed ciphertext with the second computing node based on the temporary access key to obtain plaintext data.",
+   "url": "https://patents.google.com/patent/US10691817B2/en"
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://isaacagudo.github.io/#nunez2018switching",
+   "additionalType": "https://www.wikidata.org/wiki/Q253623",
+   "genre": "patent",
+   "name": "Method and system for switching public keys in ciphertexts",
+   "creator": [
+    {
+     "@type": "Person",
+     "name": "David Núñez"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Mikhail Egorov"
+    },
+    {
+     "@type": "Person",
+     "name": "MacLane Scott Wilkison"
+    }
+   ],
+   "identifier": [
+    {
+     "@type": "PropertyValue",
+     "propertyID": "patent publication number",
+     "value": "US20180091301A1"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "patent publication number",
+     "value": "WO2018102382A1"
+    }
+   ],
+   "sameAs": [
+    "https://patents.google.com/patent/US20180091301A1/en",
+    "https://patents.google.com/patent/WO2018102382A1/en"
+   ],
+   "dateCreated": "2017-11-29",
+   "datePublished": "2018-03-29",
+   "sourceOrganization": {
+    "@type": "Organization",
+    "name": "ZeroDB, Inc."
+   },
+   "creativeWorkStatus": "Published application",
+   "abstract": "Provided is a process, including: obtaining a first ciphertext; obtaining the field size with which the first ciphertext was encrypted; obtaining a first private encryption key of the first encryption key pair; receiving a request to delegate access to the first ciphertext to a second recipient; obtaining a second private encryption key; determining a key-switching key based on the field size, the first private encryption key, and the second private encryption key; in response to the request, delegating access by forming a second ciphertext from which the plaintext is accessible with the second private encryption key; and storing the second ciphertext in memory.",
+   "url": "https://patents.google.com/patent/US20180091301A1/en"
+  }
+ ]
+}
+</script>
 </head>
 <body>
-  <main>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="home" href="/">Isaac Agudo</a>
+    <nav aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#patents">Patents</a>
+      <a href="#data">Data</a>
+    </nav>
+  </header>
+  <main id="main">
     <div class="intro">
       <h1>Isaac Agudo</h1>
-      <p class="lede">I teach and research applied cryptography, cybersecurity and blockchain at NICS&nbsp;Lab, University of Málaga. I am also the founder of Decentralized&nbsp;Security.</p>
+      <p class="lede">I teach and research applied cryptography at the University of Málaga, where I am an Associate Professor in the Department of Computer Science and a member of <a href="https://www.nics.uma.es">NICS Lab</a>. I am also the founder of <a href="https://decentralizedsecurity.es">Decentralized Security</a>.</p>
     </div>
 
-    <section class="band" aria-label="Site status">
-      <p class="status">
-        <span class="sr-only">This site is under construction.</span>
-        <span aria-hidden="true" data-decrypt>This site is under construction.</span>
-      </p>
-      <p class="note">A full version with my teaching, research and projects is on its way.</p>
+    <section class="band" id="data" aria-labelledby="data-h">
+      <h2 id="data-h" class="status"><span class="sr-only">Readable by people and by machines.</span><span aria-hidden="true" data-decrypt>Readable by people and by machines.</span></h2>
+      <p class="note">Every publication and patent on this page is also published as structured data, for citation managers, search engines and AI assistants.</p>
+      <ul class="data-links">
+        <li><a href="/llms.txt">llms.txt</a>, a guide to this site for language models</li>
+        <li><a href="/llms-full.txt">llms-full.txt</a>, the whole site with abstracts in one Markdown file</li>
+        <li><a href="/publications.bib">publications.bib</a>, BibTeX for every entry</li>
+        <li><a href="/publications.json">publications.json</a> and <a href="/patents.json">patents.json</a>, in CSL-JSON</li>
+      </ul>
     </section>
 
-    <p class="meanwhile">In the meantime, you can visit my page at <a href="https://www.nics.uma.es/isaac">NICS&nbsp;Lab</a>, browse <a href="https://github.com/isaacagudo">my repositories</a> on GitHub, or learn more about <a href="https://decentralizedsecurity.es">Decentralized&nbsp;Security</a> and <a href="https://github.com/decentralizedsecurity">its repositories</a>.</p>
+    <section class="block" id="research" aria-labelledby="research-h">
+      <h2 id="research-h">Research</h2>
+      <dl class="lines">
+      <div class="line"><dt>Secure multi-party computation</dt><dd>How current MPC protocols behave in concrete scenarios, with a focus on the trade-offs between performance and security.</dd></div>
+      <div class="line"><dt>Applied cryptography for blockchain and connected vehicles</dt><dd>Security problems in blockchain and connected-car settings, and new solutions for privacy, authentication and confidentiality.</dd></div>
+      <div class="line"><dt>Digital identity</dt><dd>Requirements for interoperable identity schemes, including self-sovereign identity, blockchain-based solutions and wearable devices as identity enablers.</dd></div>
+      <div class="line"><dt>Authentication, authorization and delegation</dt><dd>Design and implementation of privacy-friendly authentication and access delegation, including proxy re-encryption.</dd></div>
+      </dl>
+    </section>
+
+    <section class="block" id="publications" aria-labelledby="pub-h">
+      <h2 id="pub-h">Selected publications</h2>
+      <ol class="works">
+        <li class="work" id="sanchez2026effectiveness">
+          <a class="w-title" href="/publications/sanchez2026effectiveness/">On the Effectiveness of Lightweight Models for Encrypted Traffic Classification</a>
+          <span class="w-authors">Pablo Sánchez-Serrano, Ruben Rios, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Conference paper in <cite>2026 9th International Conference on Networking, Intelligent Systems &amp; Security (NISS)</cite>, pp. 215–222, 2026.</span>
+          <span class="w-links"><a href="https://doi.org/10.23919/nisscps00007.2026.00037">DOI 10.23919/nisscps00007.2026.00037</a></span>
+        </li>
+        <li class="work" id="morales2026zero">
+          <a class="w-title" href="/publications/morales2026zero/">Zero-knowledge Bitcoin mixer with reversible unlinkability</a>
+          <span class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>Blockchain: Research and Applications</cite>, 7(2), 100323, 2026.</span>
+          <span class="w-links"><a href="https://doi.org/10.1016/j.bcra.2025.100323">DOI 10.1016/j.bcra.2025.100323</a></span>
+        </li>
+        <li class="work" id="morales2025lightweight">
+          <a class="w-title" href="/publications/morales2025lightweight/">A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices</a>
+          <span class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>IEEE Internet of Things Journal</cite>, 12(13), 22725–22732, 2025.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/jiot.2025.3555026">DOI 10.1109/jiot.2025.3555026</a></span>
+        </li>
+        <li class="work" id="morales2025toward">
+          <a class="w-title" href="/publications/morales2025toward/">Toward a Framework for Cost-Effective and Publicly Verifiable Confidential Computations in Blockchain</a>
+          <span class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>IEEE Communications Magazine</cite>, 63(2), 96–102, 2025.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/mcom.001.2300839">DOI 10.1109/mcom.001.2300839</a> <a href="https://riuma.uma.es/xmlui/bitstream/10630/34694/1/Toward_a_Framework_for_Cost-Effective_and_Publicly_Verifiable_Confidential_Computations_in_Blockchain.pdf">Open-access copy</a></span>
+        </li>
+        <li class="work" id="morales2023integration">
+          <a class="w-title" href="/publications/morales2023integration/">Integration of MPC into Besu through an extended private transaction model</a>
+          <span class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>2023 IEEE International Conference on Metaverse Computing, Networking and Applications (MetaCom)</cite>, pp. 266–273, 2023.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/metacom57706.2023.00056">DOI 10.1109/metacom57706.2023.00056</a></span>
+        </li>
+        <li class="work" id="meraouche2022learning">
+          <a class="w-title" href="/publications/meraouche2022learning/">Learning Multi-Party Adversarial Encryption and Its Application to Secret Sharing</a>
+          <span class="w-authors">Ishak Meraouche, Sabyasachi Dutta, Sraban Kumar Mohanty, <span class="me">Isaac Agudo</span>, Kouichi Sakurai</span>
+          <span class="w-venue">Journal article in <cite>IEEE Access</cite>, 10, 121329–121339, 2022.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/access.2022.3223430">DOI 10.1109/access.2022.3223430</a> <a href="https://ieeexplore.ieee.org/ielx7/6287639/6514899/09955544.pdf">Open-access copy</a></span>
+        </li>
+        <li class="work" id="agudo2021blockchain">
+          <a class="w-title" href="/publications/agudo2021blockchain/">A Blockchain Approach for Decentralized V2X (D-V2X)</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Manuel Montenegro-Gómez, Javier López</span>
+          <span class="w-venue">Journal article in <cite>IEEE Transactions on Vehicular Technology</cite>, 70(5), 4001–4010, 2021.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/tvt.2020.3046640">DOI 10.1109/tvt.2020.3046640</a> <a href="https://hdl.handle.net/10630/29924">Open-access copy</a></span>
+        </li>
+        <li class="work" id="nunez2019escrowed">
+          <a class="w-title" href="/publications/nunez2019escrowed/">Escrowed decryption protocols for lawful interception of encrypted data</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>IET Information Security</cite>, 13(5), 498–507, 2019.</span>
+          <span class="w-links"><a href="https://doi.org/10.1049/iet-ifs.2018.5082">DOI 10.1049/iet-ifs.2018.5082</a></span>
+        </li>
+        <li class="work" id="nunez2015parametric">
+          <a class="w-title" href="/publications/nunez2015parametric/">A Parametric Family of Attack Models for Proxy Re-encryption</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>2015 IEEE 28th Computer Security Foundations Symposium</cite>, pp. 290–301, 2015.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/csf.2015.27">DOI 10.1109/csf.2015.27</a> <a href="https://ieeexplore.ieee.org/ielx7/7243288/7243713/07243740.pdf">Open-access copy</a></span>
+        </li>
+        <li class="work" id="nunez2015ntrureencrypt">
+          <a class="w-title" href="/publications/nunez2015ntrureencrypt/">NTRUReEncrypt: An Efficient Proxy Re-Encryption Scheme Based on NTRU</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>Proceedings of the 10th ACM Symposium on Information, Computer and Communications Security</cite>, pp. 179–189, 2015.</span>
+          <span class="w-links"><a href="https://doi.org/10.1145/2714576.2714585">DOI 10.1145/2714576.2714585</a></span>
+        </li>
+        <li class="work" id="nunez2014blindidm">
+          <a class="w-title" href="/publications/nunez2014blindidm/">BlindIdM: A privacy-preserving approach for identity management as a service</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Journal article in <cite>International Journal of Information Security</cite>, 13(2), 199–215, 2014.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/s10207-014-0230-4">DOI 10.1007/s10207-014-0230-4</a></span>
+        </li>
+        <li class="work" id="agudo2013privacy">
+          <a class="w-title" href="/publications/agudo2013privacy/">A privacy-aware continuous authentication scheme for proximity-based access control</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Ruben Rios, Javier López</span>
+          <span class="w-venue">Journal article in <cite>Computers &amp; Security</cite>, 39, 117–126, 2013.</span>
+          <span class="w-links"><a href="https://doi.org/10.1016/j.cose.2013.05.004">DOI 10.1016/j.cose.2013.05.004</a></span>
+        </li>
+      </ol>
+    </section>
+
+    <section class="block" id="patents" aria-labelledby="pat-h">
+      <h2 id="pat-h">Patents</h2>
+      <ol class="works patents">
+        <li class="patent" id="morales2025sharing">
+          <h3 class="w-title">Methods and systems for sharing encrypted data</h3>
+          <span class="w-authors">Daniel Morales Escalera, <span class="me">Isaac Agudo Ruiz</span>, Francisco Javier López Muñoz</span>
+          <span class="w-venue">Pending application. Applicant: Universidad de Málaga.</span>
+          <ul class="family"><li><a href="https://patents.google.com/patent/ES3075470A1/en">ES3075470A1</a>, Spanish application P202530072, filed 30 January 2025, published 4 August 2026.</li><li><a href="https://patents.google.com/patent/WO2026162858A1/en">WO2026162858A1</a>, International (PCT) application PCT/ES2026/070037, filed 23 January 2026, published 6 August 2026.</li></ul>
+          <details><summary>Abstract</summary><p>The present invention relates to methods and systems for sharing encrypted data. The method comprises providing a distributed network comprising network owners (h) and resource-constrained devices (d) that generate private data (m); encrypting the private data (m) to generate encrypted data (c); and sending the encrypted data (c) to a proxy server where they are split into a set of pieces (ci). The method further comprises determining a subset of network owners (hj) to which the set of pieces (ci) is sent; generating, for each resource-constrained device (d) and network owner pair, a re-encryption key (rk) based on any combination of the public/private key pairs of the resource-constrained device (d) and the network owner, wherein the re-encryption keys (rk) can only be accessed by the proxy server; and re-encrypting each piece (ci) with the respective re-encryption key (rk).</p></details>
+        </li>
+        <li class="patent" id="egorov2020messaging">
+          <h3 class="w-title">High-performance access management and data protection for distributed messaging applications</h3>
+          <span class="w-authors">Mikhail Egorov, MacLane Scott Wilkison, David Núñez, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Granted. Applicant: ZeroDB, Inc.</span>
+          <ul class="family"><li><a href="https://patents.google.com/patent/US10574440B2/en">US10574440B2</a>, US patent, filed 8 May 2018, granted 25 February 2020.</li><li><a href="https://patents.google.com/patent/WO2018208787A1/en">WO2018208787A1</a>, International (PCT) application, filed 8 May 2018, published 15 November 2018.</li></ul>
+          <details><summary>Abstract</summary><p>Provided is a computer system and method that enables delegated access to encrypted information for distributed messaging and queuing frameworks, or in general, to publish/subscribe architectures. In said frameworks and architectures, data is published by data producers and organized in channels or queues, which consumer applications can subscribe to, and that are managed by one or multiple broker entities.</p></details>
+        </li>
+        <li class="patent" id="egorov2020bigdata">
+          <h3 class="w-title">Method and system for secure delegated access to encrypted data in big data computing clusters</h3>
+          <span class="w-authors">Mikhail Egorov, MacLane Scott Wilkison, David Núñez, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Granted. Applicant: ZeroDB, Inc.</span>
+          <ul class="family"><li><a href="https://patents.google.com/patent/US10581603B2/en">US10581603B2</a>, US patent, filed 8 May 2018, granted 3 March 2020.</li><li><a href="https://patents.google.com/patent/WO2018208786A1/en">WO2018208786A1</a>, International (PCT) application, filed 8 May 2018, published 15 November 2018.</li></ul>
+          <details><summary>Abstract</summary><p>Provided is a process including: encrypting each of a plurality of data encryption keys with a first public cryptographic key to form encrypted data encryption keys; obtaining a second public cryptographic key; generating a transformation key based on the first public-private cryptographic key pair and the second public cryptographic key; and transforming the encrypted data encryption keys with proxy re-encryption based on the transformation key; and obtaining the second private cryptographic key and the transformed encrypted data encryption keys.</p></details>
+        </li>
+        <li class="patent" id="egorov2020distributed">
+          <h3 class="w-title">Encryption for distributed storage and processing</h3>
+          <span class="w-authors">Mikhail Egorov, MacLane Scott Wilkison, David Núñez, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Granted. Applicant: ZeroDB, Inc.</span>
+          <ul class="family"><li><a href="https://patents.google.com/patent/US10691817B2/en">US10691817B2</a>, US patent, filed 6 May 2017, granted 23 June 2020.</li><li><a href="https://patents.google.com/patent/US20170323114A1/en">US20170323114A1</a>, US pre-grant publication.</li></ul>
+          <details><summary>Abstract</summary><p>Provided is a process of securing data in a distributed storage and processing application, the process including: obtaining a cluster of computing nodes, wherein: the cluster stores a plurality of ciphertexts; accessing a transformation key with a first computing node; transforming the ciphertext with the first computing node based on the transformation key into a transformed ciphertext configured to be decrypted with a temporary access key; decrypting the transformed ciphertext with the second computing node based on the temporary access key to obtain plaintext data.</p></details>
+        </li>
+        <li class="patent" id="nunez2018switching">
+          <h3 class="w-title">Method and system for switching public keys in ciphertexts</h3>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Mikhail Egorov, MacLane Scott Wilkison</span>
+          <span class="w-venue">Published application. Applicant: ZeroDB, Inc.</span>
+          <ul class="family"><li><a href="https://patents.google.com/patent/US20180091301A1/en">US20180091301A1</a>, US application, filed 29 November 2017, published 29 March 2018.</li><li><a href="https://patents.google.com/patent/WO2018102382A1/en">WO2018102382A1</a>, International (PCT) application, filed 29 November 2017, published 7 June 2018.</li></ul>
+          <details><summary>Abstract</summary><p>Provided is a process, including: obtaining a first ciphertext; obtaining the field size with which the first ciphertext was encrypted; obtaining a first private encryption key of the first encryption key pair; receiving a request to delegate access to the first ciphertext to a second recipient; obtaining a second private encryption key; determining a key-switching key based on the field size, the first private encryption key, and the second private encryption key; in response to the request, delegating access by forming a second ciphertext from which the plaintext is accessible with the second private encryption key; and storing the second ciphertext in memory.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="block" id="all" aria-labelledby="all-h">
+      <h2 id="all-h">All publications</h2>
+      <p class="count">65 publications: 20 journal articles, 37 conference papers, 2 book chapters, 2 edited volumes, 3 magazine articles and a PhD thesis.</p>
+    <section class="year" aria-labelledby="y2026">
+      <h3 id="y2026" class="year-label">2026</h3>
+      <ol class="works">
+        <li class="work" id="sanchez2026effectiveness">
+          <a class="w-title" href="/publications/sanchez2026effectiveness/">On the Effectiveness of Lightweight Models for Encrypted Traffic Classification</a>
+          <span class="w-authors">Pablo Sánchez-Serrano, Ruben Rios, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Conference paper in <cite>2026 9th International Conference on Networking, Intelligent Systems &amp; Security (NISS)</cite>, pp. 215–222.</span>
+          <span class="w-links"><a href="https://doi.org/10.23919/nisscps00007.2026.00037">DOI 10.23919/nisscps00007.2026.00037</a></span>
+        </li>
+        <li class="work" id="morales2026zero">
+          <a class="w-title" href="/publications/morales2026zero/">Zero-knowledge Bitcoin mixer with reversible unlinkability</a>
+          <span class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>Blockchain: Research and Applications</cite>, 7(2), 100323.</span>
+          <span class="w-links"><a href="https://doi.org/10.1016/j.bcra.2025.100323">DOI 10.1016/j.bcra.2025.100323</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2025">
+      <h3 id="y2025" class="year-label">2025</h3>
+      <ol class="works">
+        <li class="work" id="sanchez2025decision">
+          <a class="w-title" href="/publications/sanchez2025decision/">A decision framework for privacy-preserving synthetic data generation</a>
+          <span class="w-authors">Pablo Sánchez-Serrano, Ruben Rios, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Journal article in <cite>Computers and Electrical Engineering</cite>, 126, 110468.</span>
+          <span class="w-links"><a href="https://doi.org/10.1016/j.compeleceng.2025.110468">DOI 10.1016/j.compeleceng.2025.110468</a></span>
+        </li>
+        <li class="work" id="morales2025lightweight">
+          <a class="w-title" href="/publications/morales2025lightweight/">A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices</a>
+          <span class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>IEEE Internet of Things Journal</cite>, 12(13), 22725–22732.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/jiot.2025.3555026">DOI 10.1109/jiot.2025.3555026</a></span>
+        </li>
+        <li class="work" id="juaristi2025benchmarking">
+          <a class="w-title" href="/publications/juaristi2025benchmarking/">Benchmarking Post-quantum Cryptography in Ethereum-Based Blockchains</a>
+          <span class="w-authors">Patxi Juaristi, <span class="me">Isaac Agudo</span>, Ruben Rios, Laura Ricci</span>
+          <span class="w-venue">Conference paper in <cite>Computer Security. ESORICS 2024 International Workshops</cite>, pp. 340–353.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-031-82349-7_23">DOI 10.1007/978-3-031-82349-7_23</a></span>
+        </li>
+        <li class="work" id="sanchez2025privacy">
+          <a class="w-title" href="/publications/sanchez2025privacy/">Privacy-Preserving Tabular Data Generation: Systematic Literature Review</a>
+          <span class="w-authors">Pablo Sánchez-Serrano, Ruben Rios, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Conference paper in <cite>Computer Security. ESORICS 2024 International Workshops</cite>, pp. 170–180.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-031-82349-7_12">DOI 10.1007/978-3-031-82349-7_12</a></span>
+        </li>
+        <li class="work" id="morales2025toward">
+          <a class="w-title" href="/publications/morales2025toward/">Toward a Framework for Cost-Effective and Publicly Verifiable Confidential Computations in Blockchain</a>
+          <span class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>IEEE Communications Magazine</cite>, 63(2), 96–102.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/mcom.001.2300839">DOI 10.1109/mcom.001.2300839</a> <a href="https://riuma.uma.es/xmlui/bitstream/10630/34694/1/Toward_a_Framework_for_Cost-Effective_and_Publicly_Verifiable_Confidential_Computations_in_Blockchain.pdf">Open-access copy</a></span>
+        </li>
+        <li class="work" id="ramirez2025web3">
+          <a class="w-title" href="/publications/ramirez2025web3/">Web3 Security</a>
+          <span class="w-authors">José Carlos Ramírez, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Chapter in <cite>Tokenizing the Future: A Guide to Web3 and the Metaverse</cite>, edited by Wolfgang Prinz, Daniel Trauth, Springer, pp. 163–172.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-031-91405-8_11">DOI 10.1007/978-3-031-91405-8_11</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2023">
+      <h3 id="y2023" class="year-label">2023</h3>
+      <ol class="works">
+        <li class="work" id="molina2023empirical">
+          <a class="w-title" href="/publications/molina2023empirical/">An empirical evaluation of BLE for ITS scenarios</a>
+          <span class="w-authors">Elena Molina, Ruben Rios, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Conference paper in <cite>2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall)</cite>, pp. 1–5.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/vtc2023-fall60731.2023.10333713">DOI 10.1109/vtc2023-fall60731.2023.10333713</a></span>
+        </li>
+        <li class="work" id="morales2023integration">
+          <a class="w-title" href="/publications/morales2023integration/">Integration of MPC into Besu through an extended private transaction model</a>
+          <span class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>2023 IEEE International Conference on Metaverse Computing, Networking and Applications (MetaCom)</cite>, pp. 266–273.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/metacom57706.2023.00056">DOI 10.1109/metacom57706.2023.00056</a></span>
+        </li>
+        <li class="work" id="morales2023private">
+          <a class="w-title" href="/publications/morales2023private/">Private set intersection: A systematic literature review</a>
+          <span class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>Computer Science Review</cite>, 49, 100567.</span>
+          <span class="w-links"><a href="https://doi.org/10.1016/j.cosrev.2023.100567">DOI 10.1016/j.cosrev.2023.100567</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2022">
+      <h3 id="y2022" class="year-label">2022</h3>
+      <ol class="works">
+        <li class="work" id="meraouche2022learning">
+          <a class="w-title" href="/publications/meraouche2022learning/">Learning Multi-Party Adversarial Encryption and Its Application to Secret Sharing</a>
+          <span class="w-authors">Ishak Meraouche, Sabyasachi Dutta, Sraban Kumar Mohanty, <span class="me">Isaac Agudo</span>, Kouichi Sakurai</span>
+          <span class="w-venue">Journal article in <cite>IEEE Access</cite>, 10, 121329–121339.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/access.2022.3223430">DOI 10.1109/access.2022.3223430</a> <a href="https://ieeexplore.ieee.org/ielx7/6287639/6514899/09955544.pdf">Open-access copy</a></span>
+        </li>
+        <li class="work" id="morales2022real">
+          <a class="w-title" href="/publications/morales2022real/">Real-time Crowd Counting based on Wearable Ephemeral IDs</a>
+          <span class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>Proceedings of the 19th International Conference on Security and Cryptography</cite>, pp. 249–260.</span>
+          <span class="w-links"><a href="https://doi.org/10.5220/0011327200003283">DOI 10.5220/0011327200003283</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2021">
+      <h3 id="y2021" class="year-label">2021</h3>
+      <ol class="works">
+        <li class="work" id="agudo2021blockchain">
+          <a class="w-title" href="/publications/agudo2021blockchain/">A Blockchain Approach for Decentralized V2X (D-V2X)</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Manuel Montenegro-Gómez, Javier López</span>
+          <span class="w-venue">Journal article in <cite>IEEE Transactions on Vehicular Technology</cite>, 70(5), 4001–4010.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/tvt.2020.3046640">DOI 10.1109/tvt.2020.3046640</a> <a href="https://hdl.handle.net/10630/29924">Open-access copy</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2019">
+      <h3 id="y2019" class="year-label">2019</h3>
+      <ol class="works">
+        <li class="work" id="ocana2019comunicaciones">
+          <a class="w-title" href="/publications/ocana2019comunicaciones/" lang="es">Comunicaciones VoIP cifradas usando Intel SGX</a>
+          <span class="w-authors">Raúl Ocaña, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Conference paper in <cite>Actas de las V Jornadas Nacionales de Investigación en Ciberseguridad (JNIC 2019)</cite>, pp. 255–256.</span>
+          
+        </li>
+        <li class="work" id="nunez2019escrowed">
+          <a class="w-title" href="/publications/nunez2019escrowed/">Escrowed decryption protocols for lawful interception of encrypted data</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>IET Information Security</cite>, 13(5), 498–507.</span>
+          <span class="w-links"><a href="https://doi.org/10.1049/iet-ifs.2018.5082">DOI 10.1049/iet-ifs.2018.5082</a></span>
+        </li>
+        <li class="work" id="agudo2019personalized">
+          <a class="w-title" href="/publications/agudo2019personalized/">Personalized Computer Security Tasks with Automatic Evaluation and Feedback</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Ruben Rios, Ana Nieto</span>
+          <span class="w-venue">Conference paper in <cite>Proceedings of the 2019 AIS SIGED International Conference on Information Systems Education and Research</cite>.</span>
+          <span class="w-links"><a href="https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1000&amp;context=siged2019">Open-access copy</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2017">
+      <h3 id="y2017" class="year-label">2017</h3>
+      <ol class="works">
+        <li class="work" id="agudo2017establecimiento">
+          <a class="w-title" href="/publications/agudo2017establecimiento/" lang="es">Establecimiento de claves seguro mediante códigos sonoros en dispositivos móviles</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Ricardo Ruiz Tueros</span>
+          <span class="w-venue">Conference paper in <cite>Proceedings XIII Jornadas de Ingenieria Telematica - JITEL2017</cite>, pp. 79–85.</span>
+          <span class="w-links"><a href="https://doi.org/10.4995/jitel2017.2017.6562">DOI 10.4995/jitel2017.2017.6562</a> <a href="http://ocs.editorial.upv.es/index.php/JITEL/JITEL2017/paper/download/6562/3209">Open-access copy</a></span>
+        </li>
+        <li class="work" id="nunez2017proxy">
+          <a class="w-title" href="/publications/nunez2017proxy/">Proxy Re-Encryption: Analysis of constructions and its application to secure access delegation</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>Journal of Network and Computer Applications</cite>, 87, 193–209.</span>
+          <span class="w-links"><a href="https://doi.org/10.1016/j.jnca.2017.03.005">DOI 10.1016/j.jnca.2017.03.005</a></span>
+        </li>
+        <li class="work" id="nunez2017fallout">
+          <a class="w-title" href="/publications/nunez2017fallout/">The Fallout of Key Compromise in a Proxy-Mediated Key Agreement Protocol</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>Data and Applications Security and Privacy XXXI</cite>, pp. 453–472.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-319-61176-1_25">DOI 10.1007/978-3-319-61176-1_25</a> <a href="https://inria.hal.science/hal-01684370">Open-access copy</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2016">
+      <h3 id="y2016" class="year-label">2016</h3>
+      <ol class="works">
+        <li class="work" id="agudo2016technique">
+          <a class="w-title" href="/publications/agudo2016technique/">A Technique for Enhanced Provision of Appropriate Access to Evidence Across Service Provision Chains</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Ali El Kaafarani, David Núñez, Siani Pearson</span>
+          <span class="w-venue">Conference paper in <cite>Privacy and Identity Management. Time for a Revolution?</cite>, pp. 187–204.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-319-41763-9_13">DOI 10.1007/978-3-319-41763-9_13</a> <a href="https://inria.hal.science/hal-01619749">Open-access copy</a></span>
+        </li>
+        <li class="work" id="pares2016lockpic">
+          <a class="w-title" href="/publications/pares2016lockpic/">LockPic: Privacy Preserving Photo Sharing in Social Networks</a>
+          <span class="w-authors">Carlos Parés-Pulido, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Conference paper in <cite>Data Privacy Management, and Security Assurance</cite>, pp. 281–290.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-319-29883-2_21">DOI 10.1007/978-3-319-29883-2_21</a></span>
+        </li>
+        <li class="work" id="nunez2016application">
+          <a class="w-title" href="/publications/nunez2016application/">On the application of generic CCA‐secure transformations to proxy re‐encryption</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>Security and Communication Networks</cite>, 9(12), 1769–1785.</span>
+          <span class="w-links"><a href="https://doi.org/10.1002/sec.1434">DOI 10.1002/sec.1434</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2015">
+      <h3 id="y2015" class="year-label">2015</h3>
+      <ol class="works">
+        <li class="work" id="nunez2015parametric">
+          <a class="w-title" href="/publications/nunez2015parametric/">A Parametric Family of Attack Models for Proxy Re-encryption</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>2015 IEEE 28th Computer Security Foundations Symposium</cite>, pp. 290–301.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/csf.2015.27">DOI 10.1109/csf.2015.27</a> <a href="https://ieeexplore.ieee.org/ielx7/7243288/7243713/07243740.pdf">Open-access copy</a></span>
+        </li>
+        <li class="work" id="ikonen2015is">
+          <a class="w-title" href="/publications/ikonen2015is/">Is the world ready or do we need more tools for programming related teamwork?</a>
+          <span class="w-authors">Jouni Ikonen, Antti Knutas, YongYi Wu, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Conference paper in <cite>Proceedings of the 15th Koli Calling Conference on Computing Education Research</cite>, pp. 33–39.</span>
+          <span class="w-links"><a href="https://doi.org/10.1145/2828959.2828978">DOI 10.1145/2828959.2828978</a></span>
+        </li>
+        <li class="work" id="nunez2015ntrureencrypt">
+          <a class="w-title" href="/publications/nunez2015ntrureencrypt/">NTRUReEncrypt: An Efficient Proxy Re-Encryption Scheme Based on NTRU</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>Proceedings of the 10th ACM Symposium on Information, Computer and Communications Security</cite>, pp. 179–189.</span>
+          <span class="w-links"><a href="https://doi.org/10.1145/2714576.2714585">DOI 10.1145/2714576.2714585</a></span>
+        </li>
+        <li class="work" id="nunez2015privacy">
+          <a class="w-title" href="/publications/nunez2015privacy/">Privacy-Preserving Identity Management as a Service</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>Accountability and Security in the Cloud</cite>, pp. 114–125.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-319-17199-9_5">DOI 10.1007/978-3-319-17199-9_5</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2014">
+      <h3 id="y2014" class="year-label">2014</h3>
+      <ol class="works">
+        <li class="work" id="nunez2014blindidm">
+          <a class="w-title" href="/publications/nunez2014blindidm/">BlindIdM: A privacy-preserving approach for identity management as a service</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Journal article in <cite>International Journal of Information Security</cite>, 13(2), 199–215.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/s10207-014-0230-4">DOI 10.1007/s10207-014-0230-4</a></span>
+        </li>
+        <li class="work" id="fernandez2014building">
+          <a class="w-title" href="/publications/fernandez2014building/">Building trust from context similarity measures</a>
+          <span class="w-authors">Carmen Fernández-Gago, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>Computer Standards &amp; Interfaces</cite>, 36(4), 792–800.</span>
+          <span class="w-links"><a href="https://doi.org/10.1016/j.csi.2013.12.012">DOI 10.1016/j.csi.2013.12.012</a> <a href="https://zenodo.org/record/3416904">Open-access copy</a></span>
+        </li>
+        <li class="work" id="nunez2014delegated">
+          <a class="w-title" href="/publications/nunez2014delegated/">Delegated Access for Hadoop Clusters in the Cloud</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>2014 IEEE 6th International Conference on Cloud Computing Technology and Science</cite>, pp. 374–379.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/cloudcom.2014.50">DOI 10.1109/cloudcom.2014.50</a></span>
+        </li>
+        <li class="work" id="katsikas2014public">
+          <a class="w-title" href="/publications/katsikas2014public/">Public Key Infrastructures, Services and Applications: 10th European Workshop, EuroPKI 2013, Egham, UK, September 12-13, 2013, Revised Selected Papers</a>
+          <span class="w-authors">Sokratis Katsikas, <span class="me">Isaac Agudo</span> (eds.)</span>
+          <span class="w-venue">Edited volume in <cite>Lecture Notes in Computer Science</cite>, Springer Berlin Heidelberg.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-642-53997-8">DOI 10.1007/978-3-642-53997-8</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2013">
+      <h3 id="y2013" class="year-label">2013</h3>
+      <ol class="works">
+        <li class="work" id="agudo2013privacy">
+          <a class="w-title" href="/publications/agudo2013privacy/">A privacy-aware continuous authentication scheme for proximity-based access control</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Ruben Rios, Javier López</span>
+          <span class="w-venue">Journal article in <cite>Computers &amp; Security</cite>, 39, 117–126.</span>
+          <span class="w-links"><a href="https://doi.org/10.1016/j.cose.2013.05.004">DOI 10.1016/j.cose.2013.05.004</a></span>
+        </li>
+        <li class="work" id="nunez2013leveraging">
+          <a class="w-title" href="/publications/nunez2013leveraging/">Leveraging Privacy in Identity Management as a Service through Proxy Re-Encryption</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>European Conference on Service-Oriented and Cloud Computing</cite>.</span>
+          
+        </li>
+        <li class="work" id="fernandez2013trust">
+          <a class="w-title" href="/publications/fernandez2013trust/">Trust Management VII: 7th IFIP WG 11.11 International Conference, IFIPTM 2013, Malaga, Spain, June 3-7, 2013. Proceedings</a>
+          <span class="w-authors">Carmen Fernández-Gago, Fabio Martinelli, Siani Pearson, <span class="me">Isaac Agudo</span> (eds.)</span>
+          <span class="w-venue">Edited volume in <cite>IFIP Advances in Information and Communication Technology</cite>, Springer Berlin Heidelberg.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-642-38323-6">DOI 10.1007/978-3-642-38323-6</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2012">
+      <h3 id="y2012" class="year-label">2012</h3>
+      <ol class="works">
+        <li class="work" id="moyano2012task">
+          <a class="w-title" href="/publications/moyano2012task/">A Task Ordering Approach for Automatic Trust Establishment</a>
+          <span class="w-authors">Francisco Moyano, Carmen Fernández-Gago, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>Engineering Secure Software and Systems</cite>, pp. 75–88.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-642-28166-2_8">DOI 10.1007/978-3-642-28166-2_8</a></span>
+        </li>
+        <li class="work" id="nunez2012integrating">
+          <a class="w-title" href="/publications/nunez2012integrating/">Integrating OpenID with proxy re-encryption to enhance privacy in cloud-based identity services</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>4th IEEE International Conference on Cloud Computing Technology and Science Proceedings</cite>, pp. 241–248.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/cloudcom.2012.6427551">DOI 10.1109/cloudcom.2012.6427551</a></span>
+        </li>
+        <li class="work" id="agudo2012seguridad">
+          <a class="w-title" href="/publications/agudo2012seguridad/" lang="es">La Seguridad de la Información en los nuevos grados EEES</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Magazine article in <cite>Red Seguridad</cite>.</span>
+          
+        </li>
+        <li class="work" id="neumann2012strong">
+          <a class="w-title" href="/publications/neumann2012strong/">Strong Authentication of Humans and Machines in Policy Controlled Cloud Computing Environment Using Automatic Cyber Identity</a>
+          <span class="w-authors">Libor Neumann, Tomáš Halman, Pavel Rotek, Alexander Boettcher, Julian Stecklina, Michal Sojka, David Núñez, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Conference paper in <cite>ISSE 2012 Securing Electronic Business Processes</cite>, pp. 195–206.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-658-00333-3_19">DOI 10.1007/978-3-658-00333-3_19</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2011">
+      <h3 id="y2011" class="year-label">2011</h3>
+      <ol class="works">
+        <li class="work" id="vivas2011methodology">
+          <a class="w-title" href="/publications/vivas2011methodology/">A methodology for security assurance-driven system development</a>
+          <span class="w-authors">José Luis Vivas, <span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Journal article in <cite>Requirements Engineering</cite>, 16(1), 55–73.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/s00766-010-0114-8">DOI 10.1007/s00766-010-0114-8</a></span>
+        </li>
+        <li class="work" id="agudo2011cryptography">
+          <a class="w-title" href="/publications/agudo2011cryptography/">Cryptography Goes to the Cloud</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, David Núñez, Gabriele Giammatteo, Panagiotis Rizomiliotis, Costas Lambrinoudakis</span>
+          <span class="w-venue">Conference paper in <cite>Secure and Trust Computing, Data Management, and Applications</cite>, pp. 190–197.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-642-22365-5_23">DOI 10.1007/978-3-642-22365-5_23</a></span>
+        </li>
+        <li class="work" id="nunez2011identity">
+          <a class="w-title" href="/publications/nunez2011identity/">Identity Management Challenges for Intercloud Applications</a>
+          <span class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Prokopios Drogkaris, Stefanos Gritzalis</span>
+          <span class="w-venue">Conference paper in <cite>Secure and Trust Computing, Data Management, and Applications</cite>, pp. 198–204.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-642-22365-5_24">DOI 10.1007/978-3-642-22365-5_24</a></span>
+        </li>
+        <li class="work" id="alcaraz2011managing">
+          <a class="w-title" href="/publications/alcaraz2011managing/" lang="es">Managing Incidents in Smart Grids à la Cloud</a>
+          <span class="w-authors">Cristina Alcaraz, <span class="me">Isaac Agudo</span>, David Núñez, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>2011 IEEE Third International Conference on Cloud Computing Technology and Science</cite>, pp. 527–531.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/cloudcom.2011.79">DOI 10.1109/cloudcom.2011.79</a></span>
+        </li>
+        <li class="work" id="dai2011osami">
+          <a class="w-title" href="/publications/dai2011osami/">OSAMI Commons — An open dynamic services platform for ambient intelligence</a>
+          <span class="w-authors">Naci Dai, Alejandra Ruiz Lopez, Elmar Zeeb, Jan Krueger, Oliver Dohndorf, Jesus Bermejo, Wolfgang Thronicke, Felix Cuadrado Latasa, Christoph Fiehe, Anna Litvina, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Conference paper in <cite>ETFA2011</cite>, pp. 1–10.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/etfa.2011.6059235">DOI 10.1109/etfa.2011.6059235</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2010">
+      <h3 id="y2010" class="year-label">2010</h3>
+      <ol class="works">
+        <li class="work" id="agudo2010multidimensional">
+          <a class="w-title" href="/publications/agudo2010multidimensional/">A Multidimensional Reputation Scheme for Identity Federations</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Carmen Fernández-Gago, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>Public Key Infrastructures, Services and Applications</cite>, pp. 225–238.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-642-16441-5_15">DOI 10.1007/978-3-642-16441-5_15</a></span>
+        </li>
+        <li class="work" id="agudo2010scale">
+          <a class="w-title" href="/publications/agudo2010scale/">A scale based trust model for multi-context environments</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Carmen Fernández-Gago, Javier López</span>
+          <span class="w-venue">Journal article in <cite>Computers &amp; Mathematics with Applications</cite>, 60(2), 209–216.</span>
+          <span class="w-links"><a href="https://doi.org/10.1016/j.camwa.2010.02.009">DOI 10.1016/j.camwa.2010.02.009</a></span>
+        </li>
+        <li class="work" id="lopez2010trust">
+          <a class="w-title" href="/publications/lopez2010trust/">Trust management systems for wireless sensor networks: Best practices</a>
+          <span class="w-authors">Javier López, Rodrigo Roman, <span class="me">Isaac Agudo</span>, Carmen Fernández-Gago</span>
+          <span class="w-venue">Journal article in <cite>Computer Communications</cite>, 33(9), 1086–1093.</span>
+          <span class="w-links"><a href="https://doi.org/10.1016/j.comcom.2010.02.006">DOI 10.1016/j.comcom.2010.02.006</a> <a href="https://zenodo.org/record/3416402">Open-access copy</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2009">
+      <h3 id="y2009" class="year-label">2009</h3>
+      <ol class="works">
+        <li class="work" id="alcaraz2009adaptive">
+          <a class="w-title" href="/publications/alcaraz2009adaptive/">Adaptive Dispatching of Incidences Based on Reputation for SCADA Systems</a>
+          <span class="w-authors">Cristina Alcaraz, <span class="me">Isaac Agudo</span>, Carmen Fernández-Gago, Rodrigo Roman, Gerardo Fernandez, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>Trust, Privacy and Security in Digital Business</cite>, pp. 86–94.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-642-03748-1_9">DOI 10.1007/978-3-642-03748-1_9</a></span>
+        </li>
+        <li class="work" id="agudo2009evolutionary">
+          <a class="w-title" href="/publications/agudo2009evolutionary/">An Evolutionary Trust and Distrust Model</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Carmen Fernández-Gago, Javier López</span>
+          <span class="w-venue">Journal article in <cite>Electronic Notes in Theoretical Computer Science</cite>, 244, 3–12.</span>
+          <span class="w-links"><a href="https://doi.org/10.1016/j.entcs.2009.07.034">DOI 10.1016/j.entcs.2009.07.034</a></span>
+        </li>
+        <li class="work" id="agudo2009concurrent">
+          <a class="w-title" href="/publications/agudo2009concurrent/">Concurrent access control for multi‐user and multi‐processor systems based on trust relationships</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Carmen Fernández-Gago, Javier López</span>
+          <span class="w-venue">Journal article in <cite>Concurrency and Computation: Practice and Experience</cite>, 21(10), 1389–1403.</span>
+          <span class="w-links"><a href="https://doi.org/10.1002/cpe.1430">DOI 10.1002/cpe.1430</a></span>
+        </li>
+        <li class="work" id="agudo2009delegating">
+          <a class="w-title" href="/publications/agudo2009delegating/">Delegating Privileges over Finite Resources: A Quota Based Delegation Approach</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Carmen Fernández-Gago, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>Formal Aspects in Security and Trust</cite>, pp. 302–315.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-642-01465-9_20">DOI 10.1007/978-3-642-01465-9_20</a></span>
+        </li>
+        <li class="work" id="agudo2009identidades">
+          <a class="w-title" href="/publications/agudo2009identidades/" lang="es">Identidades digitales y tecnologías de gestión de identidad</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Magazine article in <cite>Novática</cite>.</span>
+          
+        </li>
+        <li class="work" id="agudo2009security">
+          <a class="w-title" href="/publications/agudo2009security/">Security assurance during the software development cycle</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, José L. Vivas, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>Proceedings of the International Conference on Computer Systems and Technologies and Workshop for PhD Students in Computing</cite>, pp. 1–6.</span>
+          <span class="w-links"><a href="https://doi.org/10.1145/1731740.1731763">DOI 10.1145/1731740.1731763</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2008">
+      <h3 id="y2008" class="year-label">2008</h3>
+      <ol class="works">
+        <li class="work" id="agudo2008model">
+          <a class="w-title" href="/publications/agudo2008model/">A Model for Trust Metrics Analysis</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Carmen Fernández-Gago, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>Trust, Privacy and Security in Digital Business</cite>, pp. 28–37.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/978-3-540-85735-8_4">DOI 10.1007/978-3-540-85735-8_4</a></span>
+        </li>
+        <li class="work" id="agudo2008enabling">
+          <a class="w-title" href="/publications/agudo2008enabling/">Enabling Attribute Delegation in Ubiquitous Environments</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Javier López, José A. Montenegro</span>
+          <span class="w-venue">Journal article in <cite>Mobile Networks and Applications</cite>.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/s11036-008-0062-4">DOI 10.1007/s11036-008-0062-4</a></span>
+        </li>
+        <li class="work" id="marquez2008secure">
+          <a class="w-title" href="/publications/marquez2008secure/">Secure Real-Time Integration of Services in a OSGi Distributed Environment</a>
+          <span class="w-authors">Jose Manuel Marquez, Javier Jimenez, <span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Conference paper in <cite>2008 Fourth International Conference on Networked Computing and Advanced Information Management</cite>, pp. 631–635.</span>
+          <span class="w-links"><a href="https://doi.org/10.1109/ncm.2008.173">DOI 10.1109/ncm.2008.173</a></span>
+        </li>
+        <li class="work" id="agudo2008marco">
+          <a class="w-title" href="/publications/agudo2008marco/" lang="es">Un marco de delegación de privilegios basado en medidas de confianza sobre grafos y en atributos</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">PhD thesis, University of Málaga.</span>
+          
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2007">
+      <h3 id="y2007" class="year-label">2007</h3>
+      <ol class="works">
+        <li class="work" id="agudo2007attribute">
+          <a class="w-title" href="/publications/agudo2007attribute/">Attribute Delegation in Ubiquitous Environments</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Javier López, José A. Montenegro</span>
+          <span class="w-venue">Conference paper in <cite>Proceedings of the 3rd International ICST Conference on Mobile Multimedia Communications</cite>.</span>
+          <span class="w-links"><a href="https://doi.org/10.4108/icst.mobimedia2007.1903">DOI 10.4108/icst.mobimedia2007.1903</a> <a href="http://eudl.eu/pdf/10.4108/ICST.MOBIMEDIA2007.1903">Open-access copy</a></span>
+        </li>
+        <li class="work" id="agudo2007delegation">
+          <a class="w-title" href="/publications/agudo2007delegation/">Delegation Services: A Step Beyond Authorization</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span></span>
+          <span class="w-venue">Chapter in <cite>Advances in Enterprise Information Technology Security</cite>, IGI Global, pp. 149–168.</span>
+          <span class="w-links"><a href="https://doi.org/10.4018/978-1-59904-090-5.ch008">DOI 10.4018/978-1-59904-090-5.ch008</a></span>
+        </li>
+        <li class="work" id="agudo2007implementation">
+          <a class="w-title" href="/publications/agudo2007implementation/">Implementation Aspects of a Delegation System</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Javier López, José A. Montenegro</span>
+          <span class="w-venue">Conference paper in <cite>Proceedings of the 3rd International ICST Conference on Mobile Multimedia Communications</cite>.</span>
+          <span class="w-links"><a href="https://doi.org/10.4108/icst.mobimedia2007.1901">DOI 10.4108/icst.mobimedia2007.1901</a> <a href="http://eudl.eu/pdf/10.4108/ICST.MOBIMEDIA2007.1901">Open-access copy</a></span>
+        </li>
+        <li class="work" id="lopez2007deployment">
+          <a class="w-title" href="/publications/lopez2007deployment/">On the deployment of a real scalable delegation service</a>
+          <span class="w-authors">Javier López, <span class="me">Isaac Agudo</span>, José A. Montenegro</span>
+          <span class="w-venue">Journal article in <cite>Information Security Technical Report</cite>, 12(3), 139–146.</span>
+          <span class="w-links"><a href="https://doi.org/10.1016/j.istr.2007.05.008">DOI 10.1016/j.istr.2007.05.008</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2006">
+      <h3 id="y2006" class="year-label">2006</h3>
+      <ol class="works">
+        <li class="work" id="agudo2006attribute">
+          <a class="w-title" href="/publications/agudo2006attribute/">Attribute delegation based on ontologies and context information</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Javier López, José A. Montenegro</span>
+          <span class="w-venue">Conference paper in <cite>Communications and Multimedia Security</cite>, pp. 54–66.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/11909033_6">DOI 10.1007/11909033_6</a></span>
+        </li>
+        <li class="work" id="agudo2006graphical">
+          <a class="w-title" href="/publications/agudo2006graphical/">Graphical Representation of Authorization Policies for Weighted Credentials</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Javier López, José A. Montenegro</span>
+          <span class="w-venue">Conference paper in <cite>Information Security and Privacy</cite>, pp. 383–394.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/11780656_32">DOI 10.1007/11780656_32</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2005">
+      <h3 id="y2005" class="year-label">2005</h3>
+      <ol class="works">
+        <li class="work" id="agudo2005graphical">
+          <a class="w-title" href="/publications/agudo2005graphical/">A Graphical Delegation Solution for X.509 Attribute Certificates</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Javier López, José A. Montenegro</span>
+          <span class="w-venue">Magazine article in <cite>ERCIM News</cite>.</span>
+          
+        </li>
+        <li class="work" id="agudo2005representation">
+          <a class="w-title" href="/publications/agudo2005representation/">A representation model of trust relationships with delegation extensions</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Javier López, José A. Montenegro</span>
+          <span class="w-venue">Conference paper in <cite>Trust Management</cite>, pp. 116–130.</span>
+          <span class="w-links"><a href="https://doi.org/10.1007/11429760_9">DOI 10.1007/11429760_9</a></span>
+        </li>
+      </ol>
+    </section>
+    <section class="year" aria-labelledby="y2004">
+      <h3 id="y2004" class="year-label">2004</h3>
+      <ol class="works">
+        <li class="work" id="agudo2004specification">
+          <a class="w-title" href="/publications/agudo2004specification/">Specification and formal verification of security requirements</a>
+          <span class="w-authors"><span class="me">Isaac Agudo</span>, Javier López</span>
+          <span class="w-venue">Conference paper in <cite>Proceedings of the 5th international conference on Computer systems and technologies - CompSysTech &#x27;04</cite>.</span>
+          <span class="w-links"><a href="https://doi.org/10.1145/1050330.1050440">DOI 10.1145/1050330.1050440</a></span>
+        </li>
+      </ol>
+    </section>
+    </section>
+
+    <section class="block" id="education" aria-labelledby="edu-h">
+      <h2 id="edu-h">Education</h2>
+      <ul class="plain">
+      <li>PhD in Computer Science, with European Doctorate mention, University of Málaga, 2008.</li>
+      <li>BSc in Computer Science, UNED (National University of Distance Education), 2007.</li>
+      <li>MSc in Mathematics, University of Málaga, 2002.</li>
+      </ul>
+    </section>
   </main>
-
-  <footer>
-    <p>© 2026 Isaac Agudo</p>
+  <footer class="site-footer">
+    <nav aria-label="Research profiles" class="profiles"><a href="https://orcid.org/0000-0002-2911-2300">ORCID</a> <a href="https://dblp.org/pid/23/6961.html">DBLP</a> <a href="https://www.scopus.com/authid/detail.uri?authorId=8881544100">Scopus</a> <a href="https://www.webofscience.com/wos/author/record/L-1785-2014">Web of Science</a> <a href="https://openalex.org/A5053752266">OpenAlex</a> <a href="https://www.nics.uma.es/isaac">NICS Lab</a> <a href="https://portaldelainvestigacion.uma.es/investigadores/1241243">UMA research portal</a> <a href="https://github.com/isaacagudo">GitHub</a></nav>
+    <p>© 2026 Isaac Agudo. Last updated <time datetime="2026-11-21">November 2026</time>.</p>
   </footer>
-
-  <script>
-    // One load-time moment: the status line resolves from hex "ciphertext" to plain text.
-    (function () {
-      var el = document.querySelector("[data-decrypt]");
-      if (!el) return;
-      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-      var plain = el.textContent;
-      var hex = "0123456789abcdef";
-      var duration = 1300;   // ms until the last character settles
-      var lead = 250;        // ms of pure noise before the first character settles
-
-      // Wrap each letter in a span; spaces and the full stop stay as they are.
-      el.textContent = "";
-      var chars = [];
-      for (var i = 0; i < plain.length; i++) {
-        var c = plain.charAt(i);
-        if (c === " " || c === ".") {
-          el.appendChild(document.createTextNode(c));
-          continue;
-        }
-        var s = document.createElement("span");
-        s.className = "ch scr";
-        s.textContent = c;
-        el.appendChild(s);
-        chars.push({ node: s, at: lead + (i / plain.length) * (duration - lead) + Math.random() * 120 });
-      }
-
-      var start = null;
-      var last = -1000;
-      function frame(t) {
-        if (start === null) start = t;
-        var elapsed = t - start;
-        var pending = 0;
-        if (t - last > 45) {
-          last = t;
-          for (var j = 0; j < chars.length; j++) {
-            var ch = chars[j];
-            if (elapsed >= ch.at) {
-              if (ch.node.classList.contains("scr")) ch.node.classList.remove("scr");
-            } else {
-              pending++;
-              ch.node.setAttribute("data-n", hex.charAt((Math.random() * 16) | 0));
-            }
-          }
-        } else {
-          pending = 1;
-        }
-        if (pending > 0) requestAnimationFrame(frame);
-      }
-      requestAnimationFrame(frame);
-    })();
-  </script>
+  <script src="/assets/decrypt.js" defer></script>
 </body>
 </html>

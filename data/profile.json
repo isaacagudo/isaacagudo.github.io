@@ -1,0 +1,116 @@
+{
+  "name": "Isaac Agudo",
+  "alternateName": "Isaac Agudo Ruiz",
+  "givenName": "Isaac",
+  "familyName": "Agudo Ruiz",
+  "url": "https://isaacagudo.github.io/",
+  "jobTitle": "Associate Professor",
+  "department": "Department of Computer Science",
+  "university": {
+    "name": "University of Málaga",
+    "alternateName": "Universidad de Málaga",
+    "url": "https://www.uma.es"
+  },
+  "lab": {
+    "name": "NICS Lab",
+    "alternateName": "Network, Information and Computer Security Lab",
+    "url": "https://www.nics.uma.es"
+  },
+  "company": {
+    "name": "Decentralized Security",
+    "url": "https://decentralizedsecurity.es",
+    "github": "https://github.com/decentralizedsecurity"
+  },
+  "summary": "Associate Professor of Computer Science at the University of Málaga, researching applied cryptography at NICS Lab, and founder of Decentralized Security.",
+  "lede": "I teach and research applied cryptography at the University of Málaga, where I am an Associate Professor in the Department of Computer Science and a member of NICS Lab. I am also the founder of Decentralized Security.",
+  "research": [
+    {
+      "name": "Secure multi-party computation",
+      "text": "How current MPC protocols behave in concrete scenarios, with a focus on the trade-offs between performance and security."
+    },
+    {
+      "name": "Applied cryptography for blockchain and connected vehicles",
+      "text": "Security problems in blockchain and connected-car settings, and new solutions for privacy, authentication and confidentiality."
+    },
+    {
+      "name": "Digital identity",
+      "text": "Requirements for interoperable identity schemes, including self-sovereign identity, blockchain-based solutions and wearable devices as identity enablers."
+    },
+    {
+      "name": "Authentication, authorization and delegation",
+      "text": "Design and implementation of privacy-friendly authentication and access delegation, including proxy re-encryption."
+    }
+  ],
+  "knowsAbout": [
+    "Applied cryptography",
+    "Secure multi-party computation",
+    "Proxy re-encryption",
+    "Secret sharing",
+    "Blockchain",
+    "Ethereum",
+    "Post-quantum cryptography",
+    "Digital identity",
+    "Privacy",
+    "Access control and delegation",
+    "Trust management",
+    "Vehicular networks (V2X)"
+  ],
+  "education": [
+    {
+      "degree": "PhD in Computer Science, with European Doctorate mention",
+      "institution": "University of Málaga",
+      "year": 2008
+    },
+    {
+      "degree": "BSc in Computer Science",
+      "institution": "UNED (National University of Distance Education)",
+      "year": 2007
+    },
+    {
+      "degree": "MSc in Mathematics",
+      "institution": "University of Málaga",
+      "year": 2002
+    }
+  ],
+  "identifiers": {
+    "orcid": "0000-0002-2911-2300",
+    "scopus": "8881544100",
+    "researcherid": "L-1785-2014",
+    "dblp": "23/6961",
+    "openalex": "A5053752266"
+  },
+  "profiles": [
+    {
+      "name": "ORCID",
+      "url": "https://orcid.org/0000-0002-2911-2300"
+    },
+    {
+      "name": "DBLP",
+      "url": "https://dblp.org/pid/23/6961.html"
+    },
+    {
+      "name": "Scopus",
+      "url": "https://www.scopus.com/authid/detail.uri?authorId=8881544100"
+    },
+    {
+      "name": "Web of Science",
+      "url": "https://www.webofscience.com/wos/author/record/L-1785-2014"
+    },
+    {
+      "name": "OpenAlex",
+      "url": "https://openalex.org/A5053752266"
+    },
+    {
+      "name": "NICS Lab",
+      "url": "https://www.nics.uma.es/isaac"
+    },
+    {
+      "name": "UMA research portal",
+      "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/isaacagudo"
+    }
+  ]
+}

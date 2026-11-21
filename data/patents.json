@@ -1,0 +1,335 @@
+[
+  {
+    "id": "morales2025sharing",
+    "type": "patent",
+    "title": "Methods and systems for sharing encrypted data",
+    "author": [
+      {
+        "family": "Morales Escalera",
+        "given": "Daniel"
+      },
+      {
+        "family": "Agudo Ruiz",
+        "given": "Isaac"
+      },
+      {
+        "family": "López Muñoz",
+        "given": "Francisco Javier"
+      }
+    ],
+    "number": "ES3075470A1",
+    "authority": "Spanish Patent and Trademark Office (OEPM)",
+    "submitted": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          30
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          4
+        ]
+      ]
+    },
+    "URL": "https://patents.google.com/patent/ES3075470A1/en",
+    "abstract": "The present invention relates to methods and systems for sharing encrypted data. The method comprises providing a distributed network comprising network owners (h) and resource-constrained devices (d) that generate private data (m); encrypting the private data (m) to generate encrypted data (c); and sending the encrypted data (c) to a proxy server where they are split into a set of pieces (ci). The method further comprises determining a subset of network owners (hj) to which the set of pieces (ci) is sent; generating, for each resource-constrained device (d) and network owner pair, a re-encryption key (rk) based on any combination of the public/private key pairs of the resource-constrained device (d) and the network owner, wherein the re-encryption keys (rk) can only be accessed by the proxy server; and re-encrypting each piece (ci) with the respective re-encryption key (rk).",
+    "custom": {
+      "assignee": "Universidad de Málaga",
+      "status": "Pending application",
+      "priority_date": "2025-01-30",
+      "family": [
+        {
+          "number": "ES3075470A1",
+          "label": "Spanish application P202530072",
+          "application_number": "P202530072",
+          "filed": "2025-01-30",
+          "published": "2026-08-04",
+          "url": "https://patents.google.com/patent/ES3075470A1/en"
+        },
+        {
+          "number": "WO2026162858A1",
+          "label": "International (PCT) application PCT/ES2026/070037",
+          "application_number": "PCT/ES2026/070037",
+          "filed": "2026-01-23",
+          "published": "2026-08-06",
+          "url": "https://patents.google.com/patent/WO2026162858A1/en"
+        }
+      ]
+    }
+  },
+  {
+    "id": "egorov2020messaging",
+    "type": "patent",
+    "title": "High-performance access management and data protection for distributed messaging applications",
+    "author": [
+      {
+        "family": "Egorov",
+        "given": "Mikhail"
+      },
+      {
+        "family": "Wilkison",
+        "given": "MacLane Scott"
+      },
+      {
+        "family": "Núñez",
+        "given": "David"
+      },
+      {
+        "family": "Agudo",
+        "given": "Isaac"
+      }
+    ],
+    "number": "US10574440B2",
+    "authority": "United States Patent and Trademark Office",
+    "submitted": {
+      "date-parts": [
+        [
+          2018,
+          5,
+          8
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          25
+        ]
+      ]
+    },
+    "URL": "https://patents.google.com/patent/US10574440B2/en",
+    "abstract": "Provided is a computer system and method that enables delegated access to encrypted information for distributed messaging and queuing frameworks, or in general, to publish/subscribe architectures. In said frameworks and architectures, data is published by data producers and organized in channels or queues, which consumer applications can subscribe to, and that are managed by one or multiple broker entities.",
+    "custom": {
+      "assignee": "ZeroDB, Inc.",
+      "status": "Granted",
+      "priority_date": "2016-05-06",
+      "family": [
+        {
+          "number": "US10574440B2",
+          "label": "US patent",
+          "application_number": "US15/974,161",
+          "filed": "2018-05-08",
+          "granted": "2020-02-25",
+          "url": "https://patents.google.com/patent/US10574440B2/en"
+        },
+        {
+          "number": "WO2018208787A1",
+          "label": "International (PCT) application",
+          "application_number": "PCT/US2018/031615",
+          "filed": "2018-05-08",
+          "published": "2018-11-15",
+          "url": "https://patents.google.com/patent/WO2018208787A1/en"
+        }
+      ]
+    }
+  },
+  {
+    "id": "egorov2020bigdata",
+    "type": "patent",
+    "title": "Method and system for secure delegated access to encrypted data in big data computing clusters",
+    "author": [
+      {
+        "family": "Egorov",
+        "given": "Mikhail"
+      },
+      {
+        "family": "Wilkison",
+        "given": "MacLane Scott"
+      },
+      {
+        "family": "Núñez",
+        "given": "David"
+      },
+      {
+        "family": "Agudo",
+        "given": "Isaac"
+      }
+    ],
+    "number": "US10581603B2",
+    "authority": "United States Patent and Trademark Office",
+    "submitted": {
+      "date-parts": [
+        [
+          2018,
+          5,
+          8
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          3,
+          3
+        ]
+      ]
+    },
+    "URL": "https://patents.google.com/patent/US10581603B2/en",
+    "abstract": "Provided is a process including: encrypting each of a plurality of data encryption keys with a first public cryptographic key to form encrypted data encryption keys; obtaining a second public cryptographic key; generating a transformation key based on the first public-private cryptographic key pair and the second public cryptographic key; and transforming the encrypted data encryption keys with proxy re-encryption based on the transformation key; and obtaining the second private cryptographic key and the transformed encrypted data encryption keys.",
+    "custom": {
+      "assignee": "ZeroDB, Inc.",
+      "status": "Granted",
+      "priority_date": "2016-05-06",
+      "family": [
+        {
+          "number": "US10581603B2",
+          "label": "US patent",
+          "application_number": "US15/974,196",
+          "filed": "2018-05-08",
+          "granted": "2020-03-03",
+          "url": "https://patents.google.com/patent/US10581603B2/en"
+        },
+        {
+          "number": "WO2018208786A1",
+          "label": "International (PCT) application",
+          "application_number": "PCT/US2018/031614",
+          "filed": "2018-05-08",
+          "published": "2018-11-15",
+          "url": "https://patents.google.com/patent/WO2018208786A1/en"
+        }
+      ]
+    }
+  },
+  {
+    "id": "egorov2020distributed",
+    "type": "patent",
+    "title": "Encryption for distributed storage and processing",
+    "author": [
+      {
+        "family": "Egorov",
+        "given": "Mikhail"
+      },
+      {
+        "family": "Wilkison",
+        "given": "MacLane Scott"
+      },
+      {
+        "family": "Núñez",
+        "given": "David"
+      },
+      {
+        "family": "Agudo",
+        "given": "Isaac"
+      }
+    ],
+    "number": "US10691817B2",
+    "authority": "United States Patent and Trademark Office",
+    "submitted": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          6
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          23
+        ]
+      ]
+    },
+    "URL": "https://patents.google.com/patent/US10691817B2/en",
+    "abstract": "Provided is a process of securing data in a distributed storage and processing application, the process including: obtaining a cluster of computing nodes, wherein: the cluster stores a plurality of ciphertexts; accessing a transformation key with a first computing node; transforming the ciphertext with the first computing node based on the transformation key into a transformed ciphertext configured to be decrypted with a temporary access key; decrypting the transformed ciphertext with the second computing node based on the temporary access key to obtain plaintext data.",
+    "custom": {
+      "assignee": "ZeroDB, Inc.",
+      "status": "Granted",
+      "priority_date": "2016-05-06",
+      "family": [
+        {
+          "number": "US10691817B2",
+          "label": "US patent",
+          "application_number": "US15/588,614",
+          "filed": "2017-05-06",
+          "granted": "2020-06-23",
+          "url": "https://patents.google.com/patent/US10691817B2/en"
+        },
+        {
+          "number": "US20170323114A1",
+          "label": "US pre-grant publication",
+          "url": "https://patents.google.com/patent/US20170323114A1/en"
+        }
+      ]
+    }
+  },
+  {
+    "id": "nunez2018switching",
+    "type": "patent",
+    "title": "Method and system for switching public keys in ciphertexts",
+    "author": [
+      {
+        "family": "Núñez",
+        "given": "David"
+      },
+      {
+        "family": "Agudo",
+        "given": "Isaac"
+      },
+      {
+        "family": "Egorov",
+        "given": "Mikhail"
+      },
+      {
+        "family": "Wilkison",
+        "given": "MacLane Scott"
+      }
+    ],
+    "number": "US20180091301A1",
+    "authority": "United States Patent and Trademark Office",
+    "submitted": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          29
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          3,
+          29
+        ]
+      ]
+    },
+    "URL": "https://patents.google.com/patent/US20180091301A1/en",
+    "abstract": "Provided is a process, including: obtaining a first ciphertext; obtaining the field size with which the first ciphertext was encrypted; obtaining a first private encryption key of the first encryption key pair; receiving a request to delegate access to the first ciphertext to a second recipient; obtaining a second private encryption key; determining a key-switching key based on the field size, the first private encryption key, and the second private encryption key; in response to the request, delegating access by forming a second ciphertext from which the plaintext is accessible with the second private encryption key; and storing the second ciphertext in memory.",
+    "custom": {
+      "assignee": "ZeroDB, Inc.",
+      "status": "Published application",
+      "priority_date": "2016-05-06",
+      "family": [
+        {
+          "number": "US20180091301A1",
+          "label": "US application",
+          "application_number": "US15/825,821",
+          "filed": "2017-11-29",
+          "published": "2018-03-29",
+          "url": "https://patents.google.com/patent/US20180091301A1/en"
+        },
+        {
+          "number": "WO2018102382A1",
+          "label": "International (PCT) application",
+          "application_number": "PCT/US2017/063658",
+          "filed": "2017-11-29",
+          "published": "2018-06-07",
+          "url": "https://patents.google.com/patent/WO2018102382A1/en"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,95 @@
+# Isaac Agudo
+
+> Associate Professor of Computer Science at the University of Málaga, researching applied cryptography at NICS Lab, and founder of Decentralized Security.
+
+Isaac Agudo (Isaac Agudo Ruiz) works on applied cryptography: secure multi-party computation, proxy re-encryption, secret sharing, and their use in blockchain, connected vehicles and digital identity. This site lists 65 publications and 5 patent families. ORCID 0000-0002-2911-2300.
+
+## Profile
+
+- [Profile in Markdown](https://isaacagudo.github.io/index.md): position, research lines, education and profile links
+- [Everything in one file](https://isaacagudo.github.io/llms-full.txt): profile, patents and every publication with its abstract
+
+## Data
+
+- [publications.json](https://isaacagudo.github.io/publications.json): all publications in CSL-JSON
+- [patents.json](https://isaacagudo.github.io/patents.json): patents in CSL-JSON, with family members and abstracts
+- [publications.bib](https://isaacagudo.github.io/publications.bib): BibTeX for publications and patents
+
+## Selected publications
+
+- [On the Effectiveness of Lightweight Models for Encrypted Traffic Classification](https://isaacagudo.github.io/publications/sanchez2026effectiveness/index.md): Conference paper in *2026 9th International Conference on Networking, Intelligent Systems & Security (NISS)*, pp. 215–222, 2026.
+- [Zero-knowledge Bitcoin mixer with reversible unlinkability](https://isaacagudo.github.io/publications/morales2026zero/index.md): Journal article in *Blockchain: Research and Applications*, 7(2), 100323, 2026.
+- [A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices](https://isaacagudo.github.io/publications/morales2025lightweight/index.md): Journal article in *IEEE Internet of Things Journal*, 12(13), 22725–22732, 2025.
+- [Toward a Framework for Cost-Effective and Publicly Verifiable Confidential Computations in Blockchain](https://isaacagudo.github.io/publications/morales2025toward/index.md): Journal article in *IEEE Communications Magazine*, 63(2), 96–102, 2025.
+- [Integration of MPC into Besu through an extended private transaction model](https://isaacagudo.github.io/publications/morales2023integration/index.md): Conference paper in *2023 IEEE International Conference on Metaverse Computing, Networking and Applications (MetaCom)*, pp. 266–273, 2023.
+- [Learning Multi-Party Adversarial Encryption and Its Application to Secret Sharing](https://isaacagudo.github.io/publications/meraouche2022learning/index.md): Journal article in *IEEE Access*, 10, 121329–121339, 2022.
+- [A Blockchain Approach for Decentralized V2X (D-V2X)](https://isaacagudo.github.io/publications/agudo2021blockchain/index.md): Journal article in *IEEE Transactions on Vehicular Technology*, 70(5), 4001–4010, 2021.
+- [Escrowed decryption protocols for lawful interception of encrypted data](https://isaacagudo.github.io/publications/nunez2019escrowed/index.md): Journal article in *IET Information Security*, 13(5), 498–507, 2019.
+- [A Parametric Family of Attack Models for Proxy Re-encryption](https://isaacagudo.github.io/publications/nunez2015parametric/index.md): Conference paper in *2015 IEEE 28th Computer Security Foundations Symposium*, pp. 290–301, 2015.
+- [NTRUReEncrypt: An Efficient Proxy Re-Encryption Scheme Based on NTRU](https://isaacagudo.github.io/publications/nunez2015ntrureencrypt/index.md): Conference paper in *Proceedings of the 10th ACM Symposium on Information, Computer and Communications Security*, pp. 179–189, 2015.
+- [BlindIdM: A privacy-preserving approach for identity management as a service](https://isaacagudo.github.io/publications/nunez2014blindidm/index.md): Journal article in *International Journal of Information Security*, 13(2), 199–215, 2014.
+- [A privacy-aware continuous authentication scheme for proximity-based access control](https://isaacagudo.github.io/publications/agudo2013privacy/index.md): Journal article in *Computers & Security*, 39, 117–126, 2013.
+
+## Patents
+
+- Methods and systems for sharing encrypted data: ES3075470A1, WO2026162858A1 (pending application, applicant Universidad de Málaga)
+- High-performance access management and data protection for distributed messaging applications: US10574440B2, WO2018208787A1 (granted, applicant ZeroDB, Inc.)
+- Method and system for secure delegated access to encrypted data in big data computing clusters: US10581603B2, WO2018208786A1 (granted, applicant ZeroDB, Inc.)
+- Encryption for distributed storage and processing: US10691817B2, US20170323114A1 (granted, applicant ZeroDB, Inc.)
+- Method and system for switching public keys in ciphertexts: US20180091301A1, WO2018102382A1 (published application, applicant ZeroDB, Inc.)
+
+## Optional
+
+- [A decision framework for privacy-preserving synthetic data generation](https://isaacagudo.github.io/publications/sanchez2025decision/index.md): Journal article in *Computers and Electrical Engineering*, 126, 110468, 2025.
+- [Benchmarking Post-quantum Cryptography in Ethereum-Based Blockchains](https://isaacagudo.github.io/publications/juaristi2025benchmarking/index.md): Conference paper in *Computer Security. ESORICS 2024 International Workshops*, pp. 340–353, 2025.
+- [Privacy-Preserving Tabular Data Generation: Systematic Literature Review](https://isaacagudo.github.io/publications/sanchez2025privacy/index.md): Conference paper in *Computer Security. ESORICS 2024 International Workshops*, pp. 170–180, 2025.
+- [Web3 Security](https://isaacagudo.github.io/publications/ramirez2025web3/index.md): Chapter in *Tokenizing the Future: A Guide to Web3 and the Metaverse*, edited by Wolfgang Prinz, Daniel Trauth, Springer, pp. 163–172, 2025.
+- [An empirical evaluation of BLE for ITS scenarios](https://isaacagudo.github.io/publications/molina2023empirical/index.md): Conference paper in *2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall)*, pp. 1–5, 2023.
+- [Private set intersection: A systematic literature review](https://isaacagudo.github.io/publications/morales2023private/index.md): Journal article in *Computer Science Review*, 49, 100567, 2023.
+- [Real-time Crowd Counting based on Wearable Ephemeral IDs](https://isaacagudo.github.io/publications/morales2022real/index.md): Conference paper in *Proceedings of the 19th International Conference on Security and Cryptography*, pp. 249–260, 2022.
+- [Comunicaciones VoIP cifradas usando Intel SGX](https://isaacagudo.github.io/publications/ocana2019comunicaciones/index.md): Conference paper in *Actas de las V Jornadas Nacionales de Investigación en Ciberseguridad (JNIC 2019)*, pp. 255–256, 2019.
+- [Personalized Computer Security Tasks with Automatic Evaluation and Feedback](https://isaacagudo.github.io/publications/agudo2019personalized/index.md): Conference paper in *Proceedings of the 2019 AIS SIGED International Conference on Information Systems Education and Research*, 2019.
+- [Establecimiento de claves seguro mediante códigos sonoros en dispositivos móviles](https://isaacagudo.github.io/publications/agudo2017establecimiento/index.md): Conference paper in *Proceedings XIII Jornadas de Ingenieria Telematica - JITEL2017*, pp. 79–85, 2017.
+- [Proxy Re-Encryption: Analysis of constructions and its application to secure access delegation](https://isaacagudo.github.io/publications/nunez2017proxy/index.md): Journal article in *Journal of Network and Computer Applications*, 87, 193–209, 2017.
+- [The Fallout of Key Compromise in a Proxy-Mediated Key Agreement Protocol](https://isaacagudo.github.io/publications/nunez2017fallout/index.md): Conference paper in *Data and Applications Security and Privacy XXXI*, pp. 453–472, 2017.
+- [A Technique for Enhanced Provision of Appropriate Access to Evidence Across Service Provision Chains](https://isaacagudo.github.io/publications/agudo2016technique/index.md): Conference paper in *Privacy and Identity Management. Time for a Revolution?*, pp. 187–204, 2016.
+- [LockPic: Privacy Preserving Photo Sharing in Social Networks](https://isaacagudo.github.io/publications/pares2016lockpic/index.md): Conference paper in *Data Privacy Management, and Security Assurance*, pp. 281–290, 2016.
+- [On the application of generic CCA‐secure transformations to proxy re‐encryption](https://isaacagudo.github.io/publications/nunez2016application/index.md): Journal article in *Security and Communication Networks*, 9(12), 1769–1785, 2016.
+- [Is the world ready or do we need more tools for programming related teamwork?](https://isaacagudo.github.io/publications/ikonen2015is/index.md): Conference paper in *Proceedings of the 15th Koli Calling Conference on Computing Education Research*, pp. 33–39, 2015.
+- [Privacy-Preserving Identity Management as a Service](https://isaacagudo.github.io/publications/nunez2015privacy/index.md): Conference paper in *Accountability and Security in the Cloud*, pp. 114–125, 2015.
+- [Building trust from context similarity measures](https://isaacagudo.github.io/publications/fernandez2014building/index.md): Journal article in *Computer Standards & Interfaces*, 36(4), 792–800, 2014.
+- [Delegated Access for Hadoop Clusters in the Cloud](https://isaacagudo.github.io/publications/nunez2014delegated/index.md): Conference paper in *2014 IEEE 6th International Conference on Cloud Computing Technology and Science*, pp. 374–379, 2014.
+- [Public Key Infrastructures, Services and Applications: 10th European Workshop, EuroPKI 2013, Egham, UK, September 12-13, 2013, Revised Selected Papers](https://isaacagudo.github.io/publications/katsikas2014public/index.md): Edited volume in *Lecture Notes in Computer Science*, Springer Berlin Heidelberg, 2014.
+- [Leveraging Privacy in Identity Management as a Service through Proxy Re-Encryption](https://isaacagudo.github.io/publications/nunez2013leveraging/index.md): Conference paper in *European Conference on Service-Oriented and Cloud Computing*, 2013.
+- [Trust Management VII: 7th IFIP WG 11.11 International Conference, IFIPTM 2013, Malaga, Spain, June 3-7, 2013. Proceedings](https://isaacagudo.github.io/publications/fernandez2013trust/index.md): Edited volume in *IFIP Advances in Information and Communication Technology*, Springer Berlin Heidelberg, 2013.
+- [A Task Ordering Approach for Automatic Trust Establishment](https://isaacagudo.github.io/publications/moyano2012task/index.md): Conference paper in *Engineering Secure Software and Systems*, pp. 75–88, 2012.
+- [Integrating OpenID with proxy re-encryption to enhance privacy in cloud-based identity services](https://isaacagudo.github.io/publications/nunez2012integrating/index.md): Conference paper in *4th IEEE International Conference on Cloud Computing Technology and Science Proceedings*, pp. 241–248, 2012.
+- [La Seguridad de la Información en los nuevos grados EEES](https://isaacagudo.github.io/publications/agudo2012seguridad/index.md): Magazine article in *Red Seguridad*, 2012.
+- [Strong Authentication of Humans and Machines in Policy Controlled Cloud Computing Environment Using Automatic Cyber Identity](https://isaacagudo.github.io/publications/neumann2012strong/index.md): Conference paper in *ISSE 2012 Securing Electronic Business Processes*, pp. 195–206, 2012.
+- [A methodology for security assurance-driven system development](https://isaacagudo.github.io/publications/vivas2011methodology/index.md): Journal article in *Requirements Engineering*, 16(1), 55–73, 2011.
+- [Cryptography Goes to the Cloud](https://isaacagudo.github.io/publications/agudo2011cryptography/index.md): Conference paper in *Secure and Trust Computing, Data Management, and Applications*, pp. 190–197, 2011.
+- [Identity Management Challenges for Intercloud Applications](https://isaacagudo.github.io/publications/nunez2011identity/index.md): Conference paper in *Secure and Trust Computing, Data Management, and Applications*, pp. 198–204, 2011.
+- [Managing Incidents in Smart Grids à la Cloud](https://isaacagudo.github.io/publications/alcaraz2011managing/index.md): Conference paper in *2011 IEEE Third International Conference on Cloud Computing Technology and Science*, pp. 527–531, 2011.
+- [OSAMI Commons — An open dynamic services platform for ambient intelligence](https://isaacagudo.github.io/publications/dai2011osami/index.md): Conference paper in *ETFA2011*, pp. 1–10, 2011.
+- [A Multidimensional Reputation Scheme for Identity Federations](https://isaacagudo.github.io/publications/agudo2010multidimensional/index.md): Conference paper in *Public Key Infrastructures, Services and Applications*, pp. 225–238, 2010.
+- [A scale based trust model for multi-context environments](https://isaacagudo.github.io/publications/agudo2010scale/index.md): Journal article in *Computers & Mathematics with Applications*, 60(2), 209–216, 2010.
+- [Trust management systems for wireless sensor networks: Best practices](https://isaacagudo.github.io/publications/lopez2010trust/index.md): Journal article in *Computer Communications*, 33(9), 1086–1093, 2010.
+- [Adaptive Dispatching of Incidences Based on Reputation for SCADA Systems](https://isaacagudo.github.io/publications/alcaraz2009adaptive/index.md): Conference paper in *Trust, Privacy and Security in Digital Business*, pp. 86–94, 2009.
+- [An Evolutionary Trust and Distrust Model](https://isaacagudo.github.io/publications/agudo2009evolutionary/index.md): Journal article in *Electronic Notes in Theoretical Computer Science*, 244, 3–12, 2009.
+- [Concurrent access control for multi‐user and multi‐processor systems based on trust relationships](https://isaacagudo.github.io/publications/agudo2009concurrent/index.md): Journal article in *Concurrency and Computation: Practice and Experience*, 21(10), 1389–1403, 2009.
+- [Delegating Privileges over Finite Resources: A Quota Based Delegation Approach](https://isaacagudo.github.io/publications/agudo2009delegating/index.md): Conference paper in *Formal Aspects in Security and Trust*, pp. 302–315, 2009.
+- [Identidades digitales y tecnologías de gestión de identidad](https://isaacagudo.github.io/publications/agudo2009identidades/index.md): Magazine article in *Novática*, 2009.
+- [Security assurance during the software development cycle](https://isaacagudo.github.io/publications/agudo2009security/index.md): Conference paper in *Proceedings of the International Conference on Computer Systems and Technologies and Workshop for PhD Students in Computing*, pp. 1–6, 2009.
+- [A Model for Trust Metrics Analysis](https://isaacagudo.github.io/publications/agudo2008model/index.md): Conference paper in *Trust, Privacy and Security in Digital Business*, pp. 28–37, 2008.
+- [Enabling Attribute Delegation in Ubiquitous Environments](https://isaacagudo.github.io/publications/agudo2008enabling/index.md): Journal article in *Mobile Networks and Applications*, 2008.
+- [Secure Real-Time Integration of Services in a OSGi Distributed Environment](https://isaacagudo.github.io/publications/marquez2008secure/index.md): Conference paper in *2008 Fourth International Conference on Networked Computing and Advanced Information Management*, pp. 631–635, 2008.
+- [Un marco de delegación de privilegios basado en medidas de confianza sobre grafos y en atributos](https://isaacagudo.github.io/publications/agudo2008marco/index.md): PhD thesis, University of Málaga, 2008.
+- [Attribute Delegation in Ubiquitous Environments](https://isaacagudo.github.io/publications/agudo2007attribute/index.md): Conference paper in *Proceedings of the 3rd International ICST Conference on Mobile Multimedia Communications*, 2007.
+- [Delegation Services: A Step Beyond Authorization](https://isaacagudo.github.io/publications/agudo2007delegation/index.md): Chapter in *Advances in Enterprise Information Technology Security*, IGI Global, pp. 149–168, 2007.
+- [Implementation Aspects of a Delegation System](https://isaacagudo.github.io/publications/agudo2007implementation/index.md): Conference paper in *Proceedings of the 3rd International ICST Conference on Mobile Multimedia Communications*, 2007.
+- [On the deployment of a real scalable delegation service](https://isaacagudo.github.io/publications/lopez2007deployment/index.md): Journal article in *Information Security Technical Report*, 12(3), 139–146, 2007.
+- [Attribute delegation based on ontologies and context information](https://isaacagudo.github.io/publications/agudo2006attribute/index.md): Conference paper in *Communications and Multimedia Security*, pp. 54–66, 2006.
+- [Graphical Representation of Authorization Policies for Weighted Credentials](https://isaacagudo.github.io/publications/agudo2006graphical/index.md): Conference paper in *Information Security and Privacy*, pp. 383–394, 2006.
+- [A Graphical Delegation Solution for X.509 Attribute Certificates](https://isaacagudo.github.io/publications/agudo2005graphical/index.md): Magazine article in *ERCIM News*, 2005.
+- [A representation model of trust relationships with delegation extensions](https://isaacagudo.github.io/publications/agudo2005representation/index.md): Conference paper in *Trust Management*, pp. 116–130, 2005.
+- [Specification and formal verification of security requirements](https://isaacagudo.github.io/publications/agudo2004specification/index.md): Conference paper in *Proceedings of the 5th international conference on Computer systems and technologies - CompSysTech '04*, 2004.

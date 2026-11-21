@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices · Isaac Agudo</title>
+  <meta name="description" content="Outsourced computations are essential for IoT devices, but they can raise privacy issues. Privacy-preserving technologies, such as Secure Multiparty Computation, can be used to delegate computations on private data from multiple devices while disclosing nothing but the output, but they may come at a">
+  <meta name="author" content="Isaac Agudo">
+  <meta name="theme-color" content="#F7FAFA">
+  <link rel="canonical" href="https://isaacagudo.github.io/publications/morales2025lightweight/">
+  <link rel="alternate" type="text/markdown" href="https://isaacagudo.github.io/publications/morales2025lightweight/index.md" title="Markdown version">
+  <link rel="alternate" type="text/plain" href="https://isaacagudo.github.io/llms.txt" title="llms.txt">
+  <link rel="preload" href="/fonts/petrona-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <meta name="citation_title" content="A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices">
+  <meta name="citation_author" content="Daniel Morales">
+  <meta name="citation_author" content="Isaac Agudo">
+  <meta name="citation_author" content="Javier López">
+  <meta name="citation_publication_date" content="2025/07">
+  <meta name="citation_journal_title" content="IEEE Internet of Things Journal">
+  <meta name="citation_volume" content="12">
+  <meta name="citation_issue" content="13">
+  <meta name="citation_publisher" content="Institute of Electrical and Electronics Engineers (IEEE)">
+  <meta name="citation_firstpage" content="22725">
+  <meta name="citation_lastpage" content="22732">
+  <meta name="citation_doi" content="10.1109/jiot.2025.3555026">
+  <meta name="citation_abstract_html_url" content="https://isaacagudo.github.io/publications/morales2025lightweight/">
+  <meta name="citation_language" content="en">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/morales2025lightweight/#work",
+   "url": "https://isaacagudo.github.io/publications/morales2025lightweight/",
+   "name": "A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices",
+   "headline": "A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Daniel Morales"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier López"
+    }
+   ],
+   "datePublished": "2025-07",
+   "isPartOf": {
+    "@type": "PublicationVolume",
+    "volumeNumber": "12",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "IEEE Internet of Things Journal"
+    }
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Institute of Electrical and Electronics Engineers (IEEE)"
+   },
+   "pagination": "22725-22732",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1109/jiot.2025.3555026"
+   },
+   "sameAs": "https://doi.org/10.1109/jiot.2025.3555026",
+   "abstract": "Outsourced computations are essential for IoT devices, but they can raise privacy issues. Privacy-preserving technologies, such as Secure Multiparty Computation, can be used to delegate computations on private data from multiple devices while disclosing nothing but the output, but they may come at a prohibitive cost. In particular, Secret Sharing-based Secure Multiparty Computation requires the device to establish n independent confidential channels for each shared message, one channel per holder. This work proposes a new approach for IoT devices to secretly share private data with a committee of holders by broadcasting a single ciphertext. A straightforward solution is Homomorphic Encryption with Decryption to Shares from Chillotti et al., 2022, but it requires Fully Homomorphic Encryption and is not dynamic. Additionally, we propose Oblivious Sharing Re-Encryption, which is a new family of protocols that achieve this lightweight private data sharing without requiring Fully Homomorphic Encryption, and which is also more dynamic. We provide a concrete implementation based on NTRU encryption, together with a security proof and performance analysis. The analysis shows that OSRE outperforms the standard setting with n confidential channels when the device sends more than one message.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://doi.org/10.1109/jiot.2025.3555026"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://isaacagudo.github.io/#person",
+   "name": "Isaac Agudo",
+   "alternateName": "Isaac Agudo Ruiz",
+   "givenName": "Isaac",
+   "familyName": "Agudo Ruiz",
+   "url": "https://isaacagudo.github.io/",
+   "description": "Associate Professor of Computer Science at the University of Málaga, researching applied cryptography at NICS Lab, and founder of Decentralized Security.",
+   "jobTitle": "Associate Professor",
+   "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "@id": "https://isaacagudo.github.io/#uma",
+    "name": "University of Málaga",
+    "alternateName": "Universidad de Málaga",
+    "url": "https://www.uma.es"
+   },
+   "affiliation": [
+    {
+     "@type": "ResearchOrganization",
+     "name": "NICS Lab",
+     "alternateName": "Network, Information and Computer Security Lab",
+     "url": "https://www.nics.uma.es",
+     "parentOrganization": {
+      "@id": "https://isaacagudo.github.io/#uma"
+     }
+    },
+    {
+     "@type": "Organization",
+     "@id": "https://isaacagudo.github.io/#company",
+     "name": "Decentralized Security",
+     "url": "https://decentralizedsecurity.es",
+     "founder": {
+      "@id": "https://isaacagudo.github.io/#person"
+     },
+     "sameAs": [
+      "https://github.com/decentralizedsecurity"
+     ]
+    }
+   ],
+   "alumniOf": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "University of Málaga"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "UNED (National University of Distance Education)"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "University of Málaga"
+    }
+   ],
+   "knowsAbout": [
+    "Applied cryptography",
+    "Secure multi-party computation",
+    "Proxy re-encryption",
+    "Secret sharing",
+    "Blockchain",
+    "Ethereum",
+    "Post-quantum cryptography",
+    "Digital identity",
+    "Privacy",
+    "Access control and delegation",
+    "Trust management",
+    "Vehicular networks (V2X)"
+   ],
+   "identifier": [
+    {
+     "@type": "PropertyValue",
+     "propertyID": "ORCID",
+     "value": "0000-0002-2911-2300"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "Scopus Author ID",
+     "value": "8881544100"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "ResearcherID",
+     "value": "L-1785-2014"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "DBLP",
+     "value": "23/6961"
+    }
+   ],
+   "sameAs": [
+    "https://orcid.org/0000-0002-2911-2300",
+    "https://dblp.org/pid/23/6961.html",
+    "https://www.scopus.com/authid/detail.uri?authorId=8881544100",
+    "https://www.webofscience.com/wos/author/record/L-1785-2014",
+    "https://openalex.org/A5053752266",
+    "https://www.nics.uma.es/isaac",
+    "https://portaldelainvestigacion.uma.es/investigadores/1241243",
+    "https://github.com/isaacagudo"
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="home" href="/">Isaac Agudo</a>
+    <nav aria-label="Sections">
+      <a href="/#research">Research</a>
+      <a href="/#publications">Publications</a>
+      <a href="/#patents">Patents</a>
+      <a href="/#data">Data</a>
+    </nav>
+  </header>
+  <main id="main" class="paper">
+    <p class="kind">Journal article, 2025</p>
+    <h1>A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices</h1>
+    <p class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</p>
+    <p class="w-venue">Journal article in <cite>IEEE Internet of Things Journal</cite>, 12(13), 22725–22732, 2025.</p>
+    <ul class="paper-links"><li><a href="https://doi.org/10.1109/jiot.2025.3555026">DOI 10.1109/jiot.2025.3555026</a></li></ul>
+    <section class="abstract" aria-labelledby="abs-h"><h2 id="abs-h">Abstract</h2><p>Outsourced computations are essential for IoT devices, but they can raise privacy issues. Privacy-preserving technologies, such as Secure Multiparty Computation, can be used to delegate computations on private data from multiple devices while disclosing nothing but the output, but they may come at a prohibitive cost. In particular, Secret Sharing-based Secure Multiparty Computation requires the device to establish n independent confidential channels for each shared message, one channel per holder. This work proposes a new approach for IoT devices to secretly share private data with a committee of holders by broadcasting a single ciphertext. A straightforward solution is Homomorphic Encryption with Decryption to Shares from Chillotti et al., 2022, but it requires Fully Homomorphic Encryption and is not dynamic. Additionally, we propose Oblivious Sharing Re-Encryption, which is a new family of protocols that achieve this lightweight private data sharing without requiring Fully Homomorphic Encryption, and which is also more dynamic. We provide a concrete implementation based on NTRU encryption, together with a security proof and performance analysis. The analysis shows that OSRE outperforms the standard setting with n confidential channels when the device sends more than one message.</p></section>
+    <section class="cite" aria-labelledby="cite-h">
+      <h2 id="cite-h">Cite</h2>
+      <pre><code>@article{morales2025lightweight,
+  title = {{A Lightweight Mechanism for Dynamic Secret Sharing of Private Data by Constrained Devices}},
+  author = {Morales, Daniel and Agudo, Isaac and López, Javier},
+  journal = {IEEE Internet of Things Journal},
+  volume = {12},
+  number = {13},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  pages = {22725--22732},
+  year = {2025},
+  doi = {10.1109/jiot.2025.3555026}
+}</code></pre>
+    </section>
+    <p class="back"><a href="/#morales2025lightweight">All publications</a></p>
+  </main>
+  <footer class="site-footer">
+    <nav aria-label="Research profiles" class="profiles"><a href="https://orcid.org/0000-0002-2911-2300">ORCID</a> <a href="https://dblp.org/pid/23/6961.html">DBLP</a> <a href="https://www.scopus.com/authid/detail.uri?authorId=8881544100">Scopus</a> <a href="https://www.webofscience.com/wos/author/record/L-1785-2014">Web of Science</a> <a href="https://openalex.org/A5053752266">OpenAlex</a> <a href="https://www.nics.uma.es/isaac">NICS Lab</a> <a href="https://portaldelainvestigacion.uma.es/investigadores/1241243">UMA research portal</a> <a href="https://github.com/isaacagudo">GitHub</a></nav>
+    <p>© 2026 Isaac Agudo. Last updated <time datetime="2026-11-21">November 2026</time>.</p>
+  </footer>
+</body>
+</html>

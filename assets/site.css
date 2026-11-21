@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/petrona-latin-wght-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Petrona";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/petrona-latin-wght-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/hanken-grotesk-latin-wght-normal.woff2") format("woff2");
+}
+
+:root {
+  --paper: #F7FAFA;      /* cool, airy white */
+  --ink: #142A3E;        /* deep harbour navy */
+  --slate: #4F6476;      /* secondary text */
+  --sea: #0B6B70;        /* links and accents */
+  --sea-deep: #07484C;   /* text on the sea-glass band */
+  --glass: #D5EEE8;      /* fresh sea-glass tint */
+  --line: #D9E3E8;
+
+  --serif: "Petrona", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
+
+  --gutter: clamp(1rem, 6vw, 7rem);
+  --measure: 40rem;
+  --year-col: 5.5rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 1rem; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--sea);
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible {
+  outline: 2px solid var(--sea);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.skip {
+  position: absolute;
+  left: var(--gutter);
+  top: -3rem;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.4rem 0.8rem;
+  font-family: var(--sans);
+  z-index: 2;
+}
+.skip:focus { top: 0.5rem; }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Header ------------------------------------------------------------------- */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 1.25rem var(--gutter);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+}
+.site-header .home {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+.site-header nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
+.site-header nav a { color: var(--slate); text-decoration: none; }
+.site-header nav a:hover { color: var(--sea); text-decoration: underline; }
+
+/* Intro -------------------------------------------------------------------- */
+main { padding-bottom: clamp(3rem, 8vh, 5rem); }
+
+.intro {
+  padding: clamp(3rem, 10vh, 6.5rem) var(--gutter) 0;
+  max-width: calc(var(--measure) + 2 * var(--gutter));
+}
+
+h1 {
+  margin: 0 0 0.35em;
+  font-weight: 480;
+  font-size: clamp(3rem, 2rem + 6vw, 6.25rem);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+}
+
+.lede {
+  margin: 0;
+  font-size: clamp(1.2rem, 1.1rem + 0.5vw, 1.45rem);
+  line-height: 1.5;
+}
+
+/* The sea-glass band: starts at the text column and runs off the right edge */
+.band {
+  margin: clamp(2.5rem, 7vh, 4rem) 0 0 var(--gutter);
+  padding: clamp(1.4rem, 3vw, 2.1rem) var(--gutter) clamp(1.5rem, 3vw, 2.2rem) clamp(1.25rem, 3vw, 2.25rem);
+  background: var(--glass);
+  border-radius: 6px 0 0 6px;
+  color: var(--sea-deep);
+}
+.band .status {
+  margin: 0 0 0.5rem;
+  max-width: 42rem;
+  font-style: italic;
+  font-weight: 450;
+  font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2.2rem);
+  line-height: 1.2;
+}
+.band .note { margin: 0 0 0.75rem; max-width: 36rem; font-size: 1.1rem; }
+.band a { color: var(--sea-deep); }
+.data-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.02rem;
+  max-width: 40rem;
+}
+.data-links li { padding: 0.15rem 0; }
+.data-links a { font-family: var(--sans); font-weight: 600; font-size: 0.95em; }
+
+/* Each letter keeps its real width while a random hex digit is drawn over it */
+.ch { position: relative; }
+.ch.scr { color: transparent; }
+.ch.scr::after {
+  content: attr(data-n);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  color: var(--sea-deep);
+}
+
+/* Sections ----------------------------------------------------------------- */
+.block {
+  padding: clamp(3rem, 8vh, 4.5rem) var(--gutter) 0;
+  max-width: calc(46rem + var(--year-col) + 2 * var(--gutter));
+}
+.block h2 {
+  margin: 0 0 1.25rem;
+  font-weight: 500;
+  font-size: clamp(1.7rem, 1.4rem + 1vw, 2.2rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.lines { margin: 0; max-width: var(--measure); }
+.lines .line { padding: 0.85rem 0; border-top: 1px solid var(--line); }
+.lines .line:last-child { border-bottom: 1px solid var(--line); }
+.lines dt { font-weight: 600; }
+.lines dd { margin: 0.15rem 0 0; color: var(--slate); }
+
+/* Publication entries ------------------------------------------------------ */
+.works { list-style: none; margin: 0; padding: 0; max-width: 46rem; }
+.work, .patent { padding: 0.8rem 0 0.9rem; border-top: 1px solid var(--line); }
+.works > li:first-child { border-top: 0; padding-top: 0; }
+.w-title {
+  display: block;
+  font-size: 1.15rem;
+  line-height: 1.35;
+  font-weight: 560;
+  color: var(--ink);
+  text-decoration: none;
+  margin: 0;
+}
+a.w-title:hover { color: var(--sea); text-decoration: underline; text-decoration-thickness: 1px; }
+.w-authors, .w-venue, .w-links { display: block; font-size: 1rem; line-height: 1.5; }
+.w-authors { color: var(--ink); margin-top: 0.2rem; }
+.me { font-weight: 600; }
+.w-venue { color: var(--slate); }
+.w-venue cite { font-style: italic; }
+.w-links { font-family: var(--sans); font-size: 0.88rem; margin-top: 0.25rem; }
+.w-links a + a { margin-left: 1rem; }
+
+.patent h3.w-title { font-size: 1.15rem; }
+.family {
+  margin: 0.35rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.98rem;
+  color: var(--slate);
+}
+.family a { font-family: var(--sans); font-size: 0.92em; font-weight: 600; }
+details { margin-top: 0.35rem; font-size: 1rem; }
+details summary {
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--sea);
+  width: max-content;
+}
+details summary:focus-visible { outline: 2px solid var(--sea); outline-offset: 3px; }
+details p { margin: 0.4rem 0 0; color: var(--slate); max-width: var(--measure); }
+
+/* All publications, grouped by year: the year sits in its own column */
+.count { margin: -0.5rem 0 1.5rem; color: var(--slate); max-width: var(--measure); }
+.year {
+  display: grid;
+  grid-template-columns: var(--year-col) minmax(0, 1fr);
+  border-top: 1px solid var(--line);
+  padding-top: 0.8rem;
+  margin-top: 0.4rem;
+}
+.year-label {
+  margin: 0;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--slate);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.9;
+}
+.year .works > li:first-child { padding-top: 0.1rem; }
+
+.plain { margin: 0; padding-left: 1.1rem; max-width: var(--measure); }
+.plain li { padding: 0.15rem 0; }
+
+/* Publication page --------------------------------------------------------- */
+.paper { padding: clamp(2rem, 7vh, 4rem) var(--gutter) 0; max-width: calc(44rem + 2 * var(--gutter)); }
+.paper .kind { margin: 0 0 0.6rem; font-family: var(--sans); font-size: 0.95rem; color: var(--slate); }
+.paper h1 {
+  font-size: clamp(2rem, 1.5rem + 2.2vw, 3.1rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.6em;
+}
+.paper .w-authors { font-size: 1.15rem; margin: 0; }
+.paper .w-venue { font-size: 1.05rem; margin: 0.25rem 0 0; }
+.paper-links {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+}
+.abstract, .cite { margin-top: 2.25rem; }
+.abstract h2, .cite h2 { font-weight: 500; font-size: 1.5rem; margin: 0 0 0.6rem; }
+.abstract p { margin: 0; max-width: var(--measure); line-height: 1.7; }
+.cite pre {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  background: var(--glass);
+  color: var(--sea-deep);
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.back { margin-top: 2.5rem; font-family: var(--sans); font-size: 0.95rem; }
+
+/* Footer ------------------------------------------------------------------- */
+.site-footer {
+  margin-top: clamp(3rem, 8vh, 5rem);
+  padding: 1.25rem var(--gutter) 1.75rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  color: var(--slate);
+}
+.site-footer .profiles { display: flex; flex-wrap: wrap; gap: 0.25rem 1.1rem; margin-bottom: 0.6rem; }
+.site-footer p { margin: 0; }
+
+@media (max-width: 40rem) {
+  body { font-size: 1.0625rem; }
+  .band { border-radius: 4px 0 0 4px; }
+  .year { grid-template-columns: 1fr; }
+  .year-label { margin-bottom: 0.3rem; }
+}
+
+@media print {
+  .site-header nav, .band, .skip { display: none; }
+  .block { padding-top: 1.5rem; }
+  a { color: inherit; }
+}
