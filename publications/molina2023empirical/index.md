@@ -2,6 +2,7 @@
 
 - Authors: Elena Molina, Ruben Rios, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall)*, pp. 1–5.
 - Year: 2023
 - DOI: [10.1109/vtc2023-fall60731.2023.10333713](https://doi.org/10.1109/vtc2023-fall60731.2023.10333713)

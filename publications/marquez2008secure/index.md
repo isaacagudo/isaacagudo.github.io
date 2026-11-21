@@ -2,6 +2,7 @@
 
 - Authors: Jose Manuel Marquez, Javier Jimenez, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2008 Fourth International Conference on Networked Computing and Advanced Information Management*, pp. 631–635.
 - Year: 2008
 - DOI: [10.1109/ncm.2008.173](https://doi.org/10.1109/ncm.2008.173)

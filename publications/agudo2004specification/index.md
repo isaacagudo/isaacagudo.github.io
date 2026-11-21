@@ -2,6 +2,7 @@
 
 - Authors: Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 5th international conference on Computer systems and technologies - CompSysTech '04*.
 - Year: 2004
 - DOI: [10.1145/1050330.1050440](https://doi.org/10.1145/1050330.1050440)

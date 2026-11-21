@@ -2,6 +2,7 @@
 
 - Authors: Naci Dai, Alejandra Ruiz Lopez, Elmar Zeeb, Jan Krueger, Oliver Dohndorf, Jesus Bermejo, Wolfgang Thronicke, Felix Cuadrado Latasa, Christoph Fiehe, Anna Litvina, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *ETFA2011*, pp. 1–10.
 - Year: 2011
 - DOI: [10.1109/etfa.2011.6059235](https://doi.org/10.1109/etfa.2011.6059235)

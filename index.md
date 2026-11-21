@@ -29,6 +29,7 @@ I teach and research applied cryptography at the University of Málaga, where I 
 ## Profiles
 
 - [ORCID](https://orcid.org/0000-0002-2911-2300)
+- [Google Scholar](https://scholar.google.com/citations?user=JGd3lHkAAAAJ)
 - [DBLP](https://dblp.org/pid/23/6961.html)
 - [Scopus](https://www.scopus.com/authid/detail.uri?authorId=8881544100)
 - [Web of Science](https://www.webofscience.com/wos/author/record/L-1785-2014)

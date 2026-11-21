@@ -2,6 +2,7 @@
 
 - Authors: Isaac Agudo, Javier López, José A. Montenegro
 - Type: Magazine article
+- Language: English
 - Venue: Magazine article in *ERCIM News*.
 - Year: 2005
 - Page: https://isaacagudo.github.io/publications/agudo2005graphical/

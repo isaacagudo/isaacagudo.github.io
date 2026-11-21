@@ -2,6 +2,7 @@
 
 - Authors: Isaac Agudo, Carmen Fernández-Gago, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Electronic Notes in Theoretical Computer Science*, 244, 3–12.
 - Year: 2009
 - DOI: [10.1016/j.entcs.2009.07.034](https://doi.org/10.1016/j.entcs.2009.07.034)

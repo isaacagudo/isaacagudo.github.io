@@ -2,6 +2,7 @@
 
 - Authors: Daniel Morales, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *IEEE Internet of Things Journal*, 12(13), 22725–22732.
 - Year: 2025
 - DOI: [10.1109/jiot.2025.3555026](https://doi.org/10.1109/jiot.2025.3555026)

@@ -344,14 +344,40 @@ def footer():
   </footer>"""
 
 
-def work_li(w, with_year=True):
-    lk = " ".join(f'<a href="{e(u)}">{e(t)}</a>' for t, u in links(w))
+def short_venue(w):
+    """A compact venue label for the one-line row."""
+    if w["type"] == "thesis":
+        return "PhD thesis"
+    ct = w.get("container-title") or ""
+    m = re.search(r"\(([^()]{2,20})\)\s*$", ct)
+    if m:
+        return m.group(1)
+    ct = re.sub(r"^Proceedings of the\s+", "", ct)
+    ct = re.sub(r"^\d{4}\s+", "", ct)
+    ct = re.sub(r"^(IEEE\s+)?\d+(st|nd|rd|th)\s+", r"\1", ct)
+    return ct or TYPE_LABEL[w["type"]]
+
+
+def work_li(w, with_year=True, id_prefix=""):
+    """One publication as a single-line row that opens to show the details."""
+    lk = [f'<a href="/publications/{w["id"]}/">Publication page</a>']
+    lk += [f'<a href="{e(u)}">{e(t)}</a>' for t, u in links(w)]
     lang = f' lang="{w["language"]}"' if w.get("language") and w["language"] != "en" else ""
-    return f"""<li class="work" id="{w['id']}">
-          <a class="w-title" href="/publications/{w['id']}/"{lang}>{e(w['title'])}</a>
-          <span class="w-authors">{names_html(w.get('author') or w.get('editor'))}{' (eds.)' if not w.get('author') and w.get('editor') else ''}</span>
-          <span class="w-venue">{venue_html(w, with_year)}</span>
-          {f'<span class="w-links">{lk}</span>' if lk else ''}
+    sv = short_venue(w)
+    meta = sv + (f", {year(w)}" if with_year and year(w) and str(year(w)) not in sv else "")
+    eds = " (eds.)" if not w.get("author") and w.get("editor") else ""
+    abstract = (f'<p class="w-abstract"{lang}>{e(w["abstract"])}</p>' if w.get("abstract")
+                else '<p class="w-abstract none">No abstract available.</p>')
+    return f"""<li class="work" id="{id_prefix}{w['id']}">
+          <details>
+            <summary><span class="w-title"{lang}>{e(w['title'])}</span><span class="w-meta">{e(meta)}</span></summary>
+            <div class="w-body">
+              <p class="w-authors">{names_html(w.get('author') or w.get('editor'))}{eds}</p>
+              <p class="w-venue">{venue_html(w)}</p>
+              {abstract}
+              <p class="w-links">{' '.join(lk)}</p>
+            </div>
+          </details>
         </li>"""
 
 
@@ -380,8 +406,10 @@ def patent_li(p):
 def build_index():
     pr = profile
     selected = [w for w in works if w.get("custom", {}).get("selected")]
+    english = [w for w in works if w.get("language", "en") != "es"]
+    spanish = [w for w in works if w.get("language") == "es"]
     by_year = {}
-    for w in works:
+    for w in english:
         by_year.setdefault(year(w) or 0, []).append(w)
     years_html = []
     for y in sorted(by_year, reverse=True):
@@ -396,8 +424,9 @@ def build_index():
         f'      <div class="line"><dt>{e(r["name"])}</dt><dd>{e(r["text"])}</dd></div>' for r in pr["research"])
     edu = "\n".join(f'      <li>{e(ed["degree"])}, {e(ed["institution"])}, {ed["year"]}.</li>' for ed in pr["education"])
     counts = {}
-    for w in works:
+    for w in english:
         counts[w["type"]] = counts.get(w["type"], 0) + 1
+    spanish_html = "\n        ".join(work_li(w) for w in spanish)
     graph = {"@context": "https://schema.org", "@graph": [
         {"@type": "ProfilePage", "@id": f"{SITE}/#page", "url": f"{SITE}/", "name": pr["name"],
          "mainEntity": {"@id": PERSON_ID}, "dateModified": TODAY.isoformat(), "inLanguage": "en"},
@@ -445,7 +474,7 @@ def build_index():
     <section class="block" id="publications" aria-labelledby="pub-h">
       <h2 id="pub-h">Selected publications</h2>
       <ol class="works">
-        {chr(10).join('        ' + work_li(w) for w in selected).strip()}
+        {chr(10).join('        ' + work_li(w, id_prefix="selected-") for w in selected).strip()}
       </ol>
     </section>
 
@@ -458,8 +487,17 @@ def build_index():
 
     <section class="block" id="all" aria-labelledby="all-h">
       <h2 id="all-h">All publications</h2>
-      <p class="count">{len(works)} publications: {counts.get('article-journal', 0)} journal articles, {counts.get('paper-conference', 0)} conference papers, {counts.get('chapter', 0)} book chapters, {counts.get('book', 0)} edited volumes, {counts.get('article-magazine', 0)} magazine articles and a PhD thesis.</p>
+      <p class="count">{len(english)} publications in English: {counts.get('article-journal', 0)} journal articles, {counts.get('paper-conference', 0)} conference papers, {counts.get('chapter', 0)} book chapters, {counts.get('book', 0)} edited volumes and {counts.get('article-magazine', 0)} magazine article{'s' if counts.get('article-magazine', 0) != 1 else ''}. Open any entry to read its abstract.</p>
     {chr(10).join('    ' + y for y in years_html).strip()}
+    </section>
+
+    <section class="block" id="spanish" aria-label="Publications in Spanish" lang="en">
+      <details class="lang-group">
+        <summary><h2>Publications in Spanish</h2><span class="w-meta">{len(spanish)}</span></summary>
+        <ol class="works">
+        {spanish_html}
+        </ol>
+      </details>
     </section>
 
     <section class="block" id="education" aria-labelledby="edu-h">
@@ -560,6 +598,7 @@ def work_md(w, heading="###"):
     lines = [f"{heading} {w['title']}", "",
              f"- Authors: {names_text(w.get('author') or w.get('editor'))}{' (eds.)' if not w.get('author') and w.get('editor') else ''}",
              f"- Type: {TYPE_LABEL[w['type']]}",
+             f"- Language: {'Spanish' if w.get('language') == 'es' else 'English'}",
              f"- Venue: {venue_text(w, with_year=False)}"]
     if year(w):
         lines.append(f"- Year: {year(w)}")

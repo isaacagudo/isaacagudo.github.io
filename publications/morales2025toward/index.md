@@ -2,6 +2,7 @@
 
 - Authors: Daniel Morales, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *IEEE Communications Magazine*, 63(2), 96–102.
 - Year: 2025
 - DOI: [10.1109/mcom.001.2300839](https://doi.org/10.1109/mcom.001.2300839)

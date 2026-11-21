@@ -2,6 +2,7 @@
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *IET Information Security*, 13(5), 498–507.
 - Year: 2019
 - DOI: [10.1049/iet-ifs.2018.5082](https://doi.org/10.1049/iet-ifs.2018.5082)

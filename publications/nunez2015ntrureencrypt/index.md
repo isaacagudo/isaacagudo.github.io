@@ -2,6 +2,7 @@
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 10th ACM Symposium on Information, Computer and Communications Security*, pp. 179–189.
 - Year: 2015
 - DOI: [10.1145/2714576.2714585](https://doi.org/10.1145/2714576.2714585)

@@ -2,6 +2,7 @@
 
 - Authors: Isaac Agudo, Ali El Kaafarani, David Núñez, Siani Pearson
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Privacy and Identity Management. Time for a Revolution?*, pp. 187–204.
 - Year: 2016
 - DOI: [10.1007/978-3-319-41763-9_13](https://doi.org/10.1007/978-3-319-41763-9_13)

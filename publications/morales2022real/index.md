@@ -2,6 +2,7 @@
 
 - Authors: Daniel Morales, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 19th International Conference on Security and Cryptography*, pp. 249–260.
 - Year: 2022
 - DOI: [10.5220/0011327200003283](https://doi.org/10.5220/0011327200003283)

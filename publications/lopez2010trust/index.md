@@ -2,6 +2,7 @@
 
 - Authors: Javier López, Rodrigo Roman, Isaac Agudo, Carmen Fernández-Gago
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Computer Communications*, 33(9), 1086–1093.
 - Year: 2010
 - DOI: [10.1016/j.comcom.2010.02.006](https://doi.org/10.1016/j.comcom.2010.02.006)

@@ -2,6 +2,7 @@
 
 - Authors: Isaac Agudo
 - Type: Book chapter
+- Language: English
 - Venue: Chapter in *Advances in Enterprise Information Technology Security*, IGI Global, pp. 149–168.
 - Year: 2007
 - DOI: [10.4018/978-1-59904-090-5.ch008](https://doi.org/10.4018/978-1-59904-090-5.ch008)

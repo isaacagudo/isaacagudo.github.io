@@ -2,6 +2,7 @@
 
 - Authors: Daniel Morales, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2023 IEEE International Conference on Metaverse Computing, Networking and Applications (MetaCom)*, pp. 266–273.
 - Year: 2023
 - DOI: [10.1109/metacom57706.2023.00056](https://doi.org/10.1109/metacom57706.2023.00056)

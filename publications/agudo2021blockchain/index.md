@@ -2,6 +2,7 @@
 
 - Authors: Isaac Agudo, Manuel Montenegro-Gómez, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *IEEE Transactions on Vehicular Technology*, 70(5), 4001–4010.
 - Year: 2021
 - DOI: [10.1109/tvt.2020.3046640](https://doi.org/10.1109/tvt.2020.3046640)

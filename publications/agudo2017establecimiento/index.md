@@ -2,6 +2,7 @@
 
 - Authors: Isaac Agudo, Ricardo Ruiz Tueros
 - Type: Conference paper
+- Language: Spanish
 - Venue: Conference paper in *Proceedings XIII Jornadas de Ingenieria Telematica - JITEL2017*, pp. 79–85.
 - Year: 2017
 - DOI: [10.4995/jitel2017.2017.6562](https://doi.org/10.4995/jitel2017.2017.6562)

@@ -77,12 +77,17 @@
     "scopus": "8881544100",
     "researcherid": "L-1785-2014",
     "dblp": "23/6961",
-    "openalex": "A5053752266"
+    "openalex": "A5053752266",
+    "google_scholar": "JGd3lHkAAAAJ"
   },
   "profiles": [
     {
       "name": "ORCID",
       "url": "https://orcid.org/0000-0002-2911-2300"
+    },
+    {
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=JGd3lHkAAAAJ"
     },
     {
       "name": "DBLP",

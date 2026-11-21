@@ -2,6 +2,7 @@
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *4th IEEE International Conference on Cloud Computing Technology and Science Proceedings*, pp. 241–248.
 - Year: 2012
 - DOI: [10.1109/cloudcom.2012.6427551](https://doi.org/10.1109/cloudcom.2012.6427551)

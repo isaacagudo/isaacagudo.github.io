@@ -2,6 +2,7 @@
 
 - Authors: Daniel Morales, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Blockchain: Research and Applications*, 7(2), 100323.
 - Year: 2026
 - DOI: [10.1016/j.bcra.2025.100323](https://doi.org/10.1016/j.bcra.2025.100323)

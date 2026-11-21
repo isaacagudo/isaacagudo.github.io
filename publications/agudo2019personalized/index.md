@@ -2,6 +2,7 @@
 
 - Authors: Isaac Agudo, Ruben Rios, Ana Nieto
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 2019 AIS SIGED International Conference on Information Systems Education and Research*.
 - Year: 2019
 - Open-access copy: https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1000&context=siged2019

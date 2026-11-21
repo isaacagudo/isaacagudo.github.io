@@ -2,6 +2,7 @@
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Data and Applications Security and Privacy XXXI*, pp. 453–472.
 - Year: 2017
 - DOI: [10.1007/978-3-319-61176-1_25](https://doi.org/10.1007/978-3-319-61176-1_25)

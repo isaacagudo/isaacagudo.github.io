@@ -29,6 +29,7 @@ I teach and research applied cryptography at the University of Málaga, where I 
 ## Profiles
 
 - [ORCID](https://orcid.org/0000-0002-2911-2300)
+- [Google Scholar](https://scholar.google.com/citations?user=JGd3lHkAAAAJ)
 - [DBLP](https://dblp.org/pid/23/6961.html)
 - [Scopus](https://www.scopus.com/authid/detail.uri?authorId=8881544100)
 - [Web of Science](https://www.webofscience.com/wos/author/record/L-1785-2014)
@@ -102,6 +103,7 @@ Newest first.
 
 - Authors: Pablo Sánchez-Serrano, Ruben Rios, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2026 9th International Conference on Networking, Intelligent Systems & Security (NISS)*, pp. 215–222.
 - Year: 2026
 - DOI: [10.23919/nisscps00007.2026.00037](https://doi.org/10.23919/nisscps00007.2026.00037)
@@ -114,6 +116,7 @@ Abstract: With the widespread adoption of encryption, encrypted traffic classifi
 
 - Authors: Daniel Morales, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Blockchain: Research and Applications*, 7(2), 100323.
 - Year: 2026
 - DOI: [10.1016/j.bcra.2025.100323](https://doi.org/10.1016/j.bcra.2025.100323)
@@ -126,6 +129,7 @@ Abstract: Cryptocurrencies, particularly Bitcoin, continue to be the most preval
 
 - Authors: Pablo Sánchez-Serrano, Ruben Rios, Isaac Agudo
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Computers and Electrical Engineering*, 126, 110468.
 - Year: 2025
 - DOI: [10.1016/j.compeleceng.2025.110468](https://doi.org/10.1016/j.compeleceng.2025.110468)
@@ -138,6 +142,7 @@ Abstract: Access to realistic data is essential for various purposes, including 
 
 - Authors: Daniel Morales, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *IEEE Internet of Things Journal*, 12(13), 22725–22732.
 - Year: 2025
 - DOI: [10.1109/jiot.2025.3555026](https://doi.org/10.1109/jiot.2025.3555026)
@@ -150,6 +155,7 @@ Abstract: Outsourced computations are essential for IoT devices, but they can ra
 
 - Authors: Patxi Juaristi, Isaac Agudo, Ruben Rios, Laura Ricci
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Computer Security. ESORICS 2024 International Workshops*, pp. 340–353.
 - Year: 2025
 - DOI: [10.1007/978-3-031-82349-7_23](https://doi.org/10.1007/978-3-031-82349-7_23)
@@ -159,6 +165,7 @@ Abstract: Outsourced computations are essential for IoT devices, but they can ra
 
 - Authors: Pablo Sánchez-Serrano, Ruben Rios, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Computer Security. ESORICS 2024 International Workshops*, pp. 170–180.
 - Year: 2025
 - DOI: [10.1007/978-3-031-82349-7_12](https://doi.org/10.1007/978-3-031-82349-7_12)
@@ -168,6 +175,7 @@ Abstract: Outsourced computations are essential for IoT devices, but they can ra
 
 - Authors: Daniel Morales, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *IEEE Communications Magazine*, 63(2), 96–102.
 - Year: 2025
 - DOI: [10.1109/mcom.001.2300839](https://doi.org/10.1109/mcom.001.2300839)
@@ -180,6 +188,7 @@ Abstract: Blockchain technologies have introduced a compelling paradigm for a ne
 
 - Authors: José Carlos Ramírez, Isaac Agudo
 - Type: Book chapter
+- Language: English
 - Venue: Chapter in *Tokenizing the Future: A Guide to Web3 and the Metaverse*, edited by Wolfgang Prinz, Daniel Trauth, Springer, pp. 163–172.
 - Year: 2025
 - DOI: [10.1007/978-3-031-91405-8_11](https://doi.org/10.1007/978-3-031-91405-8_11)
@@ -189,6 +198,7 @@ Abstract: Blockchain technologies have introduced a compelling paradigm for a ne
 
 - Authors: Elena Molina, Ruben Rios, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall)*, pp. 1–5.
 - Year: 2023
 - DOI: [10.1109/vtc2023-fall60731.2023.10333713](https://doi.org/10.1109/vtc2023-fall60731.2023.10333713)
@@ -200,6 +210,7 @@ Abstract: Traditional intelligent transportation systems (ITS) network layers ha
 
 - Authors: Daniel Morales, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2023 IEEE International Conference on Metaverse Computing, Networking and Applications (MetaCom)*, pp. 266–273.
 - Year: 2023
 - DOI: [10.1109/metacom57706.2023.00056](https://doi.org/10.1109/metacom57706.2023.00056)
@@ -211,6 +222,7 @@ Abstract: In the last few years we have seen many different approaches to incorp
 
 - Authors: Daniel Morales, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Computer Science Review*, 49, 100567.
 - Year: 2023
 - DOI: [10.1016/j.cosrev.2023.100567](https://doi.org/10.1016/j.cosrev.2023.100567)
@@ -223,6 +235,7 @@ Abstract: Secure Multi-party Computation (SMPC) is a family of protocols which a
 
 - Authors: Ishak Meraouche, Sabyasachi Dutta, Sraban Kumar Mohanty, Isaac Agudo, Kouichi Sakurai
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *IEEE Access*, 10, 121329–121339.
 - Year: 2022
 - DOI: [10.1109/access.2022.3223430](https://doi.org/10.1109/access.2022.3223430)
@@ -235,6 +248,7 @@ Abstract: Neural networks based cryptography has seen a significant growth since
 
 - Authors: Daniel Morales, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 19th International Conference on Security and Cryptography*, pp. 249–260.
 - Year: 2022
 - DOI: [10.5220/0011327200003283](https://doi.org/10.5220/0011327200003283)
@@ -247,6 +261,7 @@ Abstract: Crowd Counting is a very interesting problem aiming at counting people
 
 - Authors: Isaac Agudo, Manuel Montenegro-Gómez, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *IEEE Transactions on Vehicular Technology*, 70(5), 4001–4010.
 - Year: 2021
 - DOI: [10.1109/tvt.2020.3046640](https://doi.org/10.1109/tvt.2020.3046640)
@@ -259,6 +274,7 @@ Abstract: New mobility paradigms have appeared in recent years, and everything s
 
 - Authors: Raúl Ocaña, Isaac Agudo
 - Type: Conference paper
+- Language: Spanish
 - Venue: Conference paper in *Actas de las V Jornadas Nacionales de Investigación en Ciberseguridad (JNIC 2019)*, pp. 255–256.
 - Year: 2019
 - Page: https://isaacagudo.github.io/publications/ocana2019comunicaciones/
@@ -267,6 +283,7 @@ Abstract: New mobility paradigms have appeared in recent years, and everything s
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *IET Information Security*, 13(5), 498–507.
 - Year: 2019
 - DOI: [10.1049/iet-ifs.2018.5082](https://doi.org/10.1049/iet-ifs.2018.5082)
@@ -278,6 +295,7 @@ Abstract: Escrowed decryption schemes (EDSs) are public‐key encryption schemes
 
 - Authors: Isaac Agudo, Ruben Rios, Ana Nieto
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 2019 AIS SIGED International Conference on Information Systems Education and Research*.
 - Year: 2019
 - Open-access copy: https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1000&context=siged2019
@@ -289,6 +307,7 @@ Abstract: Teaching cybersecurity is very challenging as it requires coverage of 
 
 - Authors: Isaac Agudo, Ricardo Ruiz Tueros
 - Type: Conference paper
+- Language: Spanish
 - Venue: Conference paper in *Proceedings XIII Jornadas de Ingenieria Telematica - JITEL2017*, pp. 79–85.
 - Year: 2017
 - DOI: [10.4995/jitel2017.2017.6562](https://doi.org/10.4995/jitel2017.2017.6562)
@@ -301,6 +320,7 @@ Abstract: El objetivo de este trabajo ha sido investigar el uso de canales sonor
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Journal of Network and Computer Applications*, 87, 193–209.
 - Year: 2017
 - DOI: [10.1016/j.jnca.2017.03.005](https://doi.org/10.1016/j.jnca.2017.03.005)
@@ -310,6 +330,7 @@ Abstract: El objetivo de este trabajo ha sido investigar el uso de canales sonor
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Data and Applications Security and Privacy XXXI*, pp. 453–472.
 - Year: 2017
 - DOI: [10.1007/978-3-319-61176-1_25](https://doi.org/10.1007/978-3-319-61176-1_25)
@@ -320,6 +341,7 @@ Abstract: El objetivo de este trabajo ha sido investigar el uso de canales sonor
 
 - Authors: Isaac Agudo, Ali El Kaafarani, David Núñez, Siani Pearson
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Privacy and Identity Management. Time for a Revolution?*, pp. 187–204.
 - Year: 2016
 - DOI: [10.1007/978-3-319-41763-9_13](https://doi.org/10.1007/978-3-319-41763-9_13)
@@ -332,6 +354,7 @@ Abstract: Transparency and verifiability are necessary aspects of accountability
 
 - Authors: Carlos Parés-Pulido, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Data Privacy Management, and Security Assurance*, pp. 281–290.
 - Year: 2016
 - DOI: [10.1007/978-3-319-29883-2_21](https://doi.org/10.1007/978-3-319-29883-2_21)
@@ -341,6 +364,7 @@ Abstract: Transparency and verifiability are necessary aspects of accountability
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Security and Communication Networks*, 9(12), 1769–1785.
 - Year: 2016
 - DOI: [10.1002/sec.1434](https://doi.org/10.1002/sec.1434)
@@ -352,6 +376,7 @@ Abstract: Several generic methods exist for achieving chosen‐ciphertext attack
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2015 IEEE 28th Computer Security Foundations Symposium*, pp. 290–301.
 - Year: 2015
 - DOI: [10.1109/csf.2015.27](https://doi.org/10.1109/csf.2015.27)
@@ -364,6 +389,7 @@ Abstract: Proxy Re-Encryption (PRE) is a type of Public-Key Encryption (PKE) tha
 
 - Authors: Jouni Ikonen, Antti Knutas, YongYi Wu, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 15th Koli Calling Conference on Computing Education Research*, pp. 33–39.
 - Year: 2015
 - DOI: [10.1145/2828959.2828978](https://doi.org/10.1145/2828959.2828978)
@@ -375,6 +401,7 @@ Abstract: Teamwork is an essential part of work nowadays, but many student team 
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 10th ACM Symposium on Information, Computer and Communications Security*, pp. 179–189.
 - Year: 2015
 - DOI: [10.1145/2714576.2714585](https://doi.org/10.1145/2714576.2714585)
@@ -386,6 +413,7 @@ Abstract: The use of alternative foundations for constructing more secure and ef
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Accountability and Security in the Cloud*, pp. 114–125.
 - Year: 2015
 - DOI: [10.1007/978-3-319-17199-9_5](https://doi.org/10.1007/978-3-319-17199-9_5)
@@ -397,6 +425,7 @@ Abstract: In this paper we tackle the problem of privacy and confidentiality in 
 
 - Authors: David Núñez, Isaac Agudo
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *International Journal of Information Security*, 13(2), 199–215.
 - Year: 2014
 - DOI: [10.1007/s10207-014-0230-4](https://doi.org/10.1007/s10207-014-0230-4)
@@ -406,6 +435,7 @@ Abstract: In this paper we tackle the problem of privacy and confidentiality in 
 
 - Authors: Carmen Fernández-Gago, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Computer Standards & Interfaces*, 36(4), 792–800.
 - Year: 2014
 - DOI: [10.1016/j.csi.2013.12.012](https://doi.org/10.1016/j.csi.2013.12.012)
@@ -416,6 +446,7 @@ Abstract: In this paper we tackle the problem of privacy and confidentiality in 
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2014 IEEE 6th International Conference on Cloud Computing Technology and Science*, pp. 374–379.
 - Year: 2014
 - DOI: [10.1109/cloudcom.2014.50](https://doi.org/10.1109/cloudcom.2014.50)
@@ -427,6 +458,7 @@ Abstract: Among Big Data technologies, Hadoop stands out for its capacity to sto
 
 - Authors: Sokratis Katsikas, Isaac Agudo (eds.)
 - Type: Edited volume
+- Language: English
 - Venue: Edited volume in *Lecture Notes in Computer Science*, Springer Berlin Heidelberg.
 - Year: 2014
 - DOI: [10.1007/978-3-642-53997-8](https://doi.org/10.1007/978-3-642-53997-8)
@@ -436,6 +468,7 @@ Abstract: Among Big Data technologies, Hadoop stands out for its capacity to sto
 
 - Authors: Isaac Agudo, Ruben Rios, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Computers & Security*, 39, 117–126.
 - Year: 2013
 - DOI: [10.1016/j.cose.2013.05.004](https://doi.org/10.1016/j.cose.2013.05.004)
@@ -445,6 +478,7 @@ Abstract: Among Big Data technologies, Hadoop stands out for its capacity to sto
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *European Conference on Service-Oriented and Cloud Computing*.
 - Year: 2013
 - Page: https://isaacagudo.github.io/publications/nunez2013leveraging/
@@ -455,6 +489,7 @@ Abstract: The advent of cloud computing has provided the opportunity to external
 
 - Authors: Carmen Fernández-Gago, Fabio Martinelli, Siani Pearson, Isaac Agudo (eds.)
 - Type: Edited volume
+- Language: English
 - Venue: Edited volume in *IFIP Advances in Information and Communication Technology*, Springer Berlin Heidelberg.
 - Year: 2013
 - DOI: [10.1007/978-3-642-38323-6](https://doi.org/10.1007/978-3-642-38323-6)
@@ -467,6 +502,7 @@ Abstract: This book constitutes the refereed proceedings of the 7th IFIP WG 11.1
 
 - Authors: Francisco Moyano, Carmen Fernández-Gago, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Engineering Secure Software and Systems*, pp. 75–88.
 - Year: 2012
 - DOI: [10.1007/978-3-642-28166-2_8](https://doi.org/10.1007/978-3-642-28166-2_8)
@@ -476,6 +512,7 @@ Abstract: This book constitutes the refereed proceedings of the 7th IFIP WG 11.1
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *4th IEEE International Conference on Cloud Computing Technology and Science Proceedings*, pp. 241–248.
 - Year: 2012
 - DOI: [10.1109/cloudcom.2012.6427551](https://doi.org/10.1109/cloudcom.2012.6427551)
@@ -487,6 +524,7 @@ Abstract: The inclusion of identity management in the cloud computing landscape 
 
 - Authors: Isaac Agudo
 - Type: Magazine article
+- Language: Spanish
 - Venue: Magazine article in *Red Seguridad*.
 - Year: 2012
 - Page: https://isaacagudo.github.io/publications/agudo2012seguridad/
@@ -495,6 +533,7 @@ Abstract: The inclusion of identity management in the cloud computing landscape 
 
 - Authors: Libor Neumann, Tomáš Halman, Pavel Rotek, Alexander Boettcher, Julian Stecklina, Michal Sojka, David Núñez, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *ISSE 2012 Securing Electronic Business Processes*, pp. 195–206.
 - Year: 2012
 - DOI: [10.1007/978-3-658-00333-3_19](https://doi.org/10.1007/978-3-658-00333-3_19)
@@ -504,6 +543,7 @@ Abstract: The inclusion of identity management in the cloud computing landscape 
 
 - Authors: José Luis Vivas, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Requirements Engineering*, 16(1), 55–73.
 - Year: 2011
 - DOI: [10.1007/s00766-010-0114-8](https://doi.org/10.1007/s00766-010-0114-8)
@@ -513,6 +553,7 @@ Abstract: The inclusion of identity management in the cloud computing landscape 
 
 - Authors: Isaac Agudo, David Núñez, Gabriele Giammatteo, Panagiotis Rizomiliotis, Costas Lambrinoudakis
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Secure and Trust Computing, Data Management, and Applications*, pp. 190–197.
 - Year: 2011
 - DOI: [10.1007/978-3-642-22365-5_23](https://doi.org/10.1007/978-3-642-22365-5_23)
@@ -522,6 +563,7 @@ Abstract: The inclusion of identity management in the cloud computing landscape 
 
 - Authors: David Núñez, Isaac Agudo, Prokopios Drogkaris, Stefanos Gritzalis
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Secure and Trust Computing, Data Management, and Applications*, pp. 198–204.
 - Year: 2011
 - DOI: [10.1007/978-3-642-22365-5_24](https://doi.org/10.1007/978-3-642-22365-5_24)
@@ -531,6 +573,7 @@ Abstract: The inclusion of identity management in the cloud computing landscape 
 
 - Authors: Cristina Alcaraz, Isaac Agudo, David Núñez, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2011 IEEE Third International Conference on Cloud Computing Technology and Science*, pp. 527–531.
 - Year: 2011
 - DOI: [10.1109/cloudcom.2011.79](https://doi.org/10.1109/cloudcom.2011.79)
@@ -542,6 +585,7 @@ Abstract: Over the last decade, the Cloud Computing paradigm has emerged as a pa
 
 - Authors: Naci Dai, Alejandra Ruiz Lopez, Elmar Zeeb, Jan Krueger, Oliver Dohndorf, Jesus Bermejo, Wolfgang Thronicke, Felix Cuadrado Latasa, Christoph Fiehe, Anna Litvina, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *ETFA2011*, pp. 1–10.
 - Year: 2011
 - DOI: [10.1109/etfa.2011.6059235](https://doi.org/10.1109/etfa.2011.6059235)
@@ -553,6 +597,7 @@ Abstract: Today we live in an environment surrounded with networked converging d
 
 - Authors: Isaac Agudo, Carmen Fernández-Gago, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Public Key Infrastructures, Services and Applications*, pp. 225–238.
 - Year: 2010
 - DOI: [10.1007/978-3-642-16441-5_15](https://doi.org/10.1007/978-3-642-16441-5_15)
@@ -562,6 +607,7 @@ Abstract: Today we live in an environment surrounded with networked converging d
 
 - Authors: Isaac Agudo, Carmen Fernández-Gago, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Computers & Mathematics with Applications*, 60(2), 209–216.
 - Year: 2010
 - DOI: [10.1016/j.camwa.2010.02.009](https://doi.org/10.1016/j.camwa.2010.02.009)
@@ -572,6 +618,7 @@ Abstract: Today we live in an environment surrounded with networked converging d
 
 - Authors: Javier López, Rodrigo Roman, Isaac Agudo, Carmen Fernández-Gago
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Computer Communications*, 33(9), 1086–1093.
 - Year: 2010
 - DOI: [10.1016/j.comcom.2010.02.006](https://doi.org/10.1016/j.comcom.2010.02.006)
@@ -582,6 +629,7 @@ Abstract: Today we live in an environment surrounded with networked converging d
 
 - Authors: Cristina Alcaraz, Isaac Agudo, Carmen Fernández-Gago, Rodrigo Roman, Gerardo Fernandez, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Trust, Privacy and Security in Digital Business*, pp. 86–94.
 - Year: 2009
 - DOI: [10.1007/978-3-642-03748-1_9](https://doi.org/10.1007/978-3-642-03748-1_9)
@@ -591,6 +639,7 @@ Abstract: Today we live in an environment surrounded with networked converging d
 
 - Authors: Isaac Agudo, Carmen Fernández-Gago, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Electronic Notes in Theoretical Computer Science*, 244, 3–12.
 - Year: 2009
 - DOI: [10.1016/j.entcs.2009.07.034](https://doi.org/10.1016/j.entcs.2009.07.034)
@@ -603,6 +652,7 @@ Abstract: In this paper we propose a trust model, where besides considering trus
 
 - Authors: Isaac Agudo, Carmen Fernández-Gago, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Concurrency and Computation: Practice and Experience*, 21(10), 1389–1403.
 - Year: 2009
 - DOI: [10.1002/cpe.1430](https://doi.org/10.1002/cpe.1430)
@@ -614,6 +664,7 @@ Abstract: Concurrent access control is an old problem in many fields in Computer
 
 - Authors: Isaac Agudo, Carmen Fernández-Gago, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Formal Aspects in Security and Trust*, pp. 302–315.
 - Year: 2009
 - DOI: [10.1007/978-3-642-01465-9_20](https://doi.org/10.1007/978-3-642-01465-9_20)
@@ -623,6 +674,7 @@ Abstract: Concurrent access control is an old problem in many fields in Computer
 
 - Authors: Isaac Agudo
 - Type: Magazine article
+- Language: Spanish
 - Venue: Magazine article in *Novática*.
 - Year: 2009
 - Page: https://isaacagudo.github.io/publications/agudo2009identidades/
@@ -631,6 +683,7 @@ Abstract: Concurrent access control is an old problem in many fields in Computer
 
 - Authors: Isaac Agudo, José L. Vivas, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the International Conference on Computer Systems and Technologies and Workshop for PhD Students in Computing*, pp. 1–6.
 - Year: 2009
 - DOI: [10.1145/1731740.1731763](https://doi.org/10.1145/1731740.1731763)
@@ -642,6 +695,7 @@ Abstract: Assurance has been a major topic for critical systems. Assurance is us
 
 - Authors: Isaac Agudo, Carmen Fernández-Gago, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Trust, Privacy and Security in Digital Business*, pp. 28–37.
 - Year: 2008
 - DOI: [10.1007/978-3-540-85735-8_4](https://doi.org/10.1007/978-3-540-85735-8_4)
@@ -651,6 +705,7 @@ Abstract: Assurance has been a major topic for critical systems. Assurance is us
 
 - Authors: Isaac Agudo, Javier López, José A. Montenegro
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Mobile Networks and Applications*.
 - Year: 2008
 - DOI: [10.1007/s11036-008-0062-4](https://doi.org/10.1007/s11036-008-0062-4)
@@ -660,6 +715,7 @@ Abstract: Assurance has been a major topic for critical systems. Assurance is us
 
 - Authors: Jose Manuel Marquez, Javier Jimenez, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2008 Fourth International Conference on Networked Computing and Advanced Information Management*, pp. 631–635.
 - Year: 2008
 - DOI: [10.1109/ncm.2008.173](https://doi.org/10.1109/ncm.2008.173)
@@ -671,6 +727,7 @@ Abstract: This paper presents a service oriented architecture for real-time inte
 
 - Authors: Isaac Agudo
 - Type: PhD thesis
+- Language: Spanish
 - Venue: PhD thesis, University of Málaga.
 - Year: 2008
 - Page: https://isaacagudo.github.io/publications/agudo2008marco/
@@ -681,6 +738,7 @@ Abstract: En esta Tesis se desarrolla un sistema de delegación de privilegios b
 
 - Authors: Isaac Agudo, Javier López, José A. Montenegro
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 3rd International ICST Conference on Mobile Multimedia Communications*.
 - Year: 2007
 - DOI: [10.4108/icst.mobimedia2007.1903](https://doi.org/10.4108/icst.mobimedia2007.1903)
@@ -693,6 +751,7 @@ Abstract: When delegation is implemented using the attribute certificates in a P
 
 - Authors: Isaac Agudo
 - Type: Book chapter
+- Language: English
 - Venue: Chapter in *Advances in Enterprise Information Technology Security*, IGI Global, pp. 149–168.
 - Year: 2007
 - DOI: [10.4018/978-1-59904-090-5.ch008](https://doi.org/10.4018/978-1-59904-090-5.ch008)
@@ -704,6 +763,7 @@ Abstract: Advanced applications for the Internet need to make use of the authori
 
 - Authors: Isaac Agudo, Javier López, José A. Montenegro
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 3rd International ICST Conference on Mobile Multimedia Communications*.
 - Year: 2007
 - DOI: [10.4108/icst.mobimedia2007.1901](https://doi.org/10.4108/icst.mobimedia2007.1901)
@@ -716,6 +776,7 @@ Abstract: In this paper we simulate an authorization and delegation system using
 
 - Authors: Javier López, Isaac Agudo, José A. Montenegro
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Information Security Technical Report*, 12(3), 139–146.
 - Year: 2007
 - DOI: [10.1016/j.istr.2007.05.008](https://doi.org/10.1016/j.istr.2007.05.008)
@@ -725,6 +786,7 @@ Abstract: In this paper we simulate an authorization and delegation system using
 
 - Authors: Isaac Agudo, Javier López, José A. Montenegro
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Communications and Multimedia Security*, pp. 54–66.
 - Year: 2006
 - DOI: [10.1007/11909033_6](https://doi.org/10.1007/11909033_6)
@@ -734,6 +796,7 @@ Abstract: In this paper we simulate an authorization and delegation system using
 
 - Authors: Isaac Agudo, Javier López, José A. Montenegro
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Information Security and Privacy*, pp. 383–394.
 - Year: 2006
 - DOI: [10.1007/11780656_32](https://doi.org/10.1007/11780656_32)
@@ -743,6 +806,7 @@ Abstract: In this paper we simulate an authorization and delegation system using
 
 - Authors: Isaac Agudo, Javier López, José A. Montenegro
 - Type: Magazine article
+- Language: English
 - Venue: Magazine article in *ERCIM News*.
 - Year: 2005
 - Page: https://isaacagudo.github.io/publications/agudo2005graphical/
@@ -753,6 +817,7 @@ Abstract: Delegation is a major goal when a real scalable distributed authorizat
 
 - Authors: Isaac Agudo, Javier López, José A. Montenegro
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Trust Management*, pp. 116–130.
 - Year: 2005
 - DOI: [10.1007/11429760_9](https://doi.org/10.1007/11429760_9)
@@ -762,6 +827,7 @@ Abstract: Delegation is a major goal when a real scalable distributed authorizat
 
 - Authors: Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 5th international conference on Computer systems and technologies - CompSysTech '04*.
 - Year: 2004
 - DOI: [10.1145/1050330.1050440](https://doi.org/10.1145/1050330.1050440)

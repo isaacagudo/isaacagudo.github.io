@@ -2,6 +2,7 @@
 
 - Authors: Daniel Morales, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Computer Science Review*, 49, 100567.
 - Year: 2023
 - DOI: [10.1016/j.cosrev.2023.100567](https://doi.org/10.1016/j.cosrev.2023.100567)

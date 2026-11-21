@@ -2,6 +2,7 @@
 
 - Authors: Carmen Fernández-Gago, Fabio Martinelli, Siani Pearson, Isaac Agudo (eds.)
 - Type: Edited volume
+- Language: English
 - Venue: Edited volume in *IFIP Advances in Information and Communication Technology*, Springer Berlin Heidelberg.
 - Year: 2013
 - DOI: [10.1007/978-3-642-38323-6](https://doi.org/10.1007/978-3-642-38323-6)

@@ -2,6 +2,7 @@
 
 - Authors: Isaac Agudo
 - Type: PhD thesis
+- Language: Spanish
 - Venue: PhD thesis, University of Málaga.
 - Year: 2008
 - Page: https://isaacagudo.github.io/publications/agudo2008marco/

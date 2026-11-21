@@ -2,6 +2,7 @@
 
 - Authors: Pablo Sánchez-Serrano, Ruben Rios, Isaac Agudo
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Computers and Electrical Engineering*, 126, 110468.
 - Year: 2025
 - DOI: [10.1016/j.compeleceng.2025.110468](https://doi.org/10.1016/j.compeleceng.2025.110468)

@@ -2,6 +2,7 @@
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2015 IEEE 28th Computer Security Foundations Symposium*, pp. 290–301.
 - Year: 2015
 - DOI: [10.1109/csf.2015.27](https://doi.org/10.1109/csf.2015.27)

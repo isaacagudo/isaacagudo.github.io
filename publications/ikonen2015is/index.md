@@ -2,6 +2,7 @@
 
 - Authors: Jouni Ikonen, Antti Knutas, YongYi Wu, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 15th Koli Calling Conference on Computing Education Research*, pp. 33–39.
 - Year: 2015
 - DOI: [10.1145/2828959.2828978](https://doi.org/10.1145/2828959.2828978)

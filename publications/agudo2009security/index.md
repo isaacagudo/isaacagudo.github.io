@@ -2,6 +2,7 @@
 
 - Authors: Isaac Agudo, José L. Vivas, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the International Conference on Computer Systems and Technologies and Workshop for PhD Students in Computing*, pp. 1–6.
 - Year: 2009
 - DOI: [10.1145/1731740.1731763](https://doi.org/10.1145/1731740.1731763)

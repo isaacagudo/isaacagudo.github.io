@@ -2,6 +2,7 @@
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Accountability and Security in the Cloud*, pp. 114–125.
 - Year: 2015
 - DOI: [10.1007/978-3-319-17199-9_5](https://doi.org/10.1007/978-3-319-17199-9_5)

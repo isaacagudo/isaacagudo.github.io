@@ -2,6 +2,7 @@
 
 - Authors: Isaac Agudo, Javier López, José A. Montenegro
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *Proceedings of the 3rd International ICST Conference on Mobile Multimedia Communications*.
 - Year: 2007
 - DOI: [10.4108/icst.mobimedia2007.1903](https://doi.org/10.4108/icst.mobimedia2007.1903)

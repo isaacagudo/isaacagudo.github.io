@@ -2,6 +2,7 @@
 
 - Authors: Isaac Agudo, Carmen Fernández-Gago, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Concurrency and Computation: Practice and Experience*, 21(10), 1389–1403.
 - Year: 2009
 - DOI: [10.1002/cpe.1430](https://doi.org/10.1002/cpe.1430)

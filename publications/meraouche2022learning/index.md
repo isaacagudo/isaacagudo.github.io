@@ -2,6 +2,7 @@
 
 - Authors: Ishak Meraouche, Sabyasachi Dutta, Sraban Kumar Mohanty, Isaac Agudo, Kouichi Sakurai
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *IEEE Access*, 10, 121329–121339.
 - Year: 2022
 - DOI: [10.1109/access.2022.3223430](https://doi.org/10.1109/access.2022.3223430)

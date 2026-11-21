@@ -188,29 +188,74 @@ h1 {
 .lines dt { font-weight: 600; }
 .lines dd { margin: 0.15rem 0 0; color: var(--slate); }
 
-/* Publication entries ------------------------------------------------------ */
-.works { list-style: none; margin: 0; padding: 0; max-width: 46rem; }
-.work, .patent { padding: 0.8rem 0 0.9rem; border-top: 1px solid var(--line); }
-.works > li:first-child { border-top: 0; padding-top: 0; }
-.w-title {
-  display: block;
-  font-size: 1.15rem;
-  line-height: 1.35;
-  font-weight: 560;
-  color: var(--ink);
-  text-decoration: none;
-  margin: 0;
+/* Publication entries: one line each, opening to show the details --------- */
+.works { list-style: none; margin: 0; padding: 0; max-width: 46rem; min-width: 0; }
+.work { border-top: 1px solid var(--line); }
+.works > li:first-child { border-top: 0; }
+
+.work summary {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.55rem 0 0.55rem 1.4rem;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
 }
-a.w-title:hover { color: var(--sea); text-decoration: underline; text-decoration-thickness: 1px; }
-.w-authors, .w-venue, .w-links { display: block; font-size: 1rem; line-height: 1.5; }
-.w-authors { color: var(--ink); margin-top: 0.2rem; }
+.work summary::-webkit-details-marker { display: none; }
+.work summary::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 1.05rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 1.5px solid var(--sea);
+  border-bottom: 1.5px solid var(--sea);
+  transform: translateY(-50%) rotate(-45deg);
+  transition: transform 120ms ease;
+}
+.work details[open] > summary::before { transform: translateY(-70%) rotate(45deg); }
+.work summary:focus-visible { outline: 2px solid var(--sea); outline-offset: 2px; border-radius: 2px; }
+
+.work .w-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.05rem;
+  font-weight: 540;
+  color: var(--ink);
+}
+.work summary:hover .w-title { color: var(--sea); }
+.work details[open] .w-title { white-space: normal; }
+.w-meta {
+  flex: 0 0 auto;
+  max-width: 15rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--slate);
+}
+
+.w-body { padding: 0 0 0.9rem 1.4rem; }
+.w-body p { margin: 0; max-width: var(--measure); }
+.w-authors { margin-top: 0.1rem; }
 .me { font-weight: 600; }
 .w-venue { color: var(--slate); }
 .w-venue cite { font-style: italic; }
-.w-links { font-family: var(--sans); font-size: 0.88rem; margin-top: 0.25rem; }
+.w-abstract { margin-top: 0.6rem !important; font-size: 1rem; line-height: 1.65; }
+.w-abstract.none { color: var(--slate); font-style: italic; }
+.w-links { font-family: var(--sans); font-size: 0.88rem; margin-top: 0.6rem !important; }
 .w-links a + a { margin-left: 1rem; }
 
-.patent h3.w-title { font-size: 1.15rem; }
+/* Patents keep a fuller layout */
+.patent { padding: 0.8rem 0 0.9rem; border-top: 1px solid var(--line); }
+.patent .w-title { display: block; font-size: 1.15rem; line-height: 1.35; font-weight: 560; margin: 0; }
+.patent .w-authors, .patent .w-venue { display: block; font-size: 1rem; line-height: 1.5; }
 .family {
   margin: 0.35rem 0 0;
   padding: 0;
@@ -219,16 +264,41 @@ a.w-title:hover { color: var(--sea); text-decoration: underline; text-decoration
   color: var(--slate);
 }
 .family a { font-family: var(--sans); font-size: 0.92em; font-weight: 600; }
-details { margin-top: 0.35rem; font-size: 1rem; }
-details summary {
+.patent details { margin-top: 0.35rem; font-size: 1rem; }
+.patent details summary {
   cursor: pointer;
   font-family: var(--sans);
   font-size: 0.88rem;
   color: var(--sea);
   width: max-content;
 }
-details summary:focus-visible { outline: 2px solid var(--sea); outline-offset: 3px; }
-details p { margin: 0.4rem 0 0; color: var(--slate); max-width: var(--measure); }
+.patent details summary:focus-visible { outline: 2px solid var(--sea); outline-offset: 3px; }
+.patent details p { margin: 0.4rem 0 0; color: var(--slate); max-width: var(--measure); }
+
+/* Spanish publications: one collapsed group */
+.lang-group > summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  cursor: pointer;
+  list-style: none;
+  width: max-content;
+  max-width: 100%;
+}
+.lang-group > summary::-webkit-details-marker { display: none; }
+.lang-group > summary h2 { margin: 0; }
+.lang-group > summary::after {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-right: 2px solid var(--sea);
+  border-bottom: 2px solid var(--sea);
+  transform: translateY(-0.3rem) rotate(45deg);
+  transition: transform 120ms ease;
+}
+.lang-group[open] > summary::after { transform: translateY(0) rotate(-135deg); }
+.lang-group > summary:focus-visible { outline: 2px solid var(--sea); outline-offset: 4px; border-radius: 2px; }
+.lang-group > .works { margin-top: 1rem; }
 
 /* All publications, grouped by year: the year sits in its own column */
 .count { margin: -0.5rem 0 1.5rem; color: var(--slate); max-width: var(--measure); }
@@ -236,8 +306,7 @@ details p { margin: 0.4rem 0 0; color: var(--slate); max-width: var(--measure); 
   display: grid;
   grid-template-columns: var(--year-col) minmax(0, 1fr);
   border-top: 1px solid var(--line);
-  padding-top: 0.8rem;
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
 }
 .year-label {
   margin: 0;
@@ -248,7 +317,7 @@ details p { margin: 0.4rem 0 0; color: var(--slate); max-width: var(--measure); 
   font-variant-numeric: tabular-nums;
   line-height: 1.9;
 }
-.year .works > li:first-child { padding-top: 0.1rem; }
+.year-label { padding-top: 0.55rem; line-height: 1.6; }
 
 .plain { margin: 0; padding-left: 1.1rem; max-width: var(--measure); }
 .plain li { padding: 0.15rem 0; }
@@ -304,12 +373,14 @@ details p { margin: 0.4rem 0 0; color: var(--slate); max-width: var(--measure); 
 @media (max-width: 40rem) {
   body { font-size: 1.0625rem; }
   .band { border-radius: 4px 0 0 4px; }
-  .year { grid-template-columns: 1fr; }
-  .year-label { margin-bottom: 0.3rem; }
+  .year { grid-template-columns: minmax(0, 1fr); }
+  .year-label { margin-bottom: 0; }
+  .work .w-meta { display: none; }
 }
 
 @media print {
   .site-header nav, .band, .skip { display: none; }
+  .work .w-title { white-space: normal; }
   .block { padding-top: 1.5rem; }
   a { color: inherit; }
 }

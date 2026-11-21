@@ -2,6 +2,7 @@
 
 - Authors: Cristina Alcaraz, Isaac Agudo, David Núñez, Javier López
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2011 IEEE Third International Conference on Cloud Computing Technology and Science*, pp. 527–531.
 - Year: 2011
 - DOI: [10.1109/cloudcom.2011.79](https://doi.org/10.1109/cloudcom.2011.79)

@@ -172,6 +172,8 @@ def add(key, item, extra=None):
     existing = by_title.get(nt) or (key if key in works else None)
     if existing:
         cur = works[existing]
+        if item.get("language"):
+            cur["language"] = item["language"]
         for k, v in item.items():
             if v and not cur.get(k):
                 cur[k] = v
@@ -233,6 +235,8 @@ for w in openalex:
             item["page"] = b["first_page"] + (f"-{b['last_page']}" if b.get("last_page") else "")
         if w.get("language"):
             item["language"] = w["language"]
+    if w.get("language"):
+        item["language"] = w["language"]
     if not item.get("abstract"):
         item["abstract"] = openalex_abstract(w.get("abstract_inverted_index"))
     extra = {"openalex": w["id"].rsplit("/", 1)[-1]}

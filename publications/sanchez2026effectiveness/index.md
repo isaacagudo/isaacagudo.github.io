@@ -2,6 +2,7 @@
 
 - Authors: Pablo Sánchez-Serrano, Ruben Rios, Isaac Agudo
 - Type: Conference paper
+- Language: English
 - Venue: Conference paper in *2026 9th International Conference on Networking, Intelligent Systems & Security (NISS)*, pp. 215–222.
 - Year: 2026
 - DOI: [10.23919/nisscps00007.2026.00037](https://doi.org/10.23919/nisscps00007.2026.00037)

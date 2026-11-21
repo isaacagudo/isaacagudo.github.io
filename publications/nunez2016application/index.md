@@ -2,6 +2,7 @@
 
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Journal article
+- Language: English
 - Venue: Journal article in *Security and Communication Networks*, 9(12), 1769–1785.
 - Year: 2016
 - DOI: [10.1002/sec.1434](https://doi.org/10.1002/sec.1434)
