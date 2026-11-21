@@ -1,0 +1,349 @@
+{
+ "marco-lopez": {
+  "expanded-result": [
+   {
+    "orcid-id": "0009-0003-6441-7809",
+    "given-names": "Marco",
+    "family-names": "López González",
+    "credit-name": "Marco López",
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Decentralized Security",
+     "Jornadas Nacionales de Invetigación en Ciberseguridad (JNIC 2026)",
+     "Linux Foundation",
+     "Universidad de Málaga"
+    ]
+   }
+  ],
+  "num-found": 1
+ },
+ "fran-zafra": {
+  "expanded-result": [
+   {
+    "orcid-id": "0009-0000-8173-8434",
+    "given-names": "Francisco",
+    "family-names": "Zafra",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Treelogic (Spain)",
+     "Universidad de Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0003-3214-9312",
+    "given-names": "Virginia",
+    "family-names": "González Zafra",
+    "credit-name": "Gonzalez-Zafra, V.",
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Universidad de Málaga Facultad de Medicina"
+    ]
+   },
+   {
+    "orcid-id": "0000-0002-8276-5976",
+    "given-names": "Francisco José",
+    "family-names": "Ariza Zafra",
+    "credit-name": null,
+    "other-name": [
+     "Ariza Zafra, F.J.",
+     "Ariza Zafra, Francisco J.",
+     "Ariza Zafra, Francisco José",
+     "Ariza_Zafra, F.J.",
+     "Ariza_Zafra, Francisco J.",
+     "Ariza_Zafra, Francisco José",
+     "Ariza Zafra, F.José",
+     "Ariza_Zafra, F.José"
+    ],
+    "email": [],
+    "institution-name": [
+     "Universidad de Malaga"
+    ]
+   },
+   {
+    "orcid-id": "0009-0003-3911-1357",
+    "given-names": "Marina",
+    "family-names": "Zafra Granados",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Universidad Rovira i Virgili",
+     "Universidad de Cádiz",
+     "Universidad de Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0002-3161-895X",
+    "given-names": "Germán",
+    "family-names": "Valdés Zafra",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Hospital Universitario Virgen de Valme",
+     "Universidad de Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0003-1939-5244",
+    "given-names": "Maria Isabel",
+    "family-names": "Carrasco Zafra",
+    "credit-name": null,
+    "other-name": [],
+    "email": [
+     "maribelcarrasco@cudeca.org"
+    ],
+    "institution-name": [
+     "Fundación CUDECA",
+     "Instituto de Investigación Biomédica de Málaga",
+     "Ministerio de Sanidad, Servicios Sociales e Igualdad",
+     "Sociedad Española de Cuidados Paliativos",
+     "Universidad Internacional de Andalucía",
+     "Universidad de Málaga",
+     "Universidad de Málaga Facultad de Ciencias",
+     "Universidad de Málaga Facultad de Medicina"
+    ]
+   },
+   {
+    "orcid-id": "0000-0002-3421-1792",
+    "given-names": "Antonio",
+    "family-names": "Segovia-Zafra",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "CIBERehd",
+     "IBIMA",
+     "Universidad Autónoma de Madrid",
+     "Universidad de Málaga",
+     "Universitat de València"
+    ]
+   },
+   {
+    "orcid-id": "0000-0003-4778-4271",
+    "given-names": "Juan",
+    "family-names": "Zafra Martín",
+    "credit-name": null,
+    "other-name": [
+     "Juan Zafra-Martin",
+     "Juan Zafra Martin",
+     "J Zafra-Martin",
+     "J Zafra",
+     "Zafra-Martin J",
+     "Zafra J"
+    ],
+    "email": [],
+    "institution-name": [
+     "Hospital Universitario Virgen de la Victoria",
+     "Hospital Universitario de Gran Canaria Doctor Negrín",
+     "Universidad de Granada",
+     "Universidad de Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0001-8976-8099",
+    "given-names": "Juan Luis",
+    "family-names": "Onieva Zafra",
+    "credit-name": null,
+    "other-name": [],
+    "email": [
+     "juanluonieva@uma.es",
+     "juanluonieva@gmail.com"
+    ],
+    "institution-name": [
+     "Carlos III University of Madrid",
+     "Centro de Investigación y Terapias Avanzadas del Cáncer",
+     "Instituto de Investigación Biomédica de Málaga",
+     "Ministry of Education",
+     "Universidad Carlos III de Madrid",
+     "Universidad de Málaga",
+     "University of Malaga",
+     "University of Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0009-0006-6881-0351",
+    "given-names": "Ana",
+    "family-names": "Zafra Arroyo",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Universidad de Málaga"
+    ]
+   }
+  ],
+  "num-found": 10
+ },
+ "fran-zafra-any": {
+  "expanded-result": [
+   {
+    "orcid-id": "0000-0003-3801-3109",
+    "given-names": "Francisco",
+    "family-names": "Zafra",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Universidad Autonoma de Madrid Facultad de Ciencias"
+    ]
+   },
+   {
+    "orcid-id": "0009-0000-8173-8434",
+    "given-names": "Francisco",
+    "family-names": "Zafra",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Treelogic (Spain)",
+     "Universidad de Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0002-8922-1293",
+    "given-names": "Francisco",
+    "family-names": "Zafra Gomez",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Universidad Autónoma de Madrid"
+    ]
+   },
+   {
+    "orcid-id": "0009-0006-1993-0330",
+    "given-names": "Francisco",
+    "family-names": "Zafra Navarro",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Institut de Recerca de l'Aigua"
+    ]
+   },
+   {
+    "orcid-id": "0000-0001-6353-9351",
+    "given-names": "Francisco Javier",
+    "family-names": "Zafra Sánchez",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": []
+   },
+   {
+    "orcid-id": "0000-0002-8276-5976",
+    "given-names": "Francisco José",
+    "family-names": "Ariza Zafra",
+    "credit-name": null,
+    "other-name": [
+     "Ariza Zafra, F.J.",
+     "Ariza Zafra, Francisco J.",
+     "Ariza Zafra, Francisco José",
+     "Ariza_Zafra, F.J.",
+     "Ariza_Zafra, Francisco J.",
+     "Ariza_Zafra, Francisco José",
+     "Ariza Zafra, F.José",
+     "Ariza_Zafra, F.José"
+    ],
+    "email": [],
+    "institution-name": [
+     "Universidad de Malaga"
+    ]
+   }
+  ],
+  "num-found": 6
+ },
+ "alvaro-lopez": {
+  "expanded-result": [
+   {
+    "orcid-id": "0000-0002-5158-2851",
+    "given-names": "Álvaro",
+    "family-names": "García López",
+    "credit-name": "Álvaro García",
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Universidad de Malaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0001-9182-423X",
+    "given-names": "Álvaro",
+    "family-names": "García López",
+    "credit-name": "Álvaro García",
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Universidad de Murcia",
+     "Universidad de Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0001-7871-2137",
+    "given-names": "Álvaro",
+    "family-names": "López-Martín",
+    "credit-name": null,
+    "other-name": [
+     "Álvaro López Martín"
+    ],
+    "email": [],
+    "institution-name": [
+     "Asociación de la Prensa de Málaga",
+     "Cátedra de Estudios Cofrades de la Universidad de Málaga",
+     "Universidad de Málaga",
+     "Universidade de Santiago de Compostela"
+    ]
+   },
+   {
+    "orcid-id": "0009-0003-0590-8237",
+    "given-names": "Alvaro",
+    "family-names": "Lopez Codina",
+    "credit-name": "Alvaro L. Codina",
+    "other-name": [],
+    "email": [
+     "alopezc@cnio.es"
+    ],
+    "institution-name": [
+     "Autonomous University of Madrid",
+     "Diamond Light Source",
+     "Fundación Ramón Areces",
+     "Ghent University",
+     "IBM Research - Zurich",
+     "Ministry of Education and Vocational Training",
+     "Protein Data Bank",
+     "Rice University",
+     "Spanish National Cancer Research Centre",
+     "Spanish Society of Biochemistry and Molecular Biology",
+     "Thermo Fisher Scientific (United States)",
+     "University of Granada",
+     "University of Malaga",
+     "University of Salamanca",
+     "VIB-VUB Center for Structural Biology"
+    ]
+   },
+   {
+    "orcid-id": "0009-0000-7870-2799",
+    "given-names": "Álvaro",
+    "family-names": "Sánchez López de Vinuesa",
+    "credit-name": null,
+    "other-name": [],
+    "email": [
+     "alvaro.slopezvinuesa@uclm.es",
+     "asldv2@gmail.com"
+    ],
+    "institution-name": [
+     "Asociación de Demografía Histórica (ADEH)",
+     "Universidad Autónoma de Madrid",
+     "Universidad de Málaga",
+     "University of Castilla-La Mancha"
+    ]
+   }
+  ],
+  "num-found": 5
+ }
+}

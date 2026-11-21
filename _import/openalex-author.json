@@ -11,9 +11,9 @@
  ],
  "full_name": "Agudo, Isaac Lopez",
  "works_count": 97,
- "cited_by_count": 1055,
+ "cited_by_count": 1070,
  "summary_stats": {
-  "2yr_mean_citedness": 5.111111111111111,
+  "2yr_mean_citedness": 5.333333333333333,
   "h_index": 17,
   "i10_index": 21
  },
@@ -164,7 +164,7 @@
   {
    "id": "https://openalex.org/T10927",
    "display_name": "Access Control and Trust",
-   "value": 0.0002409,
+   "value": 0.0002407,
    "subfield": {
     "id": "https://openalex.org/subfields/1705",
     "display_name": "Computer Networks and Communications"
@@ -181,7 +181,7 @@
   {
    "id": "https://openalex.org/T11614",
    "display_name": "Cloud Data Security Solutions",
-   "value": 0.0001915,
+   "value": 0.0001916,
    "subfield": {
     "id": "https://openalex.org/subfields/1710",
     "display_name": "Information Systems"
@@ -215,7 +215,7 @@
   {
    "id": "https://openalex.org/T11800",
    "display_name": "User Authentication and Security Systems",
-   "value": 0.0001595,
+   "value": 0.0001594,
    "subfield": {
     "id": "https://openalex.org/subfields/1710",
     "display_name": "Information Systems"
@@ -232,7 +232,7 @@
   {
    "id": "https://openalex.org/T10237",
    "display_name": "Cryptography and Data Security",
-   "value": 0.0001277,
+   "value": 0.0001278,
    "subfield": {
     "id": "https://openalex.org/subfields/1705",
     "display_name": "Computer Networks and Communications"
@@ -332,7 +332,7 @@
    "year": 2012,
    "works_count": 5,
    "oa_works_count": 0,
-   "cited_by_count": 40
+   "cited_by_count": 41
   },
   {
    "year": 2013,
@@ -350,43 +350,43 @@
    "year": 2015,
    "works_count": 6,
    "oa_works_count": 1,
-   "cited_by_count": 82
+   "cited_by_count": 84
   },
   {
    "year": 2016,
    "works_count": 7,
    "oa_works_count": 1,
-   "cited_by_count": 74
+   "cited_by_count": 75
   },
   {
    "year": 2017,
    "works_count": 4,
    "oa_works_count": 2,
-   "cited_by_count": 80
+   "cited_by_count": 81
   },
   {
    "year": 2018,
    "works_count": 0,
    "oa_works_count": 0,
-   "cited_by_count": 62
+   "cited_by_count": 63
   },
   {
    "year": 2019,
    "works_count": 4,
    "oa_works_count": 2,
-   "cited_by_count": 62
+   "cited_by_count": 63
   },
   {
    "year": 2020,
    "works_count": 1,
    "oa_works_count": 1,
-   "cited_by_count": 47
+   "cited_by_count": 49
   },
   {
    "year": 2021,
    "works_count": 0,
    "oa_works_count": 0,
-   "cited_by_count": 49
+   "cited_by_count": 51
   },
   {
    "year": 2022,
@@ -398,25 +398,25 @@
    "year": 2023,
    "works_count": 7,
    "oa_works_count": 5,
-   "cited_by_count": 57
+   "cited_by_count": 58
   },
   {
    "year": 2024,
    "works_count": 2,
    "oa_works_count": 2,
-   "cited_by_count": 68
+   "cited_by_count": 67
   },
   {
    "year": 2025,
    "works_count": 5,
    "oa_works_count": 3,
-   "cited_by_count": 91
+   "cited_by_count": 92
   },
   {
    "year": 2026,
    "works_count": 1,
    "oa_works_count": 1,
-   "cited_by_count": 103
+   "cited_by_count": 106
   }
  ],
  "display_name_alternatives": [
@@ -427,6 +427,6 @@
  "works_api_url": "https://api.openalex.org/works?filter=author.id:A5053752266",
  "awards_count": 0,
  "awards_api_url": "https://api.openalex.org/awards?filter=investigators.author.id:A5053752266",
- "updated_date": "2026-11-20T12:36:48",
+ "updated_date": "2026-11-21T13:19:37",
  "created_date": "2016-06-24T00:00:00"
 }

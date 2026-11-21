@@ -12,7 +12,7 @@
  {
   "url": "https://dblp.org/pid/23/6961.bib",
   "status": 202,
-  "bytes": 2986
+  "bytes": 3295
  },
  {
   "url": "https://dblp.org/pid/23/6961.xml",
@@ -27,7 +27,7 @@
  {
   "url": "https://api.openalex.org/works?filter=author.id:A5053752266&per-page=200&cursor=%2A",
   "status": 200,
-  "bytes": 1182502
+  "bytes": 1179883
  },
  {
   "url": "https://api.crossref.org/works/10.1002/cpe.1430",
@@ -431,7 +431,8 @@
  },
  {
   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=3",
-  "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  "status": 200,
+  "bytes": 80323
  },
  {
   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=4",
@@ -440,12 +441,31 @@
  },
  {
   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=5",
-  "status": 200,
-  "bytes": 80323
+  "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
  },
  {
   "url": "https://eprint.iacr.org/2026/1804",
   "status": 200,
   "bytes": 18278
+ },
+ {
+  "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names%3AMarco+AND+family-name%3AL%2Apez+AND+affiliation-org-name%3AM%2Alaga&rows=50",
+  "status": 200,
+  "bytes": 341
+ },
+ {
+  "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name%3AZafra+AND+affiliation-org-name%3AM%2Alaga&rows=50",
+  "status": 200,
+  "bytes": 3145
+ },
+ {
+  "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names%3A%28Fran+OR+Francisco%29+AND+family-name%3AZafra&rows=50",
+  "status": 200,
+  "bytes": 1377
+ },
+ {
+  "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names%3A%28%2Alvaro%29+AND+family-name%3AL%2Apez+AND+affiliation-org-name%3AM%2Alaga&rows=50",
+  "status": 200,
+  "bytes": 1810
  }
 ]
