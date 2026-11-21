@@ -380,3 +380,13 @@ h1 {
 .student-links { font-family: var(--sans); font-size: 0.85rem; margin-left: 0.5rem; }
 .student-links a + a { margin-left: 0.75rem; }
 .thesis .w-authors a.more { color: var(--sea); text-decoration-color: currentColor; }
+
+/* Defended / Ongoing groups inside PhD supervision */
+.sub-label {
+  margin: 1.4rem 0 0.2rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--slate);
+}
+#supervision h2 + .sub-label { margin-top: 0; }

@@ -192,5 +192,29 @@
       "label": "GitHub",
       "url": "https://github.com/isaacagudo"
     }
+  ],
+  "supervision_ongoing": [
+    {
+      "student": "Marco López",
+      "topic": "Post-quantum blockchains",
+      "university": "University of Málaga",
+      "student_links": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/marcologonz/"
+        }
+      ]
+    },
+    {
+      "student": "Fran Zafra",
+      "topic": "Privacy Risks in Tabular Data",
+      "university": "University of Málaga",
+      "student_links": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/franzafra/"
+        }
+      ]
+    }
   ]
 }

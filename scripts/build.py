@@ -350,10 +350,28 @@ def supervision_li(t):
     co = f" Co-supervised with {', '.join(t['co_supervisors'])}." if t.get("co_supervisors") else ""
     aw = f" {'; '.join(t['awards'])}." if t.get("awards") else ""
     return f"""<li class="patent thesis">
-          <h3 class="w-title"><a href="{e(t['url'])}">{e(t['title'])}</a></h3>
+          <h4 class="w-title"><a href="{e(t['url'])}">{e(t['title'])}</a></h4>
           <span class="w-authors">{student_html(t)}</span>
           <span class="w-venue">PhD thesis, {e(t['university'])}, defended {e(sup_when(t))}.{e(co)}{e(aw)}</span>
         </li>"""
+
+
+def ongoing_li(t):
+    return f"""<li class="patent thesis">
+          <h4 class="w-title">{e(t['topic'])}</h4>
+          <span class="w-authors">{student_html(t)}</span>
+          <span class="w-venue">PhD in progress, {e(t['university'])}.</span>
+        </li>"""
+
+
+def ongoing_ld(t):
+    student = {"@type": "Person", "name": t["student"]}
+    if t.get("student_links"):
+        student["sameAs"] = [x["url"] for x in t["student_links"]]
+    return {"@type": "Thesis", "name": t["topic"], "author": student, "inSupportOf": "PhD",
+            "creativeWorkStatus": "In progress",
+            "sourceOrganization": {"@type": "CollegeOrUniversity", "name": t["university"]},
+            "contributor": [{"@type": "Role", "roleName": "PhD supervisor", "contributor": {"@id": PERSON_ID}}]}
 
 
 def supervision_ld(t):
@@ -379,6 +397,12 @@ def supervision_md():
         links = t.get("student_links", [])
         who = t["student"] + (" (" + ", ".join(f"[{x['label']}]({x['url']})" for x in links) + ")" if links else "")
         out.append(f"- {who}, *{t['title']}*, {t['university']}, defended {sup_when(t)}{co}{aw}. {t['url']}")
+    if profile.get("supervision_ongoing"):
+        out += ["", "## PhD students (ongoing)", ""]
+        for t in profile["supervision_ongoing"]:
+            links = t.get("student_links", [])
+            who = t["student"] + (" (" + ", ".join(f"[{x['label']}]({x['url']})" for x in links) + ")" if links else "")
+            out.append(f"- {who}: {t['topic']}, PhD in progress at the {t['university']}")
     return "\n".join(out) + "\n"
 
 
@@ -509,6 +533,7 @@ def build_index():
         *[work_ld(w) for w in works],
         *[patent_ld(p) for p in patents],
         *[supervision_ld(t) for t in pr.get("supervision", [])],
+        *[ongoing_ld(t) for t in pr.get("supervision_ongoing", [])],
     ]}
     desc = f"{pr['name']}: {pr['summary']} Publications, patents and research lines."
     page = f"""{head(pr['name'] + ' · Applied cryptography, University of Málaga', desc, '/', '  ' + jsonld_script(graph) + chr(10))}
@@ -553,8 +578,13 @@ def build_index():
 
     <section class="block" id="supervision" aria-labelledby="sup-h">
       <h2 id="sup-h">PhD supervision</h2>
+      <h3 class="sub-label">Defended</h3>
       <ol class="works patents">
         {chr(10).join('        ' + supervision_li(t) for t in pr.get('supervision', [])).strip()}
+      </ol>
+      <h3 class="sub-label">Ongoing</h3>
+      <ol class="works patents">
+        {chr(10).join('        ' + ongoing_li(t) for t in pr.get('supervision_ongoing', [])).strip()}
       </ol>
     </section>
 
@@ -746,7 +776,8 @@ def build_markdown():
             f"{pr['name']} ({pr['alternateName']}) works on applied cryptography: secure multi-party computation, "
             "proxy re-encryption, secret sharing, and their use in blockchain, connected vehicles and digital identity. "
             f"This site lists {len(works)} publications, {len(patents)} patent families and "
-            f"{len(profile.get('supervision', []))} supervised PhD theses. "
+            f"{len(profile.get('supervision', []))} supervised PhD theses, with "
+            f"{len(profile.get('supervision_ongoing', []))} more in progress. "
             f"ORCID {pr['identifiers']['orcid']}.", "",
             "## Profile", "",
             f"- [Profile in Markdown]({SITE}/index.md): position, research lines, education and profile links",

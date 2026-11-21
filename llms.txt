@@ -2,7 +2,7 @@
 
 > Associate Professor of Computer Science at the University of Málaga, researching applied cryptography at NICS Lab, and founder of Decentralized Security.
 
-Isaac Agudo (Isaac Agudo Ruiz) works on applied cryptography: secure multi-party computation, proxy re-encryption, secret sharing, and their use in blockchain, connected vehicles and digital identity. This site lists 65 publications, 5 patent families and 2 supervised PhD theses. ORCID 0000-0002-2911-2300.
+Isaac Agudo (Isaac Agudo Ruiz) works on applied cryptography: secure multi-party computation, proxy re-encryption, secret sharing, and their use in blockchain, connected vehicles and digital identity. This site lists 65 publications, 5 patent families and 2 supervised PhD theses, with 2 more in progress. ORCID 0000-0002-2911-2300.
 
 ## Profile
 

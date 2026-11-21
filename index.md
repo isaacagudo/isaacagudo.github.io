@@ -31,6 +31,11 @@ I teach and research applied cryptography at the University of Málaga, where I 
 - Daniel Morales Escalera ([NICS Lab page](https://www.nics.uma.es/?p=1661), [LinkedIn](https://www.linkedin.com/in/daniel-morales-escalera)), *Secure Multi-Party Computation: Constructions and Applications in Blockchain*, University of Málaga, defended 28 April 2025, co-supervised with Javier López. https://hdl.handle.net/10630/38704
 - David Núñez ([LinkedIn](https://www.linkedin.com/in/davidnunezmontanez), [ORCID](https://orcid.org/0000-0002-3392-1530)), *New Security Definitions, Constructions and Applications of Proxy Re-Encryption*, University of Málaga, defended January 2016, co-supervised with Javier López. Awards: Best Thesis Award at JNIC 2017; ERCIM STM PhD Award 2017. https://www.nics.uma.es/news/best-thesis-award-in-jnic-2017-for-nics-member-david-nunez/
 
+## PhD students (ongoing)
+
+- Marco López ([LinkedIn](https://www.linkedin.com/in/marcologonz/)): Post-quantum blockchains, PhD in progress at the University of Málaga
+- Fran Zafra ([LinkedIn](https://www.linkedin.com/in/franzafra/)): Privacy Risks in Tabular Data, PhD in progress at the University of Málaga
+
 ## Profiles
 
 - [ORCID](https://orcid.org/0000-0002-2911-2300)
