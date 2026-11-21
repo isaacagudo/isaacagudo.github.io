@@ -422,6 +422,7 @@ def work_li(w, with_year=True, id_prefix=""):
 
 
 def patent_li(p):
+    """One patent family as a single-line row, like the publications."""
     c = p["custom"]
     fam = []
     for f in c["family"]:
@@ -434,12 +435,17 @@ def patent_li(p):
             when.append(f"published {date_long(f['published'])}")
         fam.append(f'<li><a href="{e(f["url"])}">{e(f["number"])}</a>, {e(f["label"])}'
                    f'{", " + ", ".join(when) if when else ""}.</li>')
-    return f"""<li class="patent" id="{p['id']}">
-          <h3 class="w-title">{e(p['title'])}</h3>
-          <span class="w-authors">{names_html(p['author'])}</span>
-          <span class="w-venue">{e(c['status'])}. Applicant: {e(c['assignee'].rstrip('.'))}.</span>
-          <ul class="family">{''.join(fam)}</ul>
-          <details><summary>Abstract</summary><p>{e(p['abstract'])}</p></details>
+    meta = f"{p['number']}, {year(p)}"
+    return f"""<li class="work" id="{p['id']}">
+          <details>
+            <summary><span class="w-title">{e(p['title'])}</span><span class="w-meta">{e(meta)}</span></summary>
+            <div class="w-body">
+              <p class="w-authors">{names_html(p['author'])}</p>
+              <p class="w-venue">{e(c['status'])}. Applicant: {e(c['assignee'].rstrip('.'))}.</p>
+              <ul class="family">{''.join(fam)}</ul>
+              <p class="w-abstract">{e(p['abstract'])}</p>
+            </div>
+          </details>
         </li>"""
 
 
@@ -512,7 +518,7 @@ def build_index():
 
     <section class="block" id="patents" aria-labelledby="pat-h">
       <h2 id="pat-h">Patents</h2>
-      <ol class="works patents">
+      <ol class="works">
         {chr(10).join('        ' + patent_li(p) for p in patents).strip()}
       </ol>
     </section>
