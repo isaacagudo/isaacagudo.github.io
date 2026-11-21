@@ -215,6 +215,21 @@
           "url": "https://www.linkedin.com/in/franzafra/"
         }
       ]
+    },
+    {
+      "student": "Pablo Sánchez-Serrano",
+      "topic": "Privacy and AI",
+      "university": "University of Málaga",
+      "student_links": [
+        {
+          "label": "NICS Lab page",
+          "url": "https://www.nics.uma.es/pablo-sanchez/"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/pablo-sanchez-serrano/"
+        }
+      ]
     }
   ]
 }

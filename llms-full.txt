@@ -35,6 +35,7 @@ I teach and research applied cryptography at the University of Málaga, where I 
 
 - Marco López ([LinkedIn](https://www.linkedin.com/in/marcologonz/)): Post-quantum blockchains, PhD in progress at the University of Málaga
 - Fran Zafra ([LinkedIn](https://www.linkedin.com/in/franzafra/)): Privacy Risks in Tabular Data, PhD in progress at the University of Málaga
+- Pablo Sánchez-Serrano ([NICS Lab page](https://www.nics.uma.es/pablo-sanchez/), [LinkedIn](https://www.linkedin.com/in/pablo-sanchez-serrano/)): Privacy and AI, PhD in progress at the University of Málaga
 
 ## Profiles
 
