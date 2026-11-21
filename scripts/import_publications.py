@@ -134,6 +134,17 @@ for url in ("https://eprint.iacr.org/2026/1804",):
     name = re.sub(r"[^a-z0-9]+", "-", url.split("://", 1)[1].lower()).strip("-")
     save(f"page-{name}.html", get(url, accept="text/html"))
 
+# ORCID public search for PhD students without an iD in any paper metadata
+students = {}
+for key, q in (
+    ("marco-lopez", 'given-names:Marco AND family-name:L*pez AND affiliation-org-name:M*laga'),
+    ("fran-zafra", 'family-name:Zafra AND affiliation-org-name:M*laga'),
+    ("fran-zafra-any", 'given-names:(Fran OR Francisco) AND family-name:Zafra'),
+    ("alvaro-lopez", 'given-names:(*lvaro) AND family-name:L*pez AND affiliation-org-name:M*laga'),
+):
+    students[key] = as_json(get("https://pub.orcid.org/v3.0/expanded-search/?" + urllib.parse.urlencode({"q": q, "rows": "50"})))
+save("orcid-student-search.json", json.dumps(students, indent=1, ensure_ascii=False).encode())
+
 (out / "log.json").write_text(json.dumps(log, indent=1))
 print(f"{len(dois)} DOIs, {len(crossref)} Crossref records")
 for e in log:
