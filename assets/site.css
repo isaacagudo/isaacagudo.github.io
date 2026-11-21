@@ -375,3 +375,5 @@ h1 {
   line-height: 1.6;
   color: var(--slate);
 }
+.thesis .w-authors a { color: var(--ink); text-decoration-color: var(--line); }
+.thesis .w-authors a:hover { color: var(--sea); text-decoration-color: currentColor; }
