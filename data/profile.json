@@ -134,7 +134,16 @@
       ],
       "url": "https://hdl.handle.net/10630/38704",
       "language": "en",
-      "student_url": "https://www.nics.uma.es/?p=1661"
+      "student_links": [
+        {
+          "label": "NICS Lab page",
+          "url": "https://www.nics.uma.es/?p=1661"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/daniel-morales-escalera"
+        }
+      ]
     },
     {
       "student": "David Núñez",
@@ -150,7 +159,16 @@
       ],
       "url": "https://www.nics.uma.es/news/best-thesis-award-in-jnic-2017-for-nics-member-david-nunez/",
       "language": "en",
-      "student_url": "https://orcid.org/0000-0002-3392-1530"
+      "student_links": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/davidnunezmontanez"
+        },
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0002-3392-1530"
+        }
+      ]
     }
   ],
   "hero_links": [

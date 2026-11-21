@@ -377,3 +377,6 @@ h1 {
 }
 .thesis .w-authors a { color: var(--ink); text-decoration-color: var(--line); }
 .thesis .w-authors a:hover { color: var(--sea); text-decoration-color: currentColor; }
+.student-links { font-family: var(--sans); font-size: 0.85rem; margin-left: 0.5rem; }
+.student-links a + a { margin-left: 0.75rem; }
+.thesis .w-authors a.more { color: var(--sea); text-decoration-color: currentColor; }

@@ -336,20 +336,30 @@ def sup_when(t):
     return f"{MONTHS[int(parts[1]) - 1]} {parts[0]}" if len(parts) == 2 else parts[0]
 
 
+def student_html(t):
+    """Student name linked to their main page, followed by any other profiles."""
+    links = t.get("student_links", [])
+    if not links:
+        return e(t["student"])
+    name = f'<a href="{e(links[0]["url"])}">{e(t["student"])}</a>'
+    more = " ".join(f'<a class="more" href="{e(x["url"])}">{e(x["label"])}</a>' for x in links[1:])
+    return name + (f' <span class="student-links">{more}</span>' if more else "")
+
+
 def supervision_li(t):
     co = f" Co-supervised with {', '.join(t['co_supervisors'])}." if t.get("co_supervisors") else ""
     aw = f" {'; '.join(t['awards'])}." if t.get("awards") else ""
     return f"""<li class="patent thesis">
           <h3 class="w-title"><a href="{e(t['url'])}">{e(t['title'])}</a></h3>
-          <span class="w-authors">{f'<a href="{e(t["student_url"])}">{e(t["student"])}</a>' if t.get("student_url") else e(t["student"])}</span>
+          <span class="w-authors">{student_html(t)}</span>
           <span class="w-venue">PhD thesis, {e(t['university'])}, defended {e(sup_when(t))}.{e(co)}{e(aw)}</span>
         </li>"""
 
 
 def supervision_ld(t):
     student = {"@type": "Person", "name": t["student"]}
-    if t.get("student_url"):
-        student["sameAs"] = t["student_url"]
+    if t.get("student_links"):
+        student["sameAs"] = [x["url"] for x in t["student_links"]]
     d = {"@type": "Thesis", "name": t["title"], "author": student,
          "inSupportOf": "PhD", "datePublished": t["date"], "url": t["url"], "inLanguage": t.get("language", "en"),
          "sourceOrganization": {"@type": "CollegeOrUniversity", "name": t["university"]},
@@ -366,7 +376,8 @@ def supervision_md():
     for t in profile.get("supervision", []):
         co = f", co-supervised with {', '.join(t['co_supervisors'])}" if t.get("co_supervisors") else ""
         aw = f". Awards: {'; '.join(t['awards'])}" if t.get("awards") else ""
-        who = f"[{t['student']}]({t['student_url']})" if t.get("student_url") else t["student"]
+        links = t.get("student_links", [])
+        who = t["student"] + (" (" + ", ".join(f"[{x['label']}]({x['url']})" for x in links) + ")" if links else "")
         out.append(f"- {who}, *{t['title']}*, {t['university']}, defended {sup_when(t)}{co}{aw}. {t['url']}")
     return "\n".join(out) + "\n"
 
