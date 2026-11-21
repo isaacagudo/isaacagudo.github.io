@@ -1,0 +1,27 @@
+name: Import publication data
+
+on:
+  push:
+    branches: [data-import]
+    paths:
+      - .github/workflows/import-publications.yml
+      - scripts/import_publications.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch from ORCID, DBLP, OpenAlex, Crossref and Google Patents
+        run: python3 scripts/import_publications.py _import
+      - name: Commit the raw data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _import
+          git commit -m "Import raw publication data" || echo "No changes"
+          git push
