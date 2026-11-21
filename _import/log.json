@@ -12,12 +12,12 @@
  {
   "url": "https://dblp.org/pid/23/6961.bib",
   "status": 202,
-  "bytes": 2985
+  "bytes": 3294
  },
  {
   "url": "https://dblp.org/pid/23/6961.xml",
   "status": 202,
-  "bytes": 3294
+  "bytes": 2985
  },
  {
   "url": "https://api.openalex.org/authors/orcid:0000-0002-2911-2300",
@@ -408,7 +408,7 @@
  {
   "url": "https://dblp.org/search/publ/api?q=author%3AIsaac_Agudo%3A&format=json&h=1000",
   "status": 202,
-  "bytes": 2985
+  "bytes": 3355
  },
  {
   "url": "https://api.semanticscholar.org/graph/v1/author/search?query=Isaac+Agudo&fields=name%2Caffiliations%2CpaperCount%2CexternalIds",
@@ -417,7 +417,8 @@
  },
  {
   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=1",
-  "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  "status": 200,
+  "bytes": 80323
  },
  {
   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=2",

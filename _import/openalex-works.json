@@ -626,8 +626,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 40,
@@ -1364,8 +1364,8 @@
   "sustainable_development_goals": [],
   "study_designs": [
    {
-    "id": "https://openalex.org/study-designs/systematic-review",
-    "display_name": "Systematic Review"
+    "display_name": "Systematic Review",
+    "id": "https://openalex.org/study-designs/systematic-review"
    }
   ],
   "awards": [
@@ -1448,8 +1448,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": true,
-   "pdf": true
+   "pdf": true,
+   "grobid_xml": true
   },
   "content_urls": {
    "pdf": "https://content.openalex.org/works/W4378710505.pdf",
@@ -2751,8 +2751,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 107,
@@ -3434,8 +3434,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 27,
@@ -4418,8 +4418,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 33,
@@ -5062,8 +5062,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 27,
@@ -5609,8 +5609,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 15,
@@ -6799,13 +6799,13 @@
   "sustainable_development_goals": [
    {
     "score": 1.0,
-    "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure"
+    "display_name": "Industry, innovation and infrastructure",
+    "id": "https://metadata.un.org/sdg/9"
    },
    {
     "score": 0.5142999887466431,
-    "id": "https://metadata.un.org/sdg/11",
-    "display_name": "Sustainable cities and communities"
+    "display_name": "Sustainable cities and communities",
+    "id": "https://metadata.un.org/sdg/11"
    }
   ],
   "study_designs": [],
@@ -6838,8 +6838,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 61,
@@ -8036,8 +8036,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 13,
@@ -8600,8 +8600,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 88,
@@ -9691,16 +9691,16 @@
   "sustainable_development_goals": [
    {
     "score": 1.0,
-    "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure"
+    "display_name": "Industry, innovation and infrastructure",
+    "id": "https://metadata.un.org/sdg/9"
    }
   ],
   "study_designs": [],
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 18,
@@ -10633,8 +10633,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 17,
@@ -11297,8 +11297,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 25,
@@ -12008,8 +12008,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 12,
@@ -12651,8 +12651,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": true,
-   "pdf": true
+   "pdf": true,
+   "grobid_xml": true
   },
   "content_urls": {
    "pdf": "https://content.openalex.org/works/W2502476552.pdf",
@@ -13359,8 +13359,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": true,
-   "pdf": true
+   "pdf": true,
+   "grobid_xml": true
   },
   "content_urls": {
    "pdf": "https://content.openalex.org/works/W1542188418.pdf",
@@ -14437,8 +14437,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 38,
@@ -15564,8 +15564,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 25,
@@ -16258,8 +16258,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 30,
@@ -16889,8 +16889,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 41,
@@ -18105,8 +18105,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": true,
-   "pdf": true
+   "pdf": true,
+   "grobid_xml": true
   },
   "content_urls": {
    "pdf": "https://content.openalex.org/works/W4312541584.pdf",
@@ -19119,8 +19119,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 10,
@@ -20037,8 +20037,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 20,
@@ -20516,15 +20516,15 @@
   "sustainable_development_goals": [],
   "study_designs": [
    {
-    "id": "https://openalex.org/study-designs/systematic-review",
-    "display_name": "Systematic Review"
+    "display_name": "Systematic Review",
+    "id": "https://openalex.org/study-designs/systematic-review"
    }
   ],
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 33,
@@ -21071,8 +21071,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 10,
@@ -22069,16 +22069,16 @@
   "sustainable_development_goals": [
    {
     "score": 0.5378999710083008,
-    "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure"
+    "display_name": "Industry, innovation and infrastructure",
+    "id": "https://metadata.un.org/sdg/9"
    }
   ],
   "study_designs": [],
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 7,
@@ -22924,21 +22924,21 @@
   "sustainable_development_goals": [
    {
     "score": 0.8278999924659729,
-    "id": "https://metadata.un.org/sdg/4",
-    "display_name": "Quality education"
+    "display_name": "Quality education",
+    "id": "https://metadata.un.org/sdg/4"
    }
   ],
   "study_designs": [
    {
-    "id": "https://openalex.org/study-designs/observational-study",
-    "display_name": "Observational Study"
+    "display_name": "Observational Study",
+    "id": "https://openalex.org/study-designs/observational-study"
    }
   ],
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 39,
@@ -23904,8 +23904,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 17,
@@ -24846,8 +24846,8 @@
   "sustainable_development_goals": [
    {
     "score": 0.7297000288963318,
-    "id": "https://metadata.un.org/sdg/16",
-    "display_name": "Peace, justice, and strong institutions"
+    "display_name": "Peace, justice, and strong institutions",
+    "id": "https://metadata.un.org/sdg/16"
    }
   ],
   "study_designs": [],
@@ -24885,8 +24885,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 23,
@@ -25874,8 +25874,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 11,
@@ -26374,21 +26374,21 @@
   "sustainable_development_goals": [
    {
     "score": 1.0,
-    "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure"
+    "display_name": "Industry, innovation and infrastructure",
+    "id": "https://metadata.un.org/sdg/9"
    },
    {
     "score": 0.875,
-    "id": "https://metadata.un.org/sdg/11",
-    "display_name": "Sustainable cities and communities"
+    "display_name": "Sustainable cities and communities",
+    "id": "https://metadata.un.org/sdg/11"
    }
   ],
   "study_designs": [],
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 14,
@@ -27346,8 +27346,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 16,
@@ -27996,8 +27996,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": true,
-   "pdf": true
+   "pdf": true,
+   "grobid_xml": true
   },
   "content_urls": {
    "pdf": "https://content.openalex.org/works/W4402170673.pdf",
@@ -28802,8 +28802,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 4,
@@ -29770,8 +29770,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 8,
@@ -30256,8 +30256,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 10,
@@ -30775,8 +30775,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 36,
@@ -31814,8 +31814,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 16,
@@ -32322,8 +32322,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 5,
@@ -33180,8 +33180,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -33797,8 +33797,8 @@
   "sustainable_development_goals": [
    {
     "score": 0.7297000288963318,
-    "id": "https://metadata.un.org/sdg/16",
-    "display_name": "Peace, justice, and strong institutions"
+    "display_name": "Peace, justice, and strong institutions",
+    "id": "https://metadata.un.org/sdg/16"
    }
   ],
   "study_designs": [],
@@ -33831,8 +33831,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": true,
-   "pdf": true
+   "pdf": true,
+   "grobid_xml": true
   },
   "content_urls": {
    "pdf": "https://content.openalex.org/works/W2485631609.pdf",
@@ -34323,8 +34323,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -34931,8 +34931,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 29,
@@ -35375,8 +35375,8 @@
   "sustainable_development_goals": [
    {
     "score": 0.9901999831199646,
-    "id": "https://metadata.un.org/sdg/4",
-    "display_name": "Quality education"
+    "display_name": "Quality education",
+    "id": "https://metadata.un.org/sdg/4"
    }
   ],
   "study_designs": [],
@@ -35394,8 +35394,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": true,
-   "pdf": true
+   "pdf": true,
+   "grobid_xml": true
   },
   "content_urls": {
    "pdf": "https://content.openalex.org/works/W3013608170.pdf",
@@ -36314,8 +36314,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 1,
@@ -36775,8 +36775,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -37410,8 +37410,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": true,
-   "pdf": true
+   "pdf": true,
+   "grobid_xml": true
   },
   "content_urls": {
    "pdf": "https://content.openalex.org/works/W2634120206.pdf",
@@ -37954,8 +37954,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": true,
-   "pdf": true
+   "pdf": true,
+   "grobid_xml": true
   },
   "content_urls": {
    "pdf": "https://content.openalex.org/works/W4285414273.pdf",
@@ -38784,8 +38784,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 10,
@@ -39231,8 +39231,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 23,
@@ -39752,8 +39752,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 17,
@@ -40576,16 +40576,16 @@
   "sustainable_development_goals": [
    {
     "score": 0.46149998903274536,
-    "id": "https://metadata.un.org/sdg/16",
-    "display_name": "Peace, justice, and strong institutions"
+    "display_name": "Peace, justice, and strong institutions",
+    "id": "https://metadata.un.org/sdg/16"
    }
   ],
   "study_designs": [],
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 17,
@@ -41147,8 +41147,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 6,
@@ -41745,8 +41745,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 14,
@@ -42205,8 +42205,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 20,
@@ -42967,8 +42967,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -44027,8 +44027,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -44370,8 +44370,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 6,
@@ -45053,8 +45053,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 8,
@@ -45802,8 +45802,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -46315,8 +46315,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 6,
@@ -47041,8 +47041,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -47792,21 +47792,21 @@
   "sustainable_development_goals": [
    {
     "score": 0.5378999710083008,
-    "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure"
+    "display_name": "Industry, innovation and infrastructure",
+    "id": "https://metadata.un.org/sdg/9"
    },
    {
     "score": 0.5142999887466431,
-    "id": "https://metadata.un.org/sdg/11",
-    "display_name": "Sustainable cities and communities"
+    "display_name": "Sustainable cities and communities",
+    "id": "https://metadata.un.org/sdg/11"
    }
   ],
   "study_designs": [],
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 13,
@@ -48472,8 +48472,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 4,
@@ -49172,8 +49172,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -49444,8 +49444,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -49919,8 +49919,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -50522,8 +50522,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -50982,8 +50982,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -51375,8 +51375,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -51709,8 +51709,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 14,
@@ -52437,8 +52437,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -52831,8 +52831,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -53139,8 +53139,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -53536,8 +53536,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -54259,16 +54259,16 @@
   "sustainable_development_goals": [
    {
     "score": 0.8970999717712402,
-    "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure"
+    "display_name": "Industry, innovation and infrastructure",
+    "id": "https://metadata.un.org/sdg/9"
    }
   ],
   "study_designs": [],
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": true,
-   "pdf": true
+   "pdf": true,
+   "grobid_xml": true
   },
   "content_urls": {
    "pdf": "https://content.openalex.org/works/W2767612758.pdf",
@@ -54918,8 +54918,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -55333,16 +55333,16 @@
   "sustainable_development_goals": [
    {
     "score": 0.666700005531311,
-    "id": "https://metadata.un.org/sdg/16",
-    "display_name": "Peace, justice, and strong institutions"
+    "display_name": "Peace, justice, and strong institutions",
+    "id": "https://metadata.un.org/sdg/16"
    }
   ],
   "study_designs": [],
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -55974,16 +55974,16 @@
   "sustainable_development_goals": [
    {
     "score": 0.9901999831199646,
-    "id": "https://metadata.un.org/sdg/4",
-    "display_name": "Quality education"
+    "display_name": "Quality education",
+    "id": "https://metadata.un.org/sdg/4"
    }
   ],
   "study_designs": [],
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -56534,8 +56534,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": true,
-   "pdf": true
+   "pdf": true,
+   "grobid_xml": true
   },
   "content_urls": {
    "pdf": "https://content.openalex.org/works/W4210357244.pdf",
@@ -57147,8 +57147,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": true,
-   "pdf": true
+   "pdf": true,
+   "grobid_xml": true
   },
   "content_urls": {
    "pdf": "https://content.openalex.org/works/W4229587927.pdf",
@@ -57802,8 +57802,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 12,
@@ -58642,8 +58642,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
@@ -59530,8 +59530,8 @@
   "sustainable_development_goals": [
    {
     "score": 0.428600013256073,
-    "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure"
+    "display_name": "Industry, innovation and infrastructure",
+    "id": "https://metadata.un.org/sdg/9"
    }
   ],
   "study_designs": [],
@@ -59576,8 +59576,8 @@
    }
   ],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 28,
@@ -60608,8 +60608,8 @@
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 12,
@@ -61315,16 +61315,16 @@
   "sustainable_development_goals": [
    {
     "score": 0.5378999710083008,
-    "id": "https://metadata.un.org/sdg/9",
-    "display_name": "Industry, innovation and infrastructure"
+    "display_name": "Industry, innovation and infrastructure",
+    "id": "https://metadata.un.org/sdg/9"
    }
   ],
   "study_designs": [],
   "awards": [],
   "funders": [],
   "has_content": {
-   "grobid_xml": false,
-   "pdf": false
+   "pdf": false,
+   "grobid_xml": false
   },
   "content_urls": null,
   "referenced_works_count": 0,
