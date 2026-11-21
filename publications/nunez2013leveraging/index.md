@@ -3,7 +3,7 @@
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
 - Language: English
-- Venue: Conference paper in *European Conference on Service-Oriented and Cloud Computing*.
+- Venue: Conference paper in *PhD Symposium of the European Conference on Service-Oriented and Cloud Computing (ESOCC 2013)*.
 - Year: 2013
 - Page: https://isaacagudo.github.io/publications/nunez2013leveraging/
 

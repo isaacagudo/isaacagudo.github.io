@@ -25,7 +25,7 @@ TODAY = datetime.date.today()
 
 profile = json.loads((ROOT / "data/profile.json").read_text())
 works = [w for w in json.loads((ROOT / "data/works.json").read_text())
-         if not w.get("custom", {}).get("hidden")]
+         if not w.get("custom", {}).get("hidden") and w["type"] != "thesis"]
 patents = json.loads((ROOT / "data/patents.json").read_text())
 PERSON_ID = f"{SITE}/#person"
 ME = {"Agudo", "Agudo Ruiz"}
@@ -315,6 +315,46 @@ def jsonld_script(obj):
     return f'<script type="application/ld+json">\n{s}\n</script>'
 
 
+# --- PhD supervision -----------------------------------------------------------
+
+def sup_when(t):
+    parts = t["date"].split("-")
+    if len(parts) == 3:
+        return date_long(t["date"])
+    return f"{MONTHS[int(parts[1]) - 1]} {parts[0]}" if len(parts) == 2 else parts[0]
+
+
+def supervision_li(t):
+    co = f" Co-supervised with {', '.join(t['co_supervisors'])}." if t.get("co_supervisors") else ""
+    aw = f" {'; '.join(t['awards'])}." if t.get("awards") else ""
+    return f"""<li class="patent thesis">
+          <h3 class="w-title"><a href="{e(t['url'])}">{e(t['title'])}</a></h3>
+          <span class="w-authors">{e(t['student'])}</span>
+          <span class="w-venue">PhD thesis, {e(t['university'])}, defended {e(sup_when(t))}.{e(co)}{e(aw)}</span>
+        </li>"""
+
+
+def supervision_ld(t):
+    d = {"@type": "Thesis", "name": t["title"], "author": {"@type": "Person", "name": t["student"]},
+         "inSupportOf": "PhD", "datePublished": t["date"], "url": t["url"], "inLanguage": t.get("language", "en"),
+         "sourceOrganization": {"@type": "CollegeOrUniversity", "name": t["university"]},
+         "contributor": [{"@type": "Role", "roleName": "PhD supervisor", "contributor": {"@id": PERSON_ID}}]
+         + [{"@type": "Role", "roleName": "PhD supervisor", "contributor": {"@type": "Person", "name": n}}
+            for n in t.get("co_supervisors", [])]}
+    if t.get("awards"):
+        d["award"] = t["awards"]
+    return d
+
+
+def supervision_md():
+    out = ["## PhD theses supervised", ""]
+    for t in profile.get("supervision", []):
+        co = f", co-supervised with {', '.join(t['co_supervisors'])}" if t.get("co_supervisors") else ""
+        aw = f". Awards: {'; '.join(t['awards'])}" if t.get("awards") else ""
+        out.append(f"- {t['student']}, *{t['title']}*, {t['university']}, defended {sup_when(t)}{co}{aw}. {t['url']}")
+    return "\n".join(out) + "\n"
+
+
 # --- HTML ---------------------------------------------------------------------
 
 def head(title, description, path, extra=""):
@@ -422,7 +462,9 @@ def build_index():
     </section>""")
     research = "\n".join(
         f'      <div class="line"><dt>{e(r["name"])}</dt><dd>{e(r["text"])}</dd></div>' for r in pr["research"])
-    edu = "\n".join(f'      <li>{e(ed["degree"])}, {e(ed["institution"])}, {ed["year"]}.</li>' for ed in pr["education"])
+    edu = "\n".join(f'      <li>{e(ed["degree"])}, {e(ed["institution"])}, {ed["year"]}.'
+                     + (f' Thesis: <cite lang="es">{e(ed["thesis"])}</cite>.' if ed.get("thesis") else "") + '</li>'
+                     for ed in pr["education"])
     counts = {}
     for w in english:
         counts[w["type"]] = counts.get(w["type"], 0) + 1
@@ -433,6 +475,7 @@ def build_index():
         person_full_ld(),
         *[work_ld(w) for w in works],
         *[patent_ld(p) for p in patents],
+        *[supervision_ld(t) for t in pr.get("supervision", [])],
     ]}
     desc = f"{pr['name']}: {pr['summary']} Publications, patents and research lines."
     page = f"""{head(pr['name'] + ' · Applied cryptography, University of Málaga', desc, '/', '  ' + jsonld_script(graph) + chr(10))}
@@ -482,6 +525,13 @@ def build_index():
       <h2 id="pat-h">Patents</h2>
       <ol class="works patents">
         {chr(10).join('        ' + patent_li(p) for p in patents).strip()}
+      </ol>
+    </section>
+
+    <section class="block" id="supervision" aria-labelledby="sup-h">
+      <h2 id="sup-h">PhD supervision</h2>
+      <ol class="works patents">
+        {chr(10).join('        ' + supervision_li(t) for t in pr.get('supervision', [])).strip()}
       </ol>
     </section>
 
@@ -641,7 +691,10 @@ def profile_md():
            f"- Topics: {', '.join(pr['knowsAbout'])}", "",
            "## Research lines", ""]
     out += [f"- **{r['name']}**: {r['text']}" for r in pr["research"]]
-    out += ["", "## Education", ""] + [f"- {ed['degree']}, {ed['institution']}, {ed['year']}" for ed in pr["education"]]
+    out += ["", "## Education", ""] + [f"- {ed['degree']}, {ed['institution']}, {ed['year']}"
+                                       + (f". Thesis (in Spanish): *{ed['thesis']}*" if ed.get("thesis") else "")
+                                       for ed in pr["education"]]
+    out += [""] + supervision_md().rstrip("\n").split("\n")
     out += ["", "## Profiles", ""] + [f"- [{x['name']}]({x['url']})" for x in pr["profiles"]]
     return "\n".join(out) + "\n"
 
@@ -665,7 +718,8 @@ def build_markdown():
     llms = [f"# {pr['name']}", "", f"> {pr['summary']}", "",
             f"{pr['name']} ({pr['alternateName']}) works on applied cryptography: secure multi-party computation, "
             "proxy re-encryption, secret sharing, and their use in blockchain, connected vehicles and digital identity. "
-            f"This site lists {len(works)} publications and {len(patents)} patent families. "
+            f"This site lists {len(works)} publications, {len(patents)} patent families and "
+            f"{len(profile.get('supervision', []))} supervised PhD theses. "
             f"ORCID {pr['identifiers']['orcid']}.", "",
             "## Profile", "",
             f"- [Profile in Markdown]({SITE}/index.md): position, research lines, education and profile links",

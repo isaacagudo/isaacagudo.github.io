@@ -384,3 +384,7 @@ h1 {
   .block { padding-top: 1.5rem; }
   a { color: inherit; }
 }
+
+/* Supervised theses reuse the patent layout; their titles link to the thesis */
+.thesis .w-title a { color: var(--ink); text-decoration: none; }
+.thesis .w-title a:hover { color: var(--sea); text-decoration: underline; text-decoration-thickness: 1px; }

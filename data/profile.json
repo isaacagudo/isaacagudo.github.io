@@ -59,7 +59,8 @@
     {
       "degree": "PhD in Computer Science, with European Doctorate mention",
       "institution": "University of Málaga",
-      "year": 2008
+      "year": 2008,
+      "thesis": "Un marco de delegación de privilegios basado en medidas de confianza sobre grafos y en atributos"
     },
     {
       "degree": "BSc in Computer Science",
@@ -116,6 +117,34 @@
     {
       "name": "GitHub",
       "url": "https://github.com/isaacagudo"
+    }
+  ],
+  "supervision": [
+    {
+      "student": "Daniel Morales Escalera",
+      "title": "Secure Multi-Party Computation: Constructions and Applications in Blockchain",
+      "date": "2025-04-28",
+      "university": "University of Málaga",
+      "co_supervisors": [
+        "Javier López"
+      ],
+      "url": "https://hdl.handle.net/10630/38704",
+      "language": "en"
+    },
+    {
+      "student": "David Núñez",
+      "title": "New Security Definitions, Constructions and Applications of Proxy Re-Encryption",
+      "date": "2016-01",
+      "university": "University of Málaga",
+      "co_supervisors": [
+        "Javier López"
+      ],
+      "awards": [
+        "Best Thesis Award at JNIC 2017",
+        "ERCIM STM PhD Award 2017"
+      ],
+      "url": "https://www.nics.uma.es/news/best-thesis-award-in-jnic-2017-for-nics-member-david-nunez/",
+      "language": "en"
     }
   ]
 }

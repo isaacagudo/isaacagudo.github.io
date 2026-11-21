@@ -2,7 +2,7 @@
 
 > Associate Professor of Computer Science at the University of Málaga, researching applied cryptography at NICS Lab, and founder of Decentralized Security.
 
-Isaac Agudo (Isaac Agudo Ruiz) works on applied cryptography: secure multi-party computation, proxy re-encryption, secret sharing, and their use in blockchain, connected vehicles and digital identity. This site lists 65 publications and 5 patent families. ORCID 0000-0002-2911-2300.
+Isaac Agudo (Isaac Agudo Ruiz) works on applied cryptography: secure multi-party computation, proxy re-encryption, secret sharing, and their use in blockchain, connected vehicles and digital identity. This site lists 64 publications, 5 patent families and 2 supervised PhD theses. ORCID 0000-0002-2911-2300.
 
 ## Profile
 
@@ -60,7 +60,7 @@ Isaac Agudo (Isaac Agudo Ruiz) works on applied cryptography: secure multi-party
 - [Building trust from context similarity measures](https://isaacagudo.github.io/publications/fernandez2014building/index.md): Journal article in *Computer Standards & Interfaces*, 36(4), 792–800, 2014.
 - [Delegated Access for Hadoop Clusters in the Cloud](https://isaacagudo.github.io/publications/nunez2014delegated/index.md): Conference paper in *2014 IEEE 6th International Conference on Cloud Computing Technology and Science*, pp. 374–379, 2014.
 - [Public Key Infrastructures, Services and Applications: 10th European Workshop, EuroPKI 2013, Egham, UK, September 12-13, 2013, Revised Selected Papers](https://isaacagudo.github.io/publications/katsikas2014public/index.md): Edited volume in *Lecture Notes in Computer Science*, Springer Berlin Heidelberg, 2014.
-- [Leveraging Privacy in Identity Management as a Service through Proxy Re-Encryption](https://isaacagudo.github.io/publications/nunez2013leveraging/index.md): Conference paper in *European Conference on Service-Oriented and Cloud Computing*, 2013.
+- [Leveraging Privacy in Identity Management as a Service through Proxy Re-Encryption](https://isaacagudo.github.io/publications/nunez2013leveraging/index.md): Conference paper in *PhD Symposium of the European Conference on Service-Oriented and Cloud Computing (ESOCC 2013)*, 2013.
 - [Trust Management VII: 7th IFIP WG 11.11 International Conference, IFIPTM 2013, Malaga, Spain, June 3-7, 2013. Proceedings](https://isaacagudo.github.io/publications/fernandez2013trust/index.md): Edited volume in *IFIP Advances in Information and Communication Technology*, Springer Berlin Heidelberg, 2013.
 - [A Task Ordering Approach for Automatic Trust Establishment](https://isaacagudo.github.io/publications/moyano2012task/index.md): Conference paper in *Engineering Secure Software and Systems*, pp. 75–88, 2012.
 - [Integrating OpenID with proxy re-encryption to enhance privacy in cloud-based identity services](https://isaacagudo.github.io/publications/nunez2012integrating/index.md): Conference paper in *4th IEEE International Conference on Cloud Computing Technology and Science Proceedings*, pp. 241–248, 2012.
@@ -83,7 +83,6 @@ Isaac Agudo (Isaac Agudo Ruiz) works on applied cryptography: secure multi-party
 - [A Model for Trust Metrics Analysis](https://isaacagudo.github.io/publications/agudo2008model/index.md): Conference paper in *Trust, Privacy and Security in Digital Business*, pp. 28–37, 2008.
 - [Enabling Attribute Delegation in Ubiquitous Environments](https://isaacagudo.github.io/publications/agudo2008enabling/index.md): Journal article in *Mobile Networks and Applications*, 2008.
 - [Secure Real-Time Integration of Services in a OSGi Distributed Environment](https://isaacagudo.github.io/publications/marquez2008secure/index.md): Conference paper in *2008 Fourth International Conference on Networked Computing and Advanced Information Management*, pp. 631–635, 2008.
-- [Un marco de delegación de privilegios basado en medidas de confianza sobre grafos y en atributos](https://isaacagudo.github.io/publications/agudo2008marco/index.md): PhD thesis, University of Málaga, 2008.
 - [Attribute Delegation in Ubiquitous Environments](https://isaacagudo.github.io/publications/agudo2007attribute/index.md): Conference paper in *Proceedings of the 3rd International ICST Conference on Mobile Multimedia Communications*, 2007.
 - [Delegation Services: A Step Beyond Authorization](https://isaacagudo.github.io/publications/agudo2007delegation/index.md): Chapter in *Advances in Enterprise Information Technology Security*, IGI Global, pp. 149–168, 2007.
 - [Implementation Aspects of a Delegation System](https://isaacagudo.github.io/publications/agudo2007implementation/index.md): Conference paper in *Proceedings of the 3rd International ICST Conference on Mobile Multimedia Communications*, 2007.

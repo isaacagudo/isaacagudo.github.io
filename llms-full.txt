@@ -22,9 +22,14 @@ I teach and research applied cryptography at the University of Málaga, where I 
 
 ## Education
 
-- PhD in Computer Science, with European Doctorate mention, University of Málaga, 2008
+- PhD in Computer Science, with European Doctorate mention, University of Málaga, 2008. Thesis (in Spanish): *Un marco de delegación de privilegios basado en medidas de confianza sobre grafos y en atributos*
 - BSc in Computer Science, UNED (National University of Distance Education), 2007
 - MSc in Mathematics, University of Málaga, 2002
+
+## PhD theses supervised
+
+- Daniel Morales Escalera, *Secure Multi-Party Computation: Constructions and Applications in Blockchain*, University of Málaga, defended 28 April 2025, co-supervised with Javier López. https://hdl.handle.net/10630/38704
+- David Núñez, *New Security Definitions, Constructions and Applications of Proxy Re-Encryption*, University of Málaga, defended January 2016, co-supervised with Javier López. Awards: Best Thesis Award at JNIC 2017; ERCIM STM PhD Award 2017. https://www.nics.uma.es/news/best-thesis-award-in-jnic-2017-for-nics-member-david-nunez/
 
 ## Profiles
 
@@ -479,7 +484,7 @@ Abstract: Among Big Data technologies, Hadoop stands out for its capacity to sto
 - Authors: David Núñez, Isaac Agudo, Javier López
 - Type: Conference paper
 - Language: English
-- Venue: Conference paper in *European Conference on Service-Oriented and Cloud Computing*.
+- Venue: Conference paper in *PhD Symposium of the European Conference on Service-Oriented and Cloud Computing (ESOCC 2013)*.
 - Year: 2013
 - Page: https://isaacagudo.github.io/publications/nunez2013leveraging/
 
@@ -722,17 +727,6 @@ Abstract: Assurance has been a major topic for critical systems. Assurance is us
 - Page: https://isaacagudo.github.io/publications/marquez2008secure/
 
 Abstract: This paper presents a service oriented architecture for real-time integration of services, how to distribute them in a local domain and how to define a secure way of accessing resources using users' and services' authorization and authentication. This work take advantage of previous European R&D projects focused on del.ivering applications and utilities in embedded real-time environments and the convergence of different worlds like Internet and digital TV.
-
-### Un marco de delegación de privilegios basado en medidas de confianza sobre grafos y en atributos
-
-- Authors: Isaac Agudo
-- Type: PhD thesis
-- Language: Spanish
-- Venue: PhD thesis, University of Málaga.
-- Year: 2008
-- Page: https://isaacagudo.github.io/publications/agudo2008marco/
-
-Abstract: En esta Tesis se desarrolla un sistema de delegación de privilegios basado en atributos que saca provecho de las relaciones de confianza especificadas por los usuarios a la hora delegar sus privilegios y de la información de contexto del sistema para facilitar un proceso de toma de decisiones flexible y controlado, Para codificar las relaciones de confianza e incluirlas en el proceso de toma de decisiones, utilizamos un número real entre cero y uno, que mide el grado de confianza que el usuario que delega deposita en el delegado para hacer uso del privilegio que se estia otorgando o delegando. Estamos por tanto convirtiendo los privilegios en un concepto difuso o borroso, de forma que los privilegios pueden recibirse de forma plena sino que dependiendo de la confianza del usuario que delega se obtendrían los privilegios con mayor o menor valor de confianza asociado. Por tanto, la definición de políticas de autorización no está basada sólo en la posesión o no de cierto privilegio, sino en la imposición de cotas inferiores de confianza para dicho privilegio. Como ventaja adicional de la utilización de un parámetro de confianza obtenemos la posibilidad de ordenar las peticiones de servicio en función del grado de confianza que recibe cada uno de los delegados, cuando varios usuarios intentan ejercer un determinado privilegio de forma simultánea. De esta forma, aquellos usuarios con niveles de confianza superiores serían servidos en primer lugar. Los atributos de los usuarios se utilizan para definir las políticas de autorización. Se distingue entre atributos globales, aquellos comunes a todos los usuarios del sistema que deben ser certificados por una entidad superior, o atributos de dominio, que sólo tienen sentido en un dominio restringido y pueden ser certificados por los propios usuarios. Esta estructura en dos capas, facilita la definición de políticas de autorización más flexibles, ya que cada usuario puede definir sus propios atributos y asignarlos a los demás usuarios, usando sus propias credenciales de atributo. El marco general de delegación de privilegios nos permite, además de definir una taxonomía de atributos y las relaciones de confianza entre los usuarios, la especificación de restricciones relativas a información de contexto. Los ejemplos más habituales de información de contexto son el instante de tiempo actual y la posición del usuario. Por tanto, cuando un usuario otorga ciertos privilegios a otro, éste puede restringir el uso de dichos privilegios sin más que incluir en la credencial restricciones para los parámetros de contexto.
 
 ### Attribute Delegation in Ubiquitous Environments
 

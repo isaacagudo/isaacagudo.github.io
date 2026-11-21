@@ -306,7 +306,10 @@ FIXES = {
         "type": "article-magazine", "container-title": "Red Seguridad"},
     "un marco de delegacion de privilegios": {
         "type": "thesis", "genre": "PhD thesis", "publisher": "University of Málaga"},
-    "leveraging privacy in identity management as a service": {"type": "paper-conference"},
+    "leveraging privacy in identity management as a service": {
+        "type": "paper-conference",
+        "container-title": "PhD Symposium of the European Conference on Service-Oriented and Cloud Computing (ESOCC 2013)",
+        "event-place": "Málaga, Spain"},
     "strong authentication of humans and machines": {"type": "paper-conference"},
 }
 # Found with no venue in any source: kept in the data but hidden from the site until confirmed

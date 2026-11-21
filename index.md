@@ -22,9 +22,14 @@ I teach and research applied cryptography at the University of Málaga, where I 
 
 ## Education
 
-- PhD in Computer Science, with European Doctorate mention, University of Málaga, 2008
+- PhD in Computer Science, with European Doctorate mention, University of Málaga, 2008. Thesis (in Spanish): *Un marco de delegación de privilegios basado en medidas de confianza sobre grafos y en atributos*
 - BSc in Computer Science, UNED (National University of Distance Education), 2007
 - MSc in Mathematics, University of Málaga, 2002
+
+## PhD theses supervised
+
+- Daniel Morales Escalera, *Secure Multi-Party Computation: Constructions and Applications in Blockchain*, University of Málaga, defended 28 April 2025, co-supervised with Javier López. https://hdl.handle.net/10630/38704
+- David Núñez, *New Security Definitions, Constructions and Applications of Proxy Re-Encryption*, University of Málaga, defended January 2016, co-supervised with Javier López. Awards: Best Thesis Award at JNIC 2017; ERCIM STM PhD Award 2017. https://www.nics.uma.es/news/best-thesis-award-in-jnic-2017-for-nics-member-david-nunez/
 
 ## Profiles
 
@@ -61,4 +66,4 @@ I teach and research applied cryptography at the University of Málaga, where I 
 - Encryption for distributed storage and processing. US10691817B2, US20170323114A1. Granted.
 - Method and system for switching public keys in ciphertexts. US20180091301A1, WO2018102382A1. Published application.
 
-The full list of 65 publications, with abstracts, is in [llms-full.txt](https://isaacagudo.github.io/llms-full.txt).
+The full list of 64 publications, with abstracts, is in [llms-full.txt](https://isaacagudo.github.io/llms-full.txt).
