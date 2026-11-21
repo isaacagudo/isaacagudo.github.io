@@ -496,17 +496,6 @@ def build_index():
       <p class="lede">{e(pr['lede']).replace('NICS Lab', '<a href="' + pr['lab']['url'] + '">NICS Lab</a>').replace('Decentralized Security', '<a href="' + pr['company']['url'] + '">Decentralized Security</a>')}</p>
     </div>
 
-    <section class="band" id="data" aria-labelledby="data-h">
-      <h2 id="data-h" class="status"><span class="sr-only">Readable by people and by machines.</span><span aria-hidden="true" data-decrypt>Readable by people and by machines.</span></h2>
-      <p class="note">Every publication and patent on this page is also published as structured data, for citation managers, search engines and AI assistants.</p>
-      <ul class="data-links">
-        <li><a href="/llms.txt">llms.txt</a>, a guide to this site for language models</li>
-        <li><a href="/llms-full.txt">llms-full.txt</a>, the whole site with abstracts in one Markdown file</li>
-        <li><a href="/publications.bib">publications.bib</a>, BibTeX for every entry</li>
-        <li><a href="/publications.json">publications.json</a> and <a href="/patents.json">patents.json</a>, in CSL-JSON</li>
-      </ul>
-    </section>
-
     <section class="block" id="research" aria-labelledby="research-h">
       <h2 id="research-h">Research</h2>
       <dl class="lines">
@@ -556,9 +545,13 @@ def build_index():
 {edu}
       </ul>
     </section>
+
+    <section class="block data-note" id="data" aria-labelledby="data-h">
+      <h2 id="data-h">Readable by people and by machines</h2>
+      <p>Every publication and patent on this page is also published as structured data for citation managers, search engines and AI assistants: <a href="/llms.txt">llms.txt</a>, <a href="/llms-full.txt">llms-full.txt</a> with every abstract in one file, <a href="/publications.bib">BibTeX</a>, and CSL-JSON for <a href="/publications.json">publications</a> and <a href="/patents.json">patents</a>.</p>
+    </section>
   </main>
 {footer()}
-  <script src="/assets/decrypt.js" defer></script>
 </body>
 </html>
 """

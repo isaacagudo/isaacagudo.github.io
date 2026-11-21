@@ -25,8 +25,8 @@
   --ink: #142A3E;        /* deep harbour navy */
   --slate: #4F6476;      /* secondary text */
   --sea: #0B6B70;        /* links and accents */
-  --sea-deep: #07484C;   /* text on the sea-glass band */
-  --glass: #D5EEE8;      /* fresh sea-glass tint */
+  --sea-deep: #07484C;   /* text on sea-glass backgrounds */
+  --glass: #D5EEE8;      /* fresh sea-glass tint, used behind code */
   --line: #D9E3E8;
 
   --serif: "Petrona", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
@@ -127,46 +127,6 @@ h1 {
   margin: 0;
   font-size: clamp(1.2rem, 1.1rem + 0.5vw, 1.45rem);
   line-height: 1.5;
-}
-
-/* The sea-glass band: starts at the text column and runs off the right edge */
-.band {
-  margin: clamp(2.5rem, 7vh, 4rem) 0 0 var(--gutter);
-  padding: clamp(1.4rem, 3vw, 2.1rem) var(--gutter) clamp(1.5rem, 3vw, 2.2rem) clamp(1.25rem, 3vw, 2.25rem);
-  background: var(--glass);
-  border-radius: 6px 0 0 6px;
-  color: var(--sea-deep);
-}
-.band .status {
-  margin: 0 0 0.5rem;
-  max-width: 42rem;
-  font-style: italic;
-  font-weight: 450;
-  font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2.2rem);
-  line-height: 1.2;
-}
-.band .note { margin: 0 0 0.75rem; max-width: 36rem; font-size: 1.1rem; }
-.band a { color: var(--sea-deep); }
-.data-links {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 1.02rem;
-  max-width: 40rem;
-}
-.data-links li { padding: 0.15rem 0; }
-.data-links a { font-family: var(--sans); font-weight: 600; font-size: 0.95em; }
-
-/* Each letter keeps its real width while a random hex digit is drawn over it */
-.ch { position: relative; }
-.ch.scr { color: transparent; }
-.ch.scr::after {
-  content: attr(data-n);
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  color: var(--sea-deep);
 }
 
 /* Sections ----------------------------------------------------------------- */
@@ -372,14 +332,13 @@ h1 {
 
 @media (max-width: 40rem) {
   body { font-size: 1.0625rem; }
-  .band { border-radius: 4px 0 0 4px; }
   .year { grid-template-columns: minmax(0, 1fr); }
   .year-label { margin-bottom: 0; }
   .work .w-meta { display: none; }
 }
 
 @media print {
-  .site-header nav, .band, .skip { display: none; }
+  .site-header nav, .data-note, .skip { display: none; }
   .work .w-title { white-space: normal; }
   .block { padding-top: 1.5rem; }
   a { color: inherit; }
@@ -388,3 +347,22 @@ h1 {
 /* Supervised theses reuse the patent layout; their titles link to the thesis */
 .thesis .w-title a { color: var(--ink); text-decoration: none; }
 .thesis .w-title a:hover { color: var(--sea); text-decoration: underline; text-decoration-thickness: 1px; }
+
+/* Machine-readable note: last, small and quiet */
+.data-note { padding-top: clamp(2.5rem, 6vh, 3.5rem); }
+.data-note h2 {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--slate);
+  margin: 0 0 0.35rem;
+}
+.data-note p {
+  margin: 0;
+  max-width: var(--measure);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--slate);
+}
