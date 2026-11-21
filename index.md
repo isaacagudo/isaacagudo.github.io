@@ -66,4 +66,4 @@ I teach and research applied cryptography at the University of Málaga, where I 
 - Encryption for distributed storage and processing. US10691817B2, US20170323114A1. Granted.
 - Method and system for switching public keys in ciphertexts. US20180091301A1, WO2018102382A1. Published application.
 
-The full list of 64 publications, with abstracts, is in [llms-full.txt](https://isaacagudo.github.io/llms-full.txt).
+The full list of 65 publications, with abstracts, is in [llms-full.txt](https://isaacagudo.github.io/llms-full.txt).

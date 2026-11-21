@@ -2,7 +2,7 @@
 
 > Associate Professor of Computer Science at the University of Málaga, researching applied cryptography at NICS Lab, and founder of Decentralized Security.
 
-Isaac Agudo (Isaac Agudo Ruiz) works on applied cryptography: secure multi-party computation, proxy re-encryption, secret sharing, and their use in blockchain, connected vehicles and digital identity. This site lists 64 publications, 5 patent families and 2 supervised PhD theses. ORCID 0000-0002-2911-2300.
+Isaac Agudo (Isaac Agudo Ruiz) works on applied cryptography: secure multi-party computation, proxy re-encryption, secret sharing, and their use in blockchain, connected vehicles and digital identity. This site lists 65 publications, 5 patent families and 2 supervised PhD theses. ORCID 0000-0002-2911-2300.
 
 ## Profile
 
@@ -40,6 +40,7 @@ Isaac Agudo (Isaac Agudo Ruiz) works on applied cryptography: secure multi-party
 
 ## Optional
 
+- [Dealing Haystack: Towards Trustless Haystack in the Optimistic Setting](https://isaacagudo.github.io/publications/munoz2026dealing/index.md): Preprint in *Cryptology ePrint Archive*, Paper 2026/1804, 2026.
 - [A decision framework for privacy-preserving synthetic data generation](https://isaacagudo.github.io/publications/sanchez2025decision/index.md): Journal article in *Computers and Electrical Engineering*, 126, 110468, 2025.
 - [Benchmarking Post-quantum Cryptography in Ethereum-Based Blockchains](https://isaacagudo.github.io/publications/juaristi2025benchmarking/index.md): Conference paper in *Computer Security. ESORICS 2024 International Workshops*, pp. 340–353, 2025.
 - [Privacy-Preserving Tabular Data Generation: Systematic Literature Review](https://isaacagudo.github.io/publications/sanchez2025privacy/index.md): Conference paper in *Computer Security. ESORICS 2024 International Workshops*, pp. 170–180, 2025.

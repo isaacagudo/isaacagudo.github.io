@@ -37,7 +37,7 @@ TYPE_LABEL = {
     "book": "Edited volume",
     "thesis": "PhD thesis",
     "article-magazine": "Magazine article",
-    "article": "Article",
+    "article": "Preprint",
     "patent": "Patent",
 }
 SCHEMA_TYPE = {
@@ -114,9 +114,11 @@ def venue_parts(w):
             rest.append(w["publisher"])
     elif t == "thesis":
         return ("PhD thesis, " + w.get("publisher", "University of Málaga"), "", [])
+    elif t == "article" and w.get("number"):
+        rest.append(f"Paper {w['number']}")
     lead = {"article-journal": "Journal article in", "paper-conference": "Conference paper in",
             "chapter": "Chapter in", "book": "Edited volume in", "article-magazine": "Magazine article in",
-            "article": "Published in"}[t]
+            "article": "Preprint in"}[t]
     if t == "book":
         ct = w.get("container-title")
     if not ct:
@@ -150,9 +152,11 @@ def links(w):
     out = []
     if w.get("DOI"):
         out.append(("DOI " + w["DOI"], f"https://doi.org/{w['DOI']}"))
+    if not w.get("DOI") and w.get("URL"):
+        out.append(("ePrint " + w["number"] if "eprint.iacr.org" in w["URL"] else "Source", w["URL"]))
     oa = w.get("custom", {}).get("oa_url")
     if oa and (not w.get("DOI") or w["DOI"] not in oa):
-        out.append(("Open-access copy", oa))
+        out.append(("PDF" if oa.lower().endswith(".pdf") else "Open-access copy", oa))
     return out
 
 
@@ -198,6 +202,9 @@ def bibtex(w):
         f["pages"] = w["page"].replace("–", "--").replace("-", "--").replace("----", "--")
     if t == "thesis":
         f["school"] = w.get("publisher", "")
+    if t == "article" and w.get("number") and ct:
+        f["howpublished"] = bib_escape(f"{ct}, Paper {w['number']}")
+        f["url"] = w.get("URL", "")
     if t == "patent":
         f["number"] = w["number"]
         f["holder"] = w["custom"]["assignee"]
@@ -242,6 +249,11 @@ def work_ld(w):
     if w.get("DOI"):
         d["identifier"] = {"@type": "PropertyValue", "propertyID": "DOI", "value": w["DOI"]}
         d["sameAs"] = f"https://doi.org/{w['DOI']}"
+    elif w.get("URL"):
+        d["sameAs"] = w["URL"]
+        if w.get("number"):
+            d["identifier"] = {"@type": "PropertyValue", "propertyID": "IACR ePrint", "value": w["number"]}
+            d["creativeWorkStatus"] = "Preprint"
     if w.get("abstract"):
         d["abstract"] = w["abstract"]
     d["inLanguage"] = w.get("language", "en")
@@ -532,7 +544,7 @@ def build_index():
 
     <section class="block" id="all" aria-labelledby="all-h">
       <h2 id="all-h">All publications</h2>
-      <p class="count">{len(english)} publications in English: {counts.get('article-journal', 0)} journal articles, {counts.get('paper-conference', 0)} conference papers, {counts.get('chapter', 0)} book chapters, {counts.get('book', 0)} edited volumes and {counts.get('article-magazine', 0)} magazine article{'s' if counts.get('article-magazine', 0) != 1 else ''}. Open any entry to read its abstract.</p>
+      <p class="count">{len(english)} publications in English: {counts.get('article-journal', 0)} journal articles, {counts.get('paper-conference', 0)} conference papers, {counts.get('chapter', 0)} book chapters, {counts.get('book', 0)} edited volumes, {counts.get('article-magazine', 0)} magazine article{'s' if counts.get('article-magazine', 0) != 1 else ''} and {counts.get('article', 0)} preprint{'s' if counts.get('article', 0) != 1 else ''}. Open any entry to read its abstract.</p>
     {chr(10).join('    ' + y for y in years_html).strip()}
     </section>
 

@@ -131,6 +131,49 @@
   },
   {
    "@type": "ScholarlyArticle",
+   "@id": "https://isaacagudo.github.io/publications/munoz2026dealing/#work",
+   "url": "https://isaacagudo.github.io/publications/munoz2026dealing/",
+   "name": "Dealing Haystack: Towards Trustless Haystack in the Optimistic Setting",
+   "headline": "Dealing Haystack: Towards Trustless Haystack in the Optimistic Setting",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Isabel Muñoz"
+    },
+    {
+     "@id": "https://isaacagudo.github.io/#person"
+    },
+    {
+     "@type": "Person",
+     "name": "Marco López"
+    },
+    {
+     "@type": "Person",
+     "name": "Daniel Morales"
+    }
+   ],
+   "datePublished": "2026-08",
+   "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Cryptology ePrint Archive"
+   },
+   "sameAs": "https://eprint.iacr.org/2026/1804",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "IACR ePrint",
+    "value": "2026/1804"
+   },
+   "creativeWorkStatus": "Preprint",
+   "abstract": "Hash-based constructions occupy a distinctive position among post-quantum signatures: their security reduces to well-tested properties of hash functions rather than to newer assumptions such as lattices or isogenies. This work focuses on stateful schemes instead of stateless, because the former are considerably more efficient. However, they have the problem of state handling, since reusing a one-time key twice enables signature forgeries. Despite threshold signatures mitigate this problem by spreading trust among a set of disjoint parties, building them from hash-based schemes is difficult, since these lack the homomorphic structure needed to recombine partial signatures, and generic multiparty computation can be expensive for hash-based constructions. Kelsey, Lang and Lucks recently proposed Haystack, the first threshold scheme for hash-based signatures producing standard LMS or XMSS signatures, at the cost of a fully trusted setup and a large common reference value. We analyze Haystack along two dimensions: performance and security. First, as Haystack lacks an implementation and realistic benchmarking, we implement the protocol in Java and produce a network-aware evaluation of its viability in real deployments, concluding that it performs comparably to other post-quantum threshold schemes. Second, we relax the trust placed in the dealer. For that, we introduce a variant of the setup built on an optimistic, lightweight MPC-based partial-DKG. It does not remove the dealer's ability to forge, but it prevents it from impersonating trustees within the signing protocol, while preserving the standard signature format. Also, an optional succinct-argument layer provides public auditability. We further consider a full-DKG setting with no dealer and where the trustees run the entire setup under MPC. Both variants are implemented in MP-SPDZ and their costs have been analyzed.",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://eprint.iacr.org/2026/1804.pdf"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
    "@id": "https://isaacagudo.github.io/publications/sanchez2026effectiveness/#work",
    "url": "https://isaacagudo.github.io/publications/sanchez2026effectiveness/",
    "name": "On the Effectiveness of Lightweight Models for Encrypted Traffic Classification",
@@ -3100,7 +3143,7 @@
               <p class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</p>
               <p class="w-venue">Journal article in <cite>IEEE Communications Magazine</cite>, 63(2), 96–102, 2025.</p>
               <p class="w-abstract">Blockchain technologies have introduced a compelling paradigm for a new understanding of security through decentralized networks and consensus mechanisms. However, they need all data to be public, which may be unacceptable for use cases such as biometric data processing or sensitive monetary transactions. Therefore, confidentiality is identified as a need in blockchain. Additionally, blockchain can contribute to confidential applications by providing publicly verifiable mechanisms, therefore enhancing security. This work presents a framework for cost-effective and publicly verifiable confidential computations in blockchain, by relying on secure multi-party computation committees and zero-knowledge proofs. Our framework supports arbitrary computations on confidential data enforced by smart contracts. Additionally, staking, incentives, and cheat identification are provided as solutions to enhance trust. We also provide a technical solution to embed secure multi-party computations within smart contracts by using the Promise programming pattern. Finally, a cost analysis is provided to justify the feasibility of the framework compared to other solutions.</p>
-              <p class="w-links"><a href="/publications/morales2025toward/">Publication page</a> <a href="https://doi.org/10.1109/mcom.001.2300839">DOI 10.1109/mcom.001.2300839</a> <a href="https://riuma.uma.es/xmlui/bitstream/10630/34694/1/Toward_a_Framework_for_Cost-Effective_and_Publicly_Verifiable_Confidential_Computations_in_Blockchain.pdf">Open-access copy</a></p>
+              <p class="w-links"><a href="/publications/morales2025toward/">Publication page</a> <a href="https://doi.org/10.1109/mcom.001.2300839">DOI 10.1109/mcom.001.2300839</a> <a href="https://riuma.uma.es/xmlui/bitstream/10630/34694/1/Toward_a_Framework_for_Cost-Effective_and_Publicly_Verifiable_Confidential_Computations_in_Blockchain.pdf">PDF</a></p>
             </div>
           </details>
         </li>
@@ -3122,7 +3165,7 @@
               <p class="w-authors">Ishak Meraouche, Sabyasachi Dutta, Sraban Kumar Mohanty, <span class="me">Isaac Agudo</span>, Kouichi Sakurai</p>
               <p class="w-venue">Journal article in <cite>IEEE Access</cite>, 10, 121329–121339, 2022.</p>
               <p class="w-abstract">Neural networks based cryptography has seen a significant growth since the introduction of adversarial cryptography which makes use of Generative Adversarial Networks (GANs) to build neural networks that can learn encryption. The encryption has been proven weak at first but many follow up works have shown that the neural networks can be made to learn the One Time Pad (OTP) and produce perfectly secure ciphertexts. To the best of our knowledge, existing works only considered communications between two or three parties. In this paper, we show how multiple neural networks in an adversarial setup can remotely synchronize and establish a perfectly secure communication in the presence of different attackers eavesdropping their communication. As an application, we show how to build Secret Sharing Scheme based on this perfectly secure multi-party communication. The results show that it takes around 45,000 training steps for 4 neural networks to synchronize and reach equilibria. When reaching equilibria, all the neural networks are able to communicate between each other and the attackers are not able to break the ciphertexts exchanged between them.</p>
-              <p class="w-links"><a href="/publications/meraouche2022learning/">Publication page</a> <a href="https://doi.org/10.1109/access.2022.3223430">DOI 10.1109/access.2022.3223430</a> <a href="https://ieeexplore.ieee.org/ielx7/6287639/6514899/09955544.pdf">Open-access copy</a></p>
+              <p class="w-links"><a href="/publications/meraouche2022learning/">Publication page</a> <a href="https://doi.org/10.1109/access.2022.3223430">DOI 10.1109/access.2022.3223430</a> <a href="https://ieeexplore.ieee.org/ielx7/6287639/6514899/09955544.pdf">PDF</a></p>
             </div>
           </details>
         </li>
@@ -3155,7 +3198,7 @@
               <p class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</p>
               <p class="w-venue">Conference paper in <cite>2015 IEEE 28th Computer Security Foundations Symposium</cite>, pp. 290–301, 2015.</p>
               <p class="w-abstract">Proxy Re-Encryption (PRE) is a type of Public-Key Encryption (PKE) that provides an additional re-encryption functionality. Although PRE is inherently more complex than PKE, attack models for PRE have not been developed further than those inherited from PKE. In this paper we address this gap and define a parametric family of attack models for PRE, based on the availability of both the decryption and re-encryption oracles during the security game. This family enables the definition of a set of intermediate security notions for PRE that ranges from &quot;plain&quot; IND-CPA to &quot;full&quot; IND-CCA. We analyze some relations among these notions of security, and in particular, the separations that arise when the re-encryption oracle leaks re-encryption keys. In addition, we discuss which of these security notions represent meaningful adversarial models for PRE. Finally, we provide an example of a recent &quot;CCA1-secure&quot; scheme from PKC 2014 whose security model does not capture chosen-cipher text attacks through re-encryption and for which we describe an attack under a more realistic security notion. This attack emphasizes the fact that PRE schemes that leak re-encryption keys cannot achieve strong security notions.</p>
-              <p class="w-links"><a href="/publications/nunez2015parametric/">Publication page</a> <a href="https://doi.org/10.1109/csf.2015.27">DOI 10.1109/csf.2015.27</a> <a href="https://ieeexplore.ieee.org/ielx7/7243288/7243713/07243740.pdf">Open-access copy</a></p>
+              <p class="w-links"><a href="/publications/nunez2015parametric/">Publication page</a> <a href="https://doi.org/10.1109/csf.2015.27">DOI 10.1109/csf.2015.27</a> <a href="https://ieeexplore.ieee.org/ielx7/7243288/7243713/07243740.pdf">PDF</a></p>
             </div>
           </details>
         </li>
@@ -3274,10 +3317,21 @@
 
     <section class="block" id="all" aria-labelledby="all-h">
       <h2 id="all-h">All publications</h2>
-      <p class="count">60 publications in English: 20 journal articles, 35 conference papers, 2 book chapters, 2 edited volumes and 1 magazine article. Open any entry to read its abstract.</p>
+      <p class="count">61 publications in English: 20 journal articles, 35 conference papers, 2 book chapters, 2 edited volumes, 1 magazine article and 1 preprint. Open any entry to read its abstract.</p>
     <section class="year" aria-labelledby="y2026">
       <h3 id="y2026" class="year-label">2026</h3>
       <ol class="works">
+        <li class="work" id="munoz2026dealing">
+          <details>
+            <summary><span class="w-title">Dealing Haystack: Towards Trustless Haystack in the Optimistic Setting</span><span class="w-meta">Cryptology ePrint Archive</span></summary>
+            <div class="w-body">
+              <p class="w-authors">Isabel Muñoz, <span class="me">Isaac Agudo</span>, Marco López, Daniel Morales</p>
+              <p class="w-venue">Preprint in <cite>Cryptology ePrint Archive</cite>, Paper 2026/1804, 2026.</p>
+              <p class="w-abstract">Hash-based constructions occupy a distinctive position among post-quantum signatures: their security reduces to well-tested properties of hash functions rather than to newer assumptions such as lattices or isogenies. This work focuses on stateful schemes instead of stateless, because the former are considerably more efficient. However, they have the problem of state handling, since reusing a one-time key twice enables signature forgeries. Despite threshold signatures mitigate this problem by spreading trust among a set of disjoint parties, building them from hash-based schemes is difficult, since these lack the homomorphic structure needed to recombine partial signatures, and generic multiparty computation can be expensive for hash-based constructions. Kelsey, Lang and Lucks recently proposed Haystack, the first threshold scheme for hash-based signatures producing standard LMS or XMSS signatures, at the cost of a fully trusted setup and a large common reference value. We analyze Haystack along two dimensions: performance and security. First, as Haystack lacks an implementation and realistic benchmarking, we implement the protocol in Java and produce a network-aware evaluation of its viability in real deployments, concluding that it performs comparably to other post-quantum threshold schemes. Second, we relax the trust placed in the dealer. For that, we introduce a variant of the setup built on an optimistic, lightweight MPC-based partial-DKG. It does not remove the dealer&#x27;s ability to forge, but it prevents it from impersonating trustees within the signing protocol, while preserving the standard signature format. Also, an optional succinct-argument layer provides public auditability. We further consider a full-DKG setting with no dealer and where the trustees run the entire setup under MPC. Both variants are implemented in MP-SPDZ and their costs have been analyzed.</p>
+              <p class="w-links"><a href="/publications/munoz2026dealing/">Publication page</a> <a href="https://eprint.iacr.org/2026/1804">ePrint 2026/1804</a> <a href="https://eprint.iacr.org/2026/1804.pdf">PDF</a></p>
+            </div>
+          </details>
+        </li>
         <li class="work" id="sanchez2026effectiveness">
           <details>
             <summary><span class="w-title">On the Effectiveness of Lightweight Models for Encrypted Traffic Classification</span><span class="w-meta">NISS</span></summary>
@@ -3356,7 +3410,7 @@
               <p class="w-authors">Daniel Morales, <span class="me">Isaac Agudo</span>, Javier López</p>
               <p class="w-venue">Journal article in <cite>IEEE Communications Magazine</cite>, 63(2), 96–102, 2025.</p>
               <p class="w-abstract">Blockchain technologies have introduced a compelling paradigm for a new understanding of security through decentralized networks and consensus mechanisms. However, they need all data to be public, which may be unacceptable for use cases such as biometric data processing or sensitive monetary transactions. Therefore, confidentiality is identified as a need in blockchain. Additionally, blockchain can contribute to confidential applications by providing publicly verifiable mechanisms, therefore enhancing security. This work presents a framework for cost-effective and publicly verifiable confidential computations in blockchain, by relying on secure multi-party computation committees and zero-knowledge proofs. Our framework supports arbitrary computations on confidential data enforced by smart contracts. Additionally, staking, incentives, and cheat identification are provided as solutions to enhance trust. We also provide a technical solution to embed secure multi-party computations within smart contracts by using the Promise programming pattern. Finally, a cost analysis is provided to justify the feasibility of the framework compared to other solutions.</p>
-              <p class="w-links"><a href="/publications/morales2025toward/">Publication page</a> <a href="https://doi.org/10.1109/mcom.001.2300839">DOI 10.1109/mcom.001.2300839</a> <a href="https://riuma.uma.es/xmlui/bitstream/10630/34694/1/Toward_a_Framework_for_Cost-Effective_and_Publicly_Verifiable_Confidential_Computations_in_Blockchain.pdf">Open-access copy</a></p>
+              <p class="w-links"><a href="/publications/morales2025toward/">Publication page</a> <a href="https://doi.org/10.1109/mcom.001.2300839">DOI 10.1109/mcom.001.2300839</a> <a href="https://riuma.uma.es/xmlui/bitstream/10630/34694/1/Toward_a_Framework_for_Cost-Effective_and_Publicly_Verifiable_Confidential_Computations_in_Blockchain.pdf">PDF</a></p>
             </div>
           </details>
         </li>
@@ -3421,7 +3475,7 @@
               <p class="w-authors">Ishak Meraouche, Sabyasachi Dutta, Sraban Kumar Mohanty, <span class="me">Isaac Agudo</span>, Kouichi Sakurai</p>
               <p class="w-venue">Journal article in <cite>IEEE Access</cite>, 10, 121329–121339, 2022.</p>
               <p class="w-abstract">Neural networks based cryptography has seen a significant growth since the introduction of adversarial cryptography which makes use of Generative Adversarial Networks (GANs) to build neural networks that can learn encryption. The encryption has been proven weak at first but many follow up works have shown that the neural networks can be made to learn the One Time Pad (OTP) and produce perfectly secure ciphertexts. To the best of our knowledge, existing works only considered communications between two or three parties. In this paper, we show how multiple neural networks in an adversarial setup can remotely synchronize and establish a perfectly secure communication in the presence of different attackers eavesdropping their communication. As an application, we show how to build Secret Sharing Scheme based on this perfectly secure multi-party communication. The results show that it takes around 45,000 training steps for 4 neural networks to synchronize and reach equilibria. When reaching equilibria, all the neural networks are able to communicate between each other and the attackers are not able to break the ciphertexts exchanged between them.</p>
-              <p class="w-links"><a href="/publications/meraouche2022learning/">Publication page</a> <a href="https://doi.org/10.1109/access.2022.3223430">DOI 10.1109/access.2022.3223430</a> <a href="https://ieeexplore.ieee.org/ielx7/6287639/6514899/09955544.pdf">Open-access copy</a></p>
+              <p class="w-links"><a href="/publications/meraouche2022learning/">Publication page</a> <a href="https://doi.org/10.1109/access.2022.3223430">DOI 10.1109/access.2022.3223430</a> <a href="https://ieeexplore.ieee.org/ielx7/6287639/6514899/09955544.pdf">PDF</a></p>
             </div>
           </details>
         </li>
@@ -3556,7 +3610,7 @@
               <p class="w-authors">David Núñez, <span class="me">Isaac Agudo</span>, Javier López</p>
               <p class="w-venue">Conference paper in <cite>2015 IEEE 28th Computer Security Foundations Symposium</cite>, pp. 290–301, 2015.</p>
               <p class="w-abstract">Proxy Re-Encryption (PRE) is a type of Public-Key Encryption (PKE) that provides an additional re-encryption functionality. Although PRE is inherently more complex than PKE, attack models for PRE have not been developed further than those inherited from PKE. In this paper we address this gap and define a parametric family of attack models for PRE, based on the availability of both the decryption and re-encryption oracles during the security game. This family enables the definition of a set of intermediate security notions for PRE that ranges from &quot;plain&quot; IND-CPA to &quot;full&quot; IND-CCA. We analyze some relations among these notions of security, and in particular, the separations that arise when the re-encryption oracle leaks re-encryption keys. In addition, we discuss which of these security notions represent meaningful adversarial models for PRE. Finally, we provide an example of a recent &quot;CCA1-secure&quot; scheme from PKC 2014 whose security model does not capture chosen-cipher text attacks through re-encryption and for which we describe an attack under a more realistic security notion. This attack emphasizes the fact that PRE schemes that leak re-encryption keys cannot achieve strong security notions.</p>
-              <p class="w-links"><a href="/publications/nunez2015parametric/">Publication page</a> <a href="https://doi.org/10.1109/csf.2015.27">DOI 10.1109/csf.2015.27</a> <a href="https://ieeexplore.ieee.org/ielx7/7243288/7243713/07243740.pdf">Open-access copy</a></p>
+              <p class="w-links"><a href="/publications/nunez2015parametric/">Publication page</a> <a href="https://doi.org/10.1109/csf.2015.27">DOI 10.1109/csf.2015.27</a> <a href="https://ieeexplore.ieee.org/ielx7/7243288/7243713/07243740.pdf">PDF</a></p>
             </div>
           </details>
         </li>
