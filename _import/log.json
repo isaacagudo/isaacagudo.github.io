@@ -27,7 +27,7 @@
  {
   "url": "https://api.openalex.org/works?filter=author.id:A5053752266&per-page=200&cursor=%2A",
   "status": 200,
-  "bytes": 1182956
+  "bytes": 1182502
  },
  {
   "url": "https://api.crossref.org/works/10.1002/cpe.1430",
@@ -413,7 +413,7 @@
  {
   "url": "https://dblp.org/search/publ/api?q=author%3AIsaac_Agudo%3A&format=json&h=1000",
   "status": 202,
-  "bytes": 2985
+  "bytes": 2986
  },
  {
   "url": "https://api.semanticscholar.org/graph/v1/author/search?query=Isaac+Agudo&fields=name%2Caffiliations%2CpaperCount%2CexternalIds",
@@ -431,8 +431,7 @@
  },
  {
   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=3",
-  "status": 200,
-  "bytes": 80323
+  "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
  },
  {
   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=4",

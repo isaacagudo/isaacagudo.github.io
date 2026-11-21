@@ -664,16 +664,6 @@
       ]
      },
      {
-      "key": "MacLane Scott Wilkison",
-      "value": 400,
-      "frequency": [
-       {
-        "key": "2016-2019",
-        "value": 4
-       }
-      ]
-     },
-     {
       "key": "Isaac Agudo",
       "value": 400,
       "frequency": [
@@ -684,22 +674,12 @@
       ]
      },
      {
-      "key": "Isaac AGUDO",
-      "value": 300,
+      "key": "MacLane Scott Wilkison",
+      "value": 400,
       "frequency": [
        {
         "key": "2016-2019",
-        "value": 3
-       }
-      ]
-     },
-     {
-      "key": "Maclane Scott Wilkison",
-      "value": 300,
-      "frequency": [
-       {
-        "key": "2016-2019",
-        "value": 3
+        "value": 4
        }
       ]
      },
@@ -714,7 +694,27 @@
       ]
      },
      {
+      "key": "Isaac AGUDO",
+      "value": 300,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 3
+       }
+      ]
+     },
+     {
       "key": "David Nu{grave over (n)}ez",
+      "value": 300,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 3
+       }
+      ]
+     },
+     {
+      "key": "Maclane Scott Wilkison",
       "value": 300,
       "frequency": [
        {
@@ -744,17 +744,7 @@
       ]
      },
      {
-      "key": "Mu\u00f1oz Francisco Javier L\u00f3pez",
-      "value": 100,
-      "frequency": [
-       {
-        "key": "2025-2028",
-        "value": 1
-       }
-      ]
-     },
-     {
-      "key": "Peter Joannes Mathias Veugen",
+      "key": "Hans Maarten Stokking",
       "value": 100,
       "frequency": [
        {
@@ -764,7 +754,7 @@
       ]
      },
      {
-      "key": "Hans Maarten Stokking",
+      "key": "\uc704\uc720\uacbd",
       "value": 100,
       "frequency": [
        {
@@ -784,11 +774,11 @@
       ]
      },
      {
-      "key": "\uc704\uc720\uacbd",
+      "key": "Mu\u00f1oz Francisco Javier L\u00f3pez",
       "value": 100,
       "frequency": [
        {
-        "key": "2013-2016",
+        "key": "2025-2028",
         "value": 1
        }
       ]
@@ -809,6 +799,16 @@
       "frequency": [
        {
         "key": "2025-2028",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Peter Joannes Mathias Veugen",
+      "value": 100,
+      "frequency": [
+       {
+        "key": "2013-2016",
         "value": 1
        }
       ]
@@ -1015,26 +1015,6 @@
       ]
      },
      {
-      "key": "Ruiz Isaac Agudo",
-      "value": 500,
-      "frequency": [
-       {
-        "key": "2025-2028",
-        "value": 1
-       }
-      ]
-     },
-     {
-      "key": "Mu\u00f1oz Francisco Javier L\u00f3pez",
-      "value": 500,
-      "frequency": [
-       {
-        "key": "2025-2028",
-        "value": 1
-       }
-      ]
-     },
-     {
       "key": "Ruiz Jose Luis Agudo",
       "value": 500,
       "frequency": [
@@ -1056,6 +1036,26 @@
      },
      {
       "key": "Escalera Daniel Morales",
+      "value": 500,
+      "frequency": [
+       {
+        "key": "2025-2028",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Ruiz Isaac Agudo",
+      "value": 500,
+      "frequency": [
+       {
+        "key": "2025-2028",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Mu\u00f1oz Francisco Javier L\u00f3pez",
       "value": 500,
       "frequency": [
        {
@@ -1140,7 +1140,7 @@
    "summary": {
     "assignee": [
      {
-      "key": "Universidad De M\u00e1laga",
+      "key": "Total",
       "value": 1000,
       "frequency": [
        {
@@ -1150,7 +1150,7 @@
       ]
      },
      {
-      "key": "Total",
+      "key": "Universidad De M\u00e1laga",
       "value": 1000,
       "frequency": [
        {
@@ -1161,16 +1161,6 @@
      }
     ],
     "inventor": [
-     {
-      "key": "Daniel MORALES ESCALERA",
-      "value": 1000,
-      "frequency": [
-       {
-        "key": "2025-2028",
-        "value": 1
-       }
-      ]
-     },
      {
       "key": "Isaac AGUDO RUIZ",
       "value": 1000,
@@ -1193,6 +1183,16 @@
      },
      {
       "key": "Total",
+      "value": 1000,
+      "frequency": [
+       {
+        "key": "2025-2028",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Daniel MORALES ESCALERA",
       "value": 1000,
       "frequency": [
        {
