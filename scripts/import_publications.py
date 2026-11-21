@@ -129,6 +129,11 @@ for page in range(1, 6):
         f"https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page={page}",
         accept="text/html"))
 
+# Individual pages for works no database lists yet (e.g. recent ePrint preprints)
+for url in ("https://eprint.iacr.org/2026/1804",):
+    name = re.sub(r"[^a-z0-9]+", "-", url.split("://", 1)[1].lower()).strip("-")
+    save(f"page-{name}.html", get(url, accept="text/html"))
+
 (out / "log.json").write_text(json.dumps(log, indent=1))
 print(f"{len(dois)} DOIs, {len(crossref)} Crossref records")
 for e in log:
