@@ -654,7 +654,7 @@
       ]
      },
      {
-      "key": "MacLane Scott Wilkison",
+      "key": "Mikhail Egorov",
       "value": 400,
       "frequency": [
        {
@@ -664,7 +664,7 @@
       ]
      },
      {
-      "key": "Mikhail Egorov",
+      "key": "MacLane Scott Wilkison",
       "value": 400,
       "frequency": [
        {
@@ -684,16 +684,6 @@
       ]
      },
      {
-      "key": "Maclane Scott Wilkison",
-      "value": 300,
-      "frequency": [
-       {
-        "key": "2016-2019",
-        "value": 3
-       }
-      ]
-     },
-     {
       "key": "Isaac AGUDO",
       "value": 300,
       "frequency": [
@@ -704,7 +694,7 @@
       ]
      },
      {
-      "key": "David Nu{grave over (n)}ez",
+      "key": "Maclane Scott Wilkison",
       "value": 300,
       "frequency": [
        {
@@ -715,6 +705,16 @@
      },
      {
       "key": "Mikhail EGOROV",
+      "value": 300,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 3
+       }
+      ]
+     },
+     {
+      "key": "David Nu{grave over (n)}ez",
       "value": 300,
       "frequency": [
        {
@@ -754,31 +754,11 @@
       ]
      },
      {
-      "key": "Ruiz Isaac Agudo",
-      "value": 100,
-      "frequency": [
-       {
-        "key": "2025-2028",
-        "value": 1
-       }
-      ]
-     },
-     {
-      "key": "\uacfd\uc9c4",
+      "key": "Peter Joannes Mathias Veugen",
       "value": 100,
       "frequency": [
        {
         "key": "2013-2016",
-        "value": 1
-       }
-      ]
-     },
-     {
-      "key": "Escalera Daniel Morales",
-      "value": 100,
-      "frequency": [
-       {
-        "key": "2025-2028",
         "value": 1
        }
       ]
@@ -794,7 +774,7 @@
       ]
      },
      {
-      "key": "Peter Joannes Mathias Veugen",
+      "key": "\uacfd\uc9c4",
       "value": 100,
       "frequency": [
        {
@@ -809,6 +789,26 @@
       "frequency": [
        {
         "key": "2013-2016",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Ruiz Isaac Agudo",
+      "value": 100,
+      "frequency": [
+       {
+        "key": "2025-2028",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Escalera Daniel Morales",
+      "value": 100,
+      "frequency": [
+       {
+        "key": "2025-2028",
         "value": 1
        }
       ]
@@ -969,6 +969,16 @@
       ]
      },
      {
+      "key": "Univ Malaga",
+      "value": 500,
+      "frequency": [
+       {
+        "key": "2025-2028",
+        "value": 1
+       }
+      ]
+     },
+     {
       "key": "Ruiz Jose Luis Agudo",
       "value": 500,
       "frequency": [
@@ -987,16 +997,6 @@
         "value": 1
        }
       ]
-     },
-     {
-      "key": "Univ Malaga",
-      "value": 500,
-      "frequency": [
-       {
-        "key": "2025-2028",
-        "value": 1
-       }
-      ]
      }
     ],
     "inventor": [
@@ -1010,26 +1010,6 @@
        },
        {
         "key": "2019-2022",
-        "value": 1
-       }
-      ]
-     },
-     {
-      "key": "Rodriguez Lydia Pavon",
-      "value": 500,
-      "frequency": [
-       {
-        "key": "2019-2022",
-        "value": 1
-       }
-      ]
-     },
-     {
-      "key": "Escalera Daniel Morales",
-      "value": 500,
-      "frequency": [
-       {
-        "key": "2025-2028",
         "value": 1
        }
       ]
@@ -1060,6 +1040,26 @@
       "frequency": [
        {
         "key": "2019-2022",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Rodriguez Lydia Pavon",
+      "value": 500,
+      "frequency": [
+       {
+        "key": "2019-2022",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Escalera Daniel Morales",
+      "value": 500,
+      "frequency": [
+       {
+        "key": "2025-2028",
         "value": 1
        }
       ]

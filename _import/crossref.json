@@ -2660,6 +2660,212 @@
    }
   ]
  },
+ "10.1007/978-3-031-91405-8_11": {
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     11,
+     16
+    ]
+   ],
+   "date-time": "2026-11-16T10:38:17Z",
+   "timestamp": 1794825497942,
+   "version": "4.9.1"
+  },
+  "publisher-location": "Cham",
+  "reference-count": 0,
+  "publisher": "Springer Nature Switzerland",
+  "isbn-type": [
+   {
+    "value": "9783031914041",
+    "type": "print"
+   },
+   {
+    "value": "9783031914058",
+    "type": "electronic"
+   }
+  ],
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2025,
+       1,
+       1
+      ]
+     ],
+     "date-time": "2025-01-01T00:00:00Z",
+     "timestamp": 1735689600000
+    },
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2025,
+       1,
+       1
+      ]
+     ],
+     "date-time": "2025-01-01T00:00:00Z",
+     "timestamp": 1735689600000
+    },
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+   }
+  ],
+  "content-domain": {
+   "domain": [
+    "link.springer.com"
+   ],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [],
+  "published-print": {
+   "date-parts": [
+    [
+     2025
+    ]
+   ]
+  },
+  "DOI": "10.1007/978-3-031-91405-8_11",
+  "type": "book-chapter",
+  "created": {
+   "date-parts": [
+    [
+     2025,
+     11,
+     19
+    ]
+   ],
+   "date-time": "2025-11-19T16:28:21Z",
+   "timestamp": 1763569701000
+  },
+  "page": "163-172",
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 0,
+  "title": [
+   "Web3 Security"
+  ],
+  "prefix": "10.1007",
+  "author": [
+   {
+    "given": "Jos\u00e9 Carlos",
+    "family": "Ram\u00edrez",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Isaac",
+    "family": "Agudo",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "297",
+  "published-online": {
+   "date-parts": [
+    [
+     2025,
+     11,
+     20
+    ]
+   ]
+  },
+  "container-title": [
+   "Tokenizing the Future"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "https://link.springer.com/content/pdf/10.1007/978-3-031-91405-8_11",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2026,
+     7,
+     3
+    ]
+   ],
+   "date-time": "2026-07-03T11:55:47Z",
+   "timestamp": 1783079747000
+  },
+  "score": 1,
+  "resource": {
+   "primary": {
+    "URL": "https://link.springer.com/10.1007/978-3-031-91405-8_11"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2025
+    ]
+   ]
+  },
+  "ISBN": [
+   "9783031914041",
+   "9783031914058"
+  ],
+  "references-count": 0,
+  "URL": "https://doi.org/10.1007/978-3-031-91405-8_11",
+  "relation": {
+   "is-part-of": [
+    {
+     "id-type": "doi",
+     "id": "https://doi.org/10.1007/978-3-031-91405-8",
+     "asserted-by": "object"
+    }
+   ]
+  },
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2025
+    ]
+   ]
+  },
+  "assertion": [
+   {
+    "value": "20 November 2025",
+    "order": 1,
+    "name": "first_online",
+    "label": "First Online",
+    "group": {
+     "name": "ChapterHistory",
+     "label": "Chapter History"
+    }
+   }
+  ]
+ },
  "10.1007/978-3-319-17199-9_5": {
   "indexed": {
    "date-parts": [
