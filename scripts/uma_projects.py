@@ -54,6 +54,9 @@ for who, rid in PEOPLE.items():
 
 all_ids = sorted({i for ids in projects.values() for i in ids})
 for pid in all_ids:
+    if (out / f"proyecto-{pid}.html").exists():
+        continue
+    time.sleep(4)
     html = get(f"{BASE}/proyectos/{pid}/detalle")
     if html:
         (out / f"proyecto-{pid}.html").write_text(html)
