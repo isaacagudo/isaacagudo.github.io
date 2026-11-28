@@ -42,25 +42,6 @@
    "745761",
    "826479",
    "826984"
-  ],
-  "antonio": [
-   "1847015",
-   "1918393",
-   "1918408",
-   "1918461",
-   "1918490",
-   "1918517",
-   "1918599",
-   "1918625",
-   "1918627",
-   "1918684",
-   "744771",
-   "744876",
-   "745366",
-   "745412",
-   "745485",
-   "745761",
-   "826479"
   ]
  },
  "log": [
@@ -76,124 +57,26 @@
   },
   {
    "url": "https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion",
-   "status": 200,
-   "bytes": 76901
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1847015/detalle",
-   "status": 200,
-   "bytes": 53006
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1918389/detalle",
-   "status": 200,
-   "bytes": 37801
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1918393/detalle",
-   "status": 200,
-   "bytes": 49871
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1918395/detalle",
-   "status": 200,
-   "bytes": 36985
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1918408/detalle",
-   "status": 200,
-   "bytes": 42176
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1918461/detalle",
-   "status": 200,
-   "bytes": 37239
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1918470/detalle",
-   "status": 200,
-   "bytes": 62784
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
   },
   {
    "url": "https://portaldelainvestigacion.uma.es/proyectos/1918490/detalle",
-   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1918517/detalle",
    "status": 200,
-   "bytes": 49959
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle",
-   "status": 200,
-   "bytes": 39456
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1918588/detalle",
-   "status": 200,
-   "bytes": 40855
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1918599/detalle",
-   "status": 200,
-   "bytes": 47654
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1918625/detalle",
-   "status": 200,
-   "bytes": 42457
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/1918627/detalle",
-   "status": 200,
-   "bytes": 48027
+   "bytes": 46666
   },
   {
    "url": "https://portaldelainvestigacion.uma.es/proyectos/1918684/detalle",
-   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/744771/detalle",
    "status": 200,
-   "bytes": 52439
+   "bytes": 52383
   },
   {
    "url": "https://portaldelainvestigacion.uma.es/proyectos/744876/detalle",
-   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+   "status": 200,
+   "bytes": 44881
   },
   {
    "url": "https://portaldelainvestigacion.uma.es/proyectos/745018/detalle",
    "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/745366/detalle",
-   "status": 200,
-   "bytes": 47950
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/745412/detalle",
-   "status": 200,
-   "bytes": 47238
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/745485/detalle",
-   "status": 200,
-   "bytes": 47565
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/745761/detalle",
-   "status": 200,
-   "bytes": 45570
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/826479/detalle",
-   "status": 200,
-   "bytes": 43450
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/826984/detalle",
-   "status": 200,
-   "bytes": 46216
   }
  ]
 }
