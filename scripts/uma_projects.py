@@ -13,7 +13,7 @@ import urllib.request
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
       "Chrome/124.0 Safari/537.36")
 BASE = "https://portaldelainvestigacion.uma.es"
-PEOPLE = {"isaac": 1241243, "ruben": 1241180, "antonio": 1241695}
+PEOPLE = {"isaac": 1241243}
 out = pathlib.Path("_import/uma")
 out.mkdir(parents=True, exist_ok=True)
 log = []
@@ -36,9 +36,10 @@ def get(url):
     return None
 
 
-projects = {}
+projects = {"isaac": []}
+prev = json.loads((out / "index.json").read_text())["projects"] if (out / "index.json").exists() else {}
 for who, rid in PEOPLE.items():
-    for page in range(0, 5):
+    for page in range(0, 0):
         url = f"{BASE}/investigadores/{rid}/financiacion" + (f"?page={page}" if page else "")
         html = get(url)
         if not html:
@@ -76,5 +77,7 @@ for pid in all_ids:
         (out / f"proyecto-{pid}.html").write_text(html)
     time.sleep(1.5)
 
+for k, v in prev.items():
+    projects[k] = sorted(set(projects.get(k, [])) | set(v))
 (out / "index.json").write_text(json.dumps({"projects": projects, "log": log}, indent=1))
 print(json.dumps({k: len(v) for k, v in projects.items()}), sum(1 for x in log if "error" in x), "errors")
