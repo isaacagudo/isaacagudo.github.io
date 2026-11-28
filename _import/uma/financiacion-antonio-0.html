@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="es" xml:lang="es">
+
+    <head>
+        
+        
+        <script>
+            window.PCIENCIA = window.PCIENCIA || {};
+            (function (P) {
+                var cola = [];
+                P.ready = function (fn) {
+                    if (P.ready.done) {
+                        fn();
+                    } else {
+                        cola.push(fn);
+                    }
+                };
+                P.ready.done = false;
+                function vaciar() {
+                    P.ready.done = true;
+                    var pendientes = cola;
+                    cola = [];
+                    pendientes.forEach(function (fn) {
+                        try {
+                            fn();
+                        } catch (e) {
+                            console.error(e);   // un inicializador roto no se lleva a los demás
+                        }
+                    });
+                }
+                function cargarPesadas(enlaces) {
+                    var quedan = enlaces.length;
+                    var acabado = function () {
+                        if (--quedan === 0) {
+                            vaciar();
+                        }
+                    };
+                    for (var i = 0; i < enlaces.length; i++) {
+                        var script = document.createElement('script');
+                        script.src = enlaces[i].href;
+                        script.async = false;   // insertados dinámicamente, así se ejecutan en orden
+                        script.onload = acabado;
+                        script.onerror = acabado;
+                        document.head.appendChild(script);   // el <link> se queda: lleva el id y los data-* que lee el script
+                    }
+                }
+                document.addEventListener('DOMContentLoaded', function () {
+                    var pesadas = document.querySelectorAll('link[data-lazy][href]');
+                    if (pesadas.length === 0) {
+                        vaciar();
+                        return;
+                    }
+                    // tras el primer pintado: un frame y un tick, para no robarle el hilo al pintado
+                    requestAnimationFrame(function () {
+                        setTimeout(function () {
+                            cargarPesadas(pesadas);
+                        }, 0);
+                    });
+                });
+            })(window.PCIENCIA);
+        </script>
+                
+        
+        
+            <!-- Google Tag Manager -->
+            <script>
+                (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-NVGXS5ZH');            
+            </script>
+        
+        
+        <title>ANTONIO JESUS MUÑOZ GALLEGO | Financiación - Universidad de Málaga</title>
+        
+        
+    
+        <meta name="description" content="Portal científico de Universidad de Málaga: investigadores, grupos de investigación, publicaciones, proyectos y datos de investigación." />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <meta name="display-level" content="standard" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons&amp;display=block" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Roboto+Mono&amp;family=Slabo+27px&amp;display=swap" />
+
+        <link media="all" type="text/css" rel="stylesheet" href="/css/theme_base-058524774751a028901b50cff2845b4f.css" />
+        <link media="all" type="text/css" rel="stylesheet" href="/css/theme_96-9602b2dbb2e3bd279da3e8783705be77.css" />
+        <link media="all" type="text/css" rel="stylesheet" href="/css/style-8525600ca0f07bb4b0571c17dfe53609.css" />
+        
+        <link media="all" type="text/css" rel="stylesheet" href="/css/filter-bar-e41b45a48dedc2c2e7af124be8c2658c.css" />
+
+        
+        <script defer src="/js/htmx.min-2e713ba95db2e33981bb607ae5183305.js"></script>
+        <script defer src="/js/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js"></script>
+        <script defer src="/js/app-b867693ed4c153436f03061c89c1a33e.js"></script>
+        <script defer src="/js/filter-bar-d77b665d0f36acfe1045b9f2cb3317f6.js"></script>
+        
+        <script defer src="/js/export-datos-b1cc337ec0910c5ba8566a3cab20c534.js"></script>
+        
+        <script defer src="/js/distribuciones-205663f06cee9f30a1f7f66e1ec287e0.js"></script>
+        <script defer src="/js/vista-datos-7a25f5f41b6c387c50037c81a7f1d862.js"></script>
+        
+        
+        <script type="text/javascript">
+            PCIENCIA.config = {
+                exportarDatos: true,
+                maxFilasExportacion: 100000,
+                exportarContacto: null
+            };
+        </script>
+    
+        
+        <script type="text/javascript">
+            PCIENCIA.lang = {
+                exportar: "Exportar",
+                exportarDatos: "Exportar datos",
+                exportarGrafico: "Exportar el gr\u00E1fico o sus datos",
+                exportarImagen: "Descargar imagen (PNG)",
+                exportarCsv: "Descargar CSV",
+                exportarExcel: "Descargar Excel",
+                exportarExportando: "Exportando\u2026",
+                exportarError: "No se ha podido preparar la descarga",
+                // el resultado no cabe en una exportación: NO se descarga nada y el botón lo
+                // dice antes de pulsar (tarea #13635). {0} son los registros de la selección,
+                // {1} el techo del portal (PreferenciasCliente.Ui#maxFilasExportacion)
+                exportarBloqueado: "Demasiadas filas",
+                exportarBloqueadoCifras: "({0}; m\u00E1x. {1})",
+                exportarBloqueadoTitulo: "No se puede exportar esta selecci\u00F3n",
+                exportarBloqueadoDetalle: "Esta vista contiene {0} registros y el l\u00EDmite de exportaci\u00F3n es de {1}.",
+                exportarBloqueadoAyuda: "\u00BFQu\u00E9 puedo hacer?",
+                exportarBloqueadoReducir: "Aplica filtros, una b\u00FAsqueda o un rango temporal m\u00E1s reducido hasta que el resultado tenga {0} registros o menos. En ese momento podr\u00E1s descargarlo.",
+                // solo si el portal mantiene un canal de contacto (PCIENCIA.config.exportarContacto)
+                exportarContactoAviso: "Si necesitas la descarga completa, {0}.",
+                exportarContacto: "contacta con los administradores del portal",
+                // la leyenda de las tartas (PCIENCIA.donuts): {0} es el nombre de la categoría
+                leyendaSolo: "Ver solo {0}",
+                leyendaTodos: "Ver todos",
+                leyendaAtajos: "Ctrl+clic a\u00F1ade o quita"
+            };
+        </script>
+
+        
+        
+        <link media="print" onload="this.media='all'" type="text/css" rel="stylesheet" href="/cookies/cookieconsent-670b37e75a82edfd7af1776c3081eac5.css"/>
+        <noscript><link media="all" type="text/css" rel="stylesheet" href="/cookies/cookieconsent-670b37e75a82edfd7af1776c3081eac5.css"/></noscript>
+        <script defer src="/cookies/cookieconsent-0a3c8bda3a0c2359787caa8bfe0cae04.js"></script>
+    
+        
+        <link rel="alternate" hreflang="es" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion"/><link rel="alternate" hreflang="ca" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=ca"/><link rel="alternate" hreflang="eu" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=eu"/><link rel="alternate" hreflang="gl" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=gl"/><link rel="alternate" hreflang="en" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=en"/><link rel="alternate" hreflang="fr" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=fr"/><link rel="alternate" hreflang="de" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=de"/>
+        <link rel="alternate" hreflang="x-default" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion"/>
+        <link rel="canonical" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion"/>
+    
+        
+        
+    
+        
+        <link rel="prefetch" as="script" data-lazy href="/js/echarts.min-8c36f4634efacb4a9c91e0d82a683ece.js" />
+        <link rel="prefetch" as="script" data-lazy href="/js/pciencia-charts-244a155ebe0c0bd2ecc9696a29b770a8.js" />
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    </head>
+    <body hx-history="false">   
+        
+            <!-- Google Tag Manager (noscript) -->
+            <noscript>
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVGXS5ZH" height="0" width="0" style="display:none;visibility:hidden">                                  
+                </iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        
+        
+        <!--button type="button" data-cc="c-settings">Show cookie settings</button-->
+        <script>
+            window.addEventListener('load', function () {
+                /**
+                 * All config. options available here:
+                 * https://cookieconsent.orestbida.com/reference/configuration-reference.html
+                 */
+                CookieConsent.run({
+
+                    // root: 'body',
+                    // autoShow: true,
+                    // disablePageInteraction: true,
+                    // hideFromBots: true,
+                    // mode: 'opt-in',
+                    // revision: 0,
+
+                    cookie: {
+                        name: 'cc_cookie',
+                        // domain: location.hostname,
+                        // path: '/',
+                        // sameSite: "Lax",
+                        // expiresAfterDays: 365,
+                    },
+
+                    // https://cookieconsent.orestbida.com/reference/configuration-reference.html#guioptions
+                    guiOptions: {
+                        consentModal: {
+                            layout: 'bar',
+                            position: 'bottom',
+                            equalWeightButtons: true,
+                            flipButtons: false
+                        },
+                        preferencesModal: {
+                            layout: 'box',
+                            equalWeightButtons: true,
+                            flipButtons: false
+                        }
+                    },
+
+                    categories: {
+                        necessary: {
+                            enabled: true, // this category is enabled by default
+                            readOnly: true  // this category cannot be disabled
+                        },
+                        analytics: {
+                            autoClear: {
+                                cookies: [
+                                    {
+                                        name: /^(_ga|_gid)/
+                                    }
+                                ]
+                            }
+                        }                        
+                    },
+
+                    language: {
+                        default: 'en',
+                        translations: {
+                            en: {
+                                consentModal: {
+                                    title: "Esta p\u00E1gina web usa cookies",
+                                    description: "Este portal utiliza cookies propias y de terceros para fines anal\u00EDticos. Las relacionadas con fines anal\u00EDticos s\u00F3lo se tendr\u00E1n en cuenta si acepta las cookies.",
+                                    acceptAllBtn: "Permitir todas",
+                                    acceptNecessaryBtn: "Permitir s\u00F3lo necesarias",
+                                    showPreferencesBtn: "Gestionar cookies",
+                                    // closeIconLabel: 'Reject all and close modal',
+                                    footer: `<a href="/aviso_legal#cookies" target="_blank">Política de cookies</a>`,
+                                },
+                                preferencesModal: {
+                                    title: "Gestionar cookies",
+                                    acceptAllBtn: "Permitir todas",
+                                    acceptNecessaryBtn: "Permitir s\u00F3lo necesarias",
+                                    savePreferencesBtn: "Guardar preferencias",
+                                    closeIconLabel: "Cerrar",
+                                    serviceCounterLabel: 'Service|Services',
+                                    sections: [
+                                        {
+                                            title: "Uso de Cookies\uD83D\uDCE2",
+                                            description: "El uso de cookies garantiza las funcionalidades b\u00E1sicas del sitio web y mejora su experiencia de usuario. Puede elegir para cada categor\u00EDa si desea o no aceptar cuando lo desee. Para obtener m\u00E1s detalles sobre las cookies y otros datos confidenciales, lea la <a href=\"\/aviso_legal#cookies\" class=\"cc-link\">Pol\u00EDtica de Cookies<\/a>."
+                                        },
+                                        {
+                                            title: "T\u00E9cnicas y Funcionales (Estrictamente necesarias)",
+                                            description: "Las cookies estrictamente necesarias contribuyen a que un sitio web se pueda navegar activando funciones b\u00E1sicas, como la selecci\u00F3n de idioma, navegaci\u00F3n de p\u00E1ginas y acceso a zonas seguras del sitio web. Sin estas cookies, el sitio no podr\u00EDa funcionar correctamente.",
+
+                                            //this field will generate a toggle linked to the 'necessary' category
+                                            linkedCategory: 'necessary'
+                                        },
+                                        {
+                                            title: "Estad\u00EDsticas",
+                                            description: "Las cookies estad\u00EDsticas le ayudan al propietario del sitio web a entender la manera en la que los visitantes interact\u00FAan con el sitio, recopilando y dando a conocer informaci\u00F3n.",
+                                            linkedCategory: 'analytics',
+                                            cookieTable: {
+                                                headers: {
+                                                    name: "Nombre",
+                                                    domain: "Dominio",
+                                                    vencimiento: "Vencimiento",
+                                                    desc: "Descripci\u00F3n"
+                                                },
+                                                body: [
+                                                    {
+                                                        name: '_ga',
+                                                        domain: 'google.com',
+                                                        vencimiento: "2 a\u00F1os",
+                                                        desc: "Esta cookie es instalada por Google Analytics. La cookie se utiliza para calcular los datos de visitantes, sesiones, campa\u00F1as y realizar un seguimiento del uso del sitio web para el informe anal\u00EDtico de dicho sitio web. Las cookies almacenan informaci\u00F3n de forma an\u00F3nima y asignan un n\u00FAmero generado aleatoriamente para identificar visitantes \u00FAnicos."
+                                                    },
+                                                    {
+                                                        name: '_gat',
+                                                        domain: 'google.com',
+                                                        vencimiento: "1 minuto",
+                                                        desc: "Esta cookie es instalada por Google Analytics. La cookie se utiliza para almacenar informaci\u00F3n sobre c\u00F3mo los visitantes usan el sitio web y ayuda a crear un informe anal\u00EDtico de c\u00F3mo est\u00E1 funcionando dicho sitio web. Los datos recopilados, incluidos el n\u00FAmero de visitantes, la fuente de donde provienen y las p\u00E1ginas, aparecieron de forma an\u00F3nima."
+                                                    },
+                                                    {
+                                                        name: '_gid',
+                                                        domain: 'google.com',
+                                                        vencimiento: "24 horas",
+                                                        desc: "Google Universal Analytics instala estas cookies para reducir la velocidad de solicitud y limitar la recopilaci\u00F3n de datos en sitios de alto tr\u00E1fico."
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            title: "M\u00E1s informaci\u00F3n",
+                                            description: "Cualquier duda o pregunta en relaci\u00F3n a la pol\u00EDtica de cookies, por favor <a class=\"cc-link\" href=\"\/contacto\">contacta con nosotros<\/a>."
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        </script>
+    
+        <header class="site-header">
+            
+    
+    
+        <section class="site-header__container">
+            <nav>
+                <span class="site-header__logos">
+                    <a class="site-header__logo site-header__logo--portal" href="/">
+                        <img fetchpriority="high" src="/img/logo-c26f1a78b45c0b1358d48275be203900.png" alt="Logo del Portal de la Investigación: Universidad de Málaga"/>
+                    </a>
+                    <a target="_blank" class="site-header__logo site-header__logo--parent" href="https://www.uma.es/">
+                        <img src="/img/parent-logo-b261534ba0fc455b3567a74c0f2d45c6.png" alt="Logo: Universidad de Málaga"/>
+                    </a>
+                </span>
+                <span class="site-header__push"></span>
+                
+        <span class="site-header__authentication" >
+            <span class="site-header__login">
+                
+                
+                    <button type="submit" form="login-form" class="site-header__link">Identifícate</button>
+                    <form id="login-form" action="/sso/login?redirect_uri=https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion" method="post" hidden></form>
+                
+
+                
+            </span>
+        </span>
+    
+            </nav>
+        </section>
+        
+
+
+        </header>
+
+        <nav class="site-navbar">
+            
+    
+    
+        <div class="site-navbar__container">
+            <div class="site-navbar__links">
+                <a class="navbar__grupos" href="/grupos">Grupos</a>
+                <a class="navbar__investigadores" href="/investigadores">Investigadores/as</a>   
+                <a class="navbar__proyectos" href="/financiaciones">Financiación</a>
+                <a class="navbar__produccion" href="/resultados">Resultados</a>              
+            </div>
+        </div>
+    
+
+
+
+
+
+        </nav>
+
+        <main class="content">            
+            
+            
+            <style>
+                .proyecto__identificador{
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+                
+                .importe i,
+                .importe span{
+                    color:grey;
+                    vertical-align: middle;
+                }
+                
+                .importe i{
+                    font-size: 16px;
+                }
+            </style>
+            
+            
+
+    
+    
+
+    
+    
+        
+        
+        
+            
+        <div class="content-header" >
+            <div class="content-header__container">
+                <div class="content-header__content">
+                    <div class="investigador-header__buttons">
+                        
+                    </div>
+
+                    <div class="investigador-header">
+
+                        <div class="investigador-header__foto">
+                            <div class="investigador-header__foto-canvas">
+                                <img src="/img/uploaded/80477CE473E8FDED88BA4F8D0DD84EDA.png" alt="Foto de ANTONIO JESUS"
+                                     title="Foto de ANTONIO JESUS"
+                                     width="100%"/>
+                            </div>
+                        </div>
+                        <div class="investigador-header__title-wrapper">
+                            <div class="investigador-header__title">
+                                
+                                <h1 class="investigador-header__nombre">ANTONIO JESUS<br/>MUÑOZ GALLEGO</h1>
+                                
+                                <h2 class="investigador-header__categoria">PROFESOR/A TITULAR DE UNIVERSIDAD</h2> 
+                                
+                            </div>
+                            <div class="investigador-header__usuario-actions">
+                                                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="c-tabs">
+                    
+                        
+                        <a class="c-tabs__tab"
+                           href="/investigadores/1241695/detalle">Perfil</a>
+                
+                    
+                        
+                        <a class="c-tabs__tab"
+                           href="/investigadores/1241695/publicaciones">Publicaciones</a>
+                
+                    
+                        
+                        <a class="c-tabs__tab"
+                           href="/investigadores/1241695/colaboracion">Colaboración</a>
+                
+                    
+                        
+                        <a class="c-tabs__tab"
+                           href="/investigadores/1241695/tesis">Tesis</a>
+                
+                    
+                        
+                        
+                
+                    
+                        
+                        
+                
+                    
+                        
+                        <a class="c-tabs__tab c-tabs__tab--current"
+                           href="/investigadores/1241695/financiacion">Financiación</a>
+                
+                    
+                        
+                        
+                
+                    
+                        
+                        
+                
+                    
+                </div>
+                
+                <script type="text/javascript">
+                    // TODO: refactor para convertirlo en un componente reusable
+                    PCIENCIA.ready(function(){
+                        var tabs = $('.c-tabs').css("position", "relative"),
+                            left = $("<span data-nosnippet class='scroll-btn material-icons' style='display: none; position: sticky; left: 0;'>keyboard_arrow_left</span>").prependTo(tabs),
+                            right = $("<span data-nosnippet class='scroll-btn material-icons' style='display: none; position: sticky; right: 0;'>keyboard_arrow_right</span>").appendTo(tabs);
+
+                        right.click(function(){
+                            tabs.animate({scrollLeft: tabs[0].offsetWidth}, 400);
+                        });
+                        left.click(function(){
+                            tabs.animate({scrollLeft: 0}, 400);
+                        });
+
+                        tabs.animate({scrollLeft: tabs.find(".c-tabs__tab--current").offset().left-32}, 1);
+                        $(window).on('resize', function(){
+                            if (tabs[0].offsetWidth < tabs[0].scrollWidth) {
+                                tabs.animate({scrollLeft: tabs[0].scrollLeft+1}, 1);
+                            } else {
+                                left.hide();
+                                right.hide();
+                            }
+                        });
+                        
+                        $(window).trigger('resize');
+                        
+                        $(tabs).scroll(function(){
+                            if(tabs[0].scrollLeft < 10) {
+                                left.hide();
+                            } else {
+                                left.show();
+                            }
+                            if(tabs[0].scrollLeft > tabs[0].scrollWidth - tabs[0].offsetWidth - 50) {
+                                right.hide();
+                            } else {
+                                right.show();
+                            }
+                        });
+                    });
+                    
+                    
+                </script>
+            </div>
+        </div>
+
+    
+        
+        
+        
+    
+
+
+            <div class="main-content">
+                <h2 class="section-title section-title--filter-bar">Financiación</h2>
+                <section class="proyectos">
+                    <div class="proyectos-nota-arriba">
+                        <span>La información de esta página de agregado de proyectos y otras financiaciones puede no ser exhaustiva por motivos de confidencialidad y protección de la propiedad intelectual e industrial.</span>
+                    </div>
+                </section>
+                
+                <div id="filter-bar" class="filter-bar" hx-swap-oob="true">
+                    
+        <div class="filter-bar__row">
+            <div class="filter-bar__filters">
+                
+                
+        <button type="button" class="fb-master" popovertarget="fb-menu-master"
+                aria-expanded="false" aria-haspopup="menu">
+            <i class="material-icons">tune</i>Filtros
+        </button>
+        <div class="fb-menu" id="fb-menu-master" popover role="menu" aria-label="Filtros">
+            <section data-panel="">
+                <div class="fb-menu__catalog" data-menu-list>
+                    
+                    
+                    
+                        
+                        
+                        
+                        <button type="button" class="fb-menu__item"
+                                data-panel-target="enActivo">
+                            <i class="material-icons">toggle_on</i>
+                            <span class="fb-menu__item-text">
+                                <span class="fb-menu__item-label">Actividad</span>
+                                
+                                
+                            </span>
+                            <i class="material-icons fb-menu__chevron">chevron_right</i>
+                        </button>
+                    
+                        
+                        
+                        
+                        <button type="button" class="fb-menu__item"
+                                data-panel-target="ambito">
+                            <i class="material-icons">public</i>
+                            <span class="fb-menu__item-text">
+                                <span class="fb-menu__item-label">Ámbito</span>
+                                
+                                
+                            </span>
+                            <i class="material-icons fb-menu__chevron">chevron_right</i>
+                        </button>
+                    
+                        
+                        
+                        
+                        <button type="button" class="fb-menu__item"
+                                data-panel-target="caracter">
+                            <i class="material-icons">account_balance</i>
+                            <span class="fb-menu__item-text">
+                                <span class="fb-menu__item-label">Carácter</span>
+                                
+                                
+                            </span>
+                            <i class="material-icons fb-menu__chevron">chevron_right</i>
+                        </button>
+                    
+                        
+                        
+                        
+                        <button type="button" class="fb-menu__item"
+                                data-panel-target="regimen">
+                            <i class="material-icons">gavel</i>
+                            <span class="fb-menu__item-text">
+                                <span class="fb-menu__item-label">Régimen</span>
+                                
+                                
+                            </span>
+                            <i class="material-icons fb-menu__chevron">chevron_right</i>
+                        </button>
+                    
+                        
+                        
+                        
+                        <button type="button" class="fb-menu__item"
+                                data-panel-target="tipoComunId">
+                            <i class="material-icons">category</i>
+                            <span class="fb-menu__item-text">
+                                <span class="fb-menu__item-label">Tipo</span>
+                                
+                                
+                            </span>
+                            <i class="material-icons fb-menu__chevron">chevron_right</i>
+                        </button>
+                    
+                    <button type="button" class="fb-menu__item"
+                            data-panel-target="fb-range">
+                        <i class="material-icons">date_range</i>
+                        <span class="fb-menu__item-text">
+                            <span class="fb-menu__item-label">Años</span>
+                            <span class="fb-menu__item-hint">Intervalo de años de publicación</span>
+                        </span>
+                        <i class="material-icons fb-menu__chevron">chevron_right</i>
+                    </button>
+                </div>
+                <p class="fb-menu__empty" hidden>Sin resultados</p>
+            </section>
+            
+                
+        
+        
+        <section data-panel="enActivo" hidden
+                 data-menu-param="enActivo"
+                 data-menu-excluded="Excluido">
+            <header class="fb-menu__header fb-menu__header--root">
+                
+                <button type="button" class="fb-menu__back"
+                        aria-label="Volver">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <span class="fb-menu__title">Actividad</span>
+            </header>
+            
+            
+            <div data-menu-list></div>
+            
+            
+            <p class="fb-menu__empty" hidden>Sin resultados</p>
+            <script type="application/json" data-menu-options>[{"v":"true","l":"Vigente","c":"5"},{"v":"false","l":"Finalizó","c":"12"}]</script>
+        </section>
+    
+            
+                
+        
+        
+        <section data-panel="ambito" hidden
+                 data-menu-param="ambito"
+                 data-menu-multi="multi"
+                 data-menu-excluded="Excluido">
+            <header class="fb-menu__header fb-menu__header--root">
+                
+                <button type="button" class="fb-menu__back"
+                        aria-label="Volver">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <span class="fb-menu__title">Ámbito</span>
+            </header>
+            
+            
+            <div data-menu-list></div>
+            
+            
+            <p class="fb-menu__empty" hidden>Sin resultados</p>
+            <script type="application/json" data-menu-options>[{"v":"interno","l":"Institucional","c":"0"},{"v":"local","l":"Local","c":"0"},{"v":"autonomico","l":"Autonómico","c":"3"},{"v":"nacional","l":"Nacional","c":"6"},{"v":"europeo","l":"Europeo","c":"8"},{"v":"internacional_no_eu","l":"Internacional (no UE)","c":"0"}]</script>
+        </section>
+    
+            
+                
+        
+        
+        <section data-panel="caracter" hidden
+                 data-menu-param="caracter"
+                 data-menu-excluded="Excluido">
+            <header class="fb-menu__header fb-menu__header--root">
+                
+                <button type="button" class="fb-menu__back"
+                        aria-label="Volver">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <span class="fb-menu__title">Carácter</span>
+            </header>
+            
+            
+            <div data-menu-list></div>
+            
+            
+            <p class="fb-menu__empty" hidden>Sin resultados</p>
+            <script type="application/json" data-menu-options>[{"v":"publico","l":"Público","c":"9"},{"v":"privado","l":"Privado","c":"0"}]</script>
+        </section>
+    
+            
+                
+        
+        
+        <section data-panel="regimen" hidden
+                 data-menu-param="regimen"
+                 data-menu-excluded="Excluido">
+            <header class="fb-menu__header fb-menu__header--root">
+                
+                <button type="button" class="fb-menu__back"
+                        aria-label="Volver">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <span class="fb-menu__title">Régimen</span>
+            </header>
+            
+            
+            <div data-menu-list></div>
+            
+            
+            <p class="fb-menu__empty" hidden>Sin resultados</p>
+            <script type="application/json" data-menu-options>[{"v":"competitivo","l":"Concurrencia competitiva","c":"9"},{"v":"concesion_directa","l":"Concesión directa","c":"0"}]</script>
+        </section>
+    
+            
+                
+        
+        
+        <section data-panel="tipoComunId" hidden
+                 data-menu-param="tipoComunId"
+                 data-menu-wide="wide"
+                 data-menu-clear="tipoId"
+                 data-menu-into="Ver lo que contiene {0}"
+                 data-menu-excluded="Excluido">
+            <header class="fb-menu__header fb-menu__header--root">
+                
+                <button type="button" class="fb-menu__back"
+                        aria-label="Volver">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <span class="fb-menu__title">Tipo</span>
+            </header>
+            <div class="fb-menu__search">
+                <i class="material-icons">search</i>
+                <input type="text" data-menu-search
+                       placeholder="Buscar en todos los niveles…"
+                       aria-label="Buscar en todos los niveles…" />
+            </div>
+            
+            <div data-menu-list></div>
+            
+            <div data-menu-flat hidden></div>
+            <p class="fb-menu__empty" hidden>Sin resultados</p>
+            <script type="application/json" data-menu-options>[{"v":"PROYECTO","l":"Proyecto","c":"17","k":[{"v":"PROYECTO","l":"Proyectos I+D","c":"8","a":"tipoId=1041"},{"v":"PROYECTO","l":"Proyecto Europeo","c":"8","a":"tipoId=2348"},{"v":"PROYECTO","l":"OTRI","c":"1","a":"tipoId=1917"}]}]</script>
+        </section>
+    
+            
+            
+        <section data-panel="fb-range" hidden>
+            <header class="fb-menu__header fb-menu__header--root">
+                
+                <button type="button" class="fb-menu__back"
+                        aria-label="Volver">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <span class="fb-menu__title">Años</span>
+            </header>
+            <div data-menu-list>
+                <button type="button" class="fb-menu__item"
+                        role="menuitemradio" data-range-min="2026" data-range-max="2026" aria-checked="false">
+                    <i class="material-icons fb-menu__check">check</i>
+                    <span class="fb-menu__item-text">
+                        <span class="fb-menu__item-label">Último año</span>
+                    </span>
+                    <span class="fb-menu__item-meta">1</span>
+                </button><button type="button" class="fb-menu__item"
+                        role="menuitemradio" data-range-min="2022" data-range-max="2026" aria-checked="false">
+                    <i class="material-icons fb-menu__check">check</i>
+                    <span class="fb-menu__item-text">
+                        <span class="fb-menu__item-label">Últimos 5 años</span>
+                    </span>
+                    <span class="fb-menu__item-meta">9</span>
+                </button><button type="button" class="fb-menu__item"
+                        role="menuitemradio" data-range-min="2017" data-range-max="2026" aria-checked="false">
+                    <i class="material-icons fb-menu__check">check</i>
+                    <span class="fb-menu__item-text">
+                        <span class="fb-menu__item-label">Últimos 10 años</span>
+                    </span>
+                    <span class="fb-menu__item-meta">16</span>
+                </button>
+                <button type="button" class="fb-menu__item" data-panel-target="fb-range-custom">
+                    <i class="material-icons">date_range</i>
+                    <span class="fb-menu__item-text">
+                        <span class="fb-menu__item-label">Otro intervalo…</span>
+                    </span>
+                    <i class="material-icons fb-menu__chevron">chevron_right</i>
+                </button>
+            </div>
+        </section>
+        
+        <section data-panel="fb-range-custom" hidden>
+            <header class="fb-menu__header">
+                <button type="button" class="fb-menu__back" data-menu-back="fb-range"
+                        aria-label="Volver">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <span class="fb-menu__title">Años</span>
+            </header>
+            <div class="fb-range">
+                <label class="fb-range__field">
+                    <span>Desde</span>
+                    <input type="text" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" data-range-min-input
+                           value="" aria-label="Desde" />
+                </label>
+                <span class="fb-range__dash">–</span>
+                <label class="fb-range__field">
+                    <span>Hasta</span>
+                    <input type="text" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" data-range-max-input
+                           value="" aria-label="Hasta" />
+                </label>
+            </div>
+            <div class="fb-menu__footer">
+                <button type="button" data-range-cancel>Cancelar</button>
+                <button type="button" data-range-apply>Aplicar</button>
+            </div>
+        </section>
+    
+        </div>
+    
+                
+                
+                
+                
+                
+        
+    
+                
+                
+            </div>
+            
+        </div>
+    
+                    
+        <h2 class="filter-bar__recuento">
+            <span><strong>17</strong> resultados</span>
+            
+            
+        </h2>
+    
+                    <div class="filter-bar__extras">
+                        <span>Importe total: 3.291.103,00 €</span>
+                    </div>
+                </div>
+                
+                <div id="vista-datos" hidden hx-swap-oob="true">
+    <script type="application/json">{"agrupadoPor":"tipoComun","rango":{},"grupos":[{"key":"PROYECTO","name":"Proyecto","color":"#60694F","count":17,"stats":{"importe":3291103.9765625},"porAnualidad":[{"year":2016,"count":1,"stats":{"importe":75394.1015625}},{"year":2017,"count":1,"stats":{"importe":48400.0}},{"year":2018,"count":1,"stats":{"importe":270000.0}},{"year":2019,"count":2,"stats":{"importe":401231.25}},{"year":2020,"count":2,"stats":{"importe":213864.0}},{"year":2021,"count":1,"stats":{"importe":40790.0}},{"year":2022,"count":2,"stats":{"importe":653612.0}},{"year":2023,"count":4,"stats":{"importe":715237.0}},{"year":2024,"count":1,"stats":{"importe":193200.0}},{"year":2025,"count":1,"stats":{"importe":597375.625}},{"year":2026,"count":1,"stats":{"importe":82000.0}}]}],"anualidades":[{"year":2016,"count":1,"stats":{"importe":75394.1015625,"importeMedio":75394.1015625}},{"year":2017,"count":1,"stats":{"importe":48400.0,"importeMedio":48400.0}},{"year":2018,"count":1,"stats":{"importe":270000.0,"importeMedio":270000.0}},{"year":2019,"count":2,"stats":{"importe":401231.25,"importeMedio":200615.625}},{"year":2020,"count":2,"stats":{"importe":213864.0,"importeMedio":106932.0}},{"year":2021,"count":1,"stats":{"importe":40790.0,"importeMedio":40790.0}},{"year":2022,"count":2,"stats":{"importe":653612.0,"importeMedio":326806.0}},{"year":2023,"count":4,"stats":{"importe":715237.0,"importeMedio":178809.25}},{"year":2024,"count":1,"stats":{"importe":193200.0,"importeMedio":193200.0}},{"year":2025,"count":1,"stats":{"importe":597375.625,"importeMedio":597375.625}},{"year":2026,"count":1,"stats":{"importe":82000.0,"importeMedio":82000.0}}],"extras":{"hayFinanciadores":true}}</script>
+</div>
+                <section class="proyectos">
+                    <div class="row">
+                        
+                        
+                        <div id="tiposChart" class="col-12" style="margin: 1rem 0 .5rem"></div>
+                        <div id="anualidadesChart" class="chart col-12"></div>
+                        <script type="text/javascript">
+                            PCIENCIA.ready(function () {
+                                var d = PCIENCIA.distribuciones;
+                                var textos = {
+                                    numero: "N\u00FAmero de financiaciones",
+                                    importe: "Importe financiado",
+                                    importeFinanciado: "Importe financiado",
+                                    financiaciones: "Financiaciones",
+                                    anualidad: "Por anualidad",
+                                    importeTotal: "Importe total",
+                                    importeMedio: "Importe medio",
+                                    tipoComun: "Tipo",
+                                    tipo: "tipo"
+                                };
+                                var hayImporte = true;
+                                var COLOR_TOTAL = '#c00';
+                                var COLOR_MEDIO = '#154481';
+
+                                function importe(valor) {
+                                    return formatMoney(valor, "es",
+                                            "EUR");
+                                }
+
+                                function dosLineas(texto) {
+                                    return texto.replace(/\s+(\S+)$/, '\n$1');
+                                }
+
+                                /* Un click en un tramo o en una entrada de la leyenda filtra por ese valor de
+                                   la dimensión activa («solo este»; repulsar el único elegido vuelve a todos);
+                                   cambiar de dimensión deja sin sentido los conmutadores, que se quitan a la vez. */
+                                function filtrar(datos) {
+                                    return function (key) {
+                                        PCIENCIA.filters.solo(datos.agrupadoPor + 'Id', key, {tipos: undefined});
+                                    };
+                                }
+
+                                /* El tramo de una barra apilada cruza su categoría con su año, de una vez. */
+                                function filtrarBarra(datos) {
+                                    return function (year, key) {
+                                        var filtro = {tipos: undefined};
+                                        filtro[datos.agrupadoPor + 'Id'] = key;
+                                        PCIENCIA.filters.range(year, year, filtro);
+                                    };
+                                }
+
+                                function medidas() {
+                                    var medidas = [];
+                                    if (hayImporte) {
+                                        medidas.push({stat: 'importe', title: dosLineas(textos.importe), formatter: importe});
+                                    }
+                                    medidas.push({stat: 'count', title: dosLineas(textos.numero)});
+                                    return medidas;
+                                }
+
+                                // las proporciones enseñan lo que hay DENTRO del rango elegido, que se
+                                // recorta aquí sumando el reparto por años: arrastrar el navigator
+                                // las actualiza sin volver a preguntar
+                                PCIENCIA.vista.bind('tiposChart', function (datos) {
+                                    var grupos = d.enRango(datos.grupos, datos.rango);
+                                    // incluso con un único tipo el reparto sigue informando de
+                                    // cuánto representa en importe y en número de financiaciones
+                                    return grupos;
+                                }, function (grupos, ctx) {
+                                    return PCIENCIA.proporciones('tiposChart', grupos, medidas(),
+                                            {
+                                                onSliceClick: filtrar(ctx.datos),
+                                                tooltipLabels: {
+                                                    importe: textos.importeFinanciado,
+                                                    count: textos.financiaciones
+                                                }
+                                            });
+                                });
+
+                                // el histograma enseña SIEMPRE todos los años; el rango solo lo encuadra
+                                PCIENCIA.vista.bind('anualidadesChart', function (datos) {
+                                    return d.series(datos.grupos).concat(hayImporte
+                                            ? d.lineas(datos.anualidades, [
+                                                {stat: 'importe', name: textos.importeTotal, yAxis: 1, color: COLOR_TOTAL, formatter: importe},
+                                                {stat: 'importeMedio', name: textos.importeMedio, yAxis: 2, color: COLOR_MEDIO, formatter: importe}])
+                                            : []);
+                                }, function (series, ctx) {
+                                    return PCIENCIA.chart('anualidadesChart',
+                                            {xAxis: ctx.rango, series: series},
+                                            {
+                                                // el histograma principal de la vista: el más
+                                                // alto del portal, porque cruza cinco o seis
+                                                // tipos apilados con dos líneas de importe
+                                                height: 360,
+                                                stacked: true,
+                                                animation: false,
+                                                legend: true,
+                                                yAxis: [
+                                                    {display: 'none', title: textos[ctx.datos.agrupadoPor]},
+                                                    // las líneas se reconocen por el color de su eje
+                                                    {display: 'none', title: textos.importeTotal, opposite: true, color: COLOR_TOTAL},
+                                                    {display: 'none', title: textos.importeMedio, opposite: true, color: COLOR_MEDIO}
+                                                ],
+                                                onLegendClick: filtrar(ctx.datos),
+                                                onBarClick: filtrarBarra(ctx.datos),
+                                                onRangeChange: PCIENCIA.filters.range
+                                            });
+                                });
+                            });
+                        </script>
+                    </div>
+                    
+                    <div class="row">
+                        
+                            <!-- Botón para abrir el gráfico -->
+                            <button id="btnFinanciadorBubbleChart" type="button" class="btn btn-secondary">Ver gráfico por financiador</button>
+                            <!-- Modal a pantalla completa -->
+                            <div class="modal fade" id="financiadorBubbleChartModal" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body p-0">
+                                            <div id="financiadorBubbleChart"  style="width: 100%; height: 80vh;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+
+                                PCIENCIA.ready(function () {
+
+                                    function byFinanciadoresBubbleChart() {
+                                        // obtenemos los datos del charts con una petición ajax
+                                        /* la ruta general del gráfico, ya con los filtros y el
+                                           acotamiento de la entidad: la escribe el servidor porque
+                                           en la página de un grupo el path no es /financiaciones */
+                                        $.getJSON("\/financiaciones\/byFinanciadoresBubble?personaId=1241695", function (chart) {
+                                            if (chart.series.length) {
+                                                PCIENCIA.packedbubble('financiadorBubbleChart',
+                                                    chart,
+                                                    {
+                                                        title: "Por financiador",
+                                                        valueFormatter: function (value) {
+                                                            return formatMoney(value, "es", "EUR");
+                                                        }
+                                                    }
+                                                );
+                                                $("#financiadorBubbleChart").show();
+                                            } else {
+                                                $("#financiadorBubbleChart").hide();
+                                            }
+                                        });
+                                    }
+                                    // Abrir modal al hacer clic y cargar el gráfico
+                                    const btn = document.getElementById('btnFinanciadorBubbleChart');
+                                    const modal = new bootstrap.Modal(document.getElementById('financiadorBubbleChartModal'));
+
+                                    btn.addEventListener('click', function() {
+                                        modal.show();
+                                        byFinanciadoresBubbleChart();
+                                    });
+
+                                });
+
+                            </script>
+                        
+                    </div>
+                    <div id="financiaciones" hx-get
+                         hx-swap="outerHTML"
+                         hx-trigger="filters-change from:body" hx-sync="this:replace">
+                        <div class="search-results">
+                            <div>
+                                <span class="c-rango-years">datos disponibles desde el año 2016</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="proyecto-docs__grupo agrupador-anualidad">
+                                <h3 class="proyecto-docs__grupo-titulo">2026</h3>    
+                                <ol>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/1847015/detalle">Seguridad Post-Cuántica - siguiente generación (PQSec-NG)</a>
+                                        <p>
+                                            <span class="proyecto__identificador">PQSec-NG</span>
+                                            <span class="importe">                                                
+                                                <span>82.000,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>                            
+                                </ol>
+                            </div>
+                            <div class="proyecto-docs__grupo agrupador-anualidad">
+                                <h3 class="proyecto-docs__grupo-titulo">2025</h3>    
+                                <ol>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/1918393/detalle">INnovative multi-diSciPlinary Industry-focused cybersecurity education for upskilling and ReskIlling the EU workforcE</a>
+                                        <p>
+                                            <span class="proyecto__identificador">EU-INSPIRE</span>
+                                            <span class="importe">                                                
+                                                <span>597.375,65 €</span>
+                                            </span>
+                                        </p>
+                                    </li>                            
+                                </ol>
+                            </div>
+                            <div class="proyecto-docs__grupo agrupador-anualidad">
+                                <h3 class="proyecto-docs__grupo-titulo">2024</h3>    
+                                <ol>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/1918490/detalle">AI-ASsisted cybersecurity platform empowering SMEs to defend against adversarial AI attacks</a>
+                                        <p>
+                                            <span class="proyecto__identificador">AIAS</span>
+                                            <span class="importe">                                                
+                                                <span>193.200,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>                            
+                                </ol>
+                            </div>
+                            <div class="proyecto-docs__grupo agrupador-anualidad">
+                                <h3 class="proyecto-docs__grupo-titulo">2023</h3>    
+                                <ol>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/744771/detalle">Soluciones seguras basadas en AI con soporte de Digital Twin y Edge Computing</a>
+                                        <p>
+                                            <span class="proyecto__identificador">SecAI</span>
+                                            <span class="importe">                                                
+                                                <span>221.625,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/1918599/detalle">Data Usage Control for empowering digital sovereignty for All citizens</a>
+                                        <p>
+                                            <span class="proyecto__identificador">DUCA</span>
+                                            <span class="importe">                                                
+                                                <span>138.000,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/1918517/detalle">An Integrated Cyber Security Risk &amp; Resilience Management Platform, With Holistic Situational Awareness, Incident Response &amp; Preparedness Capabilities</a>
+                                        <p>
+                                            <span class="proyecto__identificador">SYNAPSE</span>
+                                            <span class="importe">                                                
+                                                <span>308.500,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/1918625/detalle">EMAPA 4.0 FASE II</a>
+                                        <p>
+                                            <span class="proyecto__identificador">EMAPA 4.0 FASE II</span>
+                                            <span class="importe">                                                
+                                                <span>47.112,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>                            
+                                </ol>
+                            </div>
+                            <div class="proyecto-docs__grupo agrupador-anualidad">
+                                <h3 class="proyecto-docs__grupo-titulo">2022</h3>    
+                                <ol>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/745485/detalle">Plataforma de Ciberseguridad basada en Gemelos Digitales para la Industria 5.0</a>
+                                        <p>
+                                            
+                                            <span class="importe">                                                
+                                                <span>209.990,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/1918684/detalle">Collaborative, Multi-modal and Agile Professional Cybersecurity Training Program for A Skilled Workforce In the European Digital Single Market and Industries.</a>
+                                        <p>
+                                            <span class="proyecto__identificador">CyberSecPro</span>
+                                            <span class="importe">                                                
+                                                <span>443.622,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>                            
+                                </ol>
+                            </div>
+                            <div class="proyecto-docs__grupo agrupador-anualidad">
+                                <h3 class="proyecto-docs__grupo-titulo">2021</h3>    
+                                <ol>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/745761/detalle">BIG priv DATA: Plataforma privada y confiable para infraestructuras Big Data</a>
+                                        <p>
+                                            
+                                            <span class="importe">                                                
+                                                <span>40.790,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>                            
+                                </ol>
+                            </div>
+                            <div class="proyecto-docs__grupo agrupador-anualidad">
+                                <h3 class="proyecto-docs__grupo-titulo">2020</h3>    
+                                <ol>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/745366/detalle">SAVE: Security plAtform for the internet of Vehicles</a>
+                                        <p>
+                                            
+                                            <span class="importe">                                                
+                                                <span>94.800,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/745412/detalle">Plataforma de servicios de seguridad para la protección de escenarios Edge</a>
+                                        <p>
+                                            
+                                            <span class="importe">                                                
+                                                <span>119.064,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>                            
+                                </ol>
+                            </div>
+                            <div class="proyecto-docs__grupo agrupador-anualidad">
+                                <h3 class="proyecto-docs__grupo-titulo">2019</h3>    
+                                <ol>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/1918408/detalle">Environment and Biodiversity Climate Change Lab</a>
+                                        <p>
+                                            <span class="proyecto__identificador">EnBiC2-Lab</span>
+                                            
+                                        </p>
+                                    </li>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/1918627/detalle">Cyber Security Network of Competence Centres for Europe</a>
+                                        <p>
+                                            <span class="proyecto__identificador">CyberSec4Europe</span>
+                                            <span class="importe">                                                
+                                                <span>401.231,25 €</span>
+                                            </span>
+                                        </p>
+                                    </li>                            
+                                </ol>
+                            </div>
+                            <div class="proyecto-docs__grupo agrupador-anualidad">
+                                <h3 class="proyecto-docs__grupo-titulo">2018</h3>    
+                                <ol>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/1918461/detalle">Scalable, trustEd, and interoperAble pLatform for sEcureD smart GRID</a>
+                                        <p>
+                                            <span class="proyecto__identificador">SealedGRID</span>
+                                            <span class="importe">                                                
+                                                <span>270.000,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>                            
+                                </ol>
+                            </div>
+                            <div class="proyecto-docs__grupo agrupador-anualidad">
+                                <h3 class="proyecto-docs__grupo-titulo">2017</h3>    
+                                <ol>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/826479/detalle">Testigos digitales: dispositivos inteligentes de ciberseguridad para la loT</a>
+                                        <p>
+                                            
+                                            <span class="importe">                                                
+                                                <span>48.400,00 €</span>
+                                            </span>
+                                        </p>
+                                    </li>                            
+                                </ol>
+                            </div>
+                            <div class="proyecto-docs__grupo agrupador-anualidad">
+                                <h3 class="proyecto-docs__grupo-titulo">2016</h3>    
+                                <ol>
+                                    <li class="proyecto-docs__item  c-doc">                            
+                                        <a class="proyecto__nombre" href="/proyectos/744876/detalle">Mecanismos de seguridad para Fog Computing-Desafíos en la protección de la infraestructura</a>
+                                        <p>
+                                            
+                                            <span class="importe">                                                
+                                                <span>75.394,10 €</span>
+                                            </span>
+                                        </p>
+                                    </li>                            
+                                </ol>
+                            </div>
+
+                            <form>
+                                
+                            </form>
+                            
+        
+    
+                        </div>
+                    </div>
+                </section>
+                <section class="proyectos">
+                    <div class="proyectos-nota-abajo">
+                        <span>La información de esta página de agregado de proyectos y otras financiaciones puede no ser exhaustiva por motivos de confidencialidad y protección de la propiedad intelectual e industrial.</span>
+                    </div>
+                </section>
+                
+
+                
+                <div id="general-search-link" hx-swap-oob="true">
+    <p class="general-search-link">
+        Puedes explorar estas financiaciones en la
+        
+        <a href="/financiaciones?personaId=1241695">búsqueda general de financiaciones</a>.
+    </p>
+</div>
+            </div>            
+        
+        </main>
+
+        <nav class="site-navfooter">
+            
+    
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        
+                        <li><a href="/contacto">Contactar</a></li>
+                        
+                        <li><a href="/aviso_legal">Aviso Legal</a></li>
+                        <li><a href="/mapa_sitio">Mapa del sitio</a></li>
+                        <li><a href="https://biblioguias.uma.es/portaldelainvestigacion" target="_blank">Ayuda</a></li>
+                    </ul>                                        
+                </div>
+                <div>
+        <div class="c-langselect">
+            <a href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion" tabindex="0" class="c-langselect--trigger" title="Cambiar idioma">
+                <i class="material-icons material-icons--translate">translate</i> es <i class="material-icons">arrow_drop_down</i>
+            </a>
+            
+            <div class="mdc-menu mdc-menu-surface">
+                <div class="mdc-list">
+                    <a href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=es" title="Español">
+                        <i class="material-icons material-icons--translate">translate</i> es <i class="material-icons">arrow_drop_down</i>
+                    </a>
+                    <a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=ca"
+                       data-lang="ca"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Català i valencià">
+                        ca
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=eu"
+                       data-lang="eu"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Euskara">
+                        eu
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=gl"
+                       data-lang="gl"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Galego">
+                        gl
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=en"
+                       data-lang="en"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="English">
+                        en
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=fr"
+                       data-lang="fr"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Francais">
+                        fr
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion?lang=de"
+                       data-lang="de"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Deutsch">
+                        de
+                    </a>
+                </div>
+            </div>
+        </div>        
+    </div>
+            </div>
+        </div>
+    
+
+        </nav>
+        <footer class="site-footer">
+            
+    
+    
+        <section class="site-footer__container">                   
+            <div class="site-footer__direccion">
+                <p class="nombre">Universidad de Málaga</p>
+                <p>Avda. Cervantes, 2. 29071 MÁLAGA</p>
+            </div>
+        </section>
+    
+
+            
+    
+    
+        <div class="site-actualizacion__container">
+            <div class="info-container">
+                Fecha de última actualización de datos:
+                19-11-2026
+                <i class="material-icons">info</i>
+                <div class="info-content">
+                    <p>Los documentos del portal se actualizan diariamente. Esta fecha hace referencia a la actualización de la información relacionada con la estructura del portal (personas, grupos de investigación, unidades organizativas, proyectos...).</p>
+                </div>
+            </div>
+        </div>
+    
+
+            
+    
+    
+        <div class="site-footer__copyright">
+            <div>
+                <span>Proyecto CRIS desarrollado en colaboración con la <strong><a target="_blank" href="https://fundaciondialnet.unirioja.es/" class="externo">Fundación Dialnet</a> (<a target="_blank" href="https://www.unirioja.es/" class="externo">Universidad de La Rioja</a>)</strong></span>
+            </div>
+        </div>       
+        
+
+
+        </footer>
+
+        
+
+    
+
+    
+
+
+        
+
+    
+
+    
+    
+
+        
+    </body>
+</html>

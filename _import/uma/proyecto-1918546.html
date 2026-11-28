@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="es" xml:lang="es">
+
+    <head>
+        
+        
+        <script>
+            window.PCIENCIA = window.PCIENCIA || {};
+            (function (P) {
+                var cola = [];
+                P.ready = function (fn) {
+                    if (P.ready.done) {
+                        fn();
+                    } else {
+                        cola.push(fn);
+                    }
+                };
+                P.ready.done = false;
+                function vaciar() {
+                    P.ready.done = true;
+                    var pendientes = cola;
+                    cola = [];
+                    pendientes.forEach(function (fn) {
+                        try {
+                            fn();
+                        } catch (e) {
+                            console.error(e);   // un inicializador roto no se lleva a los demás
+                        }
+                    });
+                }
+                function cargarPesadas(enlaces) {
+                    var quedan = enlaces.length;
+                    var acabado = function () {
+                        if (--quedan === 0) {
+                            vaciar();
+                        }
+                    };
+                    for (var i = 0; i < enlaces.length; i++) {
+                        var script = document.createElement('script');
+                        script.src = enlaces[i].href;
+                        script.async = false;   // insertados dinámicamente, así se ejecutan en orden
+                        script.onload = acabado;
+                        script.onerror = acabado;
+                        document.head.appendChild(script);   // el <link> se queda: lleva el id y los data-* que lee el script
+                    }
+                }
+                document.addEventListener('DOMContentLoaded', function () {
+                    var pesadas = document.querySelectorAll('link[data-lazy][href]');
+                    if (pesadas.length === 0) {
+                        vaciar();
+                        return;
+                    }
+                    // tras el primer pintado: un frame y un tick, para no robarle el hilo al pintado
+                    requestAnimationFrame(function () {
+                        setTimeout(function () {
+                            cargarPesadas(pesadas);
+                        }, 0);
+                    });
+                });
+            })(window.PCIENCIA);
+        </script>
+                
+        
+        
+            <!-- Google Tag Manager -->
+            <script>
+                (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-NVGXS5ZH');            
+            </script>
+        
+        
+        <title>CYBSEC-TECH | Financiación - Universidad de Málaga</title>
+        
+        
+    
+        <meta name="description" content="Portal científico de Universidad de Málaga: investigadores, grupos de investigación, publicaciones, proyectos y datos de investigación." />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <meta name="display-level" content="standard" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons&amp;display=block" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Roboto+Mono&amp;family=Slabo+27px&amp;display=swap" />
+
+        <link media="all" type="text/css" rel="stylesheet" href="/css/theme_base-058524774751a028901b50cff2845b4f.css" />
+        <link media="all" type="text/css" rel="stylesheet" href="/css/theme_96-9602b2dbb2e3bd279da3e8783705be77.css" />
+        <link media="all" type="text/css" rel="stylesheet" href="/css/style-8525600ca0f07bb4b0571c17dfe53609.css" />
+        
+        <link media="all" type="text/css" rel="stylesheet" href="/css/filter-bar-e41b45a48dedc2c2e7af124be8c2658c.css" />
+
+        
+        <script defer src="/js/htmx.min-2e713ba95db2e33981bb607ae5183305.js"></script>
+        <script defer src="/js/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js"></script>
+        <script defer src="/js/app-b867693ed4c153436f03061c89c1a33e.js"></script>
+        <script defer src="/js/filter-bar-d77b665d0f36acfe1045b9f2cb3317f6.js"></script>
+        
+        <script defer src="/js/export-datos-b1cc337ec0910c5ba8566a3cab20c534.js"></script>
+        
+        <script defer src="/js/distribuciones-205663f06cee9f30a1f7f66e1ec287e0.js"></script>
+        <script defer src="/js/vista-datos-7a25f5f41b6c387c50037c81a7f1d862.js"></script>
+        
+        
+        <script type="text/javascript">
+            PCIENCIA.config = {
+                exportarDatos: true,
+                maxFilasExportacion: 100000,
+                exportarContacto: null
+            };
+        </script>
+    
+        
+        <script type="text/javascript">
+            PCIENCIA.lang = {
+                exportar: "Exportar",
+                exportarDatos: "Exportar datos",
+                exportarGrafico: "Exportar el gr\u00E1fico o sus datos",
+                exportarImagen: "Descargar imagen (PNG)",
+                exportarCsv: "Descargar CSV",
+                exportarExcel: "Descargar Excel",
+                exportarExportando: "Exportando\u2026",
+                exportarError: "No se ha podido preparar la descarga",
+                // el resultado no cabe en una exportación: NO se descarga nada y el botón lo
+                // dice antes de pulsar (tarea #13635). {0} son los registros de la selección,
+                // {1} el techo del portal (PreferenciasCliente.Ui#maxFilasExportacion)
+                exportarBloqueado: "Demasiadas filas",
+                exportarBloqueadoCifras: "({0}; m\u00E1x. {1})",
+                exportarBloqueadoTitulo: "No se puede exportar esta selecci\u00F3n",
+                exportarBloqueadoDetalle: "Esta vista contiene {0} registros y el l\u00EDmite de exportaci\u00F3n es de {1}.",
+                exportarBloqueadoAyuda: "\u00BFQu\u00E9 puedo hacer?",
+                exportarBloqueadoReducir: "Aplica filtros, una b\u00FAsqueda o un rango temporal m\u00E1s reducido hasta que el resultado tenga {0} registros o menos. En ese momento podr\u00E1s descargarlo.",
+                // solo si el portal mantiene un canal de contacto (PCIENCIA.config.exportarContacto)
+                exportarContactoAviso: "Si necesitas la descarga completa, {0}.",
+                exportarContacto: "contacta con los administradores del portal",
+                // la leyenda de las tartas (PCIENCIA.donuts): {0} es el nombre de la categoría
+                leyendaSolo: "Ver solo {0}",
+                leyendaTodos: "Ver todos",
+                leyendaAtajos: "Ctrl+clic a\u00F1ade o quita"
+            };
+        </script>
+
+        
+        
+        <link media="print" onload="this.media='all'" type="text/css" rel="stylesheet" href="/cookies/cookieconsent-670b37e75a82edfd7af1776c3081eac5.css"/>
+        <noscript><link media="all" type="text/css" rel="stylesheet" href="/cookies/cookieconsent-670b37e75a82edfd7af1776c3081eac5.css"/></noscript>
+        <script defer src="/cookies/cookieconsent-0a3c8bda3a0c2359787caa8bfe0cae04.js"></script>
+    
+        
+        <link rel="alternate" hreflang="es" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle"/><link rel="alternate" hreflang="ca" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=ca"/><link rel="alternate" hreflang="eu" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=eu"/><link rel="alternate" hreflang="gl" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=gl"/><link rel="alternate" hreflang="en" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=en"/><link rel="alternate" hreflang="fr" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=fr"/><link rel="alternate" hreflang="de" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=de"/>
+        <link rel="alternate" hreflang="x-default" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle"/>
+        <link rel="canonical" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle"/>
+    
+        
+        
+    
+        
+    </head>
+    <body hx-history="false">   
+        
+            <!-- Google Tag Manager (noscript) -->
+            <noscript>
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVGXS5ZH" height="0" width="0" style="display:none;visibility:hidden">                                  
+                </iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        
+        
+        <!--button type="button" data-cc="c-settings">Show cookie settings</button-->
+        <script>
+            window.addEventListener('load', function () {
+                /**
+                 * All config. options available here:
+                 * https://cookieconsent.orestbida.com/reference/configuration-reference.html
+                 */
+                CookieConsent.run({
+
+                    // root: 'body',
+                    // autoShow: true,
+                    // disablePageInteraction: true,
+                    // hideFromBots: true,
+                    // mode: 'opt-in',
+                    // revision: 0,
+
+                    cookie: {
+                        name: 'cc_cookie',
+                        // domain: location.hostname,
+                        // path: '/',
+                        // sameSite: "Lax",
+                        // expiresAfterDays: 365,
+                    },
+
+                    // https://cookieconsent.orestbida.com/reference/configuration-reference.html#guioptions
+                    guiOptions: {
+                        consentModal: {
+                            layout: 'bar',
+                            position: 'bottom',
+                            equalWeightButtons: true,
+                            flipButtons: false
+                        },
+                        preferencesModal: {
+                            layout: 'box',
+                            equalWeightButtons: true,
+                            flipButtons: false
+                        }
+                    },
+
+                    categories: {
+                        necessary: {
+                            enabled: true, // this category is enabled by default
+                            readOnly: true  // this category cannot be disabled
+                        },
+                        analytics: {
+                            autoClear: {
+                                cookies: [
+                                    {
+                                        name: /^(_ga|_gid)/
+                                    }
+                                ]
+                            }
+                        }                        
+                    },
+
+                    language: {
+                        default: 'en',
+                        translations: {
+                            en: {
+                                consentModal: {
+                                    title: "Esta p\u00E1gina web usa cookies",
+                                    description: "Este portal utiliza cookies propias y de terceros para fines anal\u00EDticos. Las relacionadas con fines anal\u00EDticos s\u00F3lo se tendr\u00E1n en cuenta si acepta las cookies.",
+                                    acceptAllBtn: "Permitir todas",
+                                    acceptNecessaryBtn: "Permitir s\u00F3lo necesarias",
+                                    showPreferencesBtn: "Gestionar cookies",
+                                    // closeIconLabel: 'Reject all and close modal',
+                                    footer: `<a href="/aviso_legal#cookies" target="_blank">Política de cookies</a>`,
+                                },
+                                preferencesModal: {
+                                    title: "Gestionar cookies",
+                                    acceptAllBtn: "Permitir todas",
+                                    acceptNecessaryBtn: "Permitir s\u00F3lo necesarias",
+                                    savePreferencesBtn: "Guardar preferencias",
+                                    closeIconLabel: "Cerrar",
+                                    serviceCounterLabel: 'Service|Services',
+                                    sections: [
+                                        {
+                                            title: "Uso de Cookies\uD83D\uDCE2",
+                                            description: "El uso de cookies garantiza las funcionalidades b\u00E1sicas del sitio web y mejora su experiencia de usuario. Puede elegir para cada categor\u00EDa si desea o no aceptar cuando lo desee. Para obtener m\u00E1s detalles sobre las cookies y otros datos confidenciales, lea la <a href=\"\/aviso_legal#cookies\" class=\"cc-link\">Pol\u00EDtica de Cookies<\/a>."
+                                        },
+                                        {
+                                            title: "T\u00E9cnicas y Funcionales (Estrictamente necesarias)",
+                                            description: "Las cookies estrictamente necesarias contribuyen a que un sitio web se pueda navegar activando funciones b\u00E1sicas, como la selecci\u00F3n de idioma, navegaci\u00F3n de p\u00E1ginas y acceso a zonas seguras del sitio web. Sin estas cookies, el sitio no podr\u00EDa funcionar correctamente.",
+
+                                            //this field will generate a toggle linked to the 'necessary' category
+                                            linkedCategory: 'necessary'
+                                        },
+                                        {
+                                            title: "Estad\u00EDsticas",
+                                            description: "Las cookies estad\u00EDsticas le ayudan al propietario del sitio web a entender la manera en la que los visitantes interact\u00FAan con el sitio, recopilando y dando a conocer informaci\u00F3n.",
+                                            linkedCategory: 'analytics',
+                                            cookieTable: {
+                                                headers: {
+                                                    name: "Nombre",
+                                                    domain: "Dominio",
+                                                    vencimiento: "Vencimiento",
+                                                    desc: "Descripci\u00F3n"
+                                                },
+                                                body: [
+                                                    {
+                                                        name: '_ga',
+                                                        domain: 'google.com',
+                                                        vencimiento: "2 a\u00F1os",
+                                                        desc: "Esta cookie es instalada por Google Analytics. La cookie se utiliza para calcular los datos de visitantes, sesiones, campa\u00F1as y realizar un seguimiento del uso del sitio web para el informe anal\u00EDtico de dicho sitio web. Las cookies almacenan informaci\u00F3n de forma an\u00F3nima y asignan un n\u00FAmero generado aleatoriamente para identificar visitantes \u00FAnicos."
+                                                    },
+                                                    {
+                                                        name: '_gat',
+                                                        domain: 'google.com',
+                                                        vencimiento: "1 minuto",
+                                                        desc: "Esta cookie es instalada por Google Analytics. La cookie se utiliza para almacenar informaci\u00F3n sobre c\u00F3mo los visitantes usan el sitio web y ayuda a crear un informe anal\u00EDtico de c\u00F3mo est\u00E1 funcionando dicho sitio web. Los datos recopilados, incluidos el n\u00FAmero de visitantes, la fuente de donde provienen y las p\u00E1ginas, aparecieron de forma an\u00F3nima."
+                                                    },
+                                                    {
+                                                        name: '_gid',
+                                                        domain: 'google.com',
+                                                        vencimiento: "24 horas",
+                                                        desc: "Google Universal Analytics instala estas cookies para reducir la velocidad de solicitud y limitar la recopilaci\u00F3n de datos en sitios de alto tr\u00E1fico."
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            title: "M\u00E1s informaci\u00F3n",
+                                            description: "Cualquier duda o pregunta en relaci\u00F3n a la pol\u00EDtica de cookies, por favor <a class=\"cc-link\" href=\"\/contacto\">contacta con nosotros<\/a>."
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        </script>
+    
+        <header class="site-header">
+            
+    
+    
+        <section class="site-header__container">
+            <nav>
+                <span class="site-header__logos">
+                    <a class="site-header__logo site-header__logo--portal" href="/">
+                        <img fetchpriority="high" src="/img/logo-c26f1a78b45c0b1358d48275be203900.png" alt="Logo del Portal de la Investigación: Universidad de Málaga"/>
+                    </a>
+                    <a target="_blank" class="site-header__logo site-header__logo--parent" href="https://www.uma.es/">
+                        <img src="/img/parent-logo-b261534ba0fc455b3567a74c0f2d45c6.png" alt="Logo: Universidad de Málaga"/>
+                    </a>
+                </span>
+                <span class="site-header__push"></span>
+                
+        <span class="site-header__authentication" >
+            <span class="site-header__login">
+                
+                
+                    <button type="submit" form="login-form" class="site-header__link">Identifícate</button>
+                    <form id="login-form" action="/sso/login?redirect_uri=https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle" method="post" hidden></form>
+                
+
+                
+            </span>
+        </span>
+    
+            </nav>
+        </section>
+        
+
+
+        </header>
+
+        <nav class="site-navbar">
+            
+    
+    
+        <div class="site-navbar__container">
+            <div class="site-navbar__links">
+                <a class="navbar__grupos" href="/grupos">Grupos</a>
+                <a class="navbar__investigadores" href="/investigadores">Investigadores/as</a>   
+                <a class="navbar__proyectos" href="/financiaciones">Financiación</a>
+                <a class="navbar__produccion" href="/resultados">Resultados</a>              
+            </div>
+        </div>
+    
+
+
+
+
+
+        </nav>
+
+        <main class="content">            
+            
+            
+            <style>
+                .label-activo{
+                    font-family: monospace;
+                    font-size: .9em;
+                    line-height: .9;
+                    border: 1px solid;
+                    padding: .3em .4em;
+                    border-radius: .3em;
+                    display: inline-block;
+                    white-space: nowrap;
+                    vertical-align: middle !important;
+                }
+                
+                .label-activo.no{
+                    color: grey;
+                }
+                .label-activo.si{
+                    color: darkgreen;
+                }
+
+                .proyecto-detalle p.info span strong{
+                    text-transform: lowercase;
+                }
+                              
+                .financiador i.material-icons {
+                    vertical-align: middle;
+                }
+
+                .financiador {
+                    margin-bottom: 20px;
+                }
+                .financiador > div{
+                    margin-bottom: 5px;
+                }
+
+
+            </style>
+            <div class="content-header">
+                <div class="content-header__container">
+                    <div class="content-header__content">
+                        <div class="proyecto-header__buttons">
+                            
+                        </div>                        
+                        
+                        <div class="proyecto-header">
+                            <div class="proyecto-header__title">
+                                <span class="proyecto-header__tipo" title="Tipo">OTRI</span>
+                                
+                                <p>
+                                    <span class="etiqueta" title="Tipo común">Proyecto</span>
+                                    <span class="etiqueta" title="Referencia Externa / grantNumber">AEI-010500-2018-43</span>
+                                    <span class="etiqueta" title="Acrónimo">CYBSEC-TECH</span>
+                                </p>
+                                <h1>CYBSEC-TECH</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <section class="proyecto-detalle">
+                    <p class="info">
+                        <strong>Financiadores:</strong>
+                        <span><a href="/financiaciones?financiadorEntidadId=260652">AARON FORMACIÓN Y CONSULTORÍA, S.A.</a><span>, </span></span><span><a href="/financiaciones?financiadorEntidadId=260580">MNEMO EVOLUTION &amp; INTEGRATION SERVICES, S.A.</a><span>, </span></span><span><a href="/financiaciones?financiadorEntidadId=260676">ON TECH</a><span></span></span>
+                    </p>   
+                                            
+                    <div class="financiador">
+                        <div class="duracion">
+                            <i class="material-icons" title="Finalizó">date_range</i>
+                            
+                            <span>Duración del 19 de octubre de 2018 al 31 de marzo de 2019</span>
+                            
+                            <span>(5 meses)</span>
+                            <span class="label-activo no">Finalizó</span>
+                            
+                        </div>
+                        <div class="importe">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-coins"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3z" /><path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" /><path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598z" /><path d="M3 6v10c0 .888 .772 1.45 2 2" /><path d="M3 11c0 .888 .772 1.45 2 2" /></svg>
+                            <span>34.154,00 €</span>
+                        </div>
+                    </div>
+
+                    <p class="info">
+                        <span>De ámbito <strong>Nacional</strong>.</span>
+                            <span>Con carácter <strong>Público</strong>.</span>
+                            <span>Se ha otorgado en régimen de <strong>Concurrencia competitiva</strong>.</span>
+                    </p>
+                    
+                    
+
+                    <p class="proyecto-detalle__descripcion">PUESTA EN MARCHA DE UN PROTOTIPO A ESCALA DE
+LABORATORIO DE UNA PLATAFORMA INTEGRADA DE
+CIBERSEGURIDAD</p>
+
+                    
+        
+    
+
+                    
+
+                        
+                    </p>
+                    
+                    <p>
+                        <span>En <strong>colaboración</strong> con otras entidades.</span>
+                        <span>
+                            <strong>Rol:</strong>
+                            <span class="etiqueta" title="Rol en la colaboración">Socio</span>
+                        </span>
+                    </p>
+                    
+                    
+                    
+                    
+                </section>
+
+                
+        
+    
+
+                <section id="miembros" class="proyecto-miembros">
+                    <h2 class="section-title section-title--filterable">
+                        <span>Investigadores/as</span>
+                        <label hidden for="termino">Filtrar por nombre y apellidos</label>
+                        <div class="c-filter">
+                            <button class="c-filter__btn btn btn-secondary">Filtrar</button>
+                            <input id="termino" class="c-filter__input" placeholder="Filtrar por nombre y apellidos" name="termino" type="text" style="display:none;"
+                                   aria-label="Filtrar por nombre y apellidos"/>
+                            <script type="text/javascript">
+                                PCIENCIA.ready(function () {
+                                    new FilterComponent("miembros/filtrar", "personas", "#miembros", ".proyecto-miembros__item").init();
+                                });
+                            </script>
+                        </div>
+                    </h2>
+
+                    <div class="proyecto-miembros__items">
+                        <div data-id="1241016" class="proyecto-miembros__item">
+                            <div class="c-persona-card c-persona-card--horizontal">
+                                <div class="c-persona-card__foto">
+                                    <a href="/investigadores/1241016/detalle">
+                                        <img loading="lazy" src="/img/nophoto-11a61d72634ad47789f777a6311393e0.png" alt="Foto de FRANCISCO JAVIER" width="100%"/>
+                                    </a>
+                                    
+                                </div>
+                                <div class="c-persona-card__detalles">
+                                    <a href="/investigadores/1241016/detalle">
+                                        
+                                        <div class="c-persona-card__nombre">FRANCISCO JAVIER</div>
+                                        <div class="c-persona-card__apellidos">LOPEZ MUÑOZ</div>
+                                    </a>
+                                    
+                                    <div class="c-persona-card__rol">Responsable</div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div data-id="1241243" class="proyecto-miembros__item">
+                            <div class="c-persona-card c-persona-card--horizontal">
+                                <div class="c-persona-card__foto">
+                                    <a href="/investigadores/1241243/detalle">
+                                        <img loading="lazy" src="/img/nophoto-11a61d72634ad47789f777a6311393e0.png" alt="Foto de ISAAC" width="100%"/>
+                                    </a>
+                                    
+                                </div>
+                                <div class="c-persona-card__detalles">
+                                    <a href="/investigadores/1241243/detalle">
+                                        
+                                        <div class="c-persona-card__nombre">ISAAC</div>
+                                        <div class="c-persona-card__apellidos">AGUDO RUIZ</div>
+                                    </a>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div data-id="1241300" class="proyecto-miembros__item">
+                            <div class="c-persona-card c-persona-card--horizontal">
+                                <div class="c-persona-card__foto">
+                                    <a href="/investigadores/1241300/detalle">
+                                        <img loading="lazy" src="/img/uploaded/E4A8BA933BF77FA19E4774EA9C74F88F.png" alt="Foto de MARIA CRISTINA" width="100%"/>
+                                    </a>
+                                    
+                                </div>
+                                <div class="c-persona-card__detalles">
+                                    <a href="/investigadores/1241300/detalle">
+                                        
+                                        <div class="c-persona-card__nombre">MARIA CRISTINA</div>
+                                        <div class="c-persona-card__apellidos">ALCARAZ TELLO</div>
+                                    </a>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div data-id="1241891" class="proyecto-miembros__item">
+                            <div class="c-persona-card c-persona-card--horizontal">
+                                <div class="c-persona-card__foto">
+                                    <a href="/investigadores/1241891/detalle">
+                                        <img loading="lazy" src="/img/uploaded/8F7399B01DE3C6F80E54DB9D27F29C3E.jpg" alt="Foto de JOSE ANTONIO" width="100%"/>
+                                    </a>
+                                    
+                                </div>
+                                <div class="c-persona-card__detalles">
+                                    <a href="/investigadores/1241891/detalle">
+                                        
+                                        <div class="c-persona-card__nombre">JOSE ANTONIO</div>
+                                        <div class="c-persona-card__apellidos">ONIEVA GONZALEZ</div>
+                                    </a>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div data-id="1242038" class="proyecto-miembros__item">
+                            <div class="c-persona-card c-persona-card--horizontal">
+                                <div class="c-persona-card__foto">
+                                    <a href="/investigadores/1242038/detalle">
+                                        <img loading="lazy" src="/img/nophoto-11a61d72634ad47789f777a6311393e0.png" alt="Foto de RODRIGO" width="100%"/>
+                                    </a>
+                                    
+                                </div>
+                                <div class="c-persona-card__detalles">
+                                    <a href="/investigadores/1242038/detalle">
+                                        
+                                        <div class="c-persona-card__nombre">RODRIGO</div>
+                                        <div class="c-persona-card__apellidos">ROMAN CASTRO</div>
+                                    </a>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="miembros-obra" class="proyecto-miembros">
+                    
+
+                    
+                </section>
+            </div>
+
+        
+        </main>
+
+        <nav class="site-navfooter">
+            
+    
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        
+                        <li><a href="/contacto">Contactar</a></li>
+                        
+                        <li><a href="/aviso_legal">Aviso Legal</a></li>
+                        <li><a href="/mapa_sitio">Mapa del sitio</a></li>
+                        <li><a href="https://biblioguias.uma.es/portaldelainvestigacion" target="_blank">Ayuda</a></li>
+                    </ul>                                        
+                </div>
+                <div>
+        <div class="c-langselect">
+            <a href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle" tabindex="0" class="c-langselect--trigger" title="Cambiar idioma">
+                <i class="material-icons material-icons--translate">translate</i> es <i class="material-icons">arrow_drop_down</i>
+            </a>
+            
+            <div class="mdc-menu mdc-menu-surface">
+                <div class="mdc-list">
+                    <a href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=es" title="Español">
+                        <i class="material-icons material-icons--translate">translate</i> es <i class="material-icons">arrow_drop_down</i>
+                    </a>
+                    <a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=ca"
+                       data-lang="ca"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Català i valencià">
+                        ca
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=eu"
+                       data-lang="eu"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Euskara">
+                        eu
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=gl"
+                       data-lang="gl"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Galego">
+                        gl
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=en"
+                       data-lang="en"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="English">
+                        en
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=fr"
+                       data-lang="fr"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Francais">
+                        fr
+                    </a><a class="mdc-list-item" href="https://portaldelainvestigacion.uma.es/proyectos/1918546/detalle?lang=de"
+                       data-lang="de"
+                       onclick="document.cookie=&#39;pciencia.LOCALE=&#39;+this.dataset.lang"
+                       title="Deutsch">
+                        de
+                    </a>
+                </div>
+            </div>
+        </div>        
+    </div>
+            </div>
+        </div>
+    
+
+        </nav>
+        <footer class="site-footer">
+            
+    
+    
+        <section class="site-footer__container">                   
+            <div class="site-footer__direccion">
+                <p class="nombre">Universidad de Málaga</p>
+                <p>Avda. Cervantes, 2. 29071 MÁLAGA</p>
+            </div>
+        </section>
+    
+
+            
+    
+    
+        <div class="site-actualizacion__container">
+            <div class="info-container">
+                Fecha de última actualización de datos:
+                19-11-2026
+                <i class="material-icons">info</i>
+                <div class="info-content">
+                    <p>Los documentos del portal se actualizan diariamente. Esta fecha hace referencia a la actualización de la información relacionada con la estructura del portal (personas, grupos de investigación, unidades organizativas, proyectos...).</p>
+                </div>
+            </div>
+        </div>
+    
+
+            
+    
+    
+        <div class="site-footer__copyright">
+            <div>
+                <span>Proyecto CRIS desarrollado en colaboración con la <strong><a target="_blank" href="https://fundaciondialnet.unirioja.es/" class="externo">Fundación Dialnet</a> (<a target="_blank" href="https://www.unirioja.es/" class="externo">Universidad de La Rioja</a>)</strong></span>
+            </div>
+        </div>       
+        
+
+
+        </footer>
+
+        
+
+    
+
+    
+
+
+        
+
+    
+
+    
+    
+
+        
+    </body>
+</html>
