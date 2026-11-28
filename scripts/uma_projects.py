@@ -52,6 +52,20 @@ for who, rid in PEOPLE.items():
             break
         time.sleep(1.5)
 
+for who, rid in PEOPLE.items():
+    for page in range(0, 4):
+        url = f"{BASE}/financiaciones?personaId={rid}" + (f"&page={page}" if page else "")
+        html = get(url)
+        if not html:
+            break
+        (out / f"financiaciones-{who}-{page}.html").write_text(html)
+        ids = sorted(set(re.findall(r"/proyectos/(\d+)/detalle", html)))
+        new = [i for i in ids if i not in projects[who]]
+        projects[who] += new
+        if not new:
+            break
+        time.sleep(2)
+
 all_ids = sorted({i for ids in projects.values() for i in ids})
 for pid in all_ids:
     if (out / f"proyecto-{pid}.html").exists():
