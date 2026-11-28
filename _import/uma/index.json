@@ -65,38 +65,8 @@
  },
  "log": [
   {
-   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/financiacion",
-   "status": 200,
-   "bytes": 80388
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241180/financiacion",
-   "status": 200,
-   "bytes": 78824
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241695/financiacion",
-   "status": 200,
-   "bytes": 76901
-  },
-  {
    "url": "https://portaldelainvestigacion.uma.es/financiaciones?personaId=1241243",
    "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/financiaciones?personaId=1241180",
-   "status": 200,
-   "bytes": 74486
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/financiaciones?personaId=1241695",
-   "status": 200,
-   "bytes": 72546
-  },
-  {
-   "url": "https://portaldelainvestigacion.uma.es/proyectos/745018/detalle",
-   "status": 200,
-   "bytes": 40475
   }
  ]
 }
