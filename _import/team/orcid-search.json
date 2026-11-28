@@ -1,0 +1,335 @@
+{
+ "antonio": {
+  "expanded-result": [
+   {
+    "orcid-id": "0000-0001-8536-1144",
+    "given-names": "Antonio",
+    "family-names": "Amor Muñoz",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Universidad de Málaga",
+     "University of Skövde"
+    ]
+   },
+   {
+    "orcid-id": "0000-0003-3771-9580",
+    "given-names": "Antonio",
+    "family-names": "Domínguez-Muñoz",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Gobierno de España Ministerio de Sanidad Servicios Sociales e Igualdad",
+     "Instittuto Europeo de Salud y Bienestar Social",
+     "Ministerio de Educación, Cultura y Deporte (España)  |  Ministry of Education and Science (Spain)",
+     "Universidad Camilo José Cela",
+     "Universidad de Málaga",
+     "Universidad de Navarra Facultad de Medicina"
+    ]
+   },
+   {
+    "orcid-id": "0000-0001-7133-7696",
+    "given-names": "Antonio",
+    "family-names": "Luque Muñoz",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "University of Granada",
+     "University of Malaga"
+    ]
+   },
+   {
+    "orcid-id": "0009-0004-0688-4991",
+    "given-names": "Antonio",
+    "family-names": "Muñoz Ramirez",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Universidad de Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0009-0009-1456-2331",
+    "given-names": "Antonio",
+    "family-names": "Vera Muñoz",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Universidad de Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0001-6148-4991",
+    "given-names": "Antonio",
+    "family-names": "Tarrias-Muñoz",
+    "credit-name": null,
+    "other-name": [
+     "Antonio Tarrías-Muñoz",
+     "Antonio Tarrias",
+     "Antonio Tarrías"
+    ],
+    "email": [
+     "atm@ic.uma.es"
+    ],
+    "institution-name": [
+     "Universidad de Málaga",
+     "University of Malaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0002-6751-0625",
+    "given-names": "Antonio",
+    "family-names": "Muñoz",
+    "credit-name": "Antonio Muñoz",
+    "other-name": [
+     "Anto"
+    ],
+    "email": [],
+    "institution-name": [
+     "El Instituto de Tecnologías e Ingeniería del Software",
+     "Ericsson",
+     "Fraunhofer SIT",
+     "Fraunhofer-Institut für Graphische Datenverarbeitung IGD",
+     "Neurosoft",
+     "Universidad de Málaga",
+     "Universidad de Málaga - Campus de Teatinos",
+     "University of Malaga",
+     "University of Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0001-7173-2741",
+    "given-names": "Antonio",
+    "family-names": "Muñoz Merida",
+    "credit-name": null,
+    "other-name": [],
+    "email": [
+     "munoz.merida.a@gmail.com",
+     "amunoz@cibio.up.pt"
+    ],
+    "institution-name": [
+     "CIBIO",
+     "National Institute of Bioinformatics (INB)",
+     "University of Malaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0002-3768-1044",
+    "given-names": "José Antonio",
+    "family-names": "Arjona Muñoz",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "CEIP Enrique Tierno Galván",
+     "Colegio Salesiano San Bartolomé",
+     "Instituto Enseñanza Secundaria Torreatalaya",
+     "Universidad de Malaga",
+     "Universidad de Málaga",
+     "Universidad de Málaga Facultad de Ciencias de la Educación",
+     "Universidad de Málaga Facultad de Derecho"
+    ]
+   },
+   {
+    "orcid-id": "0000-0003-0571-4777",
+    "given-names": "Antonio D.",
+    "family-names": "Muñoz-Vela",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Real Federación Española de Fútbol",
+     "Universidad de Malaga",
+     "Universidad de Navarra",
+     "Universitat de Lleida"
+    ]
+   },
+   {
+    "orcid-id": "0000-0002-1867-413X",
+    "given-names": "Antonio-José",
+    "family-names": "Lázaro-Muñoz",
+    "credit-name": null,
+    "other-name": [
+     "A. J. Lázaro-Muñoz"
+    ],
+    "email": [],
+    "institution-name": [
+     "Indra Software Lab",
+     "Universidad de Córdoba",
+     "Universidad de Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0003-4434-0157",
+    "given-names": "Antonio José",
+    "family-names": "Muñoz-Ramírez",
+    "credit-name": "Antonio J. Munoz-Ramirez",
+    "other-name": [
+     "Antonio Munoz-Ramirez",
+     "Antonio J. Munoz-Ramirez",
+     "Antonio José Muñoz Ramírez",
+     "Antonio J. Muñoz-Ramírez"
+    ],
+    "email": [
+     "aj@uma.es"
+    ],
+    "institution-name": [
+     "Universidad de Málaga",
+     "University of Malaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0001-9518-8955",
+    "given-names": "Antonio Jesús",
+    "family-names": "Muñoz-Montoro",
+    "credit-name": null,
+    "other-name": [
+     "A. Muñoz-Montoro",
+     "A. J. Muñoz-Montoro"
+    ],
+    "email": [
+     "munozantonio@uniovi.es",
+     "jmontoro@ujaen.es",
+     "ajmmontoro@uma.es"
+    ],
+    "institution-name": [
+     "Universidad de Jaén",
+     "Universidad de Málaga",
+     "Universidad de Oviedo"
+    ]
+   },
+   {
+    "orcid-id": "0000-0002-9133-4860",
+    "given-names": "Adolfo Antonio",
+    "family-names": "Muñoz Macho",
+    "credit-name": "Munoz-Macho Adolfo Antonio",
+    "other-name": [
+     "Munoz-Macho, AA"
+    ],
+    "email": [
+     "adolfo.munoz@uib.es"
+    ],
+    "institution-name": [
+     "RCD Mallorca SAD",
+     "Universidad Católica San Antonio de Murcia",
+     "Universidad de Málaga",
+     "Universidad de Sevilla",
+     "University of the Balearic Islands"
+    ]
+   },
+   {
+    "orcid-id": "0009-0005-9037-0930",
+    "given-names": "Juan Antonio",
+    "family-names": "Muñoz Navarro",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Hospital Regional Universitario de Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0002-0253-7632",
+    "given-names": "Antonio-Román",
+    "family-names": "Muñoz",
+    "credit-name": "Muñoz, A.R.",
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Fundación Migres",
+     "Junta de Andalucía",
+     "Nara University",
+     "Universidad de Málaga",
+     "Universidad de Málaga Facultad de Ciencias",
+     "Universidad de Valencia"
+    ]
+   },
+   {
+    "orcid-id": "0000-0002-5239-2670",
+    "given-names": "Antonio M.",
+    "family-names": "Ávila-Muñoz",
+    "credit-name": null,
+    "other-name": [
+     "ANTONIO AVILA MUÑOZ",
+     "ANTONIO AVILA-MUÑOZ",
+     "ANTONIO M. AVILA",
+     "ANTONIO M. AVILA MUÑOZ",
+     "ANTONIO M. AVILA-MUÑOZ",
+     "ANTONIO M. ÁVILA",
+     "ANTONIO M. ÁVILA MUÑOZ",
+     "ANTONIO M. ÁVILA-MUÑOZ",
+     "ANTONIO MANUEL AVILA MUÑOZ",
+     "ANTONIO ÁVILA-MUÑOZ",
+     "ANTONIO-MANUEL AVILA -MUÑOZ",
+     "ANTONIO-MANUEL ÁVILA-MUÑOZ",
+     "ANTONIO MANUEL ÁVILA MUÑOZ"
+    ],
+    "email": [
+     "amavila@uma.es"
+    ],
+    "institution-name": [
+     "Pontificia Universidad Católica de Chile",
+     "Universidad Ca'Foscari",
+     "Universidad de Alicante",
+     "Universidad de Malaga",
+     "Universidad de Málaga",
+     "Universidad de Zúrich"
+    ]
+   }
+  ],
+  "num-found": 17
+ },
+ "sergio": {
+  "expanded-result": [
+   {
+    "orcid-id": "0009-0000-2655-6718",
+    "given-names": "Sergio",
+    "family-names": "López Flores",
+    "credit-name": null,
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Universidad de Málaga"
+    ]
+   },
+   {
+    "orcid-id": "0000-0003-2262-4546",
+    "given-names": "Sergio",
+    "family-names": "Merida-Lopez",
+    "credit-name": "Sergio Mérida-López",
+    "other-name": [
+     "Sergio Mérida"
+    ],
+    "email": [],
+    "institution-name": [
+     "Ministerio de Educación y Cultura",
+     "Universidad de Málaga Facultad de Psicología"
+    ]
+   }
+  ],
+  "num-found": 2
+ },
+ "ruben": {
+  "expanded-result": [
+   {
+    "orcid-id": "0000-0002-6251-4897",
+    "given-names": "Rubén",
+    "family-names": "Ríos del Pozo",
+    "credit-name": "Ruben Rios",
+    "other-name": [],
+    "email": [],
+    "institution-name": [
+     "Hogskolan i Skovde",
+     "Universidad de Malaga",
+     "Universidad de Málaga"
+    ]
+   }
+  ],
+  "num-found": 1
+ }
+}

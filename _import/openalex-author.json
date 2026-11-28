@@ -5,15 +5,16 @@
   "https://orcid.org/0000-0002-2911-2300"
  ],
  "display_name": "Isaac Agudo",
+ "type": null,
  "raw_author_names": [
   "Agudo, Isaac",
   "Isaac Agudo"
  ],
  "full_name": "Agudo, Isaac Lopez",
- "works_count": 97,
+ "works_count": 98,
  "cited_by_count": 1070,
  "summary_stats": {
-  "2yr_mean_citedness": 5.333333333333333,
+  "2yr_mean_citedness": 5.444444444444445,
   "h_index": 17,
   "i10_index": 21
  },
@@ -77,7 +78,7 @@
   {
    "id": "https://openalex.org/T10927",
    "display_name": "Access Control and Trust",
-   "count": 37,
+   "count": 38,
    "subfield": {
     "id": "https://openalex.org/subfields/1705",
     "display_name": "Computer Networks and Communications"
@@ -94,7 +95,7 @@
   {
    "id": "https://openalex.org/T11504",
    "display_name": "Advanced Authentication Protocols Security",
-   "count": 36,
+   "count": 37,
    "subfield": {
     "id": "https://openalex.org/subfields/1705",
     "display_name": "Computer Networks and Communications"
@@ -164,7 +165,24 @@
   {
    "id": "https://openalex.org/T10927",
    "display_name": "Access Control and Trust",
-   "value": 0.0002407,
+   "value": 0.0002467,
+   "subfield": {
+    "id": "https://openalex.org/subfields/1705",
+    "display_name": "Computer Networks and Communications"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/17",
+    "display_name": "Computer Science"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/3",
+    "display_name": "Physical Sciences"
+   }
+  },
+  {
+   "id": "https://openalex.org/T11504",
+   "display_name": "Advanced Authentication Protocols Security",
+   "value": 0.0001947,
    "subfield": {
     "id": "https://openalex.org/subfields/1705",
     "display_name": "Computer Networks and Communications"
@@ -181,7 +199,7 @@
   {
    "id": "https://openalex.org/T11614",
    "display_name": "Cloud Data Security Solutions",
-   "value": 0.0001916,
+   "value": 0.0001911,
    "subfield": {
     "id": "https://openalex.org/subfields/1710",
     "display_name": "Information Systems"
@@ -196,26 +214,9 @@
    }
   },
   {
-   "id": "https://openalex.org/T11504",
-   "display_name": "Advanced Authentication Protocols Security",
-   "value": 0.0001897,
-   "subfield": {
-    "id": "https://openalex.org/subfields/1705",
-    "display_name": "Computer Networks and Communications"
-   },
-   "field": {
-    "id": "https://openalex.org/fields/17",
-    "display_name": "Computer Science"
-   },
-   "domain": {
-    "id": "https://openalex.org/domains/3",
-    "display_name": "Physical Sciences"
-   }
-  },
-  {
    "id": "https://openalex.org/T11800",
    "display_name": "User Authentication and Security Systems",
-   "value": 0.0001594,
+   "value": 0.0001593,
    "subfield": {
     "id": "https://openalex.org/subfields/1710",
     "display_name": "Information Systems"
@@ -232,7 +233,7 @@
   {
    "id": "https://openalex.org/T10237",
    "display_name": "Cryptography and Data Security",
-   "value": 0.0001278,
+   "value": 0.0001277,
    "subfield": {
     "id": "https://openalex.org/subfields/1705",
     "display_name": "Computer Networks and Communications"
@@ -332,49 +333,49 @@
    "year": 2012,
    "works_count": 5,
    "oa_works_count": 0,
-   "cited_by_count": 41
+   "cited_by_count": 42
   },
   {
    "year": 2013,
    "works_count": 3,
    "oa_works_count": 1,
-   "cited_by_count": 56
+   "cited_by_count": 51
   },
   {
    "year": 2014,
    "works_count": 5,
    "oa_works_count": 1,
-   "cited_by_count": 79
+   "cited_by_count": 76
   },
   {
    "year": 2015,
    "works_count": 6,
    "oa_works_count": 1,
-   "cited_by_count": 84
+   "cited_by_count": 82
   },
   {
    "year": 2016,
    "works_count": 7,
    "oa_works_count": 1,
-   "cited_by_count": 75
+   "cited_by_count": 77
   },
   {
    "year": 2017,
    "works_count": 4,
    "oa_works_count": 2,
-   "cited_by_count": 81
+   "cited_by_count": 83
   },
   {
    "year": 2018,
    "works_count": 0,
    "oa_works_count": 0,
-   "cited_by_count": 63
+   "cited_by_count": 61
   },
   {
    "year": 2019,
    "works_count": 4,
    "oa_works_count": 2,
-   "cited_by_count": 63
+   "cited_by_count": 62
   },
   {
    "year": 2020,
@@ -386,13 +387,13 @@
    "year": 2021,
    "works_count": 0,
    "oa_works_count": 0,
-   "cited_by_count": 51
+   "cited_by_count": 50
   },
   {
    "year": 2022,
    "works_count": 2,
    "oa_works_count": 2,
-   "cited_by_count": 42
+   "cited_by_count": 43
   },
   {
    "year": 2023,
@@ -404,19 +405,19 @@
    "year": 2024,
    "works_count": 2,
    "oa_works_count": 2,
-   "cited_by_count": 67
+   "cited_by_count": 69
   },
   {
    "year": 2025,
    "works_count": 5,
    "oa_works_count": 3,
-   "cited_by_count": 92
+   "cited_by_count": 95
   },
   {
    "year": 2026,
-   "works_count": 1,
+   "works_count": 2,
    "oa_works_count": 1,
-   "cited_by_count": 106
+   "cited_by_count": 110
   }
  ],
  "display_name_alternatives": [
@@ -427,6 +428,6 @@
  "works_api_url": "https://api.openalex.org/works?filter=author.id:A5053752266",
  "awards_count": 0,
  "awards_api_url": "https://api.openalex.org/awards?filter=investigators.author.id:A5053752266",
- "updated_date": "2026-11-21T13:19:37",
+ "updated_date": "2026-11-28T10:16:11",
  "created_date": "2016-06-24T00:00:00"
 }

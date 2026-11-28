@@ -1,0 +1,106 @@
+[
+ {
+  "url": "https://api.openalex.org/authors/orcid:0000-0002-2911-2300",
+  "status": 200,
+  "bytes": 7485
+ },
+ {
+  "url": "https://api.openalex.org/authors?search=Isaac+Agudo&per-page=25",
+  "status": 200,
+  "bytes": 21426
+ },
+ {
+  "url": "https://api.openalex.org/authors/orcid:0000-0002-6251-4897",
+  "status": 200,
+  "bytes": 7287
+ },
+ {
+  "url": "https://api.openalex.org/authors?search=Ruben+Rios&per-page=25",
+  "status": 200,
+  "bytes": 153238
+ },
+ {
+  "url": "https://api.openalex.org/authors?search=Antonio+Mu%C3%B1oz+Gallego&per-page=25",
+  "status": 200,
+  "bytes": 47724
+ },
+ {
+  "url": "https://api.openalex.org/authors?search=Sergio+L%C3%B3pez+Flores&per-page=25",
+  "status": 200,
+  "bytes": 7423
+ },
+ {
+  "url": "https://api.openalex.org/authors?search=Antonio+Mu%C3%B1oz&filter=last_known_institutions.country_code%3AES&per-page=50",
+  "status": 200,
+  "bytes": 541808
+ },
+ {
+  "url": "https://api.openalex.org/authors?search=Antonio+J.+Mu%C3%B1oz&filter=last_known_institutions.country_code%3AES&per-page=50",
+  "status": 200,
+  "bytes": 276990
+ },
+ {
+  "url": "https://api.openalex.org/authors?search=Sergio+L%C3%B3pez&filter=last_known_institutions.country_code%3AES&per-page=50",
+  "status": 200,
+  "bytes": 434675
+ },
+ {
+  "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names%3AAntonio+AND+family-name%3A%28Mu%2Aoz%29+AND+affiliation-org-name%3AM%2Alaga&rows=50",
+  "status": 200,
+  "bytes": 5554
+ },
+ {
+  "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names%3ASergio+AND+family-name%3A%28L%2Apez%29+AND+affiliation-org-name%3AM%2Alaga&rows=50",
+  "status": 200,
+  "bytes": 492
+ },
+ {
+  "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name%3AR%2Aos+AND+given-names%3ARub%2An+AND+affiliation-org-name%3AM%2Alaga&rows=50",
+  "status": 200,
+  "bytes": 270
+ },
+ {
+  "url": "https://patents.google.com/xhr/query?url=q%3Dinventor%253A%2522Ruben%2BRios%2522%26num%3D100&exp=",
+  "error": "<HTTPError 503: 'Service Unavailable'>"
+ },
+ {
+  "url": "https://patents.google.com/xhr/query?url=q%3Dinventor%253A%2522Rios%2Bdel%2BPozo%2522%26num%3D100&exp=",
+  "error": "<HTTPError 503: 'Service Unavailable'>"
+ },
+ {
+  "url": "https://patents.google.com/xhr/query?url=q%3Dinventor%253A%2522Antonio%2BMunoz%2BGallego%2522%26num%3D100&exp=",
+  "error": "<HTTPError 503: 'Service Unavailable'>"
+ },
+ {
+  "url": "https://patents.google.com/xhr/query?url=q%3Dinventor%253A%2522Antonio%2BMu%25C3%25B1oz%2BGallego%2522%26num%3D100&exp=",
+  "error": "<HTTPError 503: 'Service Unavailable'>"
+ },
+ {
+  "url": "https://patents.google.com/xhr/query?url=q%3Dinventor%253A%2522Sergio%2BLopez%2BFlores%2522%26num%3D100&exp=",
+  "error": "<HTTPError 503: 'Service Unavailable'>"
+ },
+ {
+  "url": "https://patents.google.com/xhr/query?url=q%3Dinventor%253A%2522Isaac%2BAgudo%2522%26num%3D100&exp=",
+  "error": "<HTTPError 503: 'Service Unavailable'>"
+ },
+ {
+  "url": "https://scholar.google.com/citations?user=JGd3lHkAAAAJ&hl=en",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "url": "https://scholar.google.com/citations?view_op=search_authors&mauthors=Ruben+Rios+Malaga&hl=en",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "url": "https://scholar.google.com/citations?view_op=search_authors&mauthors=Antonio+Mu%C3%B1oz+Malaga&hl=en",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "url": "https://scholar.google.com/citations?view_op=search_authors&mauthors=Sergio+L%C3%B3pez+Flores&hl=en",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "url": "https://www.nics.uma.es/people/",
+  "error": "<HTTPError 404: 'Not Found'>"
+ }
+]

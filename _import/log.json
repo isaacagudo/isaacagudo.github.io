@@ -2,32 +2,32 @@
  {
   "url": "https://pub.orcid.org/v3.0/0000-0002-2911-2300/record",
   "status": 200,
-  "bytes": 202341
+  "bytes": 203941
  },
  {
   "url": "https://pub.orcid.org/v3.0/0000-0002-2911-2300/works",
   "status": 200,
-  "bytes": 188038
+  "bytes": 189638
  },
  {
   "url": "https://dblp.org/pid/23/6961.bib",
   "status": 202,
-  "bytes": 3295
+  "bytes": 3296
  },
  {
   "url": "https://dblp.org/pid/23/6961.xml",
   "status": 202,
-  "bytes": 3295
+  "bytes": 2987
  },
  {
   "url": "https://api.openalex.org/authors/orcid:0000-0002-2911-2300",
   "status": 200,
-  "bytes": 7473
+  "bytes": 7485
  },
  {
   "url": "https://api.openalex.org/works?filter=author.id:A5053752266&per-page=200&cursor=%2A",
   "status": 200,
-  "bytes": 1179883
+  "bytes": 1214956
  },
  {
   "url": "https://api.crossref.org/works/10.1002/cpe.1430",
@@ -227,6 +227,11 @@
   "bytes": 7583
  },
  {
+  "url": "https://api.crossref.org/works/10.1109/access.2026.3757643",
+  "status": 200,
+  "bytes": 3066
+ },
+ {
   "url": "https://api.crossref.org/works/10.1109/cloudcom.2011.79",
   "status": 200,
   "bytes": 4699
@@ -264,7 +269,7 @@
  {
   "url": "https://api.crossref.org/works/10.1109/metacom57706.2023.00056",
   "status": 200,
-  "bytes": 6860
+  "bytes": 6862
  },
  {
   "url": "https://api.crossref.org/works/10.1109/ncm.2008.173",
@@ -274,7 +279,7 @@
  {
   "url": "https://api.crossref.org/works/10.1109/tvt.2020.3046640",
   "status": 200,
-  "bytes": 11506
+  "bytes": 11497
  },
  {
   "url": "https://api.crossref.org/works/10.1109/vtc2023-fall60731.2023.10333713",
@@ -347,73 +352,60 @@
  },
  {
   "url": "https://patents.google.com/xhr/query?url=q%3Dinventor%253A%2522Isaac%2BAgudo%2522%26num%3D100&exp=",
-  "status": 200,
-  "bytes": 18251
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://patents.google.com/xhr/query?url=q%3Dinventor%253A%2522Agudo%2BRuiz%2522%26num%3D100&exp=",
-  "status": 200,
-  "bytes": 2734
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://patents.google.com/xhr/query?url=q%3Dinventor%253A%2522Isaac%2BAgudo%2BRuiz%2522%26num%3D100&exp=",
-  "status": 200,
-  "bytes": 1701
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://patents.google.com/patent/US10691817B2/en",
-  "status": 200,
-  "bytes": 357061
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://patents.google.com/patent/US20180091301A1/en",
-  "status": 200,
-  "bytes": 275961
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://patents.google.com/patent/WO2018102382A1/en",
-  "status": 200,
-  "bytes": 214687
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://patents.google.com/patent/US10581603B2/en",
-  "status": 200,
-  "bytes": 553841
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://patents.google.com/patent/WO2018208786A1/en",
-  "status": 200,
-  "bytes": 402320
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://patents.google.com/patent/US10574440B2/en",
-  "status": 200,
-  "bytes": 443086
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://patents.google.com/patent/WO2018208787A1/en",
-  "status": 200,
-  "bytes": 326361
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://patents.google.com/patent/ES3075470A1/en",
-  "status": 200,
-  "bytes": 20060
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://patents.google.com/patent/WO2026162858A1/en",
-  "status": 200,
-  "bytes": 132803
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://patents.google.com/patent/EP2809027B1/en",
-  "status": 200,
-  "bytes": 338232
+  "error": "<HTTPError 503: 'Service Unavailable'>"
  },
  {
   "url": "https://dblp.org/search/publ/api?q=author%3AIsaac_Agudo%3A&format=json&h=1000",
   "status": 202,
-  "bytes": 2986
+  "bytes": 2987
  },
  {
   "url": "https://api.semanticscholar.org/graph/v1/author/search?query=Isaac+Agudo&fields=name%2Caffiliations%2CpaperCount%2CexternalIds",
@@ -422,26 +414,27 @@
  },
  {
   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=1",
-  "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  "status": 200,
+  "bytes": 68762
  },
  {
   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=2",
   "status": 200,
-  "bytes": 80323
+  "bytes": 68762
  },
  {
   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=3",
   "status": 200,
-  "bytes": 80323
+  "bytes": 68762
  },
  {
   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=4",
-  "status": 200,
-  "bytes": 80323
+  "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
  },
  {
   "url": "https://portaldelainvestigacion.uma.es/investigadores/1241243/publicaciones?lang=en&page=5",
-  "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  "status": 200,
+  "bytes": 68762
  },
  {
   "url": "https://eprint.iacr.org/2026/1804",

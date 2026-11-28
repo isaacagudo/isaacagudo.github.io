@@ -17011,6 +17011,235 @@
    ]
   }
  },
+ "10.1109/access.2026.3757643": {
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     11,
+     27
+    ]
+   ],
+   "date-time": "2026-11-27T21:09:40Z",
+   "timestamp": 1795813780558,
+   "version": "4.11.3"
+  },
+  "reference-count": 0,
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2026,
+       1,
+       1
+      ]
+     ],
+     "date-time": "2026-01-01T00:00:00Z",
+     "timestamp": 1767225600000
+    },
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+   }
+  ],
+  "funder": [
+   {
+    "name": "European Union\u2019s Horizon Europe research and innovation programme",
+    "award": [
+     "101168467"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "101168467"
+      ]
+     }
+    ]
+   }
+  ],
+  "content-domain": {
+   "domain": [],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [
+   "IEEE Access"
+  ],
+  "published-print": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  },
+  "DOI": "10.1109/access.2026.3757643",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2026,
+     11,
+     26
+    ]
+   ],
+   "date-time": "2026-11-26T20:05:16Z",
+   "timestamp": 1795723516000
+  },
+  "page": "1-1",
+  "source": "Crossref",
+  "is-referenced-by-count": 0,
+  "title": [
+   "Privacy Risks in Tabular Data: A Risk-Oriented Review of Disclosure Threats, Evaluation Metrics, and Mitigation Strategies"
+  ],
+  "prefix": "10.1109",
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0009-0000-8173-8434",
+    "authenticated-orcid": false,
+    "given": "Francisco",
+    "family": "Zafra",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "University of M\u00e1laga",
+      "place": [
+       "M\u00e1laga, Spain"
+      ]
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-2911-2300",
+    "authenticated-orcid": false,
+    "given": "Isaac",
+    "family": "Agudo",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "University of M\u00e1laga",
+      "place": [
+       "M\u00e1laga, Spain"
+      ],
+      "department": [
+       "Network, Information and Computer Security (NICS) Lab"
+      ]
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-6251-4897",
+    "authenticated-orcid": false,
+    "given": "Ruben",
+    "family": "Rios",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "University of M\u00e1laga",
+      "place": [
+       "M\u00e1laga, Spain"
+      ],
+      "department": [
+       "Network, Information and Computer Security (NICS) Lab"
+      ]
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Miguel",
+    "family": "Calvo",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Tree Technology"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "263",
+  "container-title": [
+   "IEEE Access"
+  ],
+  "original-title": [],
+  "link": [
+   {
+    "URL": "http://xplorestaging.ieee.org/ielx8/6287639/6514899/11815856.pdf?arnumber=11815856",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2026,
+     11,
+     27
+    ]
+   ],
+   "date-time": "2026-11-27T20:10:23Z",
+   "timestamp": 1795810223000
+  },
+  "score": 1,
+  "resource": {
+   "primary": {
+    "URL": "https://ieeexplore.ieee.org/document/11815856/"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  },
+  "references-count": 0,
+  "URL": "https://doi.org/10.1109/access.2026.3757643",
+  "relation": {},
+  "ISSN": [
+   "2169-3536"
+  ],
+  "issn-type": [
+   {
+    "value": "2169-3536",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  }
+ },
  "10.1109/cloudcom.2011.79": {
   "indexed": {
    "date-parts": [
@@ -19222,13 +19451,13 @@
    "date-parts": [
     [
      2026,
-     9,
-     30
+     11,
+     24
     ]
    ],
-   "date-time": "2026-09-30T16:57:44Z",
-   "timestamp": 1790787464956,
-   "version": "4.1.0"
+   "date-time": "2026-11-24T15:18:23Z",
+   "timestamp": 1795533503925,
+   "version": "4.11.0"
   },
   "reference-count": 44,
   "publisher": "IEEE",
@@ -19308,7 +19537,7 @@
   },
   "page": "266-273",
   "source": "Crossref",
-  "is-referenced-by-count": 1,
+  "is-referenced-by-count": 2,
   "title": [
    "Integration of MPC into Besu through an extended private transaction model"
   ],
@@ -19862,13 +20091,13 @@
    "date-parts": [
     [
      2026,
-     9,
-     12
+     11,
+     25
     ]
    ],
-   "date-time": "2026-09-12T17:42:05Z",
-   "timestamp": 1789234925535,
-   "version": "build-2803163510"
+   "date-time": "2026-11-25T18:02:58Z",
+   "timestamp": 1795629778621,
+   "version": "4.11.3"
   },
   "reference-count": 77,
   "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
@@ -19999,7 +20228,7 @@
   },
   "page": "4001-4010",
   "source": "Crossref",
-  "is-referenced-by-count": 33,
+  "is-referenced-by-count": 34,
   "title": [
    "A Blockchain Approach for Decentralized V2X (D-V2X)"
   ],
