@@ -52,56 +52,32 @@ def save(name, obj):
         p.write_text(json.dumps(obj, indent=1, ensure_ascii=False))
 
 
-# OpenAlex: authors by ORCID where known, by name search otherwise
-people = {
-    "isaac": {"orcid": "0000-0002-2911-2300", "search": "Isaac Agudo"},
-    "ruben": {"orcid": "0000-0002-6251-4897", "search": "Ruben Rios"},
-    "antonio": {"orcid": None, "search": "Antonio Muñoz Gallego"},
-    "sergio": {"orcid": None, "search": "Sergio López Flores"},
-}
-for key, p in people.items():
-    res = {}
-    if p["orcid"]:
-        res["by_orcid"] = as_json(get(f"https://api.openalex.org/authors/orcid:{p['orcid']}"))
-    res["search"] = as_json(get("https://api.openalex.org/authors?" + urllib.parse.urlencode(
-        {"search": p["search"], "per-page": "25"})))
-    save(f"openalex-{key}.json", res)
+# Round 2: ORCID records and OpenAlex works for the identified profiles
+ids = {"isaac": ("0000-0002-2911-2300", "A5053752266"),
+       "ruben": ("0000-0002-6251-4897", "A5070742888"),
+       "antonio": ("0000-0002-6751-0625", "A5101720746"),
+       "sergio": ("0009-0000-2655-6718", "A5128206455")}
+for key, (orc, oa) in ids.items():
+    save(f"orcid-record-{key}.json", as_json(get(f"https://pub.orcid.org/v3.0/{orc}/record")))
+    works, cursor = [], "*"
+    while cursor:
+        page = as_json(get("https://api.openalex.org/works?" + urllib.parse.urlencode({
+            "filter": f"author.id:{oa}", "per-page": "200", "cursor": cursor,
+            "select": "id,doi,title,type,publication_year,cited_by_count,primary_location,authorships"})))
+        if not page or not page.get("results"):
+            break
+        works += page["results"]
+        cursor = page.get("meta", {}).get("next_cursor")
+    save(f"openalex-works-{key}.json", works)
     time.sleep(0.5)
 
-# Extra name variants that OpenAlex may hold
-for key, q in (("antonio2", "Antonio Muñoz"), ("antonio3", "Antonio J. Muñoz"), ("sergio2", "Sergio López")):
-    save(f"openalex-{key}.json", {"search": as_json(get("https://api.openalex.org/authors?" + urllib.parse.urlencode(
-        {"search": q, "filter": "last_known_institutions.country_code:ES", "per-page": "50"})))})
-
-# ORCID directory
-orcid = {}
-for key, q in (
-    ("antonio", 'given-names:Antonio AND family-name:(Mu*oz) AND affiliation-org-name:M*laga'),
-    ("sergio", 'given-names:Sergio AND family-name:(L*pez) AND affiliation-org-name:M*laga'),
-    ("ruben", 'family-name:R*os AND given-names:Rub*n AND affiliation-org-name:M*laga'),
-):
-    orcid[key] = as_json(get("https://pub.orcid.org/v3.0/expanded-search/?" + urllib.parse.urlencode({"q": q, "rows": "50"})))
-save("orcid-search.json", orcid)
-
-# Google Patents by inventor
 patents = {}
 for q in ('inventor:"Ruben Rios"', 'inventor:"Rios del Pozo"', 'inventor:"Antonio Munoz Gallego"',
-          'inventor:"Antonio Muñoz Gallego"', 'inventor:"Sergio Lopez Flores"', 'inventor:"Isaac Agudo"'):
+          'inventor:"Sergio Lopez Flores"'):
     inner = urllib.parse.urlencode({"q": q, "num": "100"})
     patents[q] = as_json(get("https://patents.google.com/xhr/query?" + urllib.parse.urlencode({"url": inner, "exp": ""})))
-    time.sleep(1)
-save("google-patents.json", patents)
-
-# Google Scholar: profile pages (may be blocked)
-scholar = {}
-save("scholar-isaac.html", get("https://scholar.google.com/citations?user=JGd3lHkAAAAJ&hl=en", accept="text/html", ua=UA_WEB))
-for key, q in (("ruben", "Ruben Rios Malaga"), ("antonio", "Antonio Muñoz Malaga"), ("sergio", "Sergio López Flores")):
-    save(f"scholar-search-{key}.html", get("https://scholar.google.com/citations?" + urllib.parse.urlencode(
-        {"view_op": "search_authors", "mauthors": q, "hl": "en"}), accept="text/html", ua=UA_WEB))
-    time.sleep(3)
-
-# NICS Lab people pages (names, positions)
-save("nics-people.html", get("https://www.nics.uma.es/people/", accept="text/html", ua=UA_WEB))
+    time.sleep(5)
+save("google-patents-2.json", patents)
 
 (out / "log.json").write_text(json.dumps(log, indent=1))
 for e in log:
