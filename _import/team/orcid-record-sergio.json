@@ -1,0 +1,579 @@
+{
+ "orcid-identifier": {
+  "uri": "https://orcid.org/0009-0000-2655-6718",
+  "path": "0009-0000-2655-6718",
+  "host": "orcid.org"
+ },
+ "preferences": {
+  "locale": "en"
+ },
+ "history": {
+  "creation-method": "DIRECT",
+  "completion-date": null,
+  "submission-date": {
+   "value": 1742550246120
+  },
+  "last-modified-date": {
+   "value": 1794384358770
+  },
+  "claimed": true,
+  "source": null,
+  "deactivation-date": null,
+  "verified-email": true,
+  "verified-primary-email": true
+ },
+ "person": {
+  "last-modified-date": null,
+  "name": {
+   "created-date": {
+    "value": 1742550246273
+   },
+   "last-modified-date": {
+    "value": 1742550246273
+   },
+   "given-names": {
+    "value": "Sergio"
+   },
+   "family-name": {
+    "value": "López Flores"
+   },
+   "credit-name": null,
+   "source": null,
+   "visibility": "public",
+   "path": "0009-0000-2655-6718"
+  },
+  "other-names": {
+   "last-modified-date": null,
+   "other-name": [],
+   "path": "/0009-0000-2655-6718/other-names"
+  },
+  "biography": null,
+  "researcher-urls": {
+   "last-modified-date": null,
+   "researcher-url": [],
+   "path": "/0009-0000-2655-6718/researcher-urls"
+  },
+  "emails": {
+   "last-modified-date": null,
+   "email": [],
+   "path": "/0009-0000-2655-6718/email"
+  },
+  "addresses": {
+   "last-modified-date": null,
+   "address": [],
+   "path": "/0009-0000-2655-6718/address"
+  },
+  "keywords": {
+   "last-modified-date": null,
+   "keyword": [],
+   "path": "/0009-0000-2655-6718/keywords"
+  },
+  "external-identifiers": {
+   "last-modified-date": null,
+   "external-identifier": [],
+   "path": "/0009-0000-2655-6718/external-identifiers"
+  },
+  "path": "/0009-0000-2655-6718/person"
+ },
+ "activities-summary": {
+  "last-modified-date": {
+   "value": 1794384358772
+  },
+  "distinctions": {
+   "last-modified-date": null,
+   "affiliation-group": [],
+   "path": "/0009-0000-2655-6718/distinctions"
+  },
+  "educations": {
+   "last-modified-date": null,
+   "affiliation-group": [],
+   "path": "/0009-0000-2655-6718/educations"
+  },
+  "employments": {
+   "last-modified-date": {
+    "value": 1742550246645
+   },
+   "affiliation-group": [
+    {
+     "last-modified-date": {
+      "value": 1742550246645
+     },
+     "external-ids": {
+      "external-id": []
+     },
+     "summaries": [
+      {
+       "employment-summary": {
+        "created-date": {
+         "value": 1742550246645
+        },
+        "last-modified-date": {
+         "value": 1742550246645
+        },
+        "source": {
+         "source-orcid": {
+          "uri": "https://orcid.org/0009-0000-2655-6718",
+          "path": "0009-0000-2655-6718",
+          "host": "orcid.org"
+         },
+         "source-client-id": null,
+         "source-name": {
+          "value": "Sergio López Flores"
+         },
+         "assertion-origin-orcid": null,
+         "assertion-origin-client-id": null,
+         "assertion-origin-name": null
+        },
+        "put-code": 28284714,
+        "department-name": "Languages and Computer Science Department",
+        "role-title": "Researcher",
+        "start-date": {
+         "year": {
+          "value": "2024"
+         },
+         "month": {
+          "value": "03"
+         },
+         "day": null
+        },
+        "end-date": null,
+        "organization": {
+         "name": "Universidad de Málaga",
+         "address": {
+          "city": "Málaga",
+          "region": "Andalusia",
+          "country": "ES"
+         },
+         "disambiguated-organization": {
+          "disambiguated-organization-identifier": "https://ror.org/036b2ww28",
+          "disambiguation-source": "ROR"
+         }
+        },
+        "url": null,
+        "external-ids": null,
+        "display-index": "0",
+        "visibility": "public",
+        "path": "/0009-0000-2655-6718/employment/28284714"
+       }
+      }
+     ]
+    }
+   ],
+   "path": "/0009-0000-2655-6718/employments"
+  },
+  "fundings": {
+   "last-modified-date": null,
+   "group": [],
+   "path": "/0009-0000-2655-6718/fundings"
+  },
+  "invited-positions": {
+   "last-modified-date": null,
+   "affiliation-group": [],
+   "path": "/0009-0000-2655-6718/invited-positions"
+  },
+  "memberships": {
+   "last-modified-date": null,
+   "affiliation-group": [],
+   "path": "/0009-0000-2655-6718/memberships"
+  },
+  "peer-reviews": {
+   "last-modified-date": null,
+   "group": [],
+   "path": "/0009-0000-2655-6718/peer-reviews"
+  },
+  "qualifications": {
+   "last-modified-date": null,
+   "affiliation-group": [],
+   "path": "/0009-0000-2655-6718/qualifications"
+  },
+  "research-resources": {
+   "last-modified-date": null,
+   "group": [],
+   "path": "/0009-0000-2655-6718/research-resources"
+  },
+  "services": {
+   "last-modified-date": null,
+   "affiliation-group": [],
+   "path": "/0009-0000-2655-6718/services"
+  },
+  "works": {
+   "last-modified-date": {
+    "value": 1794384358772
+   },
+   "group": [
+    {
+     "last-modified-date": {
+      "value": 1791211201878
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1038/s41598-026-72663-z",
+        "external-id-normalized": {
+         "value": "10.1038/s41598-026-72663-z",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1038/s41598-026-72663-z"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 228782006,
+       "created-date": {
+        "value": 1791211201878
+       },
+       "last-modified-date": {
+        "value": 1791211201878
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Evidence-centric certification maintenance under continuous system change"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1038/s41598-026-72663-z",
+          "external-id-normalized": {
+           "value": "10.1038/s41598-026-72663-z",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1038/s41598-026-72663-z"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1038/s41598-026-72663-z"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2026"
+        },
+        "month": {
+         "value": "10"
+        },
+        "day": {
+         "value": "05"
+        }
+       },
+       "journal-title": {
+        "value": "Scientific Reports"
+       },
+       "visibility": "public",
+       "path": "/0009-0000-2655-6718/work/228782006",
+       "display-index": "1"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1794384358772
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1007/s11416-026-00661-w",
+        "external-id-normalized": {
+         "value": "10.1007/s11416-026-00661-w",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1007/s11416-026-00661-w"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 233092582,
+       "created-date": {
+        "value": 1794384358772
+       },
+       "last-modified-date": {
+        "value": 1794384358772
+       },
+       "source": {
+        "source-orcid": {
+         "uri": "https://orcid.org/0009-0000-2655-6718",
+         "path": "0009-0000-2655-6718",
+         "host": "orcid.org"
+        },
+        "source-client-id": null,
+        "source-name": {
+         "value": "Sergio López Flores"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Resource-aware electromagnetic malware classification on edge platforms: a controlled cross-platform comparison using Raspberry Pi 5 EM traces"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1007/s11416-026-00661-w",
+          "external-id-normalized": {
+           "value": "10.1007/s11416-026-00661-w",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1007/s11416-026-00661-w"
+          },
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "issn",
+          "external-id-value": "2263-8733",
+          "external-id-normalized": {
+           "value": "2263-8733",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://portal.issn.org/resource/ISSN/2263-8733"
+          },
+          "external-id-relationship": "part-of"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://dx.doi.org/10.1007/s11416-026-00661-w"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2026"
+        },
+        "month": {
+         "value": "08"
+        },
+        "day": {
+         "value": "28"
+        }
+       },
+       "journal-title": {
+        "value": "Journal of Computer Virology and Hacking Techniques"
+       },
+       "visibility": "public",
+       "path": "/0009-0000-2655-6718/work/233092582",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1774783609507
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.2139/ssrn.6487378",
+        "external-id-normalized": {
+         "value": "10.2139/ssrn.6487378",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.2139/ssrn.6487378"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 210048129,
+       "created-date": {
+        "value": 1774783609507
+       },
+       "last-modified-date": {
+        "value": 1774783609507
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Behaviorally Grounded Agent-Based Benign Traffic Generation with LLM-Driven Action Variability for Intrusion Detection Evaluation"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.2139/ssrn.6487378",
+          "external-id-normalized": {
+           "value": "10.2139/ssrn.6487378",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.2139/ssrn.6487378"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.2139/ssrn.6487378"
+       },
+       "type": "preprint",
+       "publication-date": {
+        "year": {
+         "value": "2026"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": null,
+       "visibility": "public",
+       "path": "/0009-0000-2655-6718/work/210048129",
+       "display-index": "1"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1784904338659
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.2139/ssrn.7173687",
+        "external-id-normalized": {
+         "value": "10.2139/ssrn.7173687",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.2139/ssrn.7173687"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 221714642,
+       "created-date": {
+        "value": 1784904338659
+       },
+       "last-modified-date": {
+        "value": 1784904338659
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Execution Observability in Intel TDX: A Framework for Residual Side-Channel Analysis"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.2139/ssrn.7173687",
+          "external-id-normalized": {
+           "value": "10.2139/ssrn.7173687",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.2139/ssrn.7173687"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.2139/ssrn.7173687"
+       },
+       "type": "preprint",
+       "publication-date": {
+        "year": {
+         "value": "2026"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": null,
+       "visibility": "public",
+       "path": "/0009-0000-2655-6718/work/221714642",
+       "display-index": "1"
+      }
+     ]
+    }
+   ],
+   "path": "/0009-0000-2655-6718/works"
+  },
+  "path": "/0009-0000-2655-6718/activities"
+ },
+ "path": "/0009-0000-2655-6718"
+}

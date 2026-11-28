@@ -1,0 +1,198 @@
+{
+ "inventor:\"Ruben Rios\"": {
+  "results": {
+   "total_num_results": 1,
+   "total_num_pages": 1,
+   "many_results": false,
+   "num_page": 0,
+   "cluster": [
+    {
+     "result": [
+      {
+       "id": "patent/ES2708898A1/en",
+       "rank": 0,
+       "patent": {
+        "title": " Bidirectional Virtual Image Projector (Machine-translation by Google Translate, &hellip;",
+        "snippet": " BRIEF DESCRIPTION OF THE DRAWINGS In the following, a series of drawings that help to better understand the <b>invention</b> and that are expressly related to a realization of said <b>invention</b> that is presented as a non-limiting example thereof, is briefly described. Figures 1A, 1B and 1C.- They show &hellip;",
+        "priority_date": "2017-10-11",
+        "filing_date": "2017-10-11",
+        "publication_date": "2019-04-11",
+        "inventor": "Peces Ruben Rios",
+        "assignee": "Peces Ruben Rios",
+        "publication_number": "ES2708898A1",
+        "language": "en",
+        "thumbnail": "",
+        "pdf": "5a/a2/16/8f70279a8f9e21/ES2708898A1.pdf",
+        "family_metadata": {
+         "aggregated": {
+          "country_status": [
+           {
+            "country_code": "ES",
+            "best_patent_stage": {
+             "state": "NOT_ACTIVE"
+            }
+           }
+          ]
+         }
+        }
+       },
+       "is_similar_document": false,
+       "entity_matches": {
+        "additional": 0
+       },
+       "measure_matches": {}
+      }
+     ]
+    }
+   ],
+   "chem_exhausted": false,
+   "summary": {
+    "assignee": [
+     {
+      "key": "Peces Ruben Rios",
+      "value": 1000,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Total",
+      "value": 1000,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 1
+       }
+      ]
+     }
+    ],
+    "inventor": [
+     {
+      "key": "Gomez Francisco Javier Rios",
+      "value": 1000,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "San Roman Clara Amparo Peces",
+      "value": 1000,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Peces Sandra Rios",
+      "value": 1000,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Total",
+      "value": 1000,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Peces Ruben Rios",
+      "value": 1000,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 1
+       }
+      ]
+     }
+    ],
+    "cpc": [
+     {
+      "key": "G02B",
+      "value": 1000,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "H04N",
+      "value": 1000,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "key": "Total",
+      "value": 1000,
+      "frequency": [
+       {
+        "key": "2016-2019",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "inventor:\"Rios del Pozo\"": {
+  "results": {
+   "total_num_results": 0,
+   "total_num_pages": 0,
+   "many_results": false,
+   "num_page": 0,
+   "cluster": [
+    {}
+   ],
+   "chem_exhausted": false,
+   "summary": {}
+  }
+ },
+ "inventor:\"Antonio Munoz Gallego\"": {
+  "results": {
+   "total_num_results": 0,
+   "total_num_pages": 0,
+   "many_results": false,
+   "num_page": 0,
+   "cluster": [
+    {}
+   ],
+   "chem_exhausted": false,
+   "summary": {}
+  }
+ },
+ "inventor:\"Sergio Lopez Flores\"": {
+  "results": {
+   "total_num_results": 0,
+   "total_num_pages": 0,
+   "many_results": false,
+   "num_page": 0,
+   "cluster": [
+    {}
+   ],
+   "chem_exhausted": false,
+   "summary": {}
+  }
+ }
+}

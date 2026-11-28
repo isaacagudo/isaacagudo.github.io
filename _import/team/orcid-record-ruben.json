@@ -1,0 +1,4060 @@
+{
+ "orcid-identifier": {
+  "uri": "https://orcid.org/0000-0002-6251-4897",
+  "path": "0000-0002-6251-4897",
+  "host": "orcid.org"
+ },
+ "preferences": {
+  "locale": "es"
+ },
+ "history": {
+  "creation-method": "DIRECT",
+  "completion-date": null,
+  "submission-date": {
+   "value": 1414580719693
+  },
+  "last-modified-date": {
+   "value": 1795724855442
+  },
+  "claimed": true,
+  "source": null,
+  "deactivation-date": null,
+  "verified-email": true,
+  "verified-primary-email": true
+ },
+ "person": {
+  "last-modified-date": {
+   "value": 1784264342056
+  },
+  "name": {
+   "created-date": {
+    "value": 1460760548331
+   },
+   "last-modified-date": {
+    "value": 1460760548331
+   },
+   "given-names": {
+    "value": "Rubén"
+   },
+   "family-name": {
+    "value": "Ríos del Pozo"
+   },
+   "credit-name": {
+    "value": "Ruben Rios"
+   },
+   "source": null,
+   "visibility": "public",
+   "path": "0000-0002-6251-4897"
+  },
+  "other-names": {
+   "last-modified-date": null,
+   "other-name": [],
+   "path": "/0000-0002-6251-4897/other-names"
+  },
+  "biography": null,
+  "researcher-urls": {
+   "last-modified-date": {
+    "value": 1493369044084
+   },
+   "researcher-url": [
+    {
+     "created-date": {
+      "value": 1442991144684
+     },
+     "last-modified-date": {
+      "value": 1493369044084
+     },
+     "source": {
+      "source-orcid": {
+       "uri": "https://orcid.org/0000-0002-6251-4897",
+       "path": "0000-0002-6251-4897",
+       "host": "orcid.org"
+      },
+      "source-client-id": null,
+      "source-name": {
+       "value": "Ruben Rios"
+      },
+      "assertion-origin-orcid": null,
+      "assertion-origin-client-id": null,
+      "assertion-origin-name": null
+     },
+     "url-name": null,
+     "url": {
+      "value": "https://www.nics.uma.es/ruben"
+     },
+     "visibility": "public",
+     "path": "/0000-0002-6251-4897/researcher-urls/537292",
+     "put-code": 537292,
+     "display-index": 1
+    }
+   ],
+   "path": "/0000-0002-6251-4897/researcher-urls"
+  },
+  "emails": {
+   "last-modified-date": null,
+   "email": [],
+   "path": "/0000-0002-6251-4897/email"
+  },
+  "addresses": {
+   "last-modified-date": {
+    "value": 1465226976952
+   },
+   "address": [
+    {
+     "created-date": {
+      "value": 1453659655968
+     },
+     "last-modified-date": {
+      "value": 1465226976952
+     },
+     "source": {
+      "source-orcid": {
+       "uri": "https://orcid.org/0000-0002-6251-4897",
+       "path": "0000-0002-6251-4897",
+       "host": "orcid.org"
+      },
+      "source-client-id": null,
+      "source-name": {
+       "value": "Ruben Rios"
+      },
+      "assertion-origin-orcid": null,
+      "assertion-origin-client-id": null,
+      "assertion-origin-name": null
+     },
+     "country": {
+      "value": "ES"
+     },
+     "visibility": "public",
+     "path": "/0000-0002-6251-4897/address/200177",
+     "put-code": 200177,
+     "display-index": 0
+    }
+   ],
+   "path": "/0000-0002-6251-4897/address"
+  },
+  "keywords": {
+   "last-modified-date": {
+    "value": 1784264342056
+   },
+   "keyword": [
+    {
+     "created-date": {
+      "value": 1414580854992
+     },
+     "last-modified-date": {
+      "value": 1784264342056
+     },
+     "source": {
+      "source-orcid": {
+       "uri": "https://orcid.org/0000-0002-6251-4897",
+       "path": "0000-0002-6251-4897",
+       "host": "orcid.org"
+      },
+      "source-client-id": null,
+      "source-name": {
+       "value": "Ruben Rios"
+      },
+      "assertion-origin-orcid": null,
+      "assertion-origin-client-id": null,
+      "assertion-origin-name": null
+     },
+     "content": "Cybersecurity, Privacy, Traffic Analysis, Covert Channels, Post-quantum",
+     "visibility": "public",
+     "path": "/0000-0002-6251-4897/keywords/251806",
+     "put-code": 251806,
+     "display-index": 1
+    }
+   ],
+   "path": "/0000-0002-6251-4897/keywords"
+  },
+  "external-identifiers": {
+   "last-modified-date": {
+    "value": 1668422694534
+   },
+   "external-identifier": [
+    {
+     "created-date": {
+      "value": 1414581535610
+     },
+     "last-modified-date": {
+      "value": 1517873256636
+     },
+     "source": {
+      "source-orcid": null,
+      "source-client-id": {
+       "uri": "https://orcid.org/client/0000-0002-5982-8983",
+       "path": "0000-0002-5982-8983",
+       "host": "orcid.org"
+      },
+      "source-name": {
+       "value": "Scopus - Elsevier"
+      },
+      "assertion-origin-orcid": {
+       "uri": "https://orcid.org/0000-0002-6251-4897",
+       "path": "0000-0002-6251-4897",
+       "host": "orcid.org"
+      },
+      "assertion-origin-client-id": null,
+      "assertion-origin-name": {
+       "value": "Ruben Rios"
+      }
+     },
+     "external-id-type": "Scopus Author ID",
+     "external-id-value": "52364670700",
+     "external-id-url": {
+      "value": "http://www.scopus.com/inward/authorDetails.url?authorID=52364670700&partnerID=MN8TOARS"
+     },
+     "external-id-relationship": "self",
+     "visibility": "public",
+     "path": "/0000-0002-6251-4897/external-identifiers/216490",
+     "put-code": 216490,
+     "display-index": 0
+    },
+    {
+     "created-date": {
+      "value": 1442991144683
+     },
+     "last-modified-date": {
+      "value": 1517869567419
+     },
+     "source": {
+      "source-orcid": null,
+      "source-client-id": {
+       "uri": "https://orcid.org/client/0000-0003-1377-5676",
+       "path": "0000-0003-1377-5676",
+       "host": "orcid.org"
+      },
+      "source-name": {
+       "value": "ResearcherID"
+      },
+      "assertion-origin-orcid": {
+       "uri": "https://orcid.org/0000-0002-6251-4897",
+       "path": "0000-0002-6251-4897",
+       "host": "orcid.org"
+      },
+      "assertion-origin-client-id": null,
+      "assertion-origin-name": {
+       "value": "Ruben Rios"
+      }
+     },
+     "external-id-type": "ResearcherID",
+     "external-id-value": "L-2390-2015",
+     "external-id-url": {
+      "value": "http://www.researcherid.com/rid/L-2390-2015"
+     },
+     "external-id-relationship": "self",
+     "visibility": "public",
+     "path": "/0000-0002-6251-4897/external-identifiers/337236",
+     "put-code": 337236,
+     "display-index": 0
+    },
+    {
+     "created-date": {
+      "value": 1668422694534
+     },
+     "last-modified-date": {
+      "value": 1668422694534
+     },
+     "source": {
+      "source-orcid": null,
+      "source-client-id": {
+       "uri": "https://orcid.org/client/APP-WRQOUAK78G5F7GMD",
+       "path": "APP-WRQOUAK78G5F7GMD",
+       "host": "orcid.org"
+      },
+      "source-name": {
+       "value": "Multidisciplinary Digital Publishing Institute"
+      },
+      "assertion-origin-orcid": null,
+      "assertion-origin-client-id": null,
+      "assertion-origin-name": null
+     },
+     "external-id-type": "SciProfiles",
+     "external-id-value": "142770",
+     "external-id-url": {
+      "value": "https://sciprofiles.com/profile/142770"
+     },
+     "external-id-relationship": "self",
+     "visibility": "public",
+     "path": "/0000-0002-6251-4897/external-identifiers/2683315",
+     "put-code": 2683315,
+     "display-index": 0
+    }
+   ],
+   "path": "/0000-0002-6251-4897/external-identifiers"
+  },
+  "path": "/0000-0002-6251-4897/person"
+ },
+ "activities-summary": {
+  "last-modified-date": {
+   "value": 1795724855466
+  },
+  "distinctions": {
+   "last-modified-date": null,
+   "affiliation-group": [],
+   "path": "/0000-0002-6251-4897/distinctions"
+  },
+  "educations": {
+   "last-modified-date": {
+    "value": 1576011744419
+   },
+   "affiliation-group": [
+    {
+     "last-modified-date": {
+      "value": 1414581379219
+     },
+     "external-ids": {
+      "external-id": []
+     },
+     "summaries": [
+      {
+       "education-summary": {
+        "created-date": {
+         "value": 1414581379219
+        },
+        "last-modified-date": {
+         "value": 1414581379219
+        },
+        "source": {
+         "source-orcid": {
+          "uri": "https://orcid.org/0000-0002-6251-4897",
+          "path": "0000-0002-6251-4897",
+          "host": "orcid.org"
+         },
+         "source-client-id": null,
+         "source-name": {
+          "value": "Ruben Rios"
+         },
+         "assertion-origin-orcid": null,
+         "assertion-origin-client-id": null,
+         "assertion-origin-name": null
+        },
+        "put-code": 546369,
+        "department-name": null,
+        "role-title": "Doctor en Informática (PhD in Computer Science)",
+        "start-date": {
+         "year": {
+          "value": "2009"
+         },
+         "month": {
+          "value": "07"
+         },
+         "day": {
+          "value": "08"
+         }
+        },
+        "end-date": {
+         "year": {
+          "value": "2014"
+         },
+         "month": {
+          "value": "11"
+         },
+         "day": {
+          "value": "24"
+         }
+        },
+        "organization": {
+         "name": "Universidad de Malaga",
+         "address": {
+          "city": "Málaga",
+          "region": "Andalucía",
+          "country": "ES"
+         },
+         "disambiguated-organization": {
+          "disambiguated-organization-identifier": "16752",
+          "disambiguation-source": "RINGGOLD"
+         }
+        },
+        "url": null,
+        "external-ids": null,
+        "display-index": "0",
+        "visibility": "public",
+        "path": "/0000-0002-6251-4897/education/546369"
+       }
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1414581173182
+     },
+     "external-ids": {
+      "external-id": []
+     },
+     "summaries": [
+      {
+       "education-summary": {
+        "created-date": {
+         "value": 1414581173182
+        },
+        "last-modified-date": {
+         "value": 1414581173182
+        },
+        "source": {
+         "source-orcid": {
+          "uri": "https://orcid.org/0000-0002-6251-4897",
+          "path": "0000-0002-6251-4897",
+          "host": "orcid.org"
+         },
+         "source-client-id": null,
+         "source-name": {
+          "value": "Ruben Rios"
+         },
+         "assertion-origin-orcid": null,
+         "assertion-origin-client-id": null,
+         "assertion-origin-name": null
+        },
+        "put-code": 546363,
+        "department-name": null,
+        "role-title": "Ingeniería Informática",
+        "start-date": {
+         "year": {
+          "value": "2001"
+         },
+         "month": {
+          "value": "09"
+         },
+         "day": {
+          "value": "20"
+         }
+        },
+        "end-date": {
+         "year": {
+          "value": "2008"
+         },
+         "month": {
+          "value": "03"
+         },
+         "day": {
+          "value": "05"
+         }
+        },
+        "organization": {
+         "name": "Universidad de Malaga",
+         "address": {
+          "city": "Málaga",
+          "region": "Andalucía",
+          "country": "ES"
+         },
+         "disambiguated-organization": {
+          "disambiguated-organization-identifier": "16752",
+          "disambiguation-source": "RINGGOLD"
+         }
+        },
+        "url": null,
+        "external-ids": null,
+        "display-index": "0",
+        "visibility": "public",
+        "path": "/0000-0002-6251-4897/education/546363"
+       }
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1576011744419
+     },
+     "external-ids": {
+      "external-id": []
+     },
+     "summaries": [
+      {
+       "education-summary": {
+        "created-date": {
+         "value": 1414581735611
+        },
+        "last-modified-date": {
+         "value": 1576011744419
+        },
+        "source": {
+         "source-orcid": {
+          "uri": "https://orcid.org/0000-0002-6251-4897",
+          "path": "0000-0002-6251-4897",
+          "host": "orcid.org"
+         },
+         "source-client-id": null,
+         "source-name": {
+          "value": "Ruben Rios"
+         },
+         "assertion-origin-orcid": null,
+         "assertion-origin-client-id": null,
+         "assertion-origin-name": null
+        },
+        "put-code": 546381,
+        "department-name": null,
+        "role-title": "Bachelor of Science with a major in Computer Science",
+        "start-date": {
+         "year": {
+          "value": "2006"
+         },
+         "month": {
+          "value": "08"
+         },
+         "day": {
+          "value": "15"
+         }
+        },
+        "end-date": {
+         "year": {
+          "value": "2007"
+         },
+         "month": {
+          "value": "06"
+         },
+         "day": {
+          "value": "07"
+         }
+        },
+        "organization": {
+         "name": "Hogskolan i Skovde",
+         "address": {
+          "city": "Skovde",
+          "region": null,
+          "country": "SE"
+         },
+         "disambiguated-organization": {
+          "disambiguated-organization-identifier": "7359",
+          "disambiguation-source": "RINGGOLD"
+         }
+        },
+        "url": null,
+        "external-ids": null,
+        "display-index": "0",
+        "visibility": "public",
+        "path": "/0000-0002-6251-4897/education/546381"
+       }
+      }
+     ]
+    }
+   ],
+   "path": "/0000-0002-6251-4897/educations"
+  },
+  "employments": {
+   "last-modified-date": {
+    "value": 1784264371185
+   },
+   "affiliation-group": [
+    {
+     "last-modified-date": {
+      "value": 1784264371185
+     },
+     "external-ids": {
+      "external-id": []
+     },
+     "summaries": [
+      {
+       "employment-summary": {
+        "created-date": {
+         "value": 1674028886859
+        },
+        "last-modified-date": {
+         "value": 1784264371185
+        },
+        "source": {
+         "source-orcid": {
+          "uri": "https://orcid.org/0000-0002-6251-4897",
+          "path": "0000-0002-6251-4897",
+          "host": "orcid.org"
+         },
+         "source-client-id": null,
+         "source-name": {
+          "value": "Ruben Rios"
+         },
+         "assertion-origin-orcid": null,
+         "assertion-origin-client-id": null,
+         "assertion-origin-name": null
+        },
+        "put-code": 19382112,
+        "department-name": "Lenguajes y Ciencias de la Computación (Computer Science)",
+        "role-title": "Profesor Titular de Universidad (Tenured/Associate Professor)",
+        "start-date": {
+         "year": {
+          "value": "2022"
+         },
+         "month": {
+          "value": "11"
+         },
+         "day": {
+          "value": "15"
+         }
+        },
+        "end-date": null,
+        "organization": {
+         "name": "Universidad de Málaga",
+         "address": {
+          "city": "Málaga",
+          "region": "Andalucía",
+          "country": "ES"
+         },
+         "disambiguated-organization": null
+        },
+        "url": null,
+        "external-ids": null,
+        "display-index": "1",
+        "visibility": "public",
+        "path": "/0000-0002-6251-4897/employment/19382112"
+       }
+      }
+     ]
+    }
+   ],
+   "path": "/0000-0002-6251-4897/employments"
+  },
+  "fundings": {
+   "last-modified-date": {
+    "value": 1477039653758
+   },
+   "group": [
+    {
+     "last-modified-date": {
+      "value": 1477039653758
+     },
+     "external-ids": {
+      "external-id": []
+     },
+     "funding-summary": [
+      {
+       "created-date": {
+        "value": 1443014696372
+       },
+       "last-modified-date": {
+        "value": 1477039653758
+       },
+       "source": {
+        "source-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "source-client-id": null,
+        "source-name": {
+         "value": "Ruben Rios"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Programa Formación Profesorado Universitario (University Lecturer Training Program)"
+        },
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": []
+       },
+       "url": null,
+       "type": "award",
+       "start-date": {
+        "year": {
+         "value": "2009"
+        },
+        "month": {
+         "value": "08"
+        },
+        "day": null
+       },
+       "end-date": {
+        "year": {
+         "value": "2013"
+        },
+        "month": {
+         "value": "07"
+        },
+        "day": null
+       },
+       "organization": {
+        "name": "Ministerio de Educación",
+        "address": {
+         "city": "Madrid",
+         "region": null,
+         "country": "ES"
+        },
+        "disambiguated-organization": null
+       },
+       "visibility": "public",
+       "put-code": 112834,
+       "path": "/0000-0002-6251-4897/funding/112834",
+       "display-index": "0"
+      }
+     ]
+    }
+   ],
+   "path": "/0000-0002-6251-4897/fundings"
+  },
+  "invited-positions": {
+   "last-modified-date": null,
+   "affiliation-group": [],
+   "path": "/0000-0002-6251-4897/invited-positions"
+  },
+  "memberships": {
+   "last-modified-date": null,
+   "affiliation-group": [],
+   "path": "/0000-0002-6251-4897/memberships"
+  },
+  "peer-reviews": {
+   "last-modified-date": null,
+   "group": [],
+   "path": "/0000-0002-6251-4897/peer-reviews"
+  },
+  "qualifications": {
+   "last-modified-date": null,
+   "affiliation-group": [],
+   "path": "/0000-0002-6251-4897/qualifications"
+  },
+  "research-resources": {
+   "last-modified-date": null,
+   "group": [],
+   "path": "/0000-0002-6251-4897/research-resources"
+  },
+  "services": {
+   "last-modified-date": null,
+   "affiliation-group": [],
+   "path": "/0000-0002-6251-4897/services"
+  },
+  "works": {
+   "last-modified-date": {
+    "value": 1795724855466
+   },
+   "group": [
+    {
+     "last-modified-date": {
+      "value": 1793829753421
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.23919/NISSCPS00007.2026.00037",
+        "external-id-normalized": {
+         "value": "10.23919/nisscps00007.2026.00037",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.23919/NISSCPS00007.2026.00037"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 232259050,
+       "created-date": {
+        "value": 1793829753421
+       },
+       "last-modified-date": {
+        "value": 1793829753421
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "On the Effectiveness of Lightweight Models for Encrypted Traffic Classification"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.23919/NISSCPS00007.2026.00037",
+          "external-id-normalized": {
+           "value": "10.23919/nisscps00007.2026.00037",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.23919/NISSCPS00007.2026.00037"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.23919/NISSCPS00007.2026.00037"
+       },
+       "type": "conference-paper",
+       "publication-date": {
+        "year": {
+         "value": "2026"
+        },
+        "month": {
+         "value": "04"
+        },
+        "day": null
+       },
+       "journal-title": null,
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/232259050",
+       "display-index": "1"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1754423512385
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1016/j.future.2025.108062",
+        "external-id-normalized": {
+         "value": "10.1016/j.future.2025.108062",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1016/j.future.2025.108062"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 188976195,
+       "created-date": {
+        "value": 1753977301383
+       },
+       "last-modified-date": {
+        "value": 1754423512385
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "A performance evaluation framework for post-quantum TLS"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1016/j.future.2025.108062",
+          "external-id-normalized": {
+           "value": "10.1016/j.future.2025.108062",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1016/j.future.2025.108062"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1016/j.future.2025.108062"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2026"
+        },
+        "month": {
+         "value": "02"
+        },
+        "day": null
+       },
+       "journal-title": {
+        "value": "Future Generation Computer Systems"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/188976195",
+       "display-index": "1"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1766795258716
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1016/j.comnet.2025.111957",
+        "external-id-normalized": {
+         "value": "10.1016/j.comnet.2025.111957",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1016/j.comnet.2025.111957"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 200531181,
+       "created-date": {
+        "value": 1766451402387
+       },
+       "last-modified-date": {
+        "value": 1766795258716
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Comparative analysis of post-quantum handshake performance in QUIC and TLS protocols"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1016/j.comnet.2025.111957",
+          "external-id-normalized": {
+           "value": "10.1016/j.comnet.2025.111957",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1016/j.comnet.2025.111957"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1016/j.comnet.2025.111957"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2026"
+        },
+        "month": {
+         "value": "02"
+        },
+        "day": null
+       },
+       "journal-title": {
+        "value": "Computer Networks"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/200531181",
+       "display-index": "1"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1780415418921
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1007/978-3-032-28350-4_2",
+        "external-id-normalized": {
+         "value": "10.1007/978-3-032-28350-4_2",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1007/978-3-032-28350-4_2"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 216515793,
+       "created-date": {
+        "value": 1780415418921
+       },
+       "last-modified-date": {
+        "value": 1780415418921
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "CyberEducation 5.0:Transforming Cybersecurity Education into CyberSecPro"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1007/978-3-032-28350-4_2",
+          "external-id-normalized": {
+           "value": "10.1007/978-3-032-28350-4_2",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1007/978-3-032-28350-4_2"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1007/978-3-032-28350-4_2"
+       },
+       "type": "book-chapter",
+       "publication-date": {
+        "year": {
+         "value": "2026"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": null,
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/216515793",
+       "display-index": "1"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1795724855466
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1109/ACCESS.2026.3757643",
+        "external-id-normalized": {
+         "value": "10.1109/access.2026.3757643",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1109/ACCESS.2026.3757643"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 234752300,
+       "created-date": {
+        "value": 1795724855466
+       },
+       "last-modified-date": {
+        "value": 1795724855466
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Privacy Risks in Tabular Data: A Risk-Oriented Review of Disclosure Threats, Evaluation Metrics, and Mitigation Strategies"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1109/ACCESS.2026.3757643",
+          "external-id-normalized": {
+           "value": "10.1109/access.2026.3757643",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1109/ACCESS.2026.3757643"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1109/ACCESS.2026.3757643"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2026"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "IEEE Access"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/234752300",
+       "display-index": "1"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1757962148130
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1109/MNET.2025.3531116",
+        "external-id-normalized": {
+         "value": "10.1109/mnet.2025.3531116",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1109/MNET.2025.3531116"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 176022198,
+       "created-date": {
+        "value": 1737140126078
+       },
+       "last-modified-date": {
+        "value": 1757962148130
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Toward the Quantum-Safe Web: Benchmarking Post-Quantum TLS"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1109/MNET.2025.3531116",
+          "external-id-normalized": {
+           "value": "10.1109/mnet.2025.3531116",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1109/MNET.2025.3531116"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1109/MNET.2025.3531116"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2025"
+        },
+        "month": {
+         "value": "09"
+        },
+        "day": null
+       },
+       "journal-title": {
+        "value": "IEEE Network"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/176022198",
+       "display-index": "1"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1749811010264
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1016/j.compeleceng.2025.110468",
+        "external-id-normalized": {
+         "value": "10.1016/j.compeleceng.2025.110468",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1016/j.compeleceng.2025.110468"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 185921103,
+       "created-date": {
+        "value": 1749811010264
+       },
+       "last-modified-date": {
+        "value": 1749811010264
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "A decision framework for privacy-preserving synthetic data generation"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1016/j.compeleceng.2025.110468",
+          "external-id-normalized": {
+           "value": "10.1016/j.compeleceng.2025.110468",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1016/j.compeleceng.2025.110468"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1016/j.compeleceng.2025.110468"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2025"
+        },
+        "month": {
+         "value": "08"
+        },
+        "day": null
+       },
+       "journal-title": {
+        "value": "Computers and Electrical Engineering"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/185921103",
+       "display-index": "1"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1743662084664
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1007/978-3-031-82349-7_23",
+        "external-id-normalized": {
+         "value": "10.1007/978-3-031-82349-7_23",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1007/978-3-031-82349-7_23"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 181487735,
+       "created-date": {
+        "value": 1743662084664
+       },
+       "last-modified-date": {
+        "value": 1743662084664
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Benchmarking Post-quantum Cryptography in Ethereum-Based Blockchains"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1007/978-3-031-82349-7_23",
+          "external-id-normalized": {
+           "value": "10.1007/978-3-031-82349-7_23",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1007/978-3-031-82349-7_23"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1007/978-3-031-82349-7_23"
+       },
+       "type": "book-chapter",
+       "publication-date": {
+        "year": {
+         "value": "2025"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": null,
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/181487735",
+       "display-index": "1"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1743699256460
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1007/978-3-031-82349-7_12",
+        "external-id-normalized": {
+         "value": "10.1007/978-3-031-82349-7_12",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1007/978-3-031-82349-7_12"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 181522383,
+       "created-date": {
+        "value": 1743699256460
+       },
+       "last-modified-date": {
+        "value": 1743699256460
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Privacy-Preserving Tabular Data Generation: Systematic Literature Review"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1007/978-3-031-82349-7_12",
+          "external-id-normalized": {
+           "value": "10.1007/978-3-031-82349-7_12",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1007/978-3-031-82349-7_12"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1007/978-3-031-82349-7_12"
+       },
+       "type": "book-chapter",
+       "publication-date": {
+        "year": {
+         "value": "2025"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": null,
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/181522383",
+       "display-index": "1"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1680271415387
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1016/j.cose.2023.103180",
+        "external-id-normalized": {
+         "value": "10.1016/j.cose.2023.103180",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1016/j.cose.2023.103180"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 130773930,
+       "created-date": {
+        "value": 1678779748586
+       },
+       "last-modified-date": {
+        "value": 1680271415387
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "A survey on the (in)security of trusted execution environments"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1016/j.cose.2023.103180",
+          "external-id-normalized": {
+           "value": "10.1016/j.cose.2023.103180",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1016/j.cose.2023.103180"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1016/j.cose.2023.103180"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2023"
+        },
+        "month": {
+         "value": "06"
+        },
+        "day": null
+       },
+       "journal-title": {
+        "value": "Computers & Security"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/130773930",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1672622216214
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1145/3498543",
+        "external-id-normalized": {
+         "value": "10.1145/3498543",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1145/3498543"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 109272887,
+       "created-date": {
+        "value": 1646466850882
+       },
+       "last-modified-date": {
+        "value": 1672622216214
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Constrained Proximity Attacks on Mobile Targets"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1145/3498543",
+          "external-id-normalized": {
+           "value": "10.1145/3498543",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1145/3498543"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1145/3498543"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2022"
+        },
+        "month": {
+         "value": "05"
+        },
+        "day": {
+         "value": "31"
+        }
+       },
+       "journal-title": {
+        "value": "ACM Transactions on Privacy and Security"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/109272887",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653970816506
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.21125/edulearn.2020.1693",
+        "external-id-normalized": {
+         "value": "10.21125/edulearn.2020.1693",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.21125/edulearn.2020.1693"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 81898981,
+       "created-date": {
+        "value": 1602582349706
+       },
+       "last-modified-date": {
+        "value": 1653970816506
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "REDUCING INEQUALITIES IN MASTER DEGREE STUDENTS DUE TO SKEWED CURRICULA"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.21125/edulearn.2020.1693",
+          "external-id-normalized": {
+           "value": "10.21125/edulearn.2020.1693",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.21125/edulearn.2020.1693"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.21125/edulearn.2020.1693"
+       },
+       "type": "conference-paper",
+       "publication-date": {
+        "year": {
+         "value": "2020"
+        },
+        "month": {
+         "value": "07"
+        },
+        "day": null
+       },
+       "journal-title": null,
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/81898981",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653796920013
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1109/JIOT.2019.2904323",
+        "external-id-normalized": {
+         "value": "10.1109/jiot.2019.2904323",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1109/JIOT.2019.2904323"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 62872161,
+       "created-date": {
+        "value": 1570651745099
+       },
+       "last-modified-date": {
+        "value": 1653796920013
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Edge-Assisted Vehicular Networks Security"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1109/JIOT.2019.2904323",
+          "external-id-normalized": {
+           "value": "10.1109/jiot.2019.2904323",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1109/JIOT.2019.2904323"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1109/JIOT.2019.2904323"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2019"
+        },
+        "month": {
+         "value": "10"
+        },
+        "day": null
+       },
+       "journal-title": {
+        "value": "IEEE Internet of Things Journal"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/62872161",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653769308392
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1109/JIOT.2018.2867613",
+        "external-id-normalized": {
+         "value": "10.1109/jiot.2018.2867613",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1109/JIOT.2018.2867613"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 58619011,
+       "created-date": {
+        "value": 1560890648356
+       },
+       "last-modified-date": {
+        "value": 1653769308392
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Immune System for the Internet of Things Using Edge Technologies"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1109/JIOT.2018.2867613",
+          "external-id-normalized": {
+           "value": "10.1109/jiot.2018.2867613",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1109/JIOT.2018.2867613"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1109/JIOT.2018.2867613"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2019"
+        },
+        "month": {
+         "value": "06"
+        },
+        "day": null
+       },
+       "journal-title": {
+        "value": "IEEE Internet of Things Journal"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/58619011",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653536296370
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1016/j.cose.2017.09.015",
+        "external-id-normalized": {
+         "value": "10.1016/j.cose.2017.09.015",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1016/j.cose.2017.09.015"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 37664208,
+       "created-date": {
+        "value": 1508143646011
+       },
+       "last-modified-date": {
+        "value": 1653536296370
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Modelling privacy-aware trust negotiations"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1016/j.cose.2017.09.015",
+          "external-id-normalized": {
+           "value": "10.1016/j.cose.2017.09.015",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1016/j.cose.2017.09.015"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1016/j.cose.2017.09.015"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2018"
+        },
+        "month": {
+         "value": "08"
+        },
+        "day": null
+       },
+       "journal-title": {
+        "value": "Computers & Security"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/37664208",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1654121844948
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.3390/s18020492",
+        "external-id-normalized": {
+         "value": "10.3390/s18020492",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.3390/s18020492"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 41554725,
+       "created-date": {
+        "value": 1518397292395
+       },
+       "last-modified-date": {
+        "value": 1518397292395
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/APP-WRQOUAK78G5F7GMD",
+         "path": "APP-WRQOUAK78G5F7GMD",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Multidisciplinary Digital Publishing Institute"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "IoT-Forensics Meets Privacy: Towards Cooperative Digital Investigations"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.3390/s18020492",
+          "external-id-normalized": {
+           "value": "10.3390/s18020492",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.3390/s18020492"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://www.mdpi.com/1424-8220/18/2/492"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2018"
+        },
+        "month": {
+         "value": "02"
+        },
+        "day": null
+       },
+       "journal-title": {
+        "value": "Sensors"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/41554725",
+       "display-index": "0"
+      },
+      {
+       "put-code": 97342061,
+       "created-date": {
+        "value": 1626953413837
+       },
+       "last-modified-date": {
+        "value": 1654121844948
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "IoT-Forensics Meets Privacy: Towards Cooperative Digital Investigations"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.3390/s18020492",
+          "external-id-normalized": {
+           "value": "10.3390/s18020492",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.3390/s18020492"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.3390/s18020492"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2018"
+        },
+        "month": {
+         "value": "02"
+        },
+        "day": {
+         "value": "07"
+        }
+       },
+       "journal-title": {
+        "value": "Sensors"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/97342061",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653626930207
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1007/978-3-319-98989-1_19",
+        "external-id-normalized": {
+         "value": "10.1007/978-3-319-98989-1_19",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": {
+         "value": "https://doi.org/10.1007/978-3-319-98989-1_19"
+        },
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 47168386,
+       "created-date": {
+        "value": 1533580716309
+       },
+       "last-modified-date": {
+        "value": 1653626930207
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0001-9884-1913",
+         "path": "0000-0001-9884-1913",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Location Proximity Attacks Against Mobile Targets: Analytical Bounds and Attacker Strategies"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1007/978-3-319-98989-1_19",
+          "external-id-normalized": {
+           "value": "10.1007/978-3-319-98989-1_19",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": {
+           "value": "https://doi.org/10.1007/978-3-319-98989-1_19"
+          },
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "https://doi.org/10.1007/978-3-319-98989-1_19"
+       },
+       "type": "book-chapter",
+       "publication-date": {
+        "year": {
+         "value": "2018"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": null,
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/47168386",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653546550198
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1109/trustcom/bigdatase/icess.2017.293",
+        "external-id-normalized": {
+         "value": "10.1109/trustcom/bigdatase/icess.2017.293",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 37913709,
+       "created-date": {
+        "value": 1508746099774
+       },
+       "last-modified-date": {
+        "value": 1653546550198
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-3054-1567",
+         "path": "0000-0002-3054-1567",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref Metadata Search"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "A Methodology for Privacy-Aware IoT-Forensics"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1109/trustcom/bigdatase/icess.2017.293",
+          "external-id-normalized": {
+           "value": "10.1109/trustcom/bigdatase/icess.2017.293",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": null,
+       "type": "conference-paper",
+       "publication-date": {
+        "year": {
+         "value": "2017"
+        },
+        "month": {
+         "value": "08"
+        },
+        "day": null
+       },
+       "journal-title": {
+        "value": "2017 IEEE Trustcom/BigDataSE/ICESS"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/37913709",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653546550285
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1109/trustcom/bigdatase/icess.2017.295",
+        "external-id-normalized": {
+         "value": "10.1109/trustcom/bigdatase/icess.2017.295",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 37913729,
+       "created-date": {
+        "value": 1508746152882
+       },
+       "last-modified-date": {
+        "value": 1653546550285
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-3054-1567",
+         "path": "0000-0002-3054-1567",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref Metadata Search"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "Digital Witness and Privacy in IoT: Anonymous Witnessing Approach"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1109/trustcom/bigdatase/icess.2017.295",
+          "external-id-normalized": {
+           "value": "10.1109/trustcom/bigdatase/icess.2017.295",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": null,
+       "type": "conference-paper",
+       "publication-date": {
+        "year": {
+         "value": "2017"
+        },
+        "month": {
+         "value": "08"
+        },
+        "day": null
+       },
+       "journal-title": {
+        "value": "2017 IEEE Trustcom/BigDataSE/ICESS"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/37913729",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653546550206
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1109/fmec.2017.7946408",
+        "external-id-normalized": {
+         "value": "10.1109/fmec.2017.7946408",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 37913712,
+       "created-date": {
+        "value": 1508746132210
+       },
+       "last-modified-date": {
+        "value": 1653546550206
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-3054-1567",
+         "path": "0000-0002-3054-1567",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref Metadata Search"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "From SMOG to Fog: A security perspective"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1109/fmec.2017.7946408",
+          "external-id-normalized": {
+           "value": "10.1109/fmec.2017.7946408",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": null,
+       "type": "conference-paper",
+       "publication-date": {
+        "year": {
+         "value": "2017"
+        },
+        "month": {
+         "value": "05"
+        },
+        "day": null
+       },
+       "journal-title": {
+        "value": "2017 Second International Conference on Fog and Mobile Edge Computing (FMEC)"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/37913712",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653546550423
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1007/978-3-319-58469-0_10",
+        "external-id-normalized": {
+         "value": "10.1007/978-3-319-58469-0_10",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 37913801,
+       "created-date": {
+        "value": 1508746272380
+       },
+       "last-modified-date": {
+        "value": 1653546550423
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-3054-1567",
+         "path": "0000-0002-3054-1567",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Crossref Metadata Search"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "Query Privacy in Sensing-as-a-Service Platforms"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1007/978-3-319-58469-0_10",
+          "external-id-normalized": {
+           "value": "10.1007/978-3-319-58469-0_10",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": null,
+       "type": "other",
+       "publication-date": {
+        "year": {
+         "value": "2017"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "ICT Systems Security and Privacy Protection"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/37913801",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653456283744
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "eid",
+        "external-id-value": "2-s2.0-84989892527",
+        "external-id-normalized": {
+         "value": "2-s2.0-84989892527",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       },
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1007/978-3-319-46598-2_7",
+        "external-id-normalized": {
+         "value": "10.1007/978-3-319-46598-2_7",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 27549972,
+       "created-date": {
+        "value": 1477039667835
+       },
+       "last-modified-date": {
+        "value": 1653456283744
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-5982-8983",
+         "path": "0000-0002-5982-8983",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Scopus - Elsevier"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "Privacy-aware trust negotiation"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1007/978-3-319-46598-2_7",
+          "external-id-normalized": {
+           "value": "10.1007/978-3-319-46598-2_7",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "eid",
+          "external-id-value": "2-s2.0-84989892527",
+          "external-id-normalized": {
+           "value": "2-s2.0-84989892527",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84989892527&partnerID=MN8TOARS"
+       },
+       "type": "book",
+       "publication-date": {
+        "year": {
+         "value": "2016"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/27549972",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653456283750
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "eid",
+        "external-id-value": "2-s2.0-84938212949",
+        "external-id-normalized": {
+         "value": "2-s2.0-84938212949",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       },
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1016/j.ins.2015.01.016",
+        "external-id-normalized": {
+         "value": "10.1016/j.ins.2015.01.016",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 27549973,
+       "created-date": {
+        "value": 1477039667842
+       },
+       "last-modified-date": {
+        "value": 1653456283750
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-5982-8983",
+         "path": "0000-0002-5982-8983",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Scopus - Elsevier"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "Probabilistic receiver-location privacy protection in wireless sensor networks"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1016/j.ins.2015.01.016",
+          "external-id-normalized": {
+           "value": "10.1016/j.ins.2015.01.016",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "eid",
+          "external-id-value": "2-s2.0-84938212949",
+          "external-id-normalized": {
+           "value": "2-s2.0-84938212949",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84938212949&partnerID=MN8TOARS"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2015"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "Information Sciences"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/27549973",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1477039653758
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1007/978-3-319-10082-1_9",
+        "external-id-normalized": {
+         "value": "10.1007/978-3-319-10082-1_9",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 18649619,
+       "created-date": {
+        "value": 1442997048028
+       },
+       "last-modified-date": {
+        "value": 1477039653758
+       },
+       "source": {
+        "source-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "source-client-id": null,
+        "source-name": {
+         "value": "Ruben Rios"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Location Privacy in WSNs: Solutions, Challenges, and Future Trends"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1007/978-3-319-10082-1_9",
+          "external-id-normalized": {
+           "value": "10.1007/978-3-319-10082-1_9",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "isbn",
+          "external-id-value": "978-3-319-10081-4",
+          "external-id-normalized": {
+           "value": "9783319100814",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "part-of"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://dx.doi.org/10.1007/978-3-319-10082-1_9"
+       },
+       "type": "book-chapter",
+       "publication-date": {
+        "year": {
+         "value": "2014"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "Foundations of Security Analysis and Design VII"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/18649619",
+       "display-index": "2"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653352695515
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "eid",
+        "external-id-value": "2-s2.0-84901652356",
+        "external-id-normalized": {
+         "value": "2-s2.0-84901652356",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       },
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1007/978-3-319-06320-1_3",
+        "external-id-normalized": {
+         "value": "10.1007/978-3-319-06320-1_3",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 14226202,
+       "created-date": {
+        "value": 1414581541288
+       },
+       "last-modified-date": {
+        "value": 1653352695515
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-5982-8983",
+         "path": "0000-0002-5982-8983",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Scopus - Elsevier"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "Preserving receiver-location privacy in wireless sensor networks"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1007/978-3-319-06320-1_3",
+          "external-id-normalized": {
+           "value": "10.1007/978-3-319-06320-1_3",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "eid",
+          "external-id-value": "2-s2.0-84901652356",
+          "external-id-normalized": {
+           "value": "2-s2.0-84901652356",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84901652356&partnerID=MN8TOARS"
+       },
+       "type": "book",
+       "publication-date": {
+        "year": {
+         "value": "2014"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/14226202",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653352695533
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1109/JSYST.2012.2221956",
+        "external-id-normalized": {
+         "value": "10.1109/jsyst.2012.2221956",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       },
+       {
+        "external-id-type": "eid",
+        "external-id-value": "2-s2.0-84876786771",
+        "external-id-normalized": {
+         "value": "2-s2.0-84876786771",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 14226205,
+       "created-date": {
+        "value": 1414581541302
+       },
+       "last-modified-date": {
+        "value": 1653352695533
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-5982-8983",
+         "path": "0000-0002-5982-8983",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Scopus - Elsevier"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "(Un)suitability of anonymous communication systems to WSN"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1109/JSYST.2012.2221956",
+          "external-id-normalized": {
+           "value": "10.1109/jsyst.2012.2221956",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "eid",
+          "external-id-value": "2-s2.0-84876786771",
+          "external-id-normalized": {
+           "value": "2-s2.0-84876786771",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84876786771&partnerID=MN8TOARS"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2013"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "IEEE Systems Journal"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/14226205",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653352695521
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1016/j.cose.2013.05.004",
+        "external-id-normalized": {
+         "value": "10.1016/j.cose.2013.05.004",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       },
+       {
+        "external-id-type": "eid",
+        "external-id-value": "2-s2.0-84889093377",
+        "external-id-normalized": {
+         "value": "2-s2.0-84889093377",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 14226203,
+       "created-date": {
+        "value": 1414581541293
+       },
+       "last-modified-date": {
+        "value": 1653352695521
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-5982-8983",
+         "path": "0000-0002-5982-8983",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Scopus - Elsevier"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "A privacy-aware continuous authentication scheme for proximity-based access control"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1016/j.cose.2013.05.004",
+          "external-id-normalized": {
+           "value": "10.1016/j.cose.2013.05.004",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "eid",
+          "external-id-value": "2-s2.0-84889093377",
+          "external-id-normalized": {
+           "value": "2-s2.0-84889093377",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84889093377&partnerID=MN8TOARS"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2013"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "Computers and Security"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/14226203",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653352695527
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1016/j.cose.2013.03.004",
+        "external-id-normalized": {
+         "value": "10.1016/j.cose.2013.03.004",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       },
+       {
+        "external-id-type": "eid",
+        "external-id-value": "2-s2.0-84888292291",
+        "external-id-normalized": {
+         "value": "2-s2.0-84888292291",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 14226204,
+       "created-date": {
+        "value": 1414581541297
+       },
+       "last-modified-date": {
+        "value": 1653352695527
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-5982-8983",
+         "path": "0000-0002-5982-8983",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Scopus - Elsevier"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "Covert communications through network configuration messages"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1016/j.cose.2013.03.004",
+          "external-id-normalized": {
+           "value": "10.1016/j.cose.2013.03.004",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "eid",
+          "external-id-value": "2-s2.0-84888292291",
+          "external-id-normalized": {
+           "value": "2-s2.0-84888292291",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84888292291&partnerID=MN8TOARS"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2013"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "Computers and Security"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/14226204",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653352695544
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "eid",
+        "external-id-value": "2-s2.0-84863898256",
+        "external-id-normalized": {
+         "value": "2-s2.0-84863898256",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       },
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1007/978-3-642-30436-1_14",
+        "external-id-normalized": {
+         "value": "10.1007/978-3-642-30436-1_14",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 14226207,
+       "created-date": {
+        "value": 1414581541312
+       },
+       "last-modified-date": {
+        "value": 1653352695544
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-5982-8983",
+         "path": "0000-0002-5982-8983",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Scopus - Elsevier"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "HIDE-DHCP: Covert communications through network configuration messages"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1007/978-3-642-30436-1_14",
+          "external-id-normalized": {
+           "value": "10.1007/978-3-642-30436-1_14",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "eid",
+          "external-id-value": "2-s2.0-84863898256",
+          "external-id-normalized": {
+           "value": "2-s2.0-84863898256",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84863898256&partnerID=MN8TOARS"
+       },
+       "type": "book",
+       "publication-date": {
+        "year": {
+         "value": "2012"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "IFIP Advances in Information and Communication Technology"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/14226207",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653352695549
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "eid",
+        "external-id-value": "2-s2.0-84863593834",
+        "external-id-normalized": {
+         "value": "2-s2.0-84863593834",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       },
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1145/2245276.2232010",
+        "external-id-normalized": {
+         "value": "10.1145/2245276.2232010",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 14226208,
+       "created-date": {
+        "value": 1414581541316
+       },
+       "last-modified-date": {
+        "value": 1653352695549
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-5982-8983",
+         "path": "0000-0002-5982-8983",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Scopus - Elsevier"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "Indistinguishable regions in geographic privacy"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1145/2245276.2232010",
+          "external-id-normalized": {
+           "value": "10.1145/2245276.2232010",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "eid",
+          "external-id-value": "2-s2.0-84863593834",
+          "external-id-normalized": {
+           "value": "2-s2.0-84863593834",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84863593834&partnerID=MN8TOARS"
+       },
+       "type": "conference-paper",
+       "publication-date": {
+        "year": {
+         "value": "2012"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "Proceedings of the ACM Symposium on Applied Computing"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/14226208",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653352695538
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "eid",
+        "external-id-value": "2-s2.0-84865603465",
+        "external-id-normalized": {
+         "value": "2-s2.0-84865603465",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       },
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1007/978-3-642-33167-1_10",
+        "external-id-normalized": {
+         "value": "10.1007/978-3-642-33167-1_10",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 14226206,
+       "created-date": {
+        "value": 1414581541307
+       },
+       "last-modified-date": {
+        "value": 1653352695538
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-5982-8983",
+         "path": "0000-0002-5982-8983",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Scopus - Elsevier"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "Robust probabilistic fake packet injection for receiver-location privacy in WSN"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1007/978-3-642-33167-1_10",
+          "external-id-normalized": {
+           "value": "10.1007/978-3-642-33167-1_10",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "eid",
+          "external-id-value": "2-s2.0-84865603465",
+          "external-id-normalized": {
+           "value": "2-s2.0-84865603465",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84865603465&partnerID=MN8TOARS"
+       },
+       "type": "book",
+       "publication-date": {
+        "year": {
+         "value": "2012"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/14226206",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653352695554
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1049/iet-com.2010.0825",
+        "external-id-normalized": {
+         "value": "10.1049/iet-com.2010.0825",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       },
+       {
+        "external-id-type": "eid",
+        "external-id-value": "2-s2.0-84857300683",
+        "external-id-normalized": {
+         "value": "2-s2.0-84857300683",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 14226209,
+       "created-date": {
+        "value": 1414581541321
+       },
+       "last-modified-date": {
+        "value": 1653352695554
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-5982-8983",
+         "path": "0000-0002-5982-8983",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Scopus - Elsevier"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "Analysis of location privacy solutions in wireless sensor networks"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1049/iet-com.2010.0825",
+          "external-id-normalized": {
+           "value": "10.1049/iet-com.2010.0825",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "eid",
+          "external-id-value": "2-s2.0-84857300683",
+          "external-id-normalized": {
+           "value": "2-s2.0-84857300683",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84857300683&partnerID=MN8TOARS"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2011"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "IET Communications"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/14226209",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1653352695559
+     },
+     "external-ids": {
+      "external-id": [
+       {
+        "external-id-type": "eid",
+        "external-id-value": "2-s2.0-80053515818",
+        "external-id-normalized": {
+         "value": "2-s2.0-80053515818",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       },
+       {
+        "external-id-type": "doi",
+        "external-id-value": "10.1093/comjnl/bxr055",
+        "external-id-normalized": {
+         "value": "10.1093/comjnl/bxr055",
+         "transient": true
+        },
+        "external-id-normalized-error": null,
+        "external-id-url": null,
+        "external-id-relationship": "self"
+       }
+      ]
+     },
+     "work-summary": [
+      {
+       "put-code": 14226210,
+       "created-date": {
+        "value": 1414581541324
+       },
+       "last-modified-date": {
+        "value": 1653352695559
+       },
+       "source": {
+        "source-orcid": null,
+        "source-client-id": {
+         "uri": "https://orcid.org/client/0000-0002-5982-8983",
+         "path": "0000-0002-5982-8983",
+         "host": "orcid.org"
+        },
+        "source-name": {
+         "value": "Scopus - Elsevier"
+        },
+        "assertion-origin-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": {
+         "value": "Ruben Rios"
+        }
+       },
+       "title": {
+        "title": {
+         "value": "Exploiting context-awareness to enhance source-location privacy in wireless sensor networks"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "doi",
+          "external-id-value": "10.1093/comjnl/bxr055",
+          "external-id-normalized": {
+           "value": "10.1093/comjnl/bxr055",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         },
+         {
+          "external-id-type": "eid",
+          "external-id-value": "2-s2.0-80053515818",
+          "external-id-normalized": {
+           "value": "2-s2.0-80053515818",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "self"
+         }
+        ]
+       },
+       "url": {
+        "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-80053515818&partnerID=MN8TOARS"
+       },
+       "type": "journal-article",
+       "publication-date": {
+        "year": {
+         "value": "2011"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "Computer Journal"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/14226210",
+       "display-index": "0"
+      }
+     ]
+    },
+    {
+     "last-modified-date": {
+      "value": 1477039653758
+     },
+     "external-ids": {
+      "external-id": []
+     },
+     "work-summary": [
+      {
+       "put-code": 18650175,
+       "created-date": {
+        "value": 1442997998970
+       },
+       "last-modified-date": {
+        "value": 1477039653758
+       },
+       "source": {
+        "source-orcid": {
+         "uri": "https://orcid.org/0000-0002-6251-4897",
+         "path": "0000-0002-6251-4897",
+         "host": "orcid.org"
+        },
+        "source-client-id": null,
+        "source-name": {
+         "value": "Ruben Rios"
+        },
+        "assertion-origin-orcid": null,
+        "assertion-origin-client-id": null,
+        "assertion-origin-name": null
+       },
+       "title": {
+        "title": {
+         "value": "Source Location Privacy Considerations in Wireless Sensor Networks"
+        },
+        "subtitle": null,
+        "translated-title": null
+       },
+       "external-ids": {
+        "external-id": [
+         {
+          "external-id-type": "isbn",
+          "external-id-value": "978-84-92812-61-5",
+          "external-id-normalized": {
+           "value": "9788492812615",
+           "transient": true
+          },
+          "external-id-normalized-error": null,
+          "external-id-url": null,
+          "external-id-relationship": "part-of"
+         }
+        ]
+       },
+       "url": null,
+       "type": "conference-paper",
+       "publication-date": {
+        "year": {
+         "value": "2010"
+        },
+        "month": null,
+        "day": null
+       },
+       "journal-title": {
+        "value": "4th International Symposium of Ubiquitous Computing and Ambient Intelligence (UCAmI'10)"
+       },
+       "visibility": "public",
+       "path": "/0000-0002-6251-4897/work/18650175",
+       "display-index": "3"
+      }
+     ]
+    }
+   ],
+   "path": "/0000-0002-6251-4897/works"
+  },
+  "path": "/0000-0002-6251-4897/activities"
+ },
+ "path": "/0000-0002-6251-4897"
+}
